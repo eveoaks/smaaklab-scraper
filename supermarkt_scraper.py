@@ -392,11 +392,13 @@ LIDL_VISION_PROMPT = (
     "Dit is een pagina uit de Lidl weekfolder. "
     "Extraheer ALLEEN voedselproducten (geen huishoudartikelen, drogisterij, kleding, elektronica, schoonmaakmiddelen).\n\n"
     "Geef de output als een JSON array, één object per product:\n"
-    '[{"naam": "productnaam", "prijs": "1.99", "deal_label": "omschrijving of lege string"}]\n\n'
+    '[{"naam": "productnaam", "prijs": "1.99", "was": "2.99", "deal_label": "34% korting"}]\n\n'
     "Regels:\n"
-    '- "prijs" is de aanbiedingsprijs als decimaal getal (bijv "1.99")\n'
+    '- "naam": volledige productnaam inclusief merk, variant en gewicht/inhoud (bijv "Arla Skyr Aardbei 450g")\n'
+    '- "prijs": de aanbiedingsprijs als decimaal getal (bijv "1.99")\n'
+    '- "was": de originele prijs als die zichtbaar is, anders null\n'
+    '- "deal_label": zichtbare aanbiedingstekst zoals "34% korting", "2e halve prijs", "1+1 gratis", "2 voor 3.00" — of lege string\n'
     "- Als er geen duidelijke prijs staat, sla het product over\n"
-    '- "deal_label" is bijv "2e halve prijs", "1+1 gratis", "2 voor 3.00", of lege string\n'
     "- Geef ALLEEN de JSON array terug, geen extra tekst, geen markdown"
 )
 
@@ -425,21 +427,31 @@ def _lidl_get_page_urls(folder_id):
     for page_num, hash_ in img_matches:
         if page_num not in seen:
             seen.add(page_num)
-            img_url = (
+            thumb_url = (
                 f"https://img.offers-cdn.net/assets/uploads/flyers/"
                 f"{folder_id}/260x270WebP/lidl-{page_num}-1-{hash_}.webp"
             )
-            page_urls.append((int(page_num), img_url))
+            # Hogere resolutie voor betere leesbaarheid door Claude
+            hires_url = (
+                f"https://img.offers-cdn.net/assets/uploads/flyers/"
+                f"{folder_id}/800x830WebP/lidl-{page_num}-1-{hash_}.webp"
+            )
+            page_urls.append((int(page_num), hires_url, thumb_url))
     page_urls.sort()
     return page_urls
 
 
 def _parse_claude_products(text):
-    """Parse Claude JSON response, strip markdown code fences if present."""
+    """Parse Claude JSON response, strip markdown code fences and trailing text."""
     text = text.strip()
     text = re.sub(r'^```(?:json)?\s*', '', text)
     text = re.sub(r'\s*```$', '', text)
-    return json.loads(text)
+    # Pak alleen het stuk tussen de eerste [ en de laatste ]
+    start = text.find('[')
+    end = text.rfind(']')
+    if start == -1 or end == -1:
+        raise json.JSONDecodeError("Geen JSON array gevonden", text, 0)
+    return json.loads(text[start:end + 1])
 
 
 def scrape_lidl():
@@ -467,15 +479,18 @@ def scrape_lidl():
     results = []
     seen = set()
 
-    for page_num, img_url in page_urls:
+    for page_num, hires_url, thumb_url in page_urls:
         try:
-            img_r = requests.get(img_url, timeout=TIMEOUT)
+            # Probeer hoge resolutie; val terug op lage resolutie bij 404
+            img_r = requests.get(hires_url, timeout=TIMEOUT)
+            if img_r.status_code == 404:
+                img_r = requests.get(thumb_url, timeout=TIMEOUT)
             img_r.raise_for_status()
             img_b64 = base64.standard_b64encode(img_r.content).decode("utf-8")
 
             response = client.messages.create(
-                model="claude-haiku-4-5-20251001",
-                max_tokens=1024,
+                model="claude-sonnet-4-6",
+                max_tokens=2048,
                 messages=[{
                     "role": "user",
                     "content": [
@@ -508,6 +523,14 @@ def scrape_lidl():
                     continue
                 seen.add(key)
 
+                was_raw = prod.get("was")
+                was_str = str(was_raw).replace(",", ".") if was_raw else None
+                try:
+                    if was_str:
+                        float(was_str)
+                except ValueError:
+                    was_str = None
+
                 deal_label = (prod.get("deal_label") or "").strip() or "Weekaanbieding"
 
                 results.append({
@@ -515,10 +538,10 @@ def scrape_lidl():
                     "naam":       naam,
                     "desc":       "Weekaanbieding",
                     "prijs":      prijs_str,
-                    "was":        None,
+                    "was":        was_str,
                     "deal_label": deal_label,
                     "effectief":  None,
-                    "img":        "",
+                    "img":        thumb_url,
                     "url":        folder_url,
                 })
 
