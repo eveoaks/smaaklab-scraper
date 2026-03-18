@@ -384,7 +384,7 @@ def scrape_jumbo():
 # Lidl — folderz.nl + Claude Vision
 # ──────────────────────────────────────────────
 
-FOLDERZ_LIST_URL   = "https://www.folderz.nl/winkels/lidl/folders-aanbiedingen"
+FOLDERZ_LIST_URL   = "https://www.folderz.nl/winkels/lidl/aanbiedingen"
 FOLDERZ_FOLDER_URL = "https://www.folderz.nl/bekijk/aanbiedingen/lidl-folder-{folder_id}"
 FOLDERZ_HEADERS    = {"User-Agent": "Mozilla/5.0 (compatible; SmaakBot/1.0)"}
 
