@@ -23,23 +23,21 @@ AH_GRAPHQL_URL = "https://api.ah.nl/graphql"
 
 AH_QUERY = """
 {
-  bonusPromotions(promotionType: NATIONAL) {
+  bonusPromotions {
     id
     title
     subtitle
     promotionType
-    price {
-      now { amount }
-      was { amount }
-    }
     products {
       title
       category
-      price {
+      priceV2 {
         now { amount }
         was { amount }
       }
-      images { url }
+      imagePack {
+        small { url }
+      }
     }
   }
 }
@@ -87,6 +85,8 @@ def scrape_ah():
     seen = set()
 
     for promo in promotions:
+        if promo.get("promotionType") != "NATIONAL":
+            continue
         products = promo.get("products") or []
 
         if products:
@@ -101,24 +101,17 @@ def scrape_ah():
 
                 price_now = None
                 price_was = None
-                prod_price = product.get("price") or {}
+                prod_price = product.get("priceV2") or {}
                 if prod_price.get("now"):
                     price_now = str(prod_price["now"]["amount"])
                 if prod_price.get("was"):
                     price_was = str(prod_price["was"]["amount"])
 
-                # Fall back to promotion-level price if product has none
-                if price_now is None:
-                    promo_price = promo.get("price") or {}
-                    if promo_price.get("now"):
-                        price_now = str(promo_price["now"]["amount"])
-                    if promo_price.get("was"):
-                        price_was = str(promo_price["was"]["amount"])
-
                 img = ""
-                images = product.get("images") or []
-                if images:
-                    img = images[0].get("url", "")
+                image_packs = product.get("imagePack") or []
+                if image_packs:
+                    small = (image_packs[0] or {}).get("small") or {}
+                    img = small.get("url", "")
 
                 results.append({
                     "supermarkt": "Albert Heijn",
@@ -139,9 +132,8 @@ def scrape_ah():
                 continue
             seen.add(key)
 
-            promo_price = promo.get("price") or {}
-            price_now = str(promo_price["now"]["amount"]) if promo_price.get("now") else None
-            price_was = str(promo_price["was"]["amount"]) if promo_price.get("was") else None
+            price_now = None
+            price_was = None
 
             results.append({
                 "supermarkt": "Albert Heijn",
