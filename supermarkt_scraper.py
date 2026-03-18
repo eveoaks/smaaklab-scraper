@@ -13,51 +13,61 @@ import requests
 
 TIMEOUT = 15
 
-FOOD_CATEGORIES = {
-    "Bakkerij",
-    "Frisdrank, sappen, water",
-    "Bier, wijn, aperitieven",
-    "Borrel, chips, snacks",
-    "Koffie, thee",
-    "Koek, snoep, chocolade",
-    "Pasta, rijst, wereldkeuken",
-    "Zuivel, eieren",
-    "Maaltijden, salades",
-    "Kaas",
-    "Ontbijtgranen, beleg",
-    "Soepen, sauzen, kruiden, olie",
-    "Fruit, verse sappen",
-    "Diepvries",
-    "Groente, aardappelen",
-    "Vis",
-    "Vegetarisch, vegan en plantaardig",
-    "Vleeswaren",
-    "Vlees",
-    "Glutenvrij",
-    "Tussendoortjes",
+# Gemeenschappelijke categorieën waarop gefilterd wordt in de viewer
+CATEGORY_MAP = {
+    # AH
+    "Bakkerij":                          "Brood & gebak",
+    "Frisdrank, sappen, water":          "Frisdrank",
+    "Bier, wijn, aperitieven":           "Bier & wijn",
+    "Borrel, chips, snacks":             "Snacks",
+    "Koffie, thee":                      "Koffie & thee",
+    "Koek, snoep, chocolade":            "Koek & snoep",
+    "Pasta, rijst, wereldkeuken":        "Pasta & rijst",
+    "Zuivel, eieren":                    "Zuivel & eieren",
+    "Maaltijden, salades":               "Maaltijden",
+    "Kaas":                              "Vleeswaren & kaas",
+    "Ontbijtgranen, beleg":              "Ontbijt & beleg",
+    "Soepen, sauzen, kruiden, olie":     "Soepen & sauzen",
+    "Fruit, verse sappen":               "Groente & fruit",
+    "Diepvries":                         "Diepvries",
+    "Groente, aardappelen":              "Groente & fruit",
+    "Vis":                               "Vlees & vis",
+    "Vegetarisch, vegan en plantaardig": "Vegetarisch & vegan",
+    "Vleeswaren":                        "Vleeswaren & kaas",
+    "Vlees":                             "Vlees & vis",
+    "Glutenvrij":                        "Glutenvrij",
+    "Tussendoortjes":                    "Snacks",
+    # Jumbo
+    "Bier en wijn":                              "Bier & wijn",
+    "Zuivel, eieren, boter":                     "Zuivel & eieren",
+    "Conserven, soepen, sauzen, oliën":          "Soepen & sauzen",
+    "Frisdrank en sappen":                       "Frisdrank",
+    "Koffie en thee":                            "Koffie & thee",
+    "Koek, snoep, chocolade en chips":           "Koek & snoep",
+    "Aardappelen, groente en fruit":             "Groente & fruit",
+    "Vlees, vis en vega":                        "Vlees & vis",
+    "Vleeswaren, kaas en tapas":                 "Vleeswaren & kaas",
+    "Brood en gebak":                            "Brood & gebak",
+    "Ontbijt, broodbeleg en bakproducten":       "Ontbijt & beleg",
+    "Verse maaltijden en gemak":                 "Maaltijden",
+    "Pasta, rijst en wereldkeuken":              "Pasta & rijst",
+}
+
+NON_FOOD = {
+    "Huishouden", "Drogisterij", "Pasen", "Gezondheid en sport",
+    "Baby en kind", "Huisdier", "AH Voordeelshop",
+    "Drogisterij en baby", "Huishouden en schoonmaak",
+    "Non-food", "Elektronica en multimedia", "Kantoor en school",
 }
 
 
-JUMBO_SKIP_CATEGORIES = {
-    "Drogisterij en baby",
-    "Huishouden en schoonmaak",
-    "Huisdier",
-    "Non-food",
-    "Elektronica en multimedia",
-    "Kantoor en school",
-}
+def normalize_category(raw_cat):
+    main = raw_cat.split("/")[0].strip()
+    return CATEGORY_MAP.get(main)  # None = niet-eten, overgeslagen
 
 
 def is_food(deal):
-    supermarkt = deal.get("supermarkt", "")
-    cat = deal.get("desc", "")
-
-    if supermarkt == "Jumbo":
-        main_cat = cat.split("/")[0].strip()
-        return main_cat not in JUMBO_SKIP_CATEGORIES and main_cat != ""
-
-    main_cat = cat.split("/")[0].strip()
-    return main_cat in FOOD_CATEGORIES
+    return normalize_category(deal.get("desc", "")) is not None
 
 
 # ──────────────────────────────────────────────
@@ -327,6 +337,8 @@ def main():
         print(f"Scraping {naam}...")
         deals = scraper()
         deals = [d for d in deals if is_food(d) and d.get("was")]
+        for d in deals:
+            d["desc"] = normalize_category(d["desc"])
         print(f"  {len(deals)} deals gevonden")
         all_deals.extend(deals)
         time.sleep(1)
