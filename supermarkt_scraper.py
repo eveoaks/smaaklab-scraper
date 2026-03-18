@@ -445,13 +445,17 @@ def scrape_lidl():
         consecutive_empty = 0
         max_pages = 60
 
-        while page_num <= max_pages and consecutive_empty < 3:
+        while page_num <= max_pages and consecutive_empty < 5:
             try:
                 pw_page.goto(f"{base_url}/{page_num}", timeout=30000, wait_until="domcontentloaded")
 
+                # Scroll om lazy loading te triggeren
+                pw_page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
+                pw_page.wait_for_timeout(1000)
+
                 # Wacht op imgproxy afbeelding
                 try:
-                    pw_page.wait_for_selector("img[src*='imgproxy']", timeout=8000)
+                    pw_page.wait_for_selector("img[src*='imgproxy']", timeout=15000)
                 except Exception:
                     consecutive_empty += 1
                     page_num += 1
