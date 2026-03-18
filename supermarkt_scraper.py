@@ -192,7 +192,7 @@ def main():
     for naam, scraper in SCRAPERS:
         print(f"Scraping {naam}...")
         deals = scraper()
-        deals = [d for d in deals if is_food(d)]
+        deals = [d for d in deals if is_food(d) and d.get("was")]
         print(f"  {len(deals)} deals gevonden")
         all_deals.extend(deals)
         time.sleep(1)
