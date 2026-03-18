@@ -400,21 +400,6 @@ LIDL_VISION_PROMPT = (
     "- Geef ALLEEN de JSON array terug, geen extra tekst, geen markdown"
 )
 
-# Termen in altText die duiden op non-food pagina's → overslaan
-LIDL_NONFOOD_KEYWORDS = [
-    "fiets", "helm", "sport", "kleding", "broek", "vest", "schoen",
-    "gereedschap", "accu", "powerbank", "compressor", "auto ", "lader",
-    "elektrisch", "inductie", "blender", "waterkoker", "broodrooster",
-    "kookplaat", "pan ", "grill", "badmat", "bloeddrukmeter", "inline",
-    "spanbanden", "fietsendrager", "zitverhoger",
-]
-
-
-def _page_is_food(alt_text: str) -> bool:
-    """Sla pagina's over die duidelijk non-food zijn op basis van altText."""
-    alt_lower = alt_text.lower()
-    hits = sum(1 for kw in LIDL_NONFOOD_KEYWORDS if kw in alt_lower)
-    return hits == 0
 
 
 def _parse_claude_products(text):
@@ -456,11 +441,6 @@ def scrape_lidl():
         img_url   = page.get("zoom") or page.get("image")
 
         if not img_url:
-            continue
-
-        # Sla duidelijke non-food pagina's over
-        if not _page_is_food(alt_text):
-            print(f"  Pagina {page_num}: overgeslagen (non-food: {alt_text[:60]})")
             continue
 
         print(f"  Pagina {page_num}: verwerken...")
@@ -539,8 +519,6 @@ def scrape_lidl():
             print(f"  Pagina {page_num}: JSON parse fout – {e}")
         except Exception as e:
             print(f"  Pagina {page_num}: {e}")
-
-        browser.close()
 
     return results
 
