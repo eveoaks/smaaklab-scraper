@@ -1,106 +1,179 @@
 #!/usr/bin/env python3
 """
 Smaaklab Supermarkt Scraper
-Scrapes wekelijkse aanbiedingen van supermarktaanbiedingen.com
+Haalt wekelijkse aanbiedingen op via native supermarkt APIs.
 Output: deals.json
 """
 
 import json
-import re
 import time
 from datetime import date
 
 import requests
 
-SUPERMARKTEN = [
-    ("Albert Heijn", "albert_heijn"),
-    ("Jumbo",        "jumbo"),
-    ("Lidl",         "lidl"),
-    ("Aldi",         "aldi"),
-    ("Plus",         "plus"),
-    ("Dirk",         "dirk"),
-]
+TIMEOUT = 15
 
-BASE_URL = "https://www.supermarktaanbiedingen.com/aanbiedingen/{slug}"
-HEADERS  = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
-    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
-    "Accept-Language": "nl-NL,nl;q=0.9,en;q=0.8",
-    "Accept-Encoding": "gzip, deflate, br",
-    "Connection": "keep-alive",
-    "Cache-Control": "max-age=0",
-    "Upgrade-Insecure-Requests": "1",
+
+# ──────────────────────────────────────────────
+# Albert Heijn — native GraphQL API
+# ──────────────────────────────────────────────
+
+AH_TOKEN_URL   = "https://api.ah.nl/mobile-auth/v1/auth/token/anonymous"
+AH_GRAPHQL_URL = "https://api.ah.nl/graphql"
+
+AH_QUERY = """
+{
+  bonusPromotions(promotionType: NATIONAL) {
+    id
+    title
+    subtitle
+    promotionType
+    price {
+      now { amount }
+      was { amount }
+    }
+    products {
+      title
+      category
+      price {
+        now { amount }
+        was { amount }
+      }
+      images { url }
+    }
+  }
 }
-TIMEOUT  = 15
+"""
 
 
-def scrape_supermarkt(naam, slug):
-    url = BASE_URL.format(slug=slug)
+def ah_get_token():
+    r = requests.post(
+        AH_TOKEN_URL,
+        json={"clientId": "appie"},
+        timeout=TIMEOUT,
+    )
+    r.raise_for_status()
+    return r.json()["access_token"]
+
+
+def scrape_ah():
     try:
-        r = requests.get(url, headers=HEADERS, timeout=TIMEOUT)
-        r.raise_for_status()
-        html = r.text
+        token = ah_get_token()
     except Exception as e:
-        print(f"  FOUT {naam}: {e}")
+        print(f"  FOUT Albert Heijn (token): {e}")
         return []
 
-    cards = re.findall(
-        r'<div class="card[^"]*"><a class="product-title"[^>]*href="([^"]+)"[^>]*>(.*?)</a>',
-        html, re.DOTALL
-    )
+    headers = {
+        "Authorization": f"Bearer {token}",
+        "x-application": "AHWEBSHOP",
+        "Content-Type": "application/json",
+    }
 
-    seen = set()
+    try:
+        r = requests.post(
+            AH_GRAPHQL_URL,
+            json={"query": AH_QUERY},
+            headers=headers,
+            timeout=TIMEOUT,
+        )
+        r.raise_for_status()
+        data = r.json()
+    except Exception as e:
+        print(f"  FOUT Albert Heijn (graphql): {e}")
+        return []
+
+    promotions = data.get("data", {}).get("bonusPromotions", [])
     results = []
+    seen = set()
 
-    for href, content in cards:
-        title_m = re.search(r'<h3 class="card_title">([^<]+)</h3>', content)
-        desc_m  = re.search(r'<p class="card_text"[^>]*>([^<]+)</p>', content)
-        price_m = re.search(r'<span class="card_prijs">([^<]+)</span>', content)
-        was_m   = re.search(r'<span class="card_prijs-oud">([^<]+)</span>', content)
-        img_m   = re.search(r'<img[^>]+src="([^"]+)"', content)
+    for promo in promotions:
+        products = promo.get("products") or []
 
-        naam_product = title_m.group(1).strip() if title_m else ""
-        if not naam_product:
-            continue
+        if products:
+            for product in products:
+                naam = (product.get("title") or "").strip()
+                if not naam:
+                    continue
+                key = naam.lower()
+                if key in seen:
+                    continue
+                seen.add(key)
 
-        # Dedup op naam
-        key = naam_product.lower()
-        if key in seen:
-            continue
-        seen.add(key)
+                price_now = None
+                price_was = None
+                prod_price = product.get("price") or {}
+                if prod_price.get("now"):
+                    price_now = str(prod_price["now"]["amount"])
+                if prod_price.get("was"):
+                    price_was = str(prod_price["was"]["amount"])
 
-        def clean_price(raw):
-            if not raw:
-                return None
-            cleaned = re.sub(r"&nbsp;|&euro;|&[^;]+;", "", raw).strip()
-            cleaned = re.sub(r"\s+", " ", cleaned).strip()
-            return cleaned if cleaned else None
+                # Fall back to promotion-level price if product has none
+                if price_now is None:
+                    promo_price = promo.get("price") or {}
+                    if promo_price.get("now"):
+                        price_now = str(promo_price["now"]["amount"])
+                    if promo_price.get("was"):
+                        price_was = str(promo_price["was"]["amount"])
 
-        prijs = clean_price(price_m.group(1) if price_m else "")
-        was   = clean_price(was_m.group(1)   if was_m   else "")
+                img = ""
+                images = product.get("images") or []
+                if images:
+                    img = images[0].get("url", "")
 
-        results.append({
-            "supermarkt": naam,
-            "naam":  naam_product,
-            "desc":  desc_m.group(1).strip() if desc_m else "",
-            "prijs": prijs,
-            "was":   was,
-            "img":   img_m.group(1) if img_m else "",
-            "url":   "https://www.supermarktaanbiedingen.com" + href,
-        })
+                results.append({
+                    "supermarkt": "Albert Heijn",
+                    "naam":  naam,
+                    "desc":  (product.get("category") or "").strip(),
+                    "prijs": price_now,
+                    "was":   price_was,
+                    "img":   img,
+                    "url":   "https://www.ah.nl/bonus",
+                })
+        else:
+            # Promotion without individual products — use promo title
+            naam = (promo.get("title") or "").strip()
+            if not naam:
+                continue
+            key = naam.lower()
+            if key in seen:
+                continue
+            seen.add(key)
+
+            promo_price = promo.get("price") or {}
+            price_now = str(promo_price["now"]["amount"]) if promo_price.get("now") else None
+            price_was = str(promo_price["was"]["amount"]) if promo_price.get("was") else None
+
+            results.append({
+                "supermarkt": "Albert Heijn",
+                "naam":  naam,
+                "desc":  (promo.get("subtitle") or "").strip(),
+                "prijs": price_now,
+                "was":   price_was,
+                "img":   "",
+                "url":   "https://www.ah.nl/bonus",
+            })
 
     return results
+
+
+# ──────────────────────────────────────────────
+# Main
+# ──────────────────────────────────────────────
+
+SCRAPERS = [
+    ("Albert Heijn", scrape_ah),
+]
 
 
 def main():
     all_deals = []
 
-    for naam, slug in SUPERMARKTEN:
+    for naam, scraper in SCRAPERS:
         print(f"Scraping {naam}...")
-        deals = scrape_supermarkt(naam, slug)
+        deals = scraper()
         print(f"  {len(deals)} deals gevonden")
         all_deals.extend(deals)
-        time.sleep(1)  # Beleefd wachten tussen requests
+        time.sleep(1)
 
     output = {
         "datum":  str(date.today()),
