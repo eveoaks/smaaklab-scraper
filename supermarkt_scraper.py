@@ -442,22 +442,30 @@ def scrape_lidl():
         pw_page = context.new_page()
 
         page_num = 1
-        consecutive_empty = 0
-        max_pages = 60
+        consecutive_same_url = 0
+        last_loaded_url = None
+        max_pages = 80
 
-        while page_num <= max_pages and consecutive_empty < 5:
+        while page_num <= max_pages and consecutive_same_url < 3:
             try:
                 pw_page.goto(f"{base_url}/{page_num}", timeout=30000, wait_until="domcontentloaded")
+                pw_page.wait_for_timeout(3000)
 
-                # Scroll om lazy loading te triggeren
-                pw_page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
-                pw_page.wait_for_timeout(1000)
+                current_url = pw_page.url
+
+                # Folder viewer redirect naar zelfde URL = spread duplicate of einde folder
+                if current_url == last_loaded_url:
+                    consecutive_same_url += 1
+                    page_num += 1
+                    continue
+
+                last_loaded_url = current_url
+                consecutive_same_url = 0
 
                 # Wacht op imgproxy afbeelding
                 try:
                     pw_page.wait_for_selector("img[src*='imgproxy']", timeout=15000)
                 except Exception:
-                    consecutive_empty += 1
                     page_num += 1
                     continue
 
@@ -468,11 +476,8 @@ def scrape_lidl():
                 )
 
                 if not img_urls:
-                    consecutive_empty += 1
                     page_num += 1
                     continue
-
-                consecutive_empty = 0
 
                 for img_url in img_urls:
                     try:
@@ -549,7 +554,6 @@ def scrape_lidl():
 
             except Exception as e:
                 print(f"  Lidl pagina {page_num}: {e}")
-                consecutive_empty += 1
 
             page_num += 1
 
