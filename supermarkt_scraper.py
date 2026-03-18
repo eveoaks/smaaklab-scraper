@@ -13,6 +13,35 @@ import requests
 
 TIMEOUT = 15
 
+FOOD_CATEGORIES = {
+    "Bakkerij",
+    "Frisdrank, sappen, water",
+    "Bier, wijn, aperitieven",
+    "Borrel, chips, snacks",
+    "Koffie, thee",
+    "Koek, snoep, chocolade",
+    "Pasta, rijst, wereldkeuken",
+    "Zuivel, eieren",
+    "Maaltijden, salades",
+    "Kaas",
+    "Ontbijtgranen, beleg",
+    "Soepen, sauzen, kruiden, olie",
+    "Fruit, verse sappen",
+    "Diepvries",
+    "Groente, aardappelen",
+    "Vis",
+    "Vegetarisch, vegan en plantaardig",
+    "Vleeswaren",
+    "Vlees",
+    "Glutenvrij",
+    "Tussendoortjes",
+}
+
+
+def is_food(deal):
+    main_cat = deal.get("desc", "").split("/")[0].strip()
+    return main_cat in FOOD_CATEGORIES
+
 
 # ──────────────────────────────────────────────
 # Albert Heijn — native GraphQL API
@@ -163,6 +192,7 @@ def main():
     for naam, scraper in SCRAPERS:
         print(f"Scraping {naam}...")
         deals = scraper()
+        deals = [d for d in deals if is_food(d)]
         print(f"  {len(deals)} deals gevonden")
         all_deals.extend(deals)
         time.sleep(1)
