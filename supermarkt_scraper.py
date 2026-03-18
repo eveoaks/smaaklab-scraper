@@ -38,8 +38,25 @@ FOOD_CATEGORIES = {
 }
 
 
+JUMBO_SKIP_CATEGORIES = {
+    "Drogisterij en baby",
+    "Huishouden en schoonmaak",
+    "Huisdier",
+    "Non-food",
+    "Elektronica en multimedia",
+    "Kantoor en school",
+}
+
+
 def is_food(deal):
-    main_cat = deal.get("desc", "").split("/")[0].strip()
+    supermarkt = deal.get("supermarkt", "")
+    cat = deal.get("desc", "")
+
+    if supermarkt == "Jumbo":
+        main_cat = cat.split("/")[0].strip()
+        return main_cat not in JUMBO_SKIP_CATEGORIES and main_cat != ""
+
+    main_cat = cat.split("/")[0].strip()
     return main_cat in FOOD_CATEGORIES
 
 
@@ -178,11 +195,128 @@ def scrape_ah():
 
 
 # ──────────────────────────────────────────────
+# Jumbo — GraphQL API
+# ──────────────────────────────────────────────
+
+JUMBO_GQL_URL = "https://www.jumbo.com/api/graphql"
+JUMBO_HEADERS = {
+    "User-Agent": "Mozilla/5.0",
+    "Content-Type": "application/json",
+    "apollographql-client-name": "JUMBO_WEB",
+    "apollographql-client-version": "master-v30.12.0-web",
+}
+
+JUMBO_FOOD_CATEGORIES = {
+    "Groente en fruit",
+    "Vleeswaren, kaas en tapas",
+    "Brood en gebak",
+    "Zuivel, eieren en boter",
+    "Salades, maaltijden en gemak",
+    "Vis",
+    "Vlees, kip en vis",
+    "Diepvries",
+    "Frisdrank, sappen en water",
+    "Koffie, thee en cacao",
+    "Bier, wijn en aperitieven",
+    "Koek, snoep en chips",
+    "Pasta, rijst en wereldkeuken",
+    "Soepen, sauzen en kruiden",
+    "Ontbijt en beleg",
+    "Vegetarisch en vegan",
+    "Biologisch",
+    "Glutenvrij",
+}
+
+
+def scrape_jumbo():
+    # Stap 1: haal alle Week-promoties op voor hun SKUs
+    try:
+        r = requests.post(
+            JUMBO_GQL_URL,
+            json={"query": "query { promotions { group products { sku } } }"},
+            headers=JUMBO_HEADERS,
+            timeout=TIMEOUT,
+        )
+        r.raise_for_status()
+        promos = r.json().get("data", {}).get("promotions", []) or []
+    except Exception as e:
+        print(f"  FOUT Jumbo (promotions): {e}")
+        return []
+
+    week_skus = list({
+        prod["sku"]
+        for p in promos
+        if p.get("group") == "Week"
+        for prod in p.get("products", [])
+    })
+
+    if not week_skus:
+        return []
+
+    # Stap 2: haal productdetails op in batches van 50
+    all_prods = []
+    batch_size = 50
+    for i in range(0, len(week_skus), batch_size):
+        batch = week_skus[i:i + batch_size]
+        query = (
+            "query { products(skus: " + json.dumps(batch) + ") "
+            "{ sku title price { price promoPrice } image rootCategory } }"
+        )
+        try:
+            r2 = requests.post(
+                JUMBO_GQL_URL,
+                json={"query": query},
+                headers=JUMBO_HEADERS,
+                timeout=TIMEOUT,
+            )
+            r2.raise_for_status()
+            all_prods.extend(r2.json().get("data", {}).get("products", []) or [])
+        except Exception as e:
+            print(f"  FOUT Jumbo (products batch {i}): {e}")
+        time.sleep(0.3)
+
+    results = []
+    seen = set()
+
+    for prod in all_prods:
+        naam = (prod.get("title") or "").strip()
+        if not naam:
+            continue
+        key = naam.lower()
+        if key in seen:
+            continue
+        seen.add(key)
+
+        price_data = prod.get("price") or {}
+        price_now = price_data.get("promoPrice")
+        price_was = price_data.get("price")
+
+        # Alleen echte kortingen bewaren
+        if not price_now or not price_was or price_now >= price_was:
+            continue
+
+        cat = (prod.get("rootCategory") or "").strip()
+
+        results.append({
+            "supermarkt": "Jumbo",
+            "naam":  naam,
+            "desc":  cat,
+            "prijs": str(round(price_now / 100, 2)),
+            "was":   str(round(price_was / 100, 2)),
+            "img":   prod.get("image") or "",
+            "url":   "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/",
+        })
+
+    return results
+
+
+# ──────────────────────────────────────────────
 # Main
 # ──────────────────────────────────────────────
 
 SCRAPERS = [
     ("Albert Heijn", scrape_ah),
+    ("Jumbo",        scrape_jumbo),
 ]
 
 
