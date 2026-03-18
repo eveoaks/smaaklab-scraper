@@ -406,10 +406,11 @@ LIDL_VISION_PROMPT = (
 def _lidl_get_folder_id():
     r = requests.get(FOLDERZ_LIST_URL, headers=FOLDERZ_HEADERS, timeout=TIMEOUT)
     r.raise_for_status()
-    matches = re.findall(r'/bekijk/aanbiedingen/lidl-folder-(\d+)', r.text)
+    # URL staat in JSON-LD als escaped slashes: \/bekijk\/aanbiedingen\/lidl-folder-XXXXXXX
+    matches = re.findall(r'lidl-folder-(\d+)', r.text)
     if not matches:
         raise ValueError("Geen Lidl folder-ID gevonden op folderz.nl")
-    return matches[0]  # eerste = meest recent
+    return matches[0]  # eerste = meest recent (hoogste ID)
 
 
 def _lidl_get_page_urls(folder_id):
