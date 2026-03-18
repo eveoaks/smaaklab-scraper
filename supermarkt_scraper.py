@@ -386,7 +386,11 @@ def scrape_jumbo():
 
 FOLDERZ_LIST_URL   = "https://www.folderz.nl/winkels/lidl/aanbiedingen"
 FOLDERZ_FOLDER_URL = "https://www.folderz.nl/bekijk/aanbiedingen/lidl-folder-{folder_id}"
-FOLDERZ_HEADERS    = {"User-Agent": "Mozilla/5.0 (compatible; SmaakBot/1.0)"}
+FOLDERZ_HEADERS    = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+    "Accept-Language": "nl-NL,nl;q=0.9",
+}
 
 LIDL_VISION_PROMPT = (
     "Dit is een pagina uit de Lidl weekfolder. "
@@ -406,6 +410,7 @@ LIDL_VISION_PROMPT = (
 def _lidl_get_folder_id():
     r = requests.get(FOLDERZ_LIST_URL, headers=FOLDERZ_HEADERS, timeout=TIMEOUT)
     r.raise_for_status()
+    print(f"  Folderz response: {r.status_code}, {len(r.text)} tekens, 'lidl-folder' aanwezig: {'lidl-folder' in r.text}")
     # URL staat in JSON-LD als escaped slashes: \/bekijk\/aanbiedingen\/lidl-folder-XXXXXXX
     matches = re.findall(r'lidl-folder-(\d+)', r.text)
     if not matches:
