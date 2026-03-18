@@ -447,7 +447,7 @@ def scrape_lidl():
 
         while page_num <= max_pages and consecutive_empty < 3:
             try:
-                pw_page.goto(f"{base_url}/{page_num}", timeout=20000, wait_until="networkidle")
+                pw_page.goto(f"{base_url}/{page_num}", timeout=30000, wait_until="domcontentloaded")
 
                 # Wacht op imgproxy afbeelding
                 try:
@@ -475,6 +475,9 @@ def scrape_lidl():
                         img_r = requests.get(img_url, timeout=TIMEOUT)
                         img_r.raise_for_status()
                         img_b64 = base64.standard_b64encode(img_r.content).decode("utf-8")
+                        content_type = img_r.headers.get("Content-Type", "image/jpeg").split(";")[0].strip()
+                        if content_type not in ("image/jpeg", "image/png", "image/webp", "image/gif"):
+                            content_type = "image/jpeg"
 
                         response = client.messages.create(
                             model="claude-sonnet-4-6",
@@ -486,7 +489,7 @@ def scrape_lidl():
                                         "type": "image",
                                         "source": {
                                             "type": "base64",
-                                            "media_type": "image/jpeg",
+                                            "media_type": content_type,
                                             "data": img_b64,
                                         },
                                     },
