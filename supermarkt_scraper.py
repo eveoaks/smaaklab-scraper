@@ -336,13 +336,7 @@ def main():
     for naam, scraper in SCRAPERS:
         print(f"Scraping {naam}...")
         deals = scraper()
-        deals = [
-            d for d in deals
-            if is_food(d)
-            and d.get("was")
-            and d.get("prijs")
-            and float(d["prijs"]) < float(d["was"])
-        ]
+        deals = [d for d in deals if is_food(d) and d.get("was")]
         for d in deals:
             d["desc"] = normalize_category(d["desc"])
         print(f"  {len(deals)} deals gevonden")
