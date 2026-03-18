@@ -20,7 +20,9 @@ jobs:
           python-version: '3.11'
 
       - name: Installeer dependencies
-        run: pip install -r requirements.txt
+        run: |
+          pip install -r requirements.txt
+          playwright install --with-deps chromium
 
       - name: Scrape deals
         env:

@@ -381,16 +381,11 @@ def scrape_jumbo():
 
 
 # ──────────────────────────────────────────────
-# Lidl — folderz.nl + Claude Vision
+# Lidl — Playwright + Claude Vision
 # ──────────────────────────────────────────────
 
-FOLDERZ_LIST_URL   = "https://www.folderz.nl/winkels/lidl/aanbiedingen"
-FOLDERZ_FOLDER_URL = "https://www.folderz.nl/bekijk/aanbiedingen/lidl-folder-{folder_id}"
-FOLDERZ_HEADERS    = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
-    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
-    "Accept-Language": "nl-NL,nl;q=0.9",
-}
+LIDL_FOLDER_BASE = "https://www.lidl.nl/l/folders/{slug}/view/flyer/page"
+LIDL_FOLDER_URL  = "https://www.lidl.nl/l/folders/{slug}/view/flyer/page/1"
 
 LIDL_VISION_PROMPT = (
     "Dit is een pagina uit de Lidl weekfolder. "
@@ -407,52 +402,11 @@ LIDL_VISION_PROMPT = (
 )
 
 
-def _lidl_get_folder_id():
-    r = requests.get(FOLDERZ_LIST_URL, headers=FOLDERZ_HEADERS, timeout=TIMEOUT)
-    r.raise_for_status()
-    print(f"  Folderz response: {r.status_code}, {len(r.text)} tekens, 'lidl-folder' aanwezig: {'lidl-folder' in r.text}")
-    # URL staat in JSON-LD als escaped slashes: \/bekijk\/aanbiedingen\/lidl-folder-XXXXXXX
-    matches = re.findall(r'lidl-folder-(\d+)', r.text)
-    if not matches:
-        raise ValueError("Geen Lidl folder-ID gevonden op folderz.nl")
-    return matches[0]  # eerste = meest recent (hoogste ID)
-
-
-def _lidl_get_page_urls(folder_id):
-    url = FOLDERZ_FOLDER_URL.format(folder_id=folder_id)
-    r = requests.get(url, headers=FOLDERZ_HEADERS, timeout=TIMEOUT)
-    r.raise_for_status()
-    pattern = (
-        r'https://img\.offers-cdn\.net/assets/uploads/flyers/'
-        + re.escape(folder_id)
-        + r'/260x270WebP/lidl-(\d+)-1-([a-zA-Z0-9_-]+)\.webp'
-    )
-    img_matches = re.findall(pattern, r.text)
-    seen = set()
-    page_urls = []
-    for page_num, hash_ in img_matches:
-        if page_num not in seen:
-            seen.add(page_num)
-            thumb_url = (
-                f"https://img.offers-cdn.net/assets/uploads/flyers/"
-                f"{folder_id}/260x270WebP/lidl-{page_num}-1-{hash_}.webp"
-            )
-            # Hogere resolutie voor betere leesbaarheid door Claude
-            hires_url = (
-                f"https://img.offers-cdn.net/assets/uploads/flyers/"
-                f"{folder_id}/800x830WebP/lidl-{page_num}-1-{hash_}.webp"
-            )
-            page_urls.append((int(page_num), hires_url, thumb_url))
-    page_urls.sort()
-    return page_urls
-
-
 def _parse_claude_products(text):
     """Parse Claude JSON response, strip markdown code fences and trailing text."""
     text = text.strip()
     text = re.sub(r'^```(?:json)?\s*', '', text)
     text = re.sub(r'\s*```$', '', text)
-    # Pak alleen het stuk tussen de eerste [ en de laatste ]
     start = text.find('[')
     end = text.rfind(']')
     if start == -1 or end == -1:
@@ -461,101 +415,138 @@ def _parse_claude_products(text):
 
 
 def scrape_lidl():
+    from playwright.sync_api import sync_playwright
+
     api_key = os.environ.get("ANTHROPIC_API_KEY")
     if not api_key:
         print("  FOUT Lidl: ANTHROPIC_API_KEY niet ingesteld, Lidl overgeslagen")
         return []
 
-    try:
-        folder_id = _lidl_get_folder_id()
-        print(f"  Lidl folder-ID: {folder_id}")
-    except Exception as e:
-        print(f"  FOUT Lidl (folder list): {e}")
-        return []
+    # Bereken huidig weeknummer voor folder slug
+    iso = date.today().isocalendar()
+    slug = f"hah-wk{iso[1]}-{iso[0]}"
+    folder_url = LIDL_FOLDER_URL.format(slug=slug)
+    base_url   = LIDL_FOLDER_BASE.format(slug=slug)
+    print(f"  Lidl folder: {slug}")
 
-    try:
-        page_urls = _lidl_get_page_urls(folder_id)
-        print(f"  Lidl: {len(page_urls)} pagina's gevonden")
-    except Exception as e:
-        print(f"  FOUT Lidl (folder pagina's): {e}")
-        return []
-
-    client = anthropic.Anthropic(api_key=api_key)
-    folder_url = FOLDERZ_FOLDER_URL.format(folder_id=folder_id)
+    client  = anthropic.Anthropic(api_key=api_key)
     results = []
-    seen = set()
+    seen    = set()
 
-    for page_num, hires_url, thumb_url in page_urls:
-        try:
-            # Probeer hoge resolutie; val terug op lage resolutie bij 404
-            img_r = requests.get(hires_url, timeout=TIMEOUT)
-            if img_r.status_code == 404:
-                img_r = requests.get(thumb_url, timeout=TIMEOUT)
-            img_r.raise_for_status()
-            img_b64 = base64.standard_b64encode(img_r.content).decode("utf-8")
+    with sync_playwright() as p:
+        browser = p.chromium.launch()
+        context = browser.new_context(
+            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+            locale="nl-NL",
+        )
+        pw_page = context.new_page()
 
-            response = client.messages.create(
-                model="claude-sonnet-4-6",
-                max_tokens=2048,
-                messages=[{
-                    "role": "user",
-                    "content": [
-                        {
-                            "type": "image",
-                            "source": {
-                                "type": "base64",
-                                "media_type": "image/webp",
-                                "data": img_b64,
-                            },
-                        },
-                        {"type": "text", "text": LIDL_VISION_PROMPT},
-                    ],
-                }],
-            )
+        page_num = 1
+        consecutive_empty = 0
+        max_pages = 60
 
-            products = _parse_claude_products(response.content[0].text)
+        while page_num <= max_pages and consecutive_empty < 3:
+            try:
+                pw_page.goto(f"{base_url}/{page_num}", timeout=20000, wait_until="networkidle")
 
-            for prod in products:
-                naam = (prod.get("naam") or "").strip()
-                prijs_str = str(prod.get("prijs") or "").strip().replace(",", ".")
-                if not naam or not prijs_str:
-                    continue
+                # Wacht op imgproxy afbeelding
                 try:
-                    float(prijs_str)
-                except ValueError:
+                    pw_page.wait_for_selector("img[src*='imgproxy']", timeout=8000)
+                except Exception:
+                    consecutive_empty += 1
+                    page_num += 1
                     continue
-                key = naam.lower()
-                if key in seen:
+
+                # Haal alle imgproxy afbeelding-URLs op van deze pagina
+                img_urls = pw_page.eval_on_selector_all(
+                    "img[src*='imgproxy']",
+                    "els => els.map(e => e.src)"
+                )
+
+                if not img_urls:
+                    consecutive_empty += 1
+                    page_num += 1
                     continue
-                seen.add(key)
 
-                was_raw = prod.get("was")
-                was_str = str(was_raw).replace(",", ".") if was_raw else None
-                try:
-                    if was_str:
-                        float(was_str)
-                except ValueError:
-                    was_str = None
+                consecutive_empty = 0
 
-                deal_label = (prod.get("deal_label") or "").strip() or "Weekaanbieding"
+                for img_url in img_urls:
+                    try:
+                        img_r = requests.get(img_url, timeout=TIMEOUT)
+                        img_r.raise_for_status()
+                        img_b64 = base64.standard_b64encode(img_r.content).decode("utf-8")
 
-                results.append({
-                    "supermarkt": "Lidl",
-                    "naam":       naam,
-                    "desc":       "Weekaanbieding",
-                    "prijs":      prijs_str,
-                    "was":        was_str,
-                    "deal_label": deal_label,
-                    "effectief":  None,
-                    "img":        thumb_url,
-                    "url":        folder_url,
-                })
+                        response = client.messages.create(
+                            model="claude-sonnet-4-6",
+                            max_tokens=2048,
+                            messages=[{
+                                "role": "user",
+                                "content": [
+                                    {
+                                        "type": "image",
+                                        "source": {
+                                            "type": "base64",
+                                            "media_type": "image/jpeg",
+                                            "data": img_b64,
+                                        },
+                                    },
+                                    {"type": "text", "text": LIDL_VISION_PROMPT},
+                                ],
+                            }],
+                        )
 
-        except json.JSONDecodeError as e:
-            print(f"  Lidl pagina {page_num}: JSON parse fout – {e}")
-        except Exception as e:
-            print(f"  Lidl pagina {page_num}: {e}")
-        time.sleep(0.4)
+                        products = _parse_claude_products(response.content[0].text)
+
+                        for prod in products:
+                            naam = (prod.get("naam") or "").strip()
+                            prijs_str = str(prod.get("prijs") or "").strip().replace(",", ".")
+                            if not naam or not prijs_str:
+                                continue
+                            try:
+                                float(prijs_str)
+                            except ValueError:
+                                continue
+                            key = naam.lower()
+                            if key in seen:
+                                continue
+                            seen.add(key)
+
+                            was_raw = prod.get("was")
+                            was_str = str(was_raw).replace(",", ".") if was_raw else None
+                            try:
+                                if was_str:
+                                    float(was_str)
+                            except ValueError:
+                                was_str = None
+
+                            deal_label = (prod.get("deal_label") or "").strip() or "Weekaanbieding"
+
+                            results.append({
+                                "supermarkt": "Lidl",
+                                "naam":       naam,
+                                "desc":       "Weekaanbieding",
+                                "prijs":      prijs_str,
+                                "was":        was_str,
+                                "deal_label": deal_label,
+                                "effectief":  None,
+                                "img":        img_url,
+                                "url":        folder_url,
+                            })
+
+                    except json.JSONDecodeError as e:
+                        print(f"  Lidl pagina {page_num}: JSON parse fout – {e}")
+                    except Exception as e:
+                        print(f"  Lidl pagina {page_num} afbeelding: {e}")
+
+                time.sleep(0.3)
+
+            except Exception as e:
+                print(f"  Lidl pagina {page_num}: {e}")
+                consecutive_empty += 1
+
+            page_num += 1
+
+        browser.close()
 
     return results
 
