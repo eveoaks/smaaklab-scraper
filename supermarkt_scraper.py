@@ -749,7 +749,7 @@ def _parse_plus_dom(page):
 def scrape_plus():
     results = []
     seen = set()
-    captured_responses = []
+    captured_bodies = []
 
     try:
         with sync_playwright() as p:
@@ -761,32 +761,49 @@ def scrape_plus():
             )
             page = context.new_page()
 
+            # Vang alle JSON responses op die product-/promotiedata kunnen bevatten
             def on_response(response):
-                if "screenservices" in response.url and response.status == 200:
-                    try:
-                        captured_responses.append(response.json())
-                    except Exception:
-                        pass
+                url = response.url
+                if response.status != 200:
+                    return
+                ct = response.headers.get("content-type", "")
+                if "json" not in ct:
+                    return
+                # Alleen Plus-domeinen, sla tracking/analytics over
+                if not any(d in url for d in ["plus.nl", "screenservices"]):
+                    return
+                if any(skip in url for skip in ["analytics", "tracking", "piwik", "gtm", "hotjar"]):
+                    return
+                try:
+                    body = response.text()
+                    if len(body) > 500 and ("{" in body or "[" in body):
+                        captured_bodies.append(body)
+                except Exception:
+                    pass
 
             page.on("response", on_response)
 
             page.goto(PLUS_URL, timeout=45000, wait_until="domcontentloaded")
             page.wait_for_timeout(8000)
 
-            # Probeer te scrollen om meer producten te laden
+            # Scroll om lazy-loaded content te triggeren
             for _ in range(3):
                 page.keyboard.press("End")
                 page.wait_for_timeout(1500)
 
-            # Probeer eerst network-interception resultaten
-            for resp in captured_responses:
-                _extract_plus_from_response(resp, results, seen)
+            # Verwerk captured JSON responses
+            for body in captured_bodies:
+                try:
+                    data = json.loads(body)
+                    _extract_plus_from_response(data, results, seen)
+                except Exception:
+                    pass
 
-            print(f"  Network interception: {len(results)} producten")
+            print(f"  Network interception: {len(results)} producten ({len(captured_bodies)} responses)")
 
             # DOM fallback als network niets opleverde
             if not results:
-                print("  Geen screenservices data — DOM fallback...")
+                print("  Geen bruikbare JSON — DOM fallback...")
                 results = _parse_plus_dom(page)
 
             browser.close()
