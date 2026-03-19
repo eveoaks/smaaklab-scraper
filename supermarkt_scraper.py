@@ -523,6 +523,69 @@ def scrape_lidl():
     return results
 
 
+# Aldi — Next.js embedded JSON
+# ──────────────────────────────────────────────
+
+ALDI_URL = "https://www.aldi.nl/aanbiedingen-deze-week.html"
+
+
+def scrape_aldi():
+    r = requests.get(ALDI_URL, timeout=TIMEOUT, headers={
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+    })
+    r.raise_for_status()
+
+    match = re.search(r'id="__NEXT_DATA__"[^>]*>(.*?)</script>', r.text, re.S)
+    if not match:
+        print("  FOUT Aldi: __NEXT_DATA__ niet gevonden")
+        return []
+
+    data     = json.loads(match.group(1))
+    api_data = json.loads(data["props"]["pageProps"]["apiData"])
+
+    products_map = {}
+    for entry in api_data:
+        if isinstance(entry, list) and len(entry) == 2:
+            key, val = entry
+            if key == "OFFER_GET" and "res" in val:
+                products_map.update(val["res"].get("algoliaDataMap", {}))
+
+    results = []
+    for p in products_map.values():
+        naam = (p.get("name") or "").strip()
+        if not naam:
+            continue
+
+        cp        = p.get("currentPrice", {})
+        prijs_val = cp.get("priceValue")
+        if prijs_val is None:
+            continue
+        prijs_str = str(prijs_val).replace(",", ".")
+
+        deal_label = (cp.get("priceTagLabels") or {}).get("promoText1", "").strip() or "Weekaanbieding"
+
+        img_url = next(
+            (a["url"] for a in p.get("assets", []) if a.get("type") == "primary"),
+            None,
+        )
+        slug    = p.get("productSlug", "")
+        url     = f"https://www.aldi.nl/producten/aanbiedingen/{slug}.html" if slug else ALDI_URL
+
+        results.append({
+            "supermarkt": "Aldi",
+            "naam":       naam,
+            "desc":       "Weekaanbieding",
+            "prijs":      prijs_str,
+            "was":        None,
+            "deal_label": deal_label,
+            "effectief":  None,
+            "img":        img_url,
+            "url":        url,
+        })
+
+    return results
+
+
 # ──────────────────────────────────────────────
 # Main
 # ──────────────────────────────────────────────
@@ -531,6 +594,7 @@ SCRAPERS = [
     ("Albert Heijn", scrape_ah),
     ("Jumbo",        scrape_jumbo),
     ("Lidl",         scrape_lidl),
+    ("Aldi",         scrape_aldi),
 ]
 
 
@@ -567,6 +631,7 @@ HTML_TEMPLATE = """\
   .super-ah {{ background: #e3f4fc; color: #007dc5; }}
   .super-jumbo {{ background: #fff8dc; color: #b8860b; }}
   .super-lidl {{ background: #fff0f0; color: #c0392b; }}
+  .super-aldi {{ background: #fff8e1; color: #e65100; }}
   .effectief {{ font-weight: bold; color: #2e7d32; }}
   .effectief small {{ font-weight: normal; color: #888; font-size: 11px; }}
 </style>
@@ -636,7 +701,7 @@ function render() {{
   else if (sort === 'prijs') filtered.sort((a, b) => parseFloat(a.prijs || a.was) - parseFloat(b.prijs || b.was));
   else filtered.sort((a, b) => a.naam.localeCompare(b.naam));
   document.getElementById('count').textContent = filtered.length + ' deals';
-  const superClass = s => s === 'Albert Heijn' ? 'super-ah' : s === 'Jumbo' ? 'super-jumbo' : s === 'Lidl' ? 'super-lidl' : '';
+  const superClass = s => s === 'Albert Heijn' ? 'super-ah' : s === 'Jumbo' ? 'super-jumbo' : s === 'Lidl' ? 'super-lidl' : s === 'Aldi' ? 'super-aldi' : '';
   const isPct = label => label && /^\\d+%/.test(label);
   document.getElementById('tbody').innerHTML = filtered.map(d => {{
     const label = d.deal_label || '';
