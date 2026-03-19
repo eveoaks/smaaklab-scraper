@@ -796,10 +796,16 @@ def scrape_plus():
             page.goto(PLUS_URL, timeout=45000, wait_until="domcontentloaded")
             page.wait_for_timeout(8000)
 
-            # Scroll om lazy-loaded content te triggeren
-            for _ in range(3):
+            # Scroll tot geen nieuwe kaarten meer bijkomen (lazy load)
+            prev_count = 0
+            for _ in range(20):
                 page.keyboard.press("End")
-                page.wait_for_timeout(1500)
+                page.wait_for_timeout(2000)
+                count = len(page.query_selector_all(".plp-results-list > a"))
+                if count == prev_count:
+                    break
+                prev_count = count
+            print(f"  Na scrollen: {prev_count} kaarten zichtbaar")
 
             # Verwerk responses NADAT de pagina klaar is (safe buiten event handler)
             captured_bodies = []
