@@ -428,8 +428,16 @@ def scrape_lidl():
     # Haal alle pagina's op via de leaflets API
     api_resp = requests.get(LIDL_API_URL.format(slug=slug), timeout=TIMEOUT)
     api_resp.raise_for_status()
-    pages = api_resp.json()["flyer"]["pages"]
+    flyer_data = api_resp.json()["flyer"]
+    pages = flyer_data["pages"]
     print(f"  {len(pages)} pagina's gevonden in folder")
+
+    # Verzamel non-food productIds uit de gestructureerde API (fietsen, tools, kleding)
+    nonfood_ids = {
+        p.get("productId")
+        for p in flyer_data.get("products", {}).values()
+        if p.get("productId")
+    }
 
     client  = anthropic.Anthropic(api_key=api_key)
     results = []
@@ -438,10 +446,21 @@ def scrape_lidl():
     for page in pages:
         page_num  = page["number"]
         alt_text  = page.get("altText", "")
-        img_url   = page.get("zoom") or page.get("image")
+        img_url   = page.get("image") or page.get("zoom")
 
         if not img_url:
             continue
+
+        # Sla pagina over als ALLE links non-food zijn
+        links = page.get("links", [])
+        if links:
+            link_ids = {
+                str(l.get("productDetails", {}).get("productId", ""))
+                for l in links if l.get("displayType") == "product"
+            }
+            if link_ids and link_ids.issubset(nonfood_ids):
+                print(f"  Pagina {page_num}: overgeslagen (puur non-food)")
+                continue
 
         print(f"  Pagina {page_num}: verwerken...")
 
