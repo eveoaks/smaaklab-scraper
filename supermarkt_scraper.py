@@ -839,25 +839,25 @@ def scrape_plus():
 
             print(f"  Na scrollen: {prev_count} kaarten zichtbaar")
 
-            # Network interception: dump structuur voor diagnose + probeer te parsen
-            print(f"  {len(captured_responses)} JSON responses gevangen:")
-            for i, resp in enumerate(captured_responses):
+            # Network interception: zoek PromotionOfferList en dump eerste 2 items
+            for resp in captured_responses:
                 try:
                     body = resp.text()
-                    if len(body) < 100:
+                    if "PromotionOfferList" not in body:
                         continue
                     data = json.loads(body)
-                    # Dump top-level keys + eerste niveau voor diagnose
-                    top_keys = list(data.keys()) if isinstance(data, dict) else f"lijst[{len(data)}]"
-                    print(f"    [{i+1}] {resp.url[-80:]} → keys: {top_keys}")
-                    if isinstance(data, dict):
-                        for k, v in data.items():
-                            if isinstance(v, (dict, list)) and v:
-                                sub = list(v.keys()) if isinstance(v, dict) else f"lijst[{len(v)}]"
-                                print(f"         .{k} → {sub}")
-                    _extract_plus_from_response(data, results, seen)
+                    offer_list = data.get("data", {}).get("PromotionOfferList", [])
+                    print(f"  PromotionOfferList gevonden: {len(offer_list)} items")
+                    for item in offer_list[:2]:
+                        print(f"    ITEM keys: {list(item.keys()) if isinstance(item, dict) else type(item)}")
+                        if isinstance(item, dict):
+                            for k, v in item.items():
+                                if isinstance(v, dict):
+                                    print(f"      .{k} → {list(v.keys())}")
+                                elif not isinstance(v, list):
+                                    print(f"      .{k} = {repr(v)[:80]}")
                 except Exception as e:
-                    print(f"    [{i+1}] parse fout: {e}")
+                    print(f"  parse fout: {e}")
             print(f"  Network resultaat: {len(results)} producten")
 
             # DOM scraping
