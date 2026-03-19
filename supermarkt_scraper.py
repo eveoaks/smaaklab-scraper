@@ -632,83 +632,98 @@ PLUS_CAT_URLS = [
 ]
 
 
-def _extract_plus_from_response(data, results, seen):
-    """Zoek recursief naar productlijsten in OutSystems screenservices JSON."""
-    if isinstance(data, dict):
-        for val in data.values():
-            _extract_plus_from_response(val, results, seen)
-    elif isinstance(data, list):
-        for item in data:
-            if isinstance(item, dict):
-                naam = (
-                    item.get("Name") or item.get("name") or
-                    item.get("Title") or item.get("title") or
-                    item.get("ProductName") or item.get("productName") or ""
-                ).strip()
-                if not naam:
-                    _extract_plus_from_response(item, results, seen)
+def _plus_item_toevoegen(naam_raw, brand_raw, prijs_raw, was_raw, label_raw, img, slug, results, seen):
+    """Voeg één Plus product toe aan results als het geldig is."""
+    brand = (brand_raw or "").replace("Alle ", "").replace("alle ", "").strip()
+    naam  = (naam_raw or "").strip()
+    if brand and brand.lower() not in naam.lower():
+        naam = f"{brand} {naam}".strip()
+    if not naam or len(naam) < 3:
+        return
+
+    key = naam.lower()
+    if key in seen:
+        return
+
+    try:
+        prijs = float(str(prijs_raw).replace(",", "."))
+        if prijs <= 0:
+            return
+    except (ValueError, TypeError):
+        return
+
+    try:
+        was = float(str(was_raw).replace(",", "."))
+        was = str(was) if was > 0 else None
+    except (ValueError, TypeError):
+        was = None
+
+    deal_label = (label_raw or "").strip().title() or "Weekaanbieding"
+    url = f"https://www.plus.nl/aanbiedingen/{slug}" if slug else PLUS_URL
+
+    seen.add(key)
+    results.append({
+        "supermarkt": "Plus",
+        "naam":       naam,
+        "desc":       "Weekaanbieding",
+        "prijs":      str(prijs),
+        "was":        was,
+        "deal_label": deal_label,
+        "effectief":  None,
+        "img":        img or "",
+        "url":        url,
+    })
+
+
+def _parse_plus_network(data, results, seen):
+    """Parseer OutSystems PromotionOfferList JSON naar deals."""
+    sections = data.get("data", {}).get("PromotionOfferList", {}).get("List", [])
+    for section in sections:
+        if not isinstance(section, dict):
+            continue
+
+        # Bron 1: ProductPromotionBanner.ProductPromotionTiles
+        banner = section.get("ProductPromotionBanner", {})
+        tiles  = banner.get("ProductPromotionTiles", {})
+        if isinstance(tiles, dict):
+            tiles = tiles.get("List", [])
+        for tile in (tiles or []):
+            if not isinstance(tile, dict) or tile.get("IsFreeDeliveryOffer"):
+                continue
+            _plus_item_toevoegen(
+                naam_raw  = tile.get("ProductName") or tile.get("PromotionLabel"),
+                brand_raw = tile.get("Brand"),
+                prijs_raw = tile.get("NewPrice"),
+                was_raw   = tile.get("PriceOriginal_Highest"),
+                label_raw = tile.get("DisplayInfo_Label"),
+                img       = tile.get("ImageURL", ""),
+                slug      = tile.get("Slug", ""),
+                results=results, seen=seen,
+            )
+
+        # Bron 2: Category.Offers
+        offers = section.get("Category", {}).get("Offers", {})
+        if isinstance(offers, dict):
+            offers = offers.get("List", [])
+        for offer in (offers or []):
+            if not isinstance(offer, dict) or offer.get("IsFreeDeliveryOffer"):
+                continue
+            try:
+                prijs = float(str(offer.get("NewPrice") or "0").replace(",", "."))
+                if prijs <= 0:
                     continue
-
-                key = naam.lower()
-                if key in seen:
-                    continue
-
-                # Prijs velden — OutSystems gebruikt vaak geneste Price objects
-                prijs = None
-                was = None
-                for pk in ("PromotionPrice", "promotionPrice", "SalePrice", "salePrice",
-                           "CurrentPrice", "currentPrice", "Price", "price"):
-                    v = item.get(pk)
-                    if v is not None:
-                        if isinstance(v, (int, float)):
-                            prijs = round(float(v) / 100, 2) if float(v) > 100 else float(v)
-                        elif isinstance(v, dict):
-                            amt = v.get("Amount") or v.get("amount") or v.get("Value") or v.get("value")
-                            if amt is not None:
-                                prijs = round(float(amt) / 100, 2) if float(amt) > 100 else float(amt)
-                        break
-                for wk in ("RegularPrice", "regularPrice", "NormalPrice", "normalPrice",
-                           "OriginalPrice", "originalPrice", "WasPrice", "wasPrice"):
-                    v = item.get(wk)
-                    if v is not None:
-                        if isinstance(v, (int, float)):
-                            was = round(float(v) / 100, 2) if float(v) > 100 else float(v)
-                        elif isinstance(v, dict):
-                            amt = v.get("Amount") or v.get("amount") or v.get("Value") or v.get("value")
-                            if amt is not None:
-                                was = round(float(amt) / 100, 2) if float(amt) > 100 else float(amt)
-                        break
-
-                if prijs is None:
-                    _extract_plus_from_response(item, results, seen)
-                    continue
-
-                deal_label = (
-                    item.get("OfferText") or item.get("offerText") or
-                    item.get("PromotionText") or item.get("promotionText") or
-                    item.get("DealLabel") or item.get("dealLabel") or
-                    item.get("Label") or item.get("label") or "Weekaanbieding"
-                ).strip() or "Weekaanbieding"
-
-                img = (
-                    item.get("ImageUrl") or item.get("imageUrl") or
-                    item.get("Image") or item.get("image") or ""
-                )
-                if isinstance(img, dict):
-                    img = img.get("Url") or img.get("url") or ""
-
-                seen.add(key)
-                results.append({
-                    "supermarkt": "Plus",
-                    "naam":       naam,
-                    "desc":       "Weekaanbieding",
-                    "prijs":      str(prijs),
-                    "was":        str(was) if was else None,
-                    "deal_label": deal_label,
-                    "effectief":  None,
-                    "img":        img or "",
-                    "url":        PLUS_URL,
-                })
+            except (ValueError, TypeError):
+                continue
+            _plus_item_toevoegen(
+                naam_raw  = offer.get("Name"),
+                brand_raw = offer.get("Brand"),
+                prijs_raw = offer.get("NewPrice"),
+                was_raw   = offer.get("PriceOriginal_Highest"),
+                label_raw = offer.get("DisplayInfo_Label"),
+                img       = offer.get("ImageURL", ""),
+                slug      = offer.get("Slug", ""),
+                results=results, seen=seen,
+            )
 
 
 def _parse_plus_dom(page):
@@ -839,44 +854,13 @@ def scrape_plus():
 
             print(f"  Na scrollen: {prev_count} kaarten zichtbaar")
 
-            # Network interception: zoek PromotionOfferList en dump eerste 2 items
+            # Network interception: parseer PromotionOfferList
             for resp in captured_responses:
                 try:
                     body = resp.text()
                     if "PromotionOfferList" not in body:
                         continue
-                    data = json.loads(body)
-                    sections = data.get("data", {}).get("PromotionOfferList", {}).get("List", [])
-                    print(f"  {len(sections)} secties gevonden")
-                    # Dump eerste item van ProductPromotionTiles, Productspromotions en Category.Offers
-                    for sub_key in ["ProductPromotionTiles", "Productspromotions"]:
-                        for sec in sections:
-                            banner = sec.get("ProductPromotionBanner", {})
-                            sub = banner.get(sub_key, {})
-                            if isinstance(sub, dict): sub = sub.get("List", [])
-                            if isinstance(sub, list) and sub:
-                                first = sub[0]
-                                print(f"  Banner.{sub_key}[0] keys: {list(first.keys()) if isinstance(first, dict) else type(first)}")
-                                if isinstance(first, dict):
-                                    for fk, fv in first.items():
-                                        if isinstance(fv, dict):
-                                            print(f"    .{fk} → {list(fv.keys())}")
-                                        elif not isinstance(fv, list):
-                                            print(f"    .{fk} = {repr(fv)[:80]}")
-                                break
-                    for sec in sections:
-                        offers = sec.get("Category", {}).get("Offers", {})
-                        if isinstance(offers, dict): offers = offers.get("List", [])
-                        if isinstance(offers, list) and offers:
-                            first = offers[0]
-                            print(f"  Category.Offers[0] keys: {list(first.keys()) if isinstance(first, dict) else type(first)}")
-                            if isinstance(first, dict):
-                                for fk, fv in first.items():
-                                    if isinstance(fv, dict):
-                                        print(f"    .{fk} → {list(fv.keys())}")
-                                    elif not isinstance(fv, list):
-                                        print(f"    .{fk} = {repr(fv)[:80]}")
-                            break
+                    _parse_plus_network(json.loads(body), results, seen)
                 except Exception as e:
                     print(f"  parse fout: {e}")
             print(f"  Network resultaat: {len(results)} producten")
