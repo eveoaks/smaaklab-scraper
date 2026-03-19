@@ -702,28 +702,43 @@ def _parse_plus_dom(page):
 
     for card in cards:
         try:
-            naam_el = (
-                card.query_selector(".plp-item-title, .product-title, [class*='title'], [class*='name']")
-            )
-            naam = naam_el.inner_text().strip() if naam_el else ""
-            if not naam:
+            # Haal volledige tekst van de kaart op en parse daaruit naam + prijs
+            full_text = card.inner_text().strip()
+            if not full_text:
                 continue
+
+            lines = [l.strip() for l in full_text.splitlines() if l.strip()]
+
+            # Prijs: zoek eerste regel die een getal bevat met optionele € en komma/punt
+            prijs = None
+            prijs_idx = None
+            for idx, line in enumerate(lines):
+                m = re.search(r"(\d+)[,.](\d{2})", line)
+                if m:
+                    prijs = float(f"{m.group(1)}.{m.group(2)}")
+                    prijs_idx = idx
+                    break
+
+            if prijs is None:
+                continue
+
+            # Naam: langste niet-prijs regel vóór de prijs (of eerste regel)
+            naam_candidates = [l for l in lines[:prijs_idx] if not re.search(r"\d+[,.]\d{2}", l)]
+            naam = max(naam_candidates, key=len) if naam_candidates else lines[0]
+            naam = naam.strip()
+            if not naam or len(naam) < 3:
+                continue
+
             key = naam.lower()
             if key in seen:
                 continue
 
-            prijs_el = card.query_selector(
-                ".plp-item-price .price-current, .price, [class*='price'], [class*='Price']"
-            )
-            prijs_text = prijs_el.inner_text().strip() if prijs_el else ""
-            prijs_clean = re.sub(r"[^\d.,]", "", prijs_text).replace(",", ".")
-            try:
-                prijs = float(prijs_clean)
-            except ValueError:
-                continue
-
-            deal_el = card.query_selector("[data-block*='PromotionOfferLabel'], [class*='offer'], [class*='promo']")
-            deal_label = deal_el.inner_text().strip() if deal_el else "Weekaanbieding"
+            # Deal label: zoek regel met bekende aanbiedingstekst
+            deal_label = "Weekaanbieding"
+            for line in lines:
+                if re.search(r"(\d\+\d|gratis|korting|voor\s+€?\d|halve\s+prijs)", line, re.I):
+                    deal_label = line
+                    break
 
             img_el = card.query_selector("img")
             img = img_el.get_attribute("src") if img_el else ""
@@ -735,7 +750,7 @@ def _parse_plus_dom(page):
                 "desc":       "Weekaanbieding",
                 "prijs":      str(prijs),
                 "was":        None,
-                "deal_label": deal_label or "Weekaanbieding",
+                "deal_label": deal_label,
                 "effectief":  None,
                 "img":        img or "",
                 "url":        PLUS_URL,
