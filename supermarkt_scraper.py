@@ -800,11 +800,15 @@ def _scrape_plus_page(page, url, results, seen):
     page.goto(url, timeout=45000, wait_until="domcontentloaded")
     page.wait_for_timeout(6000)
 
-    # Scroll tot pagina niet meer groeit
+    # Scroll geleidelijk naar beneden zodat lazy load tijd heeft te triggeren
     prev_count = 0
     for _ in range(25):
-        page.keyboard.press("End")
-        page.wait_for_timeout(1800)
+        page.evaluate("window.scrollBy(0, 600)")
+        page.wait_for_timeout(400)
+        page.evaluate("window.scrollBy(0, 600)")
+        page.wait_for_timeout(400)
+        page.evaluate("window.scrollBy(0, 600)")
+        page.wait_for_timeout(1200)
         count = len(page.query_selector_all(".plp-results-list > a"))
         if count == prev_count:
             break
