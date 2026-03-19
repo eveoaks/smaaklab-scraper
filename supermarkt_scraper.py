@@ -610,7 +610,26 @@ def scrape_aldi():
 # Plus — Playwright + network interception
 # ──────────────────────────────────────────────
 
-PLUS_URL = "https://www.plus.nl/aanbiedingen"
+PLUS_URL      = "https://www.plus.nl/aanbiedingen"
+PLUS_ALL_URL  = "https://www.plus.nl/aanbiedingen/alle-aanbiedingen"
+
+# Food-subcategorieën als safety net (geen huishouden/drogisterij)
+PLUS_CAT_URLS = [
+    "https://www.plus.nl/aanbiedingen/groente-fruit",
+    "https://www.plus.nl/aanbiedingen/vlees-vis-vega",
+    "https://www.plus.nl/aanbiedingen/zuivel-eieren",
+    "https://www.plus.nl/aanbiedingen/brood-gebak",
+    "https://www.plus.nl/aanbiedingen/diepvries",
+    "https://www.plus.nl/aanbiedingen/kaas-vleeswaren",
+    "https://www.plus.nl/aanbiedingen/pasta-rijst",
+    "https://www.plus.nl/aanbiedingen/frisdrank-sappen",
+    "https://www.plus.nl/aanbiedingen/koffie-thee",
+    "https://www.plus.nl/aanbiedingen/koek-snoep",
+    "https://www.plus.nl/aanbiedingen/ontbijt-beleg",
+    "https://www.plus.nl/aanbiedingen/maaltijden",
+    "https://www.plus.nl/aanbiedingen/dranken",
+    "https://www.plus.nl/aanbiedingen/snacks",
+]
 
 
 def _extract_plus_from_response(data, results, seen):
@@ -761,10 +780,64 @@ def _parse_plus_dom(page):
     return results
 
 
+def _scrape_plus_page(page, url, results, seen):
+    """Laad één Plus pagina, scroll volledig, extraheer via DOM."""
+    captured_responses = []
+
+    def on_response(response):
+        if response.status != 200:
+            return
+        ct = response.headers.get("content-type", "")
+        if "json" not in ct:
+            return
+        if not any(d in response.url for d in ["plus.nl", "screenservices"]):
+            return
+        if any(s in response.url for s in ["analytics", "tracking", "piwik", "gtm", "hotjar"]):
+            return
+        captured_responses.append(response)
+
+    page.on("response", on_response)
+    page.goto(url, timeout=45000, wait_until="domcontentloaded")
+    page.wait_for_timeout(6000)
+
+    # Scroll tot pagina niet meer groeit
+    prev_count = 0
+    for _ in range(25):
+        page.keyboard.press("End")
+        page.wait_for_timeout(1800)
+        count = len(page.query_selector_all(".plp-results-list > a"))
+        if count == prev_count:
+            break
+        prev_count = count
+
+    # Methode 1: network interception (bonus — werkt als OutSystems JSON herkenbaar is)
+    for resp in captured_responses:
+        try:
+            body = resp.text()
+            if len(body) > 500:
+                _extract_plus_from_response(json.loads(body), results, seen)
+        except Exception:
+            pass
+
+    before = len(results)
+
+    # Methode 2: DOM scraping
+    dom_results = _parse_plus_dom(page)
+    for d in dom_results:
+        key = d["naam"].lower()
+        if key not in seen:
+            seen.add(key)
+            results.append(d)
+
+    added = len(results) - before
+    print(f"    {url.split('/')[-1]}: {prev_count} kaarten → {added} nieuw")
+
+    page.remove_listener("response", on_response)
+
+
 def scrape_plus():
     results = []
     seen = set()
-    captured_responses = []
 
     try:
         with sync_playwright() as p:
@@ -776,60 +849,18 @@ def scrape_plus():
             )
             page = context.new_page()
 
-            # Sla response-objecten op in de handler — geen .text()/.json() hier,
-            # want dat kan deadlocks veroorzaken in de sync event loop.
-            def on_response(response):
-                url = response.url
-                if response.status != 200:
-                    return
-                ct = response.headers.get("content-type", "")
-                if "json" not in ct:
-                    return
-                if not any(d in url for d in ["plus.nl", "screenservices"]):
-                    return
-                if any(s in url for s in ["analytics", "tracking", "piwik", "gtm", "hotjar"]):
-                    return
-                captured_responses.append(response)
+            # Methode 1: alle-aanbiedingen pagina (één pagina met alles)
+            print("  Stap 1: alle-aanbiedingen...")
+            _scrape_plus_page(page, PLUS_ALL_URL, results, seen)
 
-            page.on("response", on_response)
-
-            page.goto(PLUS_URL, timeout=45000, wait_until="domcontentloaded")
-            page.wait_for_timeout(8000)
-
-            # Scroll tot geen nieuwe kaarten meer bijkomen (lazy load)
-            prev_count = 0
-            for _ in range(20):
-                page.keyboard.press("End")
-                page.wait_for_timeout(2000)
-                count = len(page.query_selector_all(".plp-results-list > a"))
-                if count == prev_count:
-                    break
-                prev_count = count
-            print(f"  Na scrollen: {prev_count} kaarten zichtbaar")
-
-            # Verwerk responses NADAT de pagina klaar is (safe buiten event handler)
-            captured_bodies = []
-            for resp in captured_responses:
-                try:
-                    body = resp.text()
-                    if len(body) > 500:
-                        captured_bodies.append(body)
-                except Exception:
-                    pass
-
-            for body in captured_bodies:
-                try:
-                    data = json.loads(body)
-                    _extract_plus_from_response(data, results, seen)
-                except Exception:
-                    pass
-
-            print(f"  Network interception: {len(results)} producten ({len(captured_bodies)} responses)")
-
-            # DOM fallback als network niets opleverde
-            if not results:
-                print("  Geen bruikbare JSON — DOM fallback...")
-                results = _parse_plus_dom(page)
+            # Methode 2: subcategorieën als safety net (pakt wat alle-aanbiedingen mist)
+            if len(results) < 50:
+                print(f"  Stap 2: subcategorieën ({len(PLUS_CAT_URLS)} stuks)...")
+                for cat_url in PLUS_CAT_URLS:
+                    _scrape_plus_page(page, cat_url, results, seen)
+                    time.sleep(0.5)
+            else:
+                print(f"  Stap 2: overgeslagen ({len(results)} al gevonden)")
 
             browser.close()
 
