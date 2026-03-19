@@ -749,7 +749,7 @@ def _parse_plus_dom(page):
 def scrape_plus():
     results = []
     seen = set()
-    captured_bodies = []
+    captured_responses = []
 
     try:
         with sync_playwright() as p:
@@ -761,7 +761,8 @@ def scrape_plus():
             )
             page = context.new_page()
 
-            # Vang alle JSON responses op die product-/promotiedata kunnen bevatten
+            # Sla response-objecten op in de handler — geen .text()/.json() hier,
+            # want dat kan deadlocks veroorzaken in de sync event loop.
             def on_response(response):
                 url = response.url
                 if response.status != 200:
@@ -769,17 +770,11 @@ def scrape_plus():
                 ct = response.headers.get("content-type", "")
                 if "json" not in ct:
                     return
-                # Alleen Plus-domeinen, sla tracking/analytics over
                 if not any(d in url for d in ["plus.nl", "screenservices"]):
                     return
-                if any(skip in url for skip in ["analytics", "tracking", "piwik", "gtm", "hotjar"]):
+                if any(s in url for s in ["analytics", "tracking", "piwik", "gtm", "hotjar"]):
                     return
-                try:
-                    body = response.text()
-                    if len(body) > 500 and ("{" in body or "[" in body):
-                        captured_bodies.append(body)
-                except Exception:
-                    pass
+                captured_responses.append(response)
 
             page.on("response", on_response)
 
@@ -791,7 +786,16 @@ def scrape_plus():
                 page.keyboard.press("End")
                 page.wait_for_timeout(1500)
 
-            # Verwerk captured JSON responses
+            # Verwerk responses NADAT de pagina klaar is (safe buiten event handler)
+            captured_bodies = []
+            for resp in captured_responses:
+                try:
+                    body = resp.text()
+                    if len(body) > 500:
+                        captured_bodies.append(body)
+                except Exception:
+                    pass
+
             for body in captured_bodies:
                 try:
                     data = json.loads(body)
