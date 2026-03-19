@@ -14,6 +14,7 @@ from datetime import date
 
 import anthropic
 import requests
+from playwright.sync_api import sync_playwright
 
 TIMEOUT = 15
 
@@ -606,6 +607,197 @@ def scrape_aldi():
 
 
 # ──────────────────────────────────────────────
+# Plus — Playwright + network interception
+# ──────────────────────────────────────────────
+
+PLUS_URL = "https://www.plus.nl/aanbiedingen"
+
+
+def _extract_plus_from_response(data, results, seen):
+    """Zoek recursief naar productlijsten in OutSystems screenservices JSON."""
+    if isinstance(data, dict):
+        for val in data.values():
+            _extract_plus_from_response(val, results, seen)
+    elif isinstance(data, list):
+        for item in data:
+            if isinstance(item, dict):
+                naam = (
+                    item.get("Name") or item.get("name") or
+                    item.get("Title") or item.get("title") or
+                    item.get("ProductName") or item.get("productName") or ""
+                ).strip()
+                if not naam:
+                    _extract_plus_from_response(item, results, seen)
+                    continue
+
+                key = naam.lower()
+                if key in seen:
+                    continue
+
+                # Prijs velden — OutSystems gebruikt vaak geneste Price objects
+                prijs = None
+                was = None
+                for pk in ("PromotionPrice", "promotionPrice", "SalePrice", "salePrice",
+                           "CurrentPrice", "currentPrice", "Price", "price"):
+                    v = item.get(pk)
+                    if v is not None:
+                        if isinstance(v, (int, float)):
+                            prijs = round(float(v) / 100, 2) if float(v) > 100 else float(v)
+                        elif isinstance(v, dict):
+                            amt = v.get("Amount") or v.get("amount") or v.get("Value") or v.get("value")
+                            if amt is not None:
+                                prijs = round(float(amt) / 100, 2) if float(amt) > 100 else float(amt)
+                        break
+                for wk in ("RegularPrice", "regularPrice", "NormalPrice", "normalPrice",
+                           "OriginalPrice", "originalPrice", "WasPrice", "wasPrice"):
+                    v = item.get(wk)
+                    if v is not None:
+                        if isinstance(v, (int, float)):
+                            was = round(float(v) / 100, 2) if float(v) > 100 else float(v)
+                        elif isinstance(v, dict):
+                            amt = v.get("Amount") or v.get("amount") or v.get("Value") or v.get("value")
+                            if amt is not None:
+                                was = round(float(amt) / 100, 2) if float(amt) > 100 else float(amt)
+                        break
+
+                if prijs is None:
+                    _extract_plus_from_response(item, results, seen)
+                    continue
+
+                deal_label = (
+                    item.get("OfferText") or item.get("offerText") or
+                    item.get("PromotionText") or item.get("promotionText") or
+                    item.get("DealLabel") or item.get("dealLabel") or
+                    item.get("Label") or item.get("label") or "Weekaanbieding"
+                ).strip() or "Weekaanbieding"
+
+                img = (
+                    item.get("ImageUrl") or item.get("imageUrl") or
+                    item.get("Image") or item.get("image") or ""
+                )
+                if isinstance(img, dict):
+                    img = img.get("Url") or img.get("url") or ""
+
+                seen.add(key)
+                results.append({
+                    "supermarkt": "Plus",
+                    "naam":       naam,
+                    "desc":       "Weekaanbieding",
+                    "prijs":      str(prijs),
+                    "was":        str(was) if was else None,
+                    "deal_label": deal_label,
+                    "effectief":  None,
+                    "img":        img or "",
+                    "url":        PLUS_URL,
+                })
+
+
+def _parse_plus_dom(page):
+    """DOM-fallback: extraheer deals uit rendered Plus aanbiedingen pagina."""
+    results = []
+    seen = set()
+
+    cards = page.query_selector_all(".plp-results-list > a, [data-block*='OfferItem'] a")
+    print(f"  DOM: {len(cards)} kaarten gevonden")
+
+    for card in cards:
+        try:
+            naam_el = (
+                card.query_selector(".plp-item-title, .product-title, [class*='title'], [class*='name']")
+            )
+            naam = naam_el.inner_text().strip() if naam_el else ""
+            if not naam:
+                continue
+            key = naam.lower()
+            if key in seen:
+                continue
+
+            prijs_el = card.query_selector(
+                ".plp-item-price .price-current, .price, [class*='price'], [class*='Price']"
+            )
+            prijs_text = prijs_el.inner_text().strip() if prijs_el else ""
+            prijs_clean = re.sub(r"[^\d.,]", "", prijs_text).replace(",", ".")
+            try:
+                prijs = float(prijs_clean)
+            except ValueError:
+                continue
+
+            deal_el = card.query_selector("[data-block*='PromotionOfferLabel'], [class*='offer'], [class*='promo']")
+            deal_label = deal_el.inner_text().strip() if deal_el else "Weekaanbieding"
+
+            img_el = card.query_selector("img")
+            img = img_el.get_attribute("src") if img_el else ""
+
+            seen.add(key)
+            results.append({
+                "supermarkt": "Plus",
+                "naam":       naam,
+                "desc":       "Weekaanbieding",
+                "prijs":      str(prijs),
+                "was":        None,
+                "deal_label": deal_label or "Weekaanbieding",
+                "effectief":  None,
+                "img":        img or "",
+                "url":        PLUS_URL,
+            })
+        except Exception:
+            continue
+
+    return results
+
+
+def scrape_plus():
+    results = []
+    seen = set()
+    captured_responses = []
+
+    try:
+        with sync_playwright() as p:
+            browser = p.chromium.launch(headless=True)
+            context = browser.new_context(
+                user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+                locale="nl-NL",
+                viewport={"width": 1280, "height": 900},
+            )
+            page = context.new_page()
+
+            def on_response(response):
+                if "screenservices" in response.url and response.status == 200:
+                    try:
+                        captured_responses.append(response.json())
+                    except Exception:
+                        pass
+
+            page.on("response", on_response)
+
+            page.goto(PLUS_URL, timeout=45000, wait_until="domcontentloaded")
+            page.wait_for_timeout(8000)
+
+            # Probeer te scrollen om meer producten te laden
+            for _ in range(3):
+                page.keyboard.press("End")
+                page.wait_for_timeout(1500)
+
+            # Probeer eerst network-interception resultaten
+            for resp in captured_responses:
+                _extract_plus_from_response(resp, results, seen)
+
+            print(f"  Network interception: {len(results)} producten")
+
+            # DOM fallback als network niets opleverde
+            if not results:
+                print("  Geen screenservices data — DOM fallback...")
+                results = _parse_plus_dom(page)
+
+            browser.close()
+
+    except Exception as e:
+        print(f"  FOUT Plus (Playwright): {e}")
+
+    return results
+
+
+# ──────────────────────────────────────────────
 # Main
 # ──────────────────────────────────────────────
 
@@ -614,6 +806,7 @@ SCRAPERS = [
     ("Jumbo",        scrape_jumbo),
     ("Lidl",         scrape_lidl),
     ("Aldi",         scrape_aldi),
+    ("Plus",         scrape_plus),
 ]
 
 
@@ -651,6 +844,7 @@ HTML_TEMPLATE = """\
   .super-jumbo {{ background: #fff8dc; color: #b8860b; }}
   .super-lidl {{ background: #fff0f0; color: #c0392b; }}
   .super-aldi {{ background: #fff8e1; color: #e65100; }}
+  .super-plus {{ background: #e8f5e9; color: #2e7d32; }}
   .effectief {{ font-weight: bold; color: #2e7d32; }}
   .effectief small {{ font-weight: normal; color: #888; font-size: 11px; }}
 </style>
@@ -720,7 +914,7 @@ function render() {{
   else if (sort === 'prijs') filtered.sort((a, b) => parseFloat(a.prijs || a.was) - parseFloat(b.prijs || b.was));
   else filtered.sort((a, b) => a.naam.localeCompare(b.naam));
   document.getElementById('count').textContent = filtered.length + ' deals';
-  const superClass = s => s === 'Albert Heijn' ? 'super-ah' : s === 'Jumbo' ? 'super-jumbo' : s === 'Lidl' ? 'super-lidl' : s === 'Aldi' ? 'super-aldi' : '';
+  const superClass = s => s === 'Albert Heijn' ? 'super-ah' : s === 'Jumbo' ? 'super-jumbo' : s === 'Lidl' ? 'super-lidl' : s === 'Aldi' ? 'super-aldi' : s === 'Plus' ? 'super-plus' : '';
   const isPct = label => label && /^\\d+%/.test(label);
   document.getElementById('tbody').innerHTML = filtered.map(d => {{
     const label = d.deal_label || '';
