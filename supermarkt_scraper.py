@@ -846,16 +846,30 @@ def scrape_plus():
                     if "PromotionOfferList" not in body:
                         continue
                     data = json.loads(body)
-                    offer_list = data.get("data", {}).get("PromotionOfferList", [])
-                    print(f"  PromotionOfferList gevonden: {len(offer_list)} items")
-                    for item in offer_list[:2]:
-                        print(f"    ITEM keys: {list(item.keys()) if isinstance(item, dict) else type(item)}")
-                        if isinstance(item, dict):
-                            for k, v in item.items():
-                                if isinstance(v, dict):
-                                    print(f"      .{k} → {list(v.keys())}")
-                                elif not isinstance(v, list):
-                                    print(f"      .{k} = {repr(v)[:80]}")
+                    raw = data.get("data", {}).get("PromotionOfferList")
+                    print(f"  PromotionOfferList type: {type(raw).__name__}, keys/len: {list(raw.keys()) if isinstance(raw, dict) else len(raw) if isinstance(raw, list) else raw}")
+                    # OutSystems wraps lijsten vaak als {"List": [...], "EmptyListItem": {...}}
+                    if isinstance(raw, dict):
+                        for k, v in raw.items():
+                            print(f"    .{k} → {type(v).__name__} len={len(v) if hasattr(v,'__len__') else '?'}")
+                            if isinstance(v, list) and v:
+                                first = v[0]
+                                print(f"      eerste item keys: {list(first.keys()) if isinstance(first, dict) else type(first)}")
+                                if isinstance(first, dict):
+                                    for fk, fv in first.items():
+                                        if isinstance(fv, dict):
+                                            print(f"        .{fk} → {list(fv.keys())}")
+                                        elif not isinstance(fv, list):
+                                            print(f"        .{fk} = {repr(fv)[:80]}")
+                    elif isinstance(raw, list) and raw:
+                        first = raw[0]
+                        print(f"    eerste item keys: {list(first.keys()) if isinstance(first, dict) else type(first)}")
+                        if isinstance(first, dict):
+                            for fk, fv in first.items():
+                                if isinstance(fv, dict):
+                                    print(f"      .{fk} → {list(fv.keys())}")
+                                elif not isinstance(fv, list):
+                                    print(f"      .{fk} = {repr(fv)[:80]}")
                 except Exception as e:
                     print(f"  parse fout: {e}")
             print(f"  Network resultaat: {len(results)} producten")
