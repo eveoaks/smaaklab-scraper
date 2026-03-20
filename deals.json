@@ -4053,7 +4053,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Halve abrikozenrastervlaai",
-      "desc": "Weekaanbieding",
+      "desc": "Zuivel & eieren",
       "prijs": "3.49",
       "was": null,
       "deal_label": "OP=OP",
@@ -4064,7 +4064,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Fourme d'Ambert 50+",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "1.69",
       "was": null,
       "deal_label": "-15%",
@@ -4075,7 +4075,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Chocolade paashaas",
-      "desc": "Weekaanbieding",
+      "desc": "Frisdrank",
       "prijs": "0.9",
       "was": null,
       "deal_label": "-30%",
@@ -4086,7 +4086,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Narcissen",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "0.79",
       "was": null,
       "deal_label": "OP=OP",
@@ -4097,7 +4097,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "6-pack Mexicaans bier",
-      "desc": "Weekaanbieding",
+      "desc": "Bier & wijn",
       "prijs": "3.99",
       "was": null,
       "deal_label": "-20%",
@@ -4108,7 +4108,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Gehakt cordon bleu",
-      "desc": "Weekaanbieding",
+      "desc": "Vlees & vis",
       "prijs": "1.99",
       "was": null,
       "deal_label": "-20%",
@@ -4119,7 +4119,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Vega kaasschnitzels",
-      "desc": "Weekaanbieding",
+      "desc": "Vlees & vis",
       "prijs": "1.39",
       "was": null,
       "deal_label": "-12%",
@@ -4130,7 +4130,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Fruitboom",
-      "desc": "Weekaanbieding",
+      "desc": "Groente & fruit",
       "prijs": "4.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -4141,7 +4141,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Witte druiven",
-      "desc": "Weekaanbieding",
+      "desc": "Groente & fruit",
       "prijs": "1.49",
       "was": null,
       "deal_label": "-40%",
@@ -4152,7 +4152,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Gesuikerde pruimen",
-      "desc": "Weekaanbieding",
+      "desc": "Groente & fruit",
       "prijs": "1.89",
       "was": null,
       "deal_label": "OP=OP",
@@ -4163,7 +4163,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Gerookt ontbijtspek",
-      "desc": "Weekaanbieding",
+      "desc": "Ontbijt & beleg",
       "prijs": "1.69",
       "was": null,
       "deal_label": "-21%",
@@ -4174,7 +4174,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Led-windgong",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "5.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -4185,7 +4185,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Steenovenbroodjes wit of spelt",
-      "desc": "Weekaanbieding",
+      "desc": "Brood & gebak",
       "prijs": "2.5",
       "was": null,
       "deal_label": "2 VOOR",
@@ -4196,7 +4196,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Rode puntpaprika's",
-      "desc": "Weekaanbieding",
+      "desc": "Groente & fruit",
       "prijs": "1.49",
       "was": null,
       "deal_label": "OP=OP",
@@ -4207,7 +4207,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Extra mager rundergehakt",
-      "desc": "Weekaanbieding",
+      "desc": "Vlees & vis",
       "prijs": "3.99",
       "was": null,
       "deal_label": "-15%",
@@ -4218,7 +4218,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Griekse olijven",
-      "desc": "Weekaanbieding",
+      "desc": "Groente & fruit",
       "prijs": "2.49",
       "was": null,
       "deal_label": "OP=OP",
@@ -4229,7 +4229,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Groene thee",
-      "desc": "Weekaanbieding",
+      "desc": "Koffie & thee",
       "prijs": "0.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -4240,7 +4240,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Tulpen",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "2.49",
       "was": null,
       "deal_label": "OP=OP",
@@ -4251,7 +4251,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Luchtverfrisser",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "1.49",
       "was": null,
       "deal_label": "OP=OP",
@@ -4262,7 +4262,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Boterhamworst",
-      "desc": "Weekaanbieding",
+      "desc": "Vlees & vis",
       "prijs": "1.49",
       "was": null,
       "deal_label": "OP=OP",
@@ -4273,7 +4273,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Appelsap",
-      "desc": "Weekaanbieding",
+      "desc": "Frisdrank",
       "prijs": "1.59",
       "was": null,
       "deal_label": "-20%",
@@ -4284,7 +4284,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Borrelschotel",
-      "desc": "Weekaanbieding",
+      "desc": "Snacks",
       "prijs": "4.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -4295,7 +4295,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Ibérico fuetplakjes",
-      "desc": "Weekaanbieding",
+      "desc": "Vleeswaren & kaas",
       "prijs": "1.51",
       "was": null,
       "deal_label": "-20%",
@@ -4306,7 +4306,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Kaas-uienbollen",
-      "desc": "Weekaanbieding",
+      "desc": "Vleeswaren & kaas",
       "prijs": "1.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -4317,7 +4317,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Vastkokende aardappelen",
-      "desc": "Weekaanbieding",
+      "desc": "Groente & fruit",
       "prijs": "2.29",
       "was": null,
       "deal_label": "-32%",
@@ -4328,7 +4328,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Scharrelkipbraadsticks",
-      "desc": "Weekaanbieding",
+      "desc": "Vlees & vis",
       "prijs": "5.49",
       "was": null,
       "deal_label": "-15%",
@@ -4339,7 +4339,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "8-pack appelmoes",
-      "desc": "Weekaanbieding",
+      "desc": "Groente & fruit",
       "prijs": "1.59",
       "was": null,
       "deal_label": "OP=OP",
@@ -4350,7 +4350,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "4-pack bier",
-      "desc": "Weekaanbieding",
+      "desc": "Bier & wijn",
       "prijs": "3.39",
       "was": null,
       "deal_label": "-23%",
@@ -4361,7 +4361,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "6-pack 0.0 bier",
-      "desc": "Weekaanbieding",
+      "desc": "Bier & wijn",
       "prijs": "2.75",
       "was": null,
       "deal_label": "OP=OP",
@@ -4372,7 +4372,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Japanse sierkers of amandelboom",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "2.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -4383,7 +4383,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "6-pack voorjaarsbloeiers",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "2.49",
       "was": null,
       "deal_label": "OP=OP",
@@ -4394,7 +4394,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Dunne roggecrackers",
-      "desc": "Weekaanbieding",
+      "desc": "Brood & gebak",
       "prijs": "1.69",
       "was": null,
       "deal_label": "-15%",
@@ -4405,7 +4405,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Pannenkoeken",
-      "desc": "Weekaanbieding",
+      "desc": "Brood & gebak",
       "prijs": "1.69",
       "was": null,
       "deal_label": "-13%",
@@ -4416,7 +4416,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Hoogwaardig inpakpapier",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "1.29",
       "was": null,
       "deal_label": "OP=OP",
@@ -4427,7 +4427,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Brunchbroodjesmix",
-      "desc": "Weekaanbieding",
+      "desc": "Brood & gebak",
       "prijs": "1.69",
       "was": null,
       "deal_label": "-13%",
@@ -4438,7 +4438,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Schenkstroop",
-      "desc": "Weekaanbieding",
+      "desc": "Koek & snoep",
       "prijs": "1.29",
       "was": null,
       "deal_label": "-18%",
@@ -4449,7 +4449,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Perssinaasappels",
-      "desc": "Weekaanbieding",
+      "desc": "Groente & fruit",
       "prijs": "1.99",
       "was": null,
       "deal_label": "2 KG",
@@ -4460,7 +4460,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Jonagold appels",
-      "desc": "Weekaanbieding",
+      "desc": "Groente & fruit",
       "prijs": "1.79",
       "was": null,
       "deal_label": "-37%",
@@ -4471,7 +4471,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Schwarzwälder ham",
-      "desc": "Weekaanbieding",
+      "desc": "Vleeswaren & kaas",
       "prijs": "4.69",
       "was": null,
       "deal_label": "OP=OP",
@@ -4482,7 +4482,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Groene kiwi's",
-      "desc": "Weekaanbieding",
+      "desc": "Groente & fruit",
       "prijs": "2.49",
       "was": null,
       "deal_label": "-37%",
@@ -4493,7 +4493,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Boeren volkoren meergranen",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "1.29",
       "was": null,
       "deal_label": "-35%",
@@ -4504,7 +4504,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Rozen",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "2.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -4515,7 +4515,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Zalmfilet op huid",
-      "desc": "Weekaanbieding",
+      "desc": "Vlees & vis",
       "prijs": "5.99",
       "was": null,
       "deal_label": "-14%",
@@ -4526,7 +4526,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Goudse kaasplakken 48+ jong belegen",
-      "desc": "Weekaanbieding",
+      "desc": "Vleeswaren & kaas",
       "prijs": "3.49",
       "was": null,
       "deal_label": "OP=OP",
@@ -4537,7 +4537,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Speklappen",
-      "desc": "Weekaanbieding",
+      "desc": "Vlees & vis",
       "prijs": "3.69",
       "was": null,
       "deal_label": "-14%",
@@ -4548,7 +4548,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Gran tartufo",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "3.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -4559,7 +4559,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Creamy hazelnut likeur",
-      "desc": "Weekaanbieding",
+      "desc": "Bier & wijn",
       "prijs": "4.79",
       "was": null,
       "deal_label": "-20%",
@@ -4570,7 +4570,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Groene-aanslagreiniger",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "4.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -4581,7 +4581,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Siergraszaad",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "1.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -4592,7 +4592,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Pastinaak",
-      "desc": "Weekaanbieding",
+      "desc": "Groente & fruit",
       "prijs": "1.19",
       "was": null,
       "deal_label": "-37%",
@@ -4603,7 +4603,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Shortama",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "6.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -4614,7 +4614,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Speelgoed",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "4.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -4625,7 +4625,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "4-pack tandenborstels",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "0.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -4636,7 +4636,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "4-pack wc-blokken",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "2.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -4647,7 +4647,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Holle paaseieren",
-      "desc": "Weekaanbieding",
+      "desc": "Zuivel & eieren",
       "prijs": "2.44",
       "was": null,
       "deal_label": "-30%",
@@ -4658,7 +4658,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Sweet salsa hamburgers",
-      "desc": "Weekaanbieding",
+      "desc": "Vlees & vis",
       "prijs": "3.49",
       "was": null,
       "deal_label": "OP=OP",
@@ -4669,7 +4669,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Zoete popcorn karamel",
-      "desc": "Weekaanbieding",
+      "desc": "Snacks",
       "prijs": "2.79",
       "was": null,
       "deal_label": "OP=OP",
@@ -4680,7 +4680,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Paashazen",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "1.04",
       "was": null,
       "deal_label": "-30%",
@@ -4691,7 +4691,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Emmentaler",
-      "desc": "Weekaanbieding",
+      "desc": "Vleeswaren & kaas",
       "prijs": "5.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -4702,7 +4702,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Paaslam",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "2.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -4713,7 +4713,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Koko- of balenakoekjes",
-      "desc": "Weekaanbieding",
+      "desc": "Koek & snoep",
       "prijs": "1.59",
       "was": null,
       "deal_label": "OP=OP",
@@ -4724,7 +4724,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Tortillachips paprika",
-      "desc": "Weekaanbieding",
+      "desc": "Groente & fruit",
       "prijs": "1.65",
       "was": null,
       "deal_label": "OP=OP",
@@ -4735,7 +4735,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Gekookte achterham",
-      "desc": "Weekaanbieding",
+      "desc": "Vleeswaren & kaas",
       "prijs": "2.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -4746,7 +4746,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Hartige edelsalami",
-      "desc": "Weekaanbieding",
+      "desc": "Vleeswaren & kaas",
       "prijs": "1.79",
       "was": null,
       "deal_label": "OP=OP",
@@ -4757,7 +4757,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Biologische groentepasta",
-      "desc": "Weekaanbieding",
+      "desc": "Pasta & rijst",
       "prijs": "1.79",
       "was": null,
       "deal_label": "OP=OP",
@@ -4768,7 +4768,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Salademix",
-      "desc": "Weekaanbieding",
+      "desc": "Maaltijden",
       "prijs": "0.99",
       "was": null,
       "deal_label": "-28%",
@@ -4779,7 +4779,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Falafel maaltijdsalade",
-      "desc": "Weekaanbieding",
+      "desc": "Maaltijden",
       "prijs": "2.99",
       "was": null,
       "deal_label": "-25%",
@@ -4790,7 +4790,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "3-pack ananas in stukjes",
-      "desc": "Weekaanbieding",
+      "desc": "Groente & fruit",
       "prijs": "2.69",
       "was": null,
       "deal_label": "OP=OP",
@@ -4801,7 +4801,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Wortelreepjes",
-      "desc": "Weekaanbieding",
+      "desc": "Groente & fruit",
       "prijs": "1.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -4812,7 +4812,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "10-delige paasbakset",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "4.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -4823,7 +4823,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Gerookte kaasplakken",
-      "desc": "Weekaanbieding",
+      "desc": "Vleeswaren & kaas",
       "prijs": "3.49",
       "was": null,
       "deal_label": "OP=OP",
@@ -4834,7 +4834,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "5-pack sokken",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "4.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -4845,7 +4845,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Spaghetti maaltijdkit tomaat",
-      "desc": "Weekaanbieding",
+      "desc": "Pasta & rijst",
       "prijs": "2.49",
       "was": null,
       "deal_label": "OP=OP",
@@ -4856,7 +4856,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Leesbril",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "1.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -4867,7 +4867,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Paaspasta",
-      "desc": "Weekaanbieding",
+      "desc": "Pasta & rijst",
       "prijs": "1.69",
       "was": null,
       "deal_label": "OP=OP",
@@ -4878,7 +4878,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Deurmat",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "4.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -4889,7 +4889,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "12-pack Actimel multifruits",
-      "desc": "Weekaanbieding",
+      "desc": "Groente & fruit",
       "prijs": "3.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -4900,7 +4900,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Kunstplant",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "29.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -4911,7 +4911,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Led-waterlelies",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "8.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -4922,7 +4922,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Wijde pantalon",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "9.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -4933,7 +4933,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Gebreide trui",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "8.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -4944,7 +4944,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Groente- of fruitknuffel",
-      "desc": "Weekaanbieding",
+      "desc": "Groente & fruit",
       "prijs": "3.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -4955,7 +4955,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Vilten paasmandje",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "2.29",
       "was": null,
       "deal_label": "OP=OP",
@@ -4966,7 +4966,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Paashangers",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "2.49",
       "was": null,
       "deal_label": "OP=OP",
@@ -4977,7 +4977,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Pasen kabouter",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "9.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -4988,7 +4988,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Bakvorm",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "4.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -4999,7 +4999,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Digitale keukenweegschaal",
-      "desc": "Weekaanbieding",
+      "desc": "Bier & wijn",
       "prijs": "4.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -5010,7 +5010,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Tuinbeeld",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "12.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -5021,7 +5021,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Kaneelbroodjes kit",
-      "desc": "Weekaanbieding",
+      "desc": "Brood & gebak",
       "prijs": "2.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -5032,7 +5032,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Bouwset boeket",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "14.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -5043,7 +5043,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Solar LED-tuindecoratie",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "3.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -5054,7 +5054,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Paasassortiment",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "1.49",
       "was": null,
       "deal_label": "OP=OP",
@@ -5065,7 +5065,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Barista-cup",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "1.69",
       "was": null,
       "deal_label": "OP=OP",
@@ -5076,7 +5076,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Griekse olijfolie extra vierge",
-      "desc": "Weekaanbieding",
+      "desc": "Soepen & sauzen",
       "prijs": "5.49",
       "was": null,
       "deal_label": "-21%",
@@ -5087,7 +5087,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "2-pack witte kaas",
-      "desc": "Weekaanbieding",
+      "desc": "Vleeswaren & kaas",
       "prijs": "1.59",
       "was": null,
       "deal_label": "OP=OP",
@@ -5098,7 +5098,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Antipasti",
-      "desc": "Weekaanbieding",
+      "desc": "Vleeswaren & kaas",
       "prijs": "2.59",
       "was": null,
       "deal_label": "OP=OP",
@@ -5109,7 +5109,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Perziken op siroop",
-      "desc": "Weekaanbieding",
+      "desc": "Groente & fruit",
       "prijs": "1.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -5120,7 +5120,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Vitamine C expert huidverzorging",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "3.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -5131,7 +5131,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Kipreepjes",
-      "desc": "Weekaanbieding",
+      "desc": "Vlees & vis",
       "prijs": "1.69",
       "was": null,
       "deal_label": "-22%",
@@ -5142,7 +5142,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Riesling, Duitsland",
-      "desc": "Weekaanbieding",
+      "desc": "Bier & wijn",
       "prijs": "4.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -5153,7 +5153,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Wortel julienne",
-      "desc": "Weekaanbieding",
+      "desc": "Groente & fruit",
       "prijs": "0.79",
       "was": null,
       "deal_label": "-20%",
@@ -5164,7 +5164,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Studentenhaver",
-      "desc": "Weekaanbieding",
+      "desc": "Snacks",
       "prijs": "3.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -5175,7 +5175,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Siliconen Bakvorm",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "4.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -5186,7 +5186,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Scharrelkipgehakt",
-      "desc": "Weekaanbieding",
+      "desc": "Vlees & vis",
       "prijs": "3.99",
       "was": null,
       "deal_label": "-20%",
@@ -5197,7 +5197,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Retro keukenmachine",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "49.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -5208,7 +5208,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "6-pack mineraalwater met sportdop",
-      "desc": "Weekaanbieding",
+      "desc": "Frisdrank",
       "prijs": "4.49",
       "was": null,
       "deal_label": "OP=OP",
@@ -5219,7 +5219,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Kip-popcornnuggets",
-      "desc": "Weekaanbieding",
+      "desc": "Snacks",
       "prijs": "2.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -5230,7 +5230,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Tuinmeubelbeschermhoes",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "5.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -5241,7 +5241,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Vaste plant",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "5",
       "was": null,
       "deal_label": "2 VOOR",
@@ -5252,7 +5252,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Varkensfiletlappen",
-      "desc": "Weekaanbieding",
+      "desc": "Vlees & vis",
       "prijs": "4.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -5263,7 +5263,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Antikalktabletten",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "5.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -5274,7 +5274,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Vanille of fruit yoghurt",
-      "desc": "Weekaanbieding",
+      "desc": "Zuivel & eieren",
       "prijs": "1.59",
       "was": null,
       "deal_label": "OP=OP",
@@ -5285,7 +5285,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Professioneel bakgerei",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "2.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -5296,7 +5296,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Siliconen bakgerei",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "0.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -5307,7 +5307,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Black angus chipolata's",
-      "desc": "Weekaanbieding",
+      "desc": "Vlees & vis",
       "prijs": "4.49",
       "was": null,
       "deal_label": "-10%",
@@ -5318,7 +5318,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "IJstaart",
-      "desc": "Weekaanbieding",
+      "desc": "Brood & gebak",
       "prijs": "4.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -5329,7 +5329,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "4-pack tonijn in water",
-      "desc": "Weekaanbieding",
+      "desc": "Vlees & vis",
       "prijs": "4.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -5340,7 +5340,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Poms appeldrink",
-      "desc": "Weekaanbieding",
+      "desc": "Groente & fruit",
       "prijs": "0.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -5351,7 +5351,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Aioli sriracha",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "1.29",
       "was": null,
       "deal_label": "OP=OP",
@@ -5362,7 +5362,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Kipbraadworsten",
-      "desc": "Weekaanbieding",
+      "desc": "Vlees & vis",
       "prijs": "2.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -5373,7 +5373,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Diamond painting",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "2.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -5384,7 +5384,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Ranonkels",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "3.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -5395,7 +5395,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "5-pack Lahmacun",
-      "desc": "Weekaanbieding",
+      "desc": "Maaltijden",
       "prijs": "4.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -5406,7 +5406,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Jegging",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "9.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -5417,7 +5417,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Buitenlamp met bewegingssensor",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "12.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -5428,7 +5428,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Twill blouse",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "7.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -5439,7 +5439,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Buitenkleed",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "6.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -5450,7 +5450,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Opvouwbare Ligstoel",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "29.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -5461,7 +5461,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Tuin opbergbox",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "17.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -5472,7 +5472,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Solar spot",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "7.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -5483,7 +5483,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Logicaspel",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "4.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -5494,7 +5494,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Sweatshirt",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "4.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -5505,7 +5505,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "2-pack gordijnen",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "14.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -5516,7 +5516,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Cargobroek",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "6.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -5527,7 +5527,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Kunstplant",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "4.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -5538,7 +5538,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Legging met tule rok",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "4.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -5549,7 +5549,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Sneakers",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "9.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -5560,7 +5560,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Sneakers",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "11.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -5571,7 +5571,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Opgravingsset",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "1.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -5582,7 +5582,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "2 of 4-delige glazenset",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "4.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -5593,7 +5593,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Croissants",
-      "desc": "Weekaanbieding",
+      "desc": "Brood & gebak",
       "prijs": "1.49",
       "was": null,
       "deal_label": "OP=OP",
@@ -5604,7 +5604,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Pyjama",
-      "desc": "Weekaanbieding",
+      "desc": "Ontbijt & beleg",
       "prijs": "4.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -5615,7 +5615,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Sweatshirt en legging",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "7.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -5626,7 +5626,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Gelakt Tafelkleed",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "7.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -5637,7 +5637,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Tafelloper of -laken",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "2.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -5648,7 +5648,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Magnetische bouwblokken",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "9.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -5659,7 +5659,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Kunsttulpen",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "2.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -5670,7 +5670,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Solar LED-ornament",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "12.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -5681,7 +5681,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Gouda 48+ extra oud schuitje",
-      "desc": "Weekaanbieding",
+      "desc": "Vleeswaren & kaas",
       "prijs": "2.69",
       "was": null,
       "deal_label": "OP=OP",
@@ -5692,7 +5692,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Kunstboeket",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "3.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -5703,7 +5703,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Geurkaars",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "4.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -5714,7 +5714,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Tuinstoel Kussen",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "2.49",
       "was": null,
       "deal_label": "OP=OP",
@@ -5725,7 +5725,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "6-pack premium tonic",
-      "desc": "Weekaanbieding",
+      "desc": "Frisdrank",
       "prijs": "4.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -5736,7 +5736,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Katten afschrikmiddel",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "3.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -5747,7 +5747,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Verse olijven",
-      "desc": "Weekaanbieding",
+      "desc": "Groente & fruit",
       "prijs": "1.75",
       "was": null,
       "deal_label": "TOT -20%",
@@ -5758,7 +5758,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Rioja Rivalllana Crianza, La Capelude Viognier Grenache of La Capelude Grande Réserve",
-      "desc": "Weekaanbieding",
+      "desc": "Bier & wijn",
       "prijs": "3.99",
       "was": null,
       "deal_label": "-20%",
@@ -5769,7 +5769,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Snelontkalker of afwasmiddel",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "1.49",
       "was": null,
       "deal_label": "OP=OP",
@@ -5780,7 +5780,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Pleisters",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "1.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -5791,7 +5791,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Dolce Gusto koffiecups",
-      "desc": "Weekaanbieding",
+      "desc": "Koffie & thee",
       "prijs": "3.99",
       "was": null,
       "deal_label": "-36%",
@@ -5802,7 +5802,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Saus",
-      "desc": "Weekaanbieding",
+      "desc": "Soepen & sauzen",
       "prijs": "1.89",
       "was": null,
       "deal_label": "OP=OP",
@@ -5813,7 +5813,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Ontstopper of ovenreiniger",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "1.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -5824,7 +5824,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Smint",
-      "desc": "Weekaanbieding",
+      "desc": "Koek & snoep",
       "prijs": "2.79",
       "was": null,
       "deal_label": "OP=OP",
@@ -5835,7 +5835,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Speciaalbier",
-      "desc": "Weekaanbieding",
+      "desc": "Bier & wijn",
       "prijs": "1.65",
       "was": null,
       "deal_label": "OP=OP",
@@ -5846,7 +5846,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "8-pack Bueno",
-      "desc": "Weekaanbieding",
+      "desc": "Koek & snoep",
       "prijs": "4.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -5857,7 +5857,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Snoep",
-      "desc": "Weekaanbieding",
+      "desc": "Koek & snoep",
       "prijs": "0.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -5868,7 +5868,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Hang- of stapot violen",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "3.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -5879,7 +5879,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Fruitdrink",
-      "desc": "Weekaanbieding",
+      "desc": "Groente & fruit",
       "prijs": "1.49",
       "was": null,
       "deal_label": "OP=OP",
@@ -5890,7 +5890,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Zakdoekjes of vochtige doekjes",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "2",
       "was": null,
       "deal_label": "2 VOOR",
@@ -5901,7 +5901,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Paaschocolade",
-      "desc": "Weekaanbieding",
+      "desc": "Frisdrank",
       "prijs": "3.49",
       "was": null,
       "deal_label": "OP=OP",
@@ -5912,7 +5912,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Brownie- of puddingblokjes",
-      "desc": "Weekaanbieding",
+      "desc": "Zuivel & eieren",
       "prijs": "2.49",
       "was": null,
       "deal_label": "OP=OP",
@@ -5923,7 +5923,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Dikke rijst- of maïswafels",
-      "desc": "Weekaanbieding",
+      "desc": "Pasta & rijst",
       "prijs": "1.39",
       "was": null,
       "deal_label": "OP=OP",
@@ -5934,7 +5934,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Rings chips",
-      "desc": "Weekaanbieding",
+      "desc": "Snacks",
       "prijs": "2.5",
       "was": null,
       "deal_label": "2 VOOR",
@@ -5945,7 +5945,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "6-pack Chocomel, Fristi en Optimel",
-      "desc": "Weekaanbieding",
+      "desc": "Ontbijt & beleg",
       "prijs": "1.79",
       "was": null,
       "deal_label": "OP=OP",
@@ -5956,7 +5956,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Mixdrink",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "1.69",
       "was": null,
       "deal_label": "OP=OP",
@@ -5967,7 +5967,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Handzeep",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "1.59",
       "was": null,
       "deal_label": "OP=OP",
@@ -5978,7 +5978,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Drinkyoghurt",
-      "desc": "Weekaanbieding",
+      "desc": "Zuivel & eieren",
       "prijs": "0.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -5989,7 +5989,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Groenten en appelmoes",
-      "desc": "Weekaanbieding",
+      "desc": "Groente & fruit",
       "prijs": "1.09",
       "was": null,
       "deal_label": "OP=OP",
@@ -6000,7 +6000,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Knaks",
-      "desc": "Weekaanbieding",
+      "desc": "Vlees & vis",
       "prijs": "2.29",
       "was": null,
       "deal_label": "OP=OP",
@@ -6011,7 +6011,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Wereldgerechten",
-      "desc": "Weekaanbieding",
+      "desc": "Maaltijden",
       "prijs": "1.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -6022,7 +6022,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Thee",
-      "desc": "Weekaanbieding",
+      "desc": "Koffie & thee",
       "prijs": "1.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -6033,7 +6033,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Ontbijtgranen",
-      "desc": "Weekaanbieding",
+      "desc": "Ontbijt & beleg",
       "prijs": "3.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -6044,7 +6044,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Max chips",
-      "desc": "Weekaanbieding",
+      "desc": "Snacks",
       "prijs": "1.99",
       "was": null,
       "deal_label": "TOT -32%",
@@ -6055,7 +6055,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "12-pack cola regular of zero",
-      "desc": "Weekaanbieding",
+      "desc": "Frisdrank",
       "prijs": "3.29",
       "was": null,
       "deal_label": "-17%",
@@ -6066,7 +6066,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "IJsbeker",
-      "desc": "Weekaanbieding",
+      "desc": "Diepvries",
       "prijs": "3.49",
       "was": null,
       "deal_label": "OP=OP",
@@ -6077,7 +6077,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Speculaas- of cookies-cream stroop",
-      "desc": "Weekaanbieding",
+      "desc": "Brood & gebak",
       "prijs": "2.59",
       "was": null,
       "deal_label": "OP=OP",
@@ -6088,7 +6088,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Zeebries wascollectie",
-      "desc": "Weekaanbieding",
+      "desc": "Vleeswaren & kaas",
       "prijs": "4.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -6099,7 +6099,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Paaseitjesmix",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "3.39",
       "was": null,
       "deal_label": "-15%",
@@ -6110,7 +6110,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Crispino's of visburgers",
-      "desc": "Weekaanbieding",
+      "desc": "Vlees & vis",
       "prijs": "2.49",
       "was": null,
       "deal_label": "OP=OP",
@@ -6121,7 +6121,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Chocolade-biscuits",
-      "desc": "Weekaanbieding",
+      "desc": "Frisdrank",
       "prijs": "1.69",
       "was": null,
       "deal_label": "OP=OP",
@@ -6132,7 +6132,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Dekbedovertrek seersucker",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "8.99",
       "was": null,
       "deal_label": "VANAF",
@@ -6143,7 +6143,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "6-pack Oasis",
-      "desc": "Weekaanbieding",
+      "desc": "Frisdrank",
       "prijs": "3.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -6154,7 +6154,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Badmat of handdoeken",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "5.99",
       "was": null,
       "deal_label": "VANAF",
@@ -6165,7 +6165,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Drop",
-      "desc": "Weekaanbieding",
+      "desc": "Koek & snoep",
       "prijs": "2.49",
       "was": null,
       "deal_label": "OP=OP",
@@ -6176,7 +6176,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "10-pack drink",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "3.49",
       "was": null,
       "deal_label": "OP=OP",
@@ -6187,7 +6187,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "B'tween protein repen",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "1.89",
       "was": null,
       "deal_label": "OP=OP",
@@ -6198,7 +6198,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Peeperpops",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "1.59",
       "was": null,
       "deal_label": "OP=OP",
@@ -6209,7 +6209,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Conimex Boemboe, woksaus en curry",
-      "desc": "Weekaanbieding",
+      "desc": "Soepen & sauzen",
       "prijs": "2.99",
       "was": "5.78",
       "deal_label": "2 Voor 2.99",
@@ -6220,7 +6220,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Wagner Pizza Fina en Gustavo Gusto Pizza",
-      "desc": "Weekaanbieding",
+      "desc": "Maaltijden",
       "prijs": "1.99",
       "was": "4.49",
       "deal_label": "Weekaanbieding",
@@ -6231,7 +6231,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Chio Chips en popcorn",
-      "desc": "Weekaanbieding",
+      "desc": "Snacks",
       "prijs": "2.99",
       "was": "3.98",
       "deal_label": "2 Voor 2.99",
@@ -6242,7 +6242,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Ariel",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "13.99",
       "was": null,
       "deal_label": "1+1 Gratis",
@@ -6253,7 +6253,7 @@
     {
       "supermarkt": "Plus",
       "naam": "PLUS Handsinaasappelen",
-      "desc": "Weekaanbieding",
+      "desc": "Groente & fruit",
       "prijs": "2.49",
       "was": null,
       "deal_label": "Weekaanbieding",
@@ -6264,7 +6264,7 @@
     {
       "supermarkt": "Plus",
       "naam": "PLUS Aardbeien",
-      "desc": "Weekaanbieding",
+      "desc": "Groente & fruit",
       "prijs": "2.99",
       "was": null,
       "deal_label": "Weekaanbieding",
@@ -6275,7 +6275,7 @@
     {
       "supermarkt": "Plus",
       "naam": "PLUS Spruiten",
-      "desc": "Weekaanbieding",
+      "desc": "Groente & fruit",
       "prijs": "0.79",
       "was": null,
       "deal_label": "Weekaanbieding",
@@ -6286,7 +6286,7 @@
     {
       "supermarkt": "Plus",
       "naam": "PLUS Kies & Mix Vers gesneden fruit",
-      "desc": "Weekaanbieding",
+      "desc": "Groente & fruit",
       "prijs": "5.0",
       "was": "7.47",
       "deal_label": "3 Voor 5.00",
@@ -6297,7 +6297,7 @@
     {
       "supermarkt": "Plus",
       "naam": "PLUS Bananen Fairtrade",
-      "desc": "Weekaanbieding",
+      "desc": "Groente & fruit",
       "prijs": "0.99",
       "was": null,
       "deal_label": "0.99 Per Kilo",
@@ -6308,7 +6308,7 @@
     {
       "supermarkt": "Plus",
       "naam": "PLUS Blauwe bessen",
-      "desc": "Weekaanbieding",
+      "desc": "Groente & fruit",
       "prijs": "3.99",
       "was": null,
       "deal_label": "Weekaanbieding",
@@ -6319,7 +6319,7 @@
     {
       "supermarkt": "Plus",
       "naam": "PLUS Mandarijnen extra groot GVP",
-      "desc": "Weekaanbieding",
+      "desc": "Groente & fruit",
       "prijs": "3.69",
       "was": null,
       "deal_label": "Weekaanbieding",
@@ -6330,7 +6330,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Neutraal Handperen Conference",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "1.49",
       "was": null,
       "deal_label": "Weekaanbieding",
@@ -6341,7 +6341,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Neutraal Kleine zoete appeltjes",
-      "desc": "Weekaanbieding",
+      "desc": "Groente & fruit",
       "prijs": "1.99",
       "was": null,
       "deal_label": "Weekaanbieding",
@@ -6352,7 +6352,7 @@
     {
       "supermarkt": "Plus",
       "naam": "PLUS Druiven rood pitloos",
-      "desc": "Weekaanbieding",
+      "desc": "Groente & fruit",
       "prijs": "1.99",
       "was": null,
       "deal_label": "Weekaanbieding",
@@ -6363,7 +6363,7 @@
     {
       "supermarkt": "Plus",
       "naam": "PLUS Oven en airfryer groenten",
-      "desc": "Weekaanbieding",
+      "desc": "Groente & fruit",
       "prijs": "3.99",
       "was": null,
       "deal_label": "1+1 Gratis",
@@ -6374,7 +6374,7 @@
     {
       "supermarkt": "Plus",
       "naam": "PLUS Witlof verpakt",
-      "desc": "Weekaanbieding",
+      "desc": "Groente & fruit",
       "prijs": "1.49",
       "was": null,
       "deal_label": "Weekaanbieding",
@@ -6385,7 +6385,7 @@
     {
       "supermarkt": "Plus",
       "naam": "PLUS Snijbonen (ongesneden)",
-      "desc": "Weekaanbieding",
+      "desc": "Groente & fruit",
       "prijs": "1.69",
       "was": null,
       "deal_label": "Weekaanbieding",
@@ -6396,7 +6396,7 @@
     {
       "supermarkt": "Plus",
       "naam": "PLUS Wok- en roerbakgroenten",
-      "desc": "Weekaanbieding",
+      "desc": "Groente & fruit",
       "prijs": "2.29",
       "was": null,
       "deal_label": "1+1 Gratis",
@@ -6407,7 +6407,7 @@
     {
       "supermarkt": "Plus",
       "naam": "PLUS Ijsbergsla of salademix",
-      "desc": "Weekaanbieding",
+      "desc": "Maaltijden",
       "prijs": "1.09",
       "was": null,
       "deal_label": "1+1 Gratis",
@@ -6418,7 +6418,7 @@
     {
       "supermarkt": "Plus",
       "naam": "PLUS Verspakket",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "4.49",
       "was": "5.99",
       "deal_label": "Weekaanbieding",
@@ -6429,7 +6429,7 @@
     {
       "supermarkt": "Plus",
       "naam": "PLUS Verse ananas blokjes, watermeloen blokjes en meloenmix",
-      "desc": "Weekaanbieding",
+      "desc": "Groente & fruit",
       "prijs": "3.49",
       "was": null,
       "deal_label": "1+1 Gratis",
@@ -6440,7 +6440,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Biologisch van PLUS Rode en witte kool",
-      "desc": "Weekaanbieding",
+      "desc": "Groente & fruit",
       "prijs": "1.69",
       "was": "2.29",
       "deal_label": "Weekaanbieding",
@@ -6451,7 +6451,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Biologisch PLUS en PLUS Kies & Mix Snoepgroente",
-      "desc": "Weekaanbieding",
+      "desc": "Groente & fruit",
       "prijs": "5.0",
       "was": "7.47",
       "deal_label": "3 Voor 5.00",
@@ -6462,7 +6462,7 @@
     {
       "supermarkt": "Plus",
       "naam": "PLUS Verse pizza's",
-      "desc": "Weekaanbieding",
+      "desc": "Maaltijden",
       "prijs": "6.99",
       "was": "12.58",
       "deal_label": "2 Voor 6.99",
@@ -6473,7 +6473,7 @@
     {
       "supermarkt": "Plus",
       "naam": "PLUS Bloemkool pizzabodem en No Fairytales Tortilla",
-      "desc": "Weekaanbieding",
+      "desc": "Maaltijden",
       "prijs": "2.99",
       "was": null,
       "deal_label": "1+1 Gratis",
@@ -6484,7 +6484,7 @@
     {
       "supermarkt": "Plus",
       "naam": "PLUS Pannenkoeken naturel",
-      "desc": "Weekaanbieding",
+      "desc": "Brood & gebak",
       "prijs": "1.69",
       "was": null,
       "deal_label": "Weekaanbieding",
@@ -6495,7 +6495,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Mama's Maaltijden Poké bowls",
-      "desc": "Weekaanbieding",
+      "desc": "Maaltijden",
       "prijs": "5.99",
       "was": null,
       "deal_label": "25 % Korting",
@@ -6506,7 +6506,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Uit de keuken van PLUS Kies & Mix Verse maaltijd",
-      "desc": "Weekaanbieding",
+      "desc": "Maaltijden",
       "prijs": "11.0",
       "was": "12.78",
       "deal_label": "2 Voor 11.00",
@@ -6517,7 +6517,7 @@
     {
       "supermarkt": "Plus",
       "naam": "PLUS Kies & Mix Maaltijdsalade",
-      "desc": "Weekaanbieding",
+      "desc": "Maaltijden",
       "prijs": "9.0",
       "was": "12.58",
       "deal_label": "2 Voor 9.00",
@@ -6528,7 +6528,7 @@
     {
       "supermarkt": "Plus",
       "naam": "PLUS Kies & Mix Verse soep",
-      "desc": "Weekaanbieding",
+      "desc": "Soepen & sauzen",
       "prijs": "5.5",
       "was": "7.18",
       "deal_label": "2 Voor 5.50",
@@ -6539,7 +6539,7 @@
     {
       "supermarkt": "Plus",
       "naam": "PLUS Kies & Mix Oosterse maaltijd",
-      "desc": "Weekaanbieding",
+      "desc": "Maaltijden",
       "prijs": "5.5",
       "was": "7.58",
       "deal_label": "2 Voor 5.50",
@@ -6550,7 +6550,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Uit de keuken van PLUS Kies & Mix Combi gerechten",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "7.5",
       "was": "9.98",
       "deal_label": "2 Voor 7.50",
@@ -6561,7 +6561,7 @@
     {
       "supermarkt": "Plus",
       "naam": "PLUS Vleesvervangers",
-      "desc": "Weekaanbieding",
+      "desc": "Vlees & vis",
       "prijs": "1.99",
       "was": "2.99",
       "deal_label": "Weekaanbieding",
@@ -6572,7 +6572,7 @@
     {
       "supermarkt": "Plus",
       "naam": "PLUS Varkenshaas lang",
-      "desc": "Weekaanbieding",
+      "desc": "Vlees & vis",
       "prijs": "4.49",
       "was": "5.487",
       "deal_label": "300 Gram 4.49",
@@ -6583,7 +6583,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Boerentrots van PLUS Runderhachee en runderriblappen",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "4.49",
       "was": "5.38",
       "deal_label": "250 Gram 4.49",
@@ -6594,7 +6594,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Boerentrots van PLUS Speklappen en magere hamlappen",
-      "desc": "Weekaanbieding",
+      "desc": "Vlees & vis",
       "prijs": "2.69",
       "was": "3.245",
       "deal_label": "250 Gram 2.69",
@@ -6605,7 +6605,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Boerentrots van PLUS Kipdrumsticks en kipborrelhapjes",
-      "desc": "Weekaanbieding",
+      "desc": "Vlees & vis",
       "prijs": "5.49",
       "was": "7.49",
       "deal_label": "Weekaanbieding",
@@ -6616,7 +6616,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Boerentrots van PLUS Kipschnitzels en kip cordon bleu's",
-      "desc": "Weekaanbieding",
+      "desc": "Vlees & vis",
       "prijs": "2.49",
       "was": "3.35",
       "deal_label": "Weekaanbieding",
@@ -6627,7 +6627,7 @@
     {
       "supermarkt": "Plus",
       "naam": "PLUS Zalmfilet met huid",
-      "desc": "Weekaanbieding",
+      "desc": "Vlees & vis",
       "prijs": "6.99",
       "was": null,
       "deal_label": "Weekaanbieding",
@@ -6638,7 +6638,7 @@
     {
       "supermarkt": "Plus",
       "naam": "PLUS Maatjesharing en -haringfilet",
-      "desc": "Weekaanbieding",
+      "desc": "Vlees & vis",
       "prijs": "2.29",
       "was": "2.89",
       "deal_label": "Weekaanbieding",
@@ -6649,7 +6649,7 @@
     {
       "supermarkt": "Plus",
       "naam": "PLUS Vleeswaren",
-      "desc": "Weekaanbieding",
+      "desc": "Vlees & vis",
       "prijs": "1.99",
       "was": "3.99",
       "deal_label": "Weekaanbieding",
@@ -6660,7 +6660,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Puur van Smaak van PLUS Abdijham, coburgerham of kipfilet naturel",
-      "desc": "Weekaanbieding",
+      "desc": "Vlees & vis",
       "prijs": "2.69",
       "was": "3.173",
       "deal_label": "100 Gram 2.69",
@@ -6671,7 +6671,7 @@
     {
       "supermarkt": "Plus",
       "naam": "PLUS Slagersachterham, pannenkoekenspek en boerenmetworst",
-      "desc": "Weekaanbieding",
+      "desc": "Vlees & vis",
       "prijs": "1.79",
       "was": "2.39",
       "deal_label": "100 Gram 1.79",
@@ -6682,7 +6682,7 @@
     {
       "supermarkt": "Plus",
       "naam": "PLUS Salade",
-      "desc": "Weekaanbieding",
+      "desc": "Maaltijden",
       "prijs": "3.49",
       "was": "5.98",
       "deal_label": "2 Voor 3.49",
@@ -6693,7 +6693,7 @@
     {
       "supermarkt": "Plus",
       "naam": "PLUS Goudse kaas 48+",
-      "desc": "Weekaanbieding",
+      "desc": "Vleeswaren & kaas",
       "prijs": "7.99",
       "was": "11.19",
       "deal_label": "Weekaanbieding",
@@ -6704,7 +6704,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Beemster Kaasplakken 48+",
-      "desc": "Weekaanbieding",
+      "desc": "Vleeswaren & kaas",
       "prijs": "4.89",
       "was": null,
       "deal_label": "1+1 Gratis",
@@ -6715,7 +6715,7 @@
     {
       "supermarkt": "Plus",
       "naam": "PLUS Goudse kaas 48+ kilostukken",
-      "desc": "Weekaanbieding",
+      "desc": "Vleeswaren & kaas",
       "prijs": "11.24",
       "was": null,
       "deal_label": "25 % Korting",
@@ -6726,7 +6726,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Echte Smeerkaas",
-      "desc": "Weekaanbieding",
+      "desc": "Vleeswaren & kaas",
       "prijs": "1.19",
       "was": null,
       "deal_label": "1+1 Gratis",
@@ -6737,7 +6737,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Biologisch PLUS en Fryske Kies & Mix Goudse kaas 50+ plakken",
-      "desc": "Weekaanbieding",
+      "desc": "Vleeswaren & kaas",
       "prijs": "6.0",
       "was": "8.38",
       "deal_label": "2 Voor 6.00",
@@ -6748,7 +6748,7 @@
     {
       "supermarkt": "Plus",
       "naam": "PLUS Kies & Mix Tapas",
-      "desc": "Weekaanbieding",
+      "desc": "Vleeswaren & kaas",
       "prijs": "4.5",
       "was": "8.58",
       "deal_label": "2 Voor 4.50",
@@ -6759,7 +6759,7 @@
     {
       "supermarkt": "Plus",
       "naam": "PLUS Kies & Mix Kleintje vleeswaren",
-      "desc": "Weekaanbieding",
+      "desc": "Vlees & vis",
       "prijs": "3.5",
       "was": "4.18",
       "deal_label": "2 Voor 3.50",
@@ -6770,7 +6770,7 @@
     {
       "supermarkt": "Plus",
       "naam": "PLUS Tapas en buitenlandse kaas",
-      "desc": "Weekaanbieding",
+      "desc": "Vleeswaren & kaas",
       "prijs": "6.0",
       "was": "11.97",
       "deal_label": "3 Voor 6.00",
@@ -6781,7 +6781,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Korenlanders van PLUS Kleintje desem",
-      "desc": "Weekaanbieding",
+      "desc": "Brood & gebak",
       "prijs": "0.99",
       "was": null,
       "deal_label": "50 % Korting",
@@ -6792,7 +6792,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Korenlanders van PLUS Bollen",
-      "desc": "Weekaanbieding",
+      "desc": "Brood & gebak",
       "prijs": "1.49",
       "was": "1.99",
       "deal_label": "Weekaanbieding",
@@ -6803,7 +6803,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Korenlanders van PLUS Stoer spelt",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "2.49",
       "was": "2.99",
       "deal_label": "Weekaanbieding",
@@ -6814,7 +6814,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Korenlanders van PLUS Stokbrood wit",
-      "desc": "Weekaanbieding",
+      "desc": "Brood & gebak",
       "prijs": "1.99",
       "was": null,
       "deal_label": "Weekaanbieding",
@@ -6825,7 +6825,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Almhof Kwark",
-      "desc": "Weekaanbieding",
+      "desc": "Zuivel & eieren",
       "prijs": "2.99",
       "was": null,
       "deal_label": "1+1 Gratis",
@@ -6836,7 +6836,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Campina Vlaflip en zacht & luchtig",
-      "desc": "Weekaanbieding",
+      "desc": "Zuivel & eieren",
       "prijs": "2.49",
       "was": null,
       "deal_label": "1+1 Gratis",
@@ -6847,7 +6847,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Arla Skyr en Cultura",
-      "desc": "Weekaanbieding",
+      "desc": "Zuivel & eieren",
       "prijs": "2.19",
       "was": null,
       "deal_label": "1+1 Gratis",
@@ -6858,7 +6858,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Müllermilk",
-      "desc": "Weekaanbieding",
+      "desc": "Zuivel & eieren",
       "prijs": "0.99",
       "was": "2.19",
       "deal_label": "Weekaanbieding",
@@ -6869,7 +6869,7 @@
     {
       "supermarkt": "Plus",
       "naam": "The Flower Farm",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "3.19",
       "was": null,
       "deal_label": "1+1 Gratis",
@@ -6880,7 +6880,7 @@
     {
       "supermarkt": "Plus",
       "naam": "PLUS Kies & Mix Toetjes Hollands, Grieks of Italiaans",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "3.0",
       "was": "6.2",
       "deal_label": "4 Voor 3.00",
@@ -6891,7 +6891,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Feestelijk PLUS Kies & Mix Mousse",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "5.99",
       "was": "7.98",
       "deal_label": "2 Voor 5.99",
@@ -6902,7 +6902,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Korenlanders van PLUS Stokbroden met desem bereid",
-      "desc": "Weekaanbieding",
+      "desc": "Brood & gebak",
       "prijs": "1.41",
       "was": null,
       "deal_label": "25 % Korting",
@@ -6913,7 +6913,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Korenlanders van PLUS Vloerbrood",
-      "desc": "Weekaanbieding",
+      "desc": "Brood & gebak",
       "prijs": "1.99",
       "was": "2.89",
       "deal_label": "Weekaanbieding",
@@ -6924,7 +6924,7 @@
     {
       "supermarkt": "Plus",
       "naam": "PLUS Korenlanders Boter puntjes",
-      "desc": "Weekaanbieding",
+      "desc": "Zuivel & eieren",
       "prijs": "1.89",
       "was": null,
       "deal_label": "Weekaanbieding",
@@ -6935,7 +6935,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Gijs Fries suikerbrood en mini kwarkbollen",
-      "desc": "Weekaanbieding",
+      "desc": "Zuivel & eieren",
       "prijs": "1.49",
       "was": null,
       "deal_label": "25 % Korting",
@@ -6946,7 +6946,7 @@
     {
       "supermarkt": "Plus",
       "naam": "PLUS Korenlanders Brunch mix",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "2.49",
       "was": null,
       "deal_label": "Weekaanbieding",
@@ -6957,7 +6957,7 @@
     {
       "supermarkt": "Plus",
       "naam": "PLUS Korenlanders Stokbrood wit",
-      "desc": "Weekaanbieding",
+      "desc": "Brood & gebak",
       "prijs": "1.99",
       "was": null,
       "deal_label": "Weekaanbieding",
@@ -6968,7 +6968,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Korenlanders van PLUS Stroopwafels XL",
-      "desc": "Weekaanbieding",
+      "desc": "Brood & gebak",
       "prijs": "1.86",
       "was": null,
       "deal_label": "25 % Korting",
@@ -6979,7 +6979,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Korenlanders van PLUS Aardbeiengebak",
-      "desc": "Weekaanbieding",
+      "desc": "Groente & fruit",
       "prijs": "7.49",
       "was": null,
       "deal_label": "25 % Korting",
@@ -6990,7 +6990,7 @@
     {
       "supermarkt": "Plus",
       "naam": "PLUS Korenlanders Eclairs",
-      "desc": "Weekaanbieding",
+      "desc": "Brood & gebak",
       "prijs": "2.49",
       "was": null,
       "deal_label": "Weekaanbieding",
@@ -7001,7 +7001,7 @@
     {
       "supermarkt": "Plus",
       "naam": "PLUS Korenlanders Lemon curd taart",
-      "desc": "Weekaanbieding",
+      "desc": "Brood & gebak",
       "prijs": "7.49",
       "was": null,
       "deal_label": "Weekaanbieding",
@@ -7012,7 +7012,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Mediterraneo Focaccia's",
-      "desc": "Weekaanbieding",
+      "desc": "Brood & gebak",
       "prijs": "2.69",
       "was": null,
       "deal_label": "1+1 Gratis",
@@ -7023,7 +7023,7 @@
     {
       "supermarkt": "Plus",
       "naam": "PLUS Kies & Mix American Bakery Cookies, vanille- of chocolade muffins",
-      "desc": "Weekaanbieding",
+      "desc": "Frisdrank",
       "prijs": "2.0",
       "was": "2.38",
       "deal_label": "2 Voor 2.00",
@@ -7034,7 +7034,7 @@
     {
       "supermarkt": "Plus",
       "naam": "PLUS Kies & Mix Mini gebakjes",
-      "desc": "Weekaanbieding",
+      "desc": "Brood & gebak",
       "prijs": "7.5",
       "was": "9.98",
       "deal_label": "2 Voor 7.50",
@@ -7045,7 +7045,7 @@
     {
       "supermarkt": "Plus",
       "naam": "PLUS Kies & Mix Mini ciabatta wit, kaiserbroodje volkoren en wit en tijgerbol wit",
-      "desc": "Weekaanbieding",
+      "desc": "Brood & gebak",
       "prijs": "1.0",
       "was": "2.36",
       "deal_label": "4 Voor 1.00",
@@ -7056,7 +7056,7 @@
     {
       "supermarkt": "Plus",
       "naam": "PLUS Kies & Mix Mini stolletjes",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "2.5",
       "was": "2.97",
       "deal_label": "3 Voor 2.50",
@@ -7067,7 +7067,7 @@
     {
       "supermarkt": "Plus",
       "naam": "PLUS Korenlanders Kies & Mix Koek, cake of chocolade",
-      "desc": "Weekaanbieding",
+      "desc": "Frisdrank",
       "prijs": "6.0",
       "was": "7.5",
       "deal_label": "2 Voor 6.00",
@@ -7078,7 +7078,7 @@
     {
       "supermarkt": "Plus",
       "naam": "L'Or Lungo profondo voordeelpak koffiecups",
-      "desc": "Weekaanbieding",
+      "desc": "Koffie & thee",
       "prijs": "4.99",
       "was": null,
       "deal_label": "Weekaanbieding",
@@ -7089,7 +7089,7 @@
     {
       "supermarkt": "Plus",
       "naam": "L'Or Ristretto voordeelpak koffiecups",
-      "desc": "Weekaanbieding",
+      "desc": "Koffie & thee",
       "prijs": "4.99",
       "was": null,
       "deal_label": "Weekaanbieding",
@@ -7100,7 +7100,7 @@
     {
       "supermarkt": "Plus",
       "naam": "L'Or Lungo estremo voordeelpak koffiecups",
-      "desc": "Weekaanbieding",
+      "desc": "Koffie & thee",
       "prijs": "4.99",
       "was": null,
       "deal_label": "Weekaanbieding",
@@ -7111,7 +7111,7 @@
     {
       "supermarkt": "Plus",
       "naam": "L'Or Espresso forza koffiecups voordeelpak",
-      "desc": "Weekaanbieding",
+      "desc": "Koffie & thee",
       "prijs": "4.99",
       "was": null,
       "deal_label": "Weekaanbieding",
@@ -7122,7 +7122,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Van Gilse, Frutesse en Canisius Stroop en fruitstroop",
-      "desc": "Weekaanbieding",
+      "desc": "Groente & fruit",
       "prijs": "1.49",
       "was": null,
       "deal_label": "25 % Korting",
@@ -7133,7 +7133,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Zonnatura Thee en tussendoor",
-      "desc": "Weekaanbieding",
+      "desc": "Koffie & thee",
       "prijs": "2.69",
       "was": null,
       "deal_label": "1+1 Gratis",
@@ -7144,7 +7144,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Snelle Jelle",
-      "desc": "Weekaanbieding",
+      "desc": "Ontbijt & beleg",
       "prijs": "1.99",
       "was": null,
       "deal_label": "1+1 Gratis",
@@ -7155,7 +7155,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Quaker Havermout",
-      "desc": "Weekaanbieding",
+      "desc": "Ontbijt & beleg",
       "prijs": "1.94",
       "was": null,
       "deal_label": "25 % Korting",
@@ -7166,7 +7166,7 @@
     {
       "supermarkt": "Plus",
       "naam": "PLUS Kies & Mix Ontbijtverrijkers",
-      "desc": "Weekaanbieding",
+      "desc": "Ontbijt & beleg",
       "prijs": "5.5",
       "was": "6.98",
       "deal_label": "2 Voor 5.50",
@@ -7177,7 +7177,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Amstel Pilsener bier fles",
-      "desc": "Weekaanbieding",
+      "desc": "Bier & wijn",
       "prijs": "13.9875",
       "was": null,
       "deal_label": "Weekaanbieding",
@@ -7188,7 +7188,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Amstel Pilsener bier blik",
-      "desc": "Weekaanbieding",
+      "desc": "Bier & wijn",
       "prijs": "4.4925",
       "was": null,
       "deal_label": "Weekaanbieding",
@@ -7199,7 +7199,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Amstel Rosé bier fles",
-      "desc": "Weekaanbieding",
+      "desc": "Bier & wijn",
       "prijs": "5.9925",
       "was": null,
       "deal_label": "Weekaanbieding",
@@ -7210,7 +7210,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Coolbest Fruitdrink, drinkontbijt en proteinedrink",
-      "desc": "Weekaanbieding",
+      "desc": "Groente & fruit",
       "prijs": "2.29",
       "was": null,
       "deal_label": "1+1 Gratis",
@@ -7221,7 +7221,7 @@
     {
       "supermarkt": "Plus",
       "naam": "L'Or Koffiecups",
-      "desc": "Weekaanbieding",
+      "desc": "Koffie & thee",
       "prijs": "4.99",
       "was": "8.49",
       "deal_label": "Weekaanbieding",
@@ -7232,7 +7232,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Lipton en Pukka Thee",
-      "desc": "Weekaanbieding",
+      "desc": "Koffie & thee",
       "prijs": "2.24",
       "was": null,
       "deal_label": "25 % Korting",
@@ -7243,7 +7243,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Lavazza Koffie",
-      "desc": "Weekaanbieding",
+      "desc": "Koffie & thee",
       "prijs": "11.99",
       "was": null,
       "deal_label": "25 % Korting",
@@ -7254,7 +7254,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Dubbelfrisss Original en 1kcal en Appelsientje Fruitdrink",
-      "desc": "Weekaanbieding",
+      "desc": "Groente & fruit",
       "prijs": "2.89",
       "was": null,
       "deal_label": "1+1 Gratis",
@@ -7265,7 +7265,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Maaza en Dubbeldrank",
-      "desc": "Weekaanbieding",
+      "desc": "Frisdrank",
       "prijs": "1.49",
       "was": "2.49",
       "deal_label": "Weekaanbieding",
@@ -7276,7 +7276,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Coca-Cola, Fanta, Sprite en Fuze Tea",
-      "desc": "Weekaanbieding",
+      "desc": "Frisdrank",
       "prijs": "2.45",
       "was": null,
       "deal_label": "1+1 Gratis",
@@ -7287,7 +7287,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Karvan Cévitam",
-      "desc": "Weekaanbieding",
+      "desc": "Frisdrank",
       "prijs": "3.49",
       "was": "4.29",
       "deal_label": "Weekaanbieding",
@@ -7298,7 +7298,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Biologische wijn",
-      "desc": "Weekaanbieding",
+      "desc": "Bier & wijn",
       "prijs": "3.75",
       "was": null,
       "deal_label": "25 % Korting",
@@ -7309,7 +7309,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Hardseltzers",
-      "desc": "Weekaanbieding",
+      "desc": "Bier & wijn",
       "prijs": "1.8",
       "was": null,
       "deal_label": "25 % Korting",
@@ -7320,7 +7320,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Gato Negro",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "3.99",
       "was": "5.29",
       "deal_label": "Weekaanbieding",
@@ -7331,7 +7331,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Grolsch, Amstel, Jupiler en Bavaria Pils",
-      "desc": "Weekaanbieding",
+      "desc": "Bier & wijn",
       "prijs": "14.47",
       "was": null,
       "deal_label": "25 % Korting",
@@ -7342,7 +7342,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Grolsch, Bavaria en Brand 0.0%",
-      "desc": "Weekaanbieding",
+      "desc": "Bier & wijn",
       "prijs": "5.29",
       "was": null,
       "deal_label": "1+1 Gratis",
@@ -7353,7 +7353,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Hertog Jan Speciaalbier, Corona en Cornet",
-      "desc": "Weekaanbieding",
+      "desc": "Bier & wijn",
       "prijs": "7.99",
       "was": null,
       "deal_label": "25 % Korting",
@@ -7364,7 +7364,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Tripel Karmeliet, Hoegaarden en Amstel Rosé",
-      "desc": "Weekaanbieding",
+      "desc": "Bier & wijn",
       "prijs": "7.12",
       "was": null,
       "deal_label": "25 % Korting",
@@ -7375,7 +7375,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Wijn van de Maand maart: Monte Tessa Primitivo IGP",
-      "desc": "Weekaanbieding",
+      "desc": "Bier & wijn",
       "prijs": "29.94",
       "was": "39.9",
       "deal_label": "6 Voor 29.94",
@@ -7386,7 +7386,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Wijn top 5 maart",
-      "desc": "Weekaanbieding",
+      "desc": "Bier & wijn",
       "prijs": "6.99",
       "was": null,
       "deal_label": "1.00 Korting",
@@ -7397,7 +7397,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Hartevelt Jonge jenever, vieux en berenburg",
-      "desc": "Weekaanbieding",
+      "desc": "Bier & wijn",
       "prijs": "11.99",
       "was": "15.99",
       "deal_label": "Weekaanbieding",
@@ -7408,7 +7408,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Sonnema Berenburg",
-      "desc": "Weekaanbieding",
+      "desc": "Bier & wijn",
       "prijs": "13.99",
       "was": null,
       "deal_label": "Weekaanbieding",
@@ -7419,7 +7419,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Malibu White rum en strawberry, Glen Talloch Whisky en Eristoff Vodka",
-      "desc": "Weekaanbieding",
+      "desc": "Bier & wijn",
       "prijs": "12.99",
       "was": "17.29",
       "deal_label": "Weekaanbieding",
@@ -7430,7 +7430,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Grants Blended Scotch whisky Jameson Irish Whiskey en Roku Gin",
-      "desc": "Weekaanbieding",
+      "desc": "Bier & wijn",
       "prijs": "18.75",
       "was": null,
       "deal_label": "25 % Korting",
@@ -7441,7 +7441,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Honig Mix voor maaltijden en maaltijdpakketten",
-      "desc": "Weekaanbieding",
+      "desc": "Maaltijden",
       "prijs": "1.99",
       "was": null,
       "deal_label": "1+1 Gratis",
@@ -7452,7 +7452,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Bio+ Rijst",
-      "desc": "Weekaanbieding",
+      "desc": "Pasta & rijst",
       "prijs": "1.19",
       "was": null,
       "deal_label": "25 % Korting",
@@ -7463,7 +7463,7 @@
     {
       "supermarkt": "Plus",
       "naam": "PLUS Pastasaus",
-      "desc": "Weekaanbieding",
+      "desc": "Soepen & sauzen",
       "prijs": "2.59",
       "was": null,
       "deal_label": "1+1 Gratis",
@@ -7474,7 +7474,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Silvo Kruiden en specerijen",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "0.74",
       "was": null,
       "deal_label": "50 % Korting",
@@ -7485,7 +7485,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Nissin, Nongshim en Yopokki",
-      "desc": "Weekaanbieding",
+      "desc": "Pasta & rijst",
       "prijs": "1.85",
       "was": null,
       "deal_label": "1+1 Gratis",
@@ -7496,7 +7496,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Hak Groenteconserven",
-      "desc": "Weekaanbieding",
+      "desc": "Groente & fruit",
       "prijs": "2.99",
       "was": null,
       "deal_label": "1+1 Gratis",
@@ -7507,7 +7507,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Mousline Aardappelpuree",
-      "desc": "Weekaanbieding",
+      "desc": "Groente & fruit",
       "prijs": "1.69",
       "was": "2.39",
       "deal_label": "Weekaanbieding",
@@ -7518,7 +7518,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Feestelijk PLUS Paaschocolade",
-      "desc": "Weekaanbieding",
+      "desc": "Frisdrank",
       "prijs": "5.99",
       "was": "7.98",
       "deal_label": "2 Voor 5.99",
@@ -7529,7 +7529,7 @@
     {
       "supermarkt": "Plus",
       "naam": "PLUS Crème brulée koekjes en hazelino's met crèmevulling",
-      "desc": "Weekaanbieding",
+      "desc": "Koek & snoep",
       "prijs": "1.99",
       "was": null,
       "deal_label": "1+1 Gratis",
@@ -7540,7 +7540,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Tony's Chocolonely Repen en lil'bits",
-      "desc": "Weekaanbieding",
+      "desc": "Ontbijt & beleg",
       "prijs": "2.99",
       "was": "4.99",
       "deal_label": "Weekaanbieding",
@@ -7551,7 +7551,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Stimorol en Bubblicious",
-      "desc": "Weekaanbieding",
+      "desc": "Koek & snoep",
       "prijs": "3.49",
       "was": null,
       "deal_label": "1+1 Gratis",
@@ -7562,7 +7562,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Red Band, Venco en The Jelly Bean Factory",
-      "desc": "Weekaanbieding",
+      "desc": "Koek & snoep",
       "prijs": "3.99",
       "was": "5.5",
       "deal_label": "2 Voor 3.99",
@@ -7573,7 +7573,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Pringles",
-      "desc": "Weekaanbieding",
+      "desc": "Snacks",
       "prijs": "1.95",
       "was": null,
       "deal_label": "1+1 Gratis",
@@ -7584,7 +7584,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Doritos",
-      "desc": "Weekaanbieding",
+      "desc": "Snacks",
       "prijs": "3.49",
       "was": "4.78",
       "deal_label": "2 Voor 3.49",
@@ -7595,7 +7595,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Kies & Mix Chips",
-      "desc": "Weekaanbieding",
+      "desc": "Snacks",
       "prijs": "2.5",
       "was": "4.45",
       "deal_label": "5 Voor 2.50",
@@ -7606,7 +7606,7 @@
     {
       "supermarkt": "Plus",
       "naam": "PLUS Kies & Mix Dipstokjes, grissini, picos of scrocchi",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "3.5",
       "was": "4.38",
       "deal_label": "2 Voor 3.50",
@@ -7617,7 +7617,7 @@
     {
       "supermarkt": "Plus",
       "naam": "PLUS Kies & Mix Pinda's, noten of rijstzoutjes",
-      "desc": "Weekaanbieding",
+      "desc": "Pasta & rijst",
       "prijs": "5.0",
       "was": "11.97",
       "deal_label": "3 Voor 5.00",
@@ -7628,7 +7628,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Kwekkeboom Snacks",
-      "desc": "Weekaanbieding",
+      "desc": "Snacks",
       "prijs": "4.59",
       "was": null,
       "deal_label": "1+1 Gratis",
@@ -7639,7 +7639,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Lamb Weston Friet",
-      "desc": "Weekaanbieding",
+      "desc": "Diepvries",
       "prijs": "2.99",
       "was": null,
       "deal_label": "1+1 Gratis",
@@ -7650,7 +7650,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Goodoo, Pirulo en Oppo IJs",
-      "desc": "Weekaanbieding",
+      "desc": "Diepvries",
       "prijs": "3.99",
       "was": null,
       "deal_label": "1+1 Gratis",
@@ -7661,7 +7661,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Mama's en Fitmeals Vriesverse maaltijden",
-      "desc": "Weekaanbieding",
+      "desc": "Maaltijden",
       "prijs": "10.0",
       "was": "13.98",
       "deal_label": "2 Voor 10.00",
@@ -7672,7 +7672,7 @@
     {
       "supermarkt": "Plus",
       "naam": "PLUS Kies & Mix Dolce Vita Pizza",
-      "desc": "Weekaanbieding",
+      "desc": "Maaltijden",
       "prijs": "6.0",
       "was": "7.47",
       "deal_label": "3 Voor 6.00",
@@ -7683,7 +7683,7 @@
     {
       "supermarkt": "Plus",
       "naam": "HappySoaps",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "8.99",
       "was": null,
       "deal_label": "1+1 Gratis",
@@ -7694,7 +7694,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Kneipp en Therme",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "6.99",
       "was": null,
       "deal_label": "1+1 Gratis",
@@ -7705,7 +7705,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Colgate en Elmex",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "4.39",
       "was": null,
       "deal_label": "1+1 Gratis",
@@ -7716,7 +7716,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Odorex en Vogue",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "2.89",
       "was": null,
       "deal_label": "1+2 Gratis",
@@ -7727,7 +7727,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Page Toiletpapier",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "16.99",
       "was": null,
       "deal_label": "1+1 Gratis",
@@ -7738,7 +7738,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Nalys Keuken- en toiletpapier",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "16.99",
       "was": null,
       "deal_label": "1+1 Gratis",
@@ -7749,7 +7749,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Lenor",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "9.99",
       "was": null,
       "deal_label": "1+1 Gratis",
@@ -7760,7 +7760,7 @@
     {
       "supermarkt": "Plus",
       "naam": "A-Merk ecologisch en parfumvrije Wasmiddel en wasverzachter",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "9.79",
       "was": null,
       "deal_label": "1+1 Gratis",
@@ -7771,7 +7771,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Dreft en Marcel's Green Soap Vaatwascapsules en 3in1 power spray",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "13.99",
       "was": null,
       "deal_label": "1+1 Gratis",
@@ -7782,7 +7782,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Vintastic en HG Schoonmaakazijn en groene aanslagreiniger",
-      "desc": "Weekaanbieding",
+      "desc": "Soepen & sauzen",
       "prijs": "4.95",
       "was": null,
       "deal_label": "1+1 Gratis",
@@ -7793,7 +7793,7 @@
     {
       "supermarkt": "Plus",
       "naam": "3G power en 3G expert",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "2.49",
       "was": "5.99",
       "deal_label": "Weekaanbieding",
@@ -7804,7 +7804,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Dreft Handafwas",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "2.49",
       "was": "4.99",
       "deal_label": "Weekaanbieding",
@@ -7815,7 +7815,7 @@
     {
       "supermarkt": "Plus",
       "naam": "PLUS Pick & Mix Bloemen en planten",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "7.5",
       "was": "7.98",
       "deal_label": "2 Voor 7.50",
@@ -7826,7 +7826,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Duracell PLUS AA en AAA en CR2032 knoopcel",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "11.69",
       "was": null,
       "deal_label": "1+1 Gratis",
@@ -7837,7 +7837,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Vitakraft",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "4.78",
       "was": null,
       "deal_label": "2E Halve Prijs",
@@ -7848,7 +7848,7 @@
     {
       "supermarkt": "Plus",
       "naam": "GRATIS BEZORGING",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "12.0",
       "was": null,
       "deal_label": "GRATIS BEZORGING",
@@ -7859,7 +7859,7 @@
     {
       "supermarkt": "Plus",
       "naam": "3 VOOR 5.00",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "5.0",
       "was": null,
       "deal_label": "3 VOOR 5.00",
@@ -7870,7 +7870,7 @@
     {
       "supermarkt": "Plus",
       "naam": "0.99 PER KILO",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "0.99",
       "was": null,
       "deal_label": "Weekaanbieding",
@@ -7881,7 +7881,7 @@
     {
       "supermarkt": "Plus",
       "naam": "2 VOOR 0.89",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "0.89",
       "was": null,
       "deal_label": "2 VOOR 0.89",
@@ -7892,7 +7892,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Bijv. Oven en Airfryer groenten courg paprik",
-      "desc": "Weekaanbieding",
+      "desc": "Groente & fruit",
       "prijs": "7.98",
       "was": null,
       "deal_label": "1+1 GRATIS",
@@ -7903,7 +7903,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Bijv. Roerbakgroenten Italiaanse stijl",
-      "desc": "Weekaanbieding",
+      "desc": "Groente & fruit",
       "prijs": "4.58",
       "was": null,
       "deal_label": "1+1 GRATIS",
@@ -7914,7 +7914,7 @@
     {
       "supermarkt": "Plus",
       "naam": "2 VOOR 2.50",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "2.5",
       "was": null,
       "deal_label": "2 VOOR 2.50",
@@ -7925,7 +7925,7 @@
     {
       "supermarkt": "Plus",
       "naam": "2 VOOR 6.99",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "6.99",
       "was": null,
       "deal_label": "2 VOOR 6.99",
@@ -7936,7 +7936,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Alle Mama's Maaltijden Poké bowls",
-      "desc": "Weekaanbieding",
+      "desc": "Maaltijden",
       "prijs": "7.99",
       "was": null,
       "deal_label": "25 % KORTING",
@@ -7947,7 +7947,7 @@
     {
       "supermarkt": "Plus",
       "naam": "2 VOOR 11.00",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "11.0",
       "was": null,
       "deal_label": "2 VOOR 11.00",
@@ -7958,7 +7958,7 @@
     {
       "supermarkt": "Plus",
       "naam": "2 VOOR 9.00",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "9.0",
       "was": null,
       "deal_label": "2 VOOR 9.00",
@@ -7969,7 +7969,7 @@
     {
       "supermarkt": "Plus",
       "naam": "2 VOOR 5.50",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "5.5",
       "was": null,
       "deal_label": "2 VOOR 5.50",
@@ -7980,7 +7980,7 @@
     {
       "supermarkt": "Plus",
       "naam": "2 VOOR 7.50",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "7.5",
       "was": null,
       "deal_label": "2 VOOR 7.50",
@@ -7991,7 +7991,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "1 de Beste IJsbergsla melange — Zak 200 gram.",
-      "desc": "Weekaanbieding",
+      "desc": "Groente & fruit",
       "prijs": "0.99",
       "was": null,
       "deal_label": "Actie_",
@@ -8002,7 +8002,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "BIO+ shiitake — Schaal 100 gram.",
-      "desc": "Weekaanbieding",
+      "desc": "Groente & fruit",
       "prijs": "1.39",
       "was": null,
       "deal_label": "Actie_",
@@ -8013,7 +8013,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Groene asperges — Per bos.",
-      "desc": "Weekaanbieding",
+      "desc": "Groente & fruit",
       "prijs": "2.49",
       "was": null,
       "deal_label": "Actie_",
@@ -8024,7 +8024,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Rode druiven — Bak 500 gram of los per 500 gram. Pitloos of met pit.",
-      "desc": "Weekaanbieding",
+      "desc": "Groente & fruit",
       "prijs": "1.49",
       "was": null,
       "deal_label": "Actie_",
@@ -8035,7 +8035,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Snijbonen — Zak 400 gram.",
-      "desc": "Weekaanbieding",
+      "desc": "Groente & fruit",
       "prijs": "1.49",
       "was": null,
       "deal_label": "Actie_",
@@ -8046,7 +8046,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Rode snoeptomaten — Per bak.",
-      "desc": "Weekaanbieding",
+      "desc": "Groente & fruit",
       "prijs": "1.99",
       "was": null,
       "deal_label": "Actie_",
@@ -8057,7 +8057,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Royal Gala appels — Per zak.",
-      "desc": "Weekaanbieding",
+      "desc": "Groente & fruit",
       "prijs": "2.49",
       "was": null,
       "deal_label": "Actie_",
@@ -8068,7 +8068,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Zoete puntpaprika's — Per zak.",
-      "desc": "Weekaanbieding",
+      "desc": "Groente & fruit",
       "prijs": "1.99",
       "was": null,
       "deal_label": "Actie_",
@@ -8079,7 +8079,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Del Monte vruchten op sap of siroop — Blik 825 of 840 gram. OP=OP",
-      "desc": "Weekaanbieding",
+      "desc": "Frisdrank",
       "prijs": "1.99",
       "was": null,
       "deal_label": "Actie_",
@@ -8090,7 +8090,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Hak groente in pak — Pak 380 gram.",
-      "desc": "Weekaanbieding",
+      "desc": "Groente & fruit",
       "prijs": "0.79",
       "was": "1.85",
       "deal_label": "Actie_",
@@ -8101,7 +8101,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Kokota tapas — Pot 244 of 370 ml.",
-      "desc": "Weekaanbieding",
+      "desc": "Vleeswaren & kaas",
       "prijs": "1.79",
       "was": "2.49",
       "deal_label": "Actie_",
@@ -8112,7 +8112,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "1 de Beste Aardappelen — Zak 1 kilo.",
-      "desc": "Weekaanbieding",
+      "desc": "Groente & fruit",
       "prijs": "0.79",
       "was": null,
       "deal_label": "Actie_",
@@ -8123,7 +8123,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Aardbeien — Per schaal.",
-      "desc": "Weekaanbieding",
+      "desc": "Groente & fruit",
       "prijs": "2.99",
       "was": null,
       "deal_label": "Actie_",
@@ -8134,7 +8134,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Al Jawhara dadels op tak — Per pak.",
-      "desc": "Weekaanbieding",
+      "desc": "Groente & fruit",
       "prijs": "3.99",
       "was": null,
       "deal_label": "Actie_",
@@ -8145,7 +8145,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Blauwe bessen — Per bak.",
-      "desc": "Weekaanbieding",
+      "desc": "Groente & fruit",
       "prijs": "4.49",
       "was": null,
       "deal_label": "Actie_",
@@ -8156,7 +8156,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Courgette — Per stuk.",
-      "desc": "Weekaanbieding",
+      "desc": "Groente & fruit",
       "prijs": "0.79",
       "was": null,
       "deal_label": "Actie_",
@@ -8167,7 +8167,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Gedroogde vijgen — Schaal 350 gram.",
-      "desc": "Weekaanbieding",
+      "desc": "Groente & fruit",
       "prijs": "1.99",
       "was": null,
       "deal_label": "Actie_",
@@ -8178,7 +8178,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Mandarijnen — Per net.",
-      "desc": "Weekaanbieding",
+      "desc": "Groente & fruit",
       "prijs": "1.99",
       "was": null,
       "deal_label": "Actie_",
@@ -8189,7 +8189,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Perssinaasappelen — Per net.",
-      "desc": "Weekaanbieding",
+      "desc": "Groente & fruit",
       "prijs": "1.99",
       "was": null,
       "deal_label": "Actie_",
@@ -8200,7 +8200,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Pijnboompitten — Schaal 100 gram.",
-      "desc": "Weekaanbieding",
+      "desc": "Groente & fruit",
       "prijs": "3.69",
       "was": null,
       "deal_label": "Actie_",
@@ -8211,7 +8211,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Pruimen — Los.",
-      "desc": "Weekaanbieding",
+      "desc": "Groente & fruit",
       "prijs": "1.29",
       "was": null,
       "deal_label": "Actie_",
@@ -8222,7 +8222,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Snackkomkommer — Per bak.",
-      "desc": "Weekaanbieding",
+      "desc": "Groente & fruit",
       "prijs": "2.49",
       "was": null,
       "deal_label": "Actie_",
@@ -8233,7 +8233,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "De Vleeschmeesters Runderriblap — Per pak.",
-      "desc": "Weekaanbieding",
+      "desc": "Vlees & vis",
       "prijs": "6.99",
       "was": null,
       "deal_label": "Actie_",
@@ -8244,7 +8244,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "De Vleeschmeesters Varkensoesters — Pak 6 stuks. OP=OP",
-      "desc": "Weekaanbieding",
+      "desc": "Vlees & vis",
       "prijs": "5.99",
       "was": null,
       "deal_label": "Actie_",
@@ -8255,7 +8255,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Vivera — Pak 2 of 12 stuks of 150 - 500 gram. (m.u.v. tofu 400 - 500 gram).",
-      "desc": "Weekaanbieding",
+      "desc": "Vegetarisch & vegan",
       "prijs": "1.89",
       "was": "3.85",
       "deal_label": "Actie_",
@@ -8266,7 +8266,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "De Vleeschmeesters Extra mager rundergehakt — Per pak.",
-      "desc": "Weekaanbieding",
+      "desc": "Vlees & vis",
       "prijs": "4.39",
       "was": null,
       "deal_label": "Actie_",
@@ -8277,7 +8277,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "De Vleeschmeesters Kipdijshoarma — Per pak.",
-      "desc": "Weekaanbieding",
+      "desc": "Vlees & vis",
       "prijs": "7.99",
       "was": null,
       "deal_label": "Actie_",
@@ -8288,7 +8288,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Kabeljauw- of zalmburgers — Pak 2 stuks.",
-      "desc": "Weekaanbieding",
+      "desc": "Vlees & vis",
       "prijs": "1.99",
       "was": "3.15",
       "deal_label": "Actie_",
@@ -8299,7 +8299,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "1 de Beste Gebraden kipfilet of kiprollade chili — Pak 100 gram.",
-      "desc": "Weekaanbieding",
+      "desc": "Vlees & vis",
       "prijs": "1.99",
       "was": "2.49",
       "deal_label": "Actie_",
@@ -8310,7 +8310,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Zandvliet Gelderse gekookte worst — Per stuk 250 gram.",
-      "desc": "Weekaanbieding",
+      "desc": "Vlees & vis",
       "prijs": "1.59",
       "was": null,
       "deal_label": "Actie_",
@@ -8321,7 +8321,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Compaxo — Per stuk 250 gram. OP=OP",
-      "desc": "Weekaanbieding",
+      "desc": "Vleeswaren & kaas",
       "prijs": "1.99",
       "was": null,
       "deal_label": "Actie_",
@@ -8332,7 +8332,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "1 de Beste Gyros rollade — Pak 100 gram. OP=OP",
-      "desc": "Weekaanbieding",
+      "desc": "Vlees & vis",
       "prijs": "1.99",
       "was": null,
       "deal_label": "Vr, Za & Zo",
@@ -8343,7 +8343,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "De Vleeschmeesters Culinaire beenham — Per stuk.",
-      "desc": "Weekaanbieding",
+      "desc": "Vlees & vis",
       "prijs": "4.99",
       "was": null,
       "deal_label": "Vr, Za & Zo",
@@ -8354,7 +8354,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Klooster warmgerookte zalmsteak — Per stuk 100 gram. OP=OP",
-      "desc": "Weekaanbieding",
+      "desc": "Vlees & vis",
       "prijs": "3.79",
       "was": null,
       "deal_label": "Vr, Za & Zo",
@@ -8365,7 +8365,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Bakker van der Akker Bruine- of volkoren bollen — Per zak.",
-      "desc": "Weekaanbieding",
+      "desc": "Brood & gebak",
       "prijs": "0.99",
       "was": null,
       "deal_label": "Actie_",
@@ -8376,7 +8376,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Boerenbrood — Heel brood.",
-      "desc": "Weekaanbieding",
+      "desc": "Brood & gebak",
       "prijs": "1.49",
       "was": null,
       "deal_label": "Actie_",
@@ -8387,7 +8387,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Geglazuurde donuts — Pak 4 stuks.",
-      "desc": "Weekaanbieding",
+      "desc": "Brood & gebak",
       "prijs": "1.69",
       "was": null,
       "deal_label": "Actie_",
@@ -8398,7 +8398,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Kadir's halal frikandelbroodje — Per stuk.",
-      "desc": "Weekaanbieding",
+      "desc": "Diepvries",
       "prijs": "0.89",
       "was": null,
       "deal_label": "Actie_",
@@ -8409,7 +8409,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Markus stroopwafels — Pak 10 stuks.",
-      "desc": "Weekaanbieding",
+      "desc": "Brood & gebak",
       "prijs": "2.49",
       "was": null,
       "deal_label": "Actie_",
@@ -8420,7 +8420,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Bolletje ontbijtkoek XL — Pak 600 gram. OP=OP",
-      "desc": "Weekaanbieding",
+      "desc": "Brood & gebak",
       "prijs": "1.39",
       "was": null,
       "deal_label": "Actie_",
@@ -8431,7 +8431,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Bolletje Oerknäck of vezelrijk beschuit — Pak 10 stuks of pak 300 gram.",
-      "desc": "Weekaanbieding",
+      "desc": "Brood & gebak",
       "prijs": "1.49",
       "was": "2.39",
       "deal_label": "Actie_",
@@ -8442,7 +8442,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Lotus Speculoospasta — Per pot.",
-      "desc": "Weekaanbieding",
+      "desc": "Pasta & rijst",
       "prijs": "1.89",
       "was": "3.75",
       "deal_label": "Actie_",
@@ -8453,7 +8453,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Balconi wafers — Pak 5 x 45 gram. OP=OP",
-      "desc": "Weekaanbieding",
+      "desc": "Koek & snoep",
       "prijs": "1.29",
       "was": null,
       "deal_label": "Actie_",
@@ -8464,7 +8464,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Enkhuizer Jodekoeken — Bus ca. 16 stuks.",
-      "desc": "Weekaanbieding",
+      "desc": "Koek & snoep",
       "prijs": "1.89",
       "was": null,
       "deal_label": "Actie_",
@@ -8475,7 +8475,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Beemster kaas 48+ — Per stuk.",
-      "desc": "Weekaanbieding",
+      "desc": "Vleeswaren & kaas",
       "prijs": "5.49",
       "was": "8.49",
       "deal_label": "Actie_",
@@ -8486,7 +8486,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Maaslander of Old Amsterdam kaasplakken — Pak 100 - 150 gram. (m.u.v. geitenkaas).",
-      "desc": "Weekaanbieding",
+      "desc": "Vleeswaren & kaas",
       "prijs": "1.99",
       "was": "2.99",
       "deal_label": "Actie_",
@@ -8497,7 +8497,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Apetina witte kaas — Pak 150 gram of pot 265 of 410 gram.",
-      "desc": "Weekaanbieding",
+      "desc": "Vleeswaren & kaas",
       "prijs": "1.99",
       "was": "3.05",
       "deal_label": "Actie_",
@@ -8508,7 +8508,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Melkunie Protein — Per stuk.",
-      "desc": "Weekaanbieding",
+      "desc": "Zuivel & eieren",
       "prijs": "0.99",
       "was": "1.79",
       "deal_label": "Actie_",
@@ -8519,7 +8519,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Activia yoghurt — 4-pack.",
-      "desc": "Weekaanbieding",
+      "desc": "Zuivel & eieren",
       "prijs": "1.99",
       "was": "2.85",
       "deal_label": "Actie_",
@@ -8530,7 +8530,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Arla biologische zuivel — Pak 1 liter.",
-      "desc": "Weekaanbieding",
+      "desc": "Zuivel & eieren",
       "prijs": "1.19",
       "was": "2.25",
       "deal_label": "Actie_",
@@ -8541,7 +8541,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Douwe Egberts ice coffee — Beker 230 ml of blik 250 ml. OP=OP",
-      "desc": "Weekaanbieding",
+      "desc": "Koffie & thee",
       "prijs": "0.79",
       "was": "1.54",
       "deal_label": "Actie_",
@@ -8552,7 +8552,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Almhof halfvolle of 0% yoghurt — Beker 500 gram. OP=OP",
-      "desc": "Weekaanbieding",
+      "desc": "Zuivel & eieren",
       "prijs": "1.19",
       "was": "1.95",
       "deal_label": "Actie_",
@@ -8563,7 +8563,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Lurpak roomboter of smeerbaar — Wikkel 200 gram of kuip 250 gram. OP=OP.",
-      "desc": "Weekaanbieding",
+      "desc": "Zuivel & eieren",
       "prijs": "1.69",
       "was": "2.99",
       "deal_label": "Actie_",
@@ -8574,7 +8574,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Oatly haverdrink — Pak 1 liter. (m.u.v. vers).",
-      "desc": "Weekaanbieding",
+      "desc": "Zuivel & eieren",
       "prijs": "1.79",
       "was": "3.65",
       "deal_label": "Actie_",
@@ -8585,7 +8585,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Bits & Bites Buitenlandse kaas — Per stuk 125 - 150 gram",
-      "desc": "Weekaanbieding",
+      "desc": "Vleeswaren & kaas",
       "prijs": "1.69",
       "was": "2.29",
       "deal_label": "Vr, Za & Zo",
@@ -8596,7 +8596,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "1 de Beste Vers sap — Fles 500 ml.",
-      "desc": "Weekaanbieding",
+      "desc": "Frisdrank",
       "prijs": "1.99",
       "was": "2.55",
       "deal_label": "Actie_",
@@ -8607,7 +8607,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Appelsientje Fruitdrink — Pak 1 liter.",
-      "desc": "Weekaanbieding",
+      "desc": "Groente & fruit",
       "prijs": "0.99",
       "was": "2.19",
       "deal_label": "Actie_",
@@ -8618,7 +8618,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Douwe Egberts oploskoffie — Pak 8 - 25 stuks.",
-      "desc": "Weekaanbieding",
+      "desc": "Koffie & thee",
       "prijs": "1.99",
       "was": "3.35",
       "deal_label": "Actie_",
@@ -8629,7 +8629,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Fuze Tea — Fles 1.25  liter. OP=OP",
-      "desc": "Weekaanbieding",
+      "desc": "Frisdrank",
       "prijs": "0.99",
       "was": "2.65",
       "deal_label": "Actie_",
@@ -8640,7 +8640,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Kahrel koffiecups — Pak 10 stuks.",
-      "desc": "Weekaanbieding",
+      "desc": "Koffie & thee",
       "prijs": "1.49",
       "was": null,
       "deal_label": "Actie_",
@@ -8651,7 +8651,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Senseo koffiepads — Per voordeelpak. 48 stuks.",
-      "desc": "Weekaanbieding",
+      "desc": "Koffie & thee",
       "prijs": "6.49",
       "was": "9.25",
       "deal_label": "Actie_",
@@ -8662,7 +8662,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Crystal Clear — Fles 1.5 liter.",
-      "desc": "Weekaanbieding",
+      "desc": "Frisdrank",
       "prijs": "1.29",
       "was": "2.39",
       "deal_label": "Actie_",
@@ -8673,7 +8673,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "O2 Life mineraalwater — Per fles.750 ml.",
-      "desc": "Weekaanbieding",
+      "desc": "Frisdrank",
       "prijs": "1.39",
       "was": null,
       "deal_label": "Actie_",
@@ -8684,7 +8684,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Slimpie limonadesiroop 0% suiker — Fles 580 of 650 ml.",
-      "desc": "Weekaanbieding",
+      "desc": "Frisdrank",
       "prijs": "1.79",
       "was": "3.39",
       "deal_label": "Actie_",
@@ -8695,7 +8695,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Taksi, Dubbelfrisss of Maaza — Pak 300, 330 of 350 ml.",
-      "desc": "Weekaanbieding",
+      "desc": "Frisdrank",
       "prijs": "0.69",
       "was": "1.49",
       "deal_label": "Actie_",
@@ -8706,7 +8706,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Amstel — Per krat.",
-      "desc": "Weekaanbieding",
+      "desc": "Bier & wijn",
       "prijs": "12.71",
       "was": null,
       "deal_label": "Actie_",
@@ -8717,7 +8717,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Heineken 0.0 — 6-pack blik à 33 cl.",
-      "desc": "Weekaanbieding",
+      "desc": "Bier & wijn",
       "prijs": "2.99",
       "was": null,
       "deal_label": "Actie_",
@@ -8728,7 +8728,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Hertog Jan, Brand of Grolsch lentebier — 6-pack fles à 30 cl.",
-      "desc": "Weekaanbieding",
+      "desc": "Bier & wijn",
       "prijs": "4.99",
       "was": null,
       "deal_label": "Actie_",
@@ -8739,7 +8739,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Texels Skuumkoppe of 0.0 — 6-pack fles à 30 cl.",
-      "desc": "Weekaanbieding",
+      "desc": "Bier & wijn",
       "prijs": "6.37",
       "was": null,
       "deal_label": "Actie_",
@@ -8750,7 +8750,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "DeliciouS — Fles 75 cl.",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "2.99",
       "was": null,
       "deal_label": "Actie_",
@@ -8761,7 +8761,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Gato Negro — Fles 75 cl.",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "3.99",
       "was": null,
       "deal_label": "Actie_",
@@ -8772,7 +8772,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Coca-Cola, Fanta, Sprite of Fernandes — Blik 33 cl.",
-      "desc": "Weekaanbieding",
+      "desc": "Frisdrank",
       "prijs": "0.55",
       "was": "0.99",
       "deal_label": "Actie_",
@@ -8783,7 +8783,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Stëlz — Blik 25 cl.",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "1.69",
       "was": null,
       "deal_label": "Vr, Za & Zo",
@@ -8794,7 +8794,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Carbonell olijfolie extra virgen — Fles 750 ml. OP=OP",
-      "desc": "Weekaanbieding",
+      "desc": "Soepen & sauzen",
       "prijs": "5.99",
       "was": null,
       "deal_label": "Actie_",
@@ -8805,7 +8805,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Hellmann's of Calvé mayonaise — Knijpfles 430 ml of pot 430 - 650 ml.",
-      "desc": "Weekaanbieding",
+      "desc": "Soepen & sauzen",
       "prijs": "1.89",
       "was": "4.19",
       "deal_label": "Actie_",
@@ -8816,7 +8816,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Knorr maaltijdmix of soep — Per stuk 30 - 100 gram.",
-      "desc": "Weekaanbieding",
+      "desc": "Soepen & sauzen",
       "prijs": "0.69",
       "was": "1.99",
       "deal_label": "Actie_",
@@ -8827,7 +8827,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Tilda rijst — Per pak.",
-      "desc": "Weekaanbieding",
+      "desc": "Pasta & rijst",
       "prijs": "1.29",
       "was": "2.85",
       "deal_label": "Actie_",
@@ -8838,7 +8838,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Bits & Bites Kaasblokjes — Kuip 100 - 130 gram.",
-      "desc": "Weekaanbieding",
+      "desc": "Vleeswaren & kaas",
       "prijs": "1.69",
       "was": "2.39",
       "deal_label": "Actie_",
@@ -8849,7 +8849,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Daily Chef gevulde verse pasta — Pak 250 gram.",
-      "desc": "Weekaanbieding",
+      "desc": "Pasta & rijst",
       "prijs": "1.89",
       "was": null,
       "deal_label": "Actie_",
@@ -8860,7 +8860,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Jan pannenkoeken of pancakes — Pak 6 of 8 stuks.",
-      "desc": "Weekaanbieding",
+      "desc": "Brood & gebak",
       "prijs": "1.49",
       "was": "2.99",
       "deal_label": "Actie_",
@@ -8871,7 +8871,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Maggi roerbaknoedels — Zak 185 gram.",
-      "desc": "Weekaanbieding",
+      "desc": "Maaltijden",
       "prijs": "1.29",
       "was": "2.85",
       "deal_label": "Actie_",
@@ -8882,7 +8882,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Johma brood- en toastsalade — Kuip 175 gram.",
-      "desc": "Weekaanbieding",
+      "desc": "Maaltijden",
       "prijs": "1.99",
       "was": "3.65",
       "deal_label": "Actie_",
@@ -8893,7 +8893,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Yummy noodles — Beker 70 gram.",
-      "desc": "Weekaanbieding",
+      "desc": "Pasta & rijst",
       "prijs": "0.89",
       "was": "1.39",
       "deal_label": "Actie_",
@@ -8904,7 +8904,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Verspakket van de maand — Per pakket.",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "4.49",
       "was": null,
       "deal_label": "Actie_",
@@ -8915,7 +8915,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Maaltijd verspakket — Per pakket.",
-      "desc": "Weekaanbieding",
+      "desc": "Maaltijden",
       "prijs": "4.49",
       "was": null,
       "deal_label": "Vr, Za & Zo",
@@ -8926,7 +8926,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Pokébowl — Per stuk.",
-      "desc": "Weekaanbieding",
+      "desc": "Maaltijden",
       "prijs": "3.99",
       "was": null,
       "deal_label": "Vr, Za & Zo",
@@ -8937,7 +8937,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Amoretti tapas — Pak 60 gram.",
-      "desc": "Weekaanbieding",
+      "desc": "Vleeswaren & kaas",
       "prijs": "1.99",
       "was": "2.59",
       "deal_label": "Vr, Za & Zo",
@@ -8948,7 +8948,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Verse mini kaas- of saucijzenbroodjes — Pak 9 stuks. OP=OP",
-      "desc": "Weekaanbieding",
+      "desc": "Vleeswaren & kaas",
       "prijs": "2.29",
       "was": null,
       "deal_label": "Vr, Za & Zo",
@@ -8959,7 +8959,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Aviko Friet van 't huis — Zak 750 gram.",
-      "desc": "Weekaanbieding",
+      "desc": "Diepvries",
       "prijs": "1.39",
       "was": "2.79",
       "deal_label": "Actie_",
@@ -8970,7 +8970,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Daim, Oreo of Milka ijs — Beker 425 ml. OP=OP",
-      "desc": "Weekaanbieding",
+      "desc": "Diepvries",
       "prijs": "2.49",
       "was": null,
       "deal_label": "Actie_",
@@ -8981,7 +8981,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Wagner Pizzeria style — Per stuk 365 - 375 gram.",
-      "desc": "Weekaanbieding",
+      "desc": "Maaltijden",
       "prijs": "2.49",
       "was": null,
       "deal_label": "Actie_",
@@ -8992,7 +8992,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Klaas Puul wokgarnalen — Per zak. OP=OP",
-      "desc": "Weekaanbieding",
+      "desc": "Vlees & vis",
       "prijs": "5.99",
       "was": null,
       "deal_label": "Actie_",
@@ -9003,7 +9003,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Nivea deodorant — Roller 50 ml of bus 150 ml. OP=OP",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "1.99",
       "was": "6.29",
       "deal_label": "Actie_",
@@ -9014,7 +9014,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Pampers fresh clean babydoekjes — Pak 52 stuks. OP=OP",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "0.99",
       "was": null,
       "deal_label": "Actie_",
@@ -9025,7 +9025,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Dreft Max Power handafwas — Flacon 450 ml.",
-      "desc": "Weekaanbieding",
+      "desc": "Overig",
       "prijs": "2.49",
       "was": null,
       "deal_label": "Actie_",
@@ -9036,7 +9036,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Smint mints — Pak 2 x 50 stuks.",
-      "desc": "Weekaanbieding",
+      "desc": "Koek & snoep",
       "prijs": "1.99",
       "was": "4.19",
       "deal_label": "Actie_",
@@ -9047,7 +9047,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Nestlé mini's — Zak 208 - 284 gram.",
-      "desc": "Weekaanbieding",
+      "desc": "Koek & snoep",
       "prijs": "2.49",
       "was": "3.95",
       "deal_label": "Actie_",
@@ -9058,7 +9058,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Wilhelmina pepermunt — Zak 200 gram.",
-      "desc": "Weekaanbieding",
+      "desc": "Koek & snoep",
       "prijs": "0.99",
       "was": null,
       "deal_label": "Actie_",
@@ -9069,7 +9069,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Chio Partymix original — Zak 250 gram.",
-      "desc": "Weekaanbieding",
+      "desc": "Snacks",
       "prijs": "0.99",
       "was": null,
       "deal_label": "Actie_",
@@ -9080,7 +9080,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Lay's chips — Zak 175 gram. OP=OP",
-      "desc": "Weekaanbieding",
+      "desc": "Snacks",
       "prijs": "0.99",
       "was": null,
       "deal_label": "Actie_",
