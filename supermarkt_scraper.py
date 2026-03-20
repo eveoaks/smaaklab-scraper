@@ -613,6 +613,7 @@ def scrape_aldi():
 DIRK_URL        = "https://www.dirk.nl/aanbiedingen"
 DIRK_IMG_BASE   = "https://web-fileserver.dirk.nl/artikelen/"
 DIRK_HEADERS    = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"}
+DIRK_NON_FOOD   = {"Huishoud & huisdieren", "Kind & drogisterij"}
 
 
 def scrape_dirk():
@@ -660,6 +661,18 @@ def scrape_dirk():
             if prijs <= 0:
                 continue
         except (TypeError, ValueError):
+            continue
+
+        # Haal department op via products → productInformation → department
+        dept = None
+        prods = resolve(item.get("products"))
+        if isinstance(prods, list) and prods:
+            prod = data[prods[0]] if isinstance(prods[0], int) else prods[0]
+            if isinstance(prod, dict):
+                pinfo = resolve(prod.get("productInformation"))
+                if isinstance(pinfo, dict):
+                    dept = resolve(resolve(pinfo.get("department")))
+        if isinstance(dept, str) and dept in DIRK_NON_FOOD:
             continue
 
         was = resolve(item.get("normalPrice"))
