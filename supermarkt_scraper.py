@@ -1339,9 +1339,6 @@ def _plus_item_toevoegen(naam_raw, brand_raw, prijs_raw, was_raw, label_raw, img
         naam = f"{brand} {naam}".strip()
     if not naam or len(naam) < 3:
         return
-    # Sla prijslabels over die als naam zijn teruggegeven ("2 VOOR 5.00", "0.99 PER KILO")
-    if re.match(r'^\d', naam):
-        return
 
     key = naam.lower()
     if key in seen:

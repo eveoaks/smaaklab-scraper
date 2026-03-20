@@ -1,6 +1,6 @@
 {
   "datum": "2026-03-20",
-  "totaal": 788,
+  "totaal": 826,
   "deals": [
     {
       "supermarkt": "Albert Heijn",
@@ -4096,6 +4096,17 @@
     },
     {
       "supermarkt": "Aldi",
+      "naam": "6-pack Mexicaans bier",
+      "desc": "Bier & wijn",
+      "prijs": "3.99",
+      "was": null,
+      "deal_label": "-20%",
+      "effectief": null,
+      "img": "https://s7g10.scene7.com/is/image/aldinord/product_1201568_main_cms_9_nl_nl_6_pack_mexicaans_bier_cw01_2024",
+      "url": "https://www.aldi.nl/producten/aanbiedingen/6-pack-mexicaans-bier-1201568.html"
+    },
+    {
+      "supermarkt": "Aldi",
       "naam": "Gehakt cordon bleu",
       "desc": "Vlees & vis",
       "prijs": "1.99",
@@ -4327,6 +4338,39 @@
     },
     {
       "supermarkt": "Aldi",
+      "naam": "8-pack appelmoes",
+      "desc": "Groente & fruit",
+      "prijs": "1.59",
+      "was": null,
+      "deal_label": "OP=OP",
+      "effectief": null,
+      "img": "https://s7g10.scene7.com/is/image/aldinord/product_1216081_main_cms_1_nl_nl_8_pack_appelmoes_cw01_2024",
+      "url": "https://www.aldi.nl/producten/aanbiedingen/8-pack-appelmoes-1216081.html"
+    },
+    {
+      "supermarkt": "Aldi",
+      "naam": "4-pack bier",
+      "desc": "Bier & wijn",
+      "prijs": "3.39",
+      "was": null,
+      "deal_label": "-23%",
+      "effectief": null,
+      "img": "https://s7g10.scene7.com/is/image/aldinord/product_1216323_main_cms_6_nl_nl_4_pack_bier_cw01_2024",
+      "url": "https://www.aldi.nl/producten/aanbiedingen/4-pack-bier-1216323.html"
+    },
+    {
+      "supermarkt": "Aldi",
+      "naam": "6-pack 0.0 bier",
+      "desc": "Bier & wijn",
+      "prijs": "2.75",
+      "was": null,
+      "deal_label": "OP=OP",
+      "effectief": null,
+      "img": "https://s7g10.scene7.com/is/image/aldinord/product_1217112_main_cms_1_nl_nl_6_pack_00_bier_cw01_2024",
+      "url": "https://www.aldi.nl/producten/aanbiedingen/6-pack-00-bier-1217112.html"
+    },
+    {
+      "supermarkt": "Aldi",
       "naam": "Japanse sierkers of amandelboom",
       "desc": "Overig",
       "prijs": "2.99",
@@ -4335,6 +4379,17 @@
       "effectief": null,
       "img": "https://s7g10.scene7.com/is/image/aldinord/product_1217513_main_cms_15_nl_nl_japanse_sierkers_of_amandelboom_cw01_2024",
       "url": "https://www.aldi.nl/producten/aanbiedingen/japanse-sierkers-of-amandelboom-1217513.html"
+    },
+    {
+      "supermarkt": "Aldi",
+      "naam": "6-pack voorjaarsbloeiers",
+      "desc": "Overig",
+      "prijs": "2.49",
+      "was": null,
+      "deal_label": "OP=OP",
+      "effectief": null,
+      "img": "https://s7g10.scene7.com/is/image/aldinord/product_1217700_main_cms_4_nl_nl_6_pack_voorjaarsbloeiers_cw01_2024",
+      "url": "https://www.aldi.nl/producten/aanbiedingen/6-pack-voorjaarsbloeiers-1217700.html"
     },
     {
       "supermarkt": "Aldi",
@@ -4569,6 +4624,28 @@
     },
     {
       "supermarkt": "Aldi",
+      "naam": "4-pack tandenborstels",
+      "desc": "Overig",
+      "prijs": "0.99",
+      "was": null,
+      "deal_label": "OP=OP",
+      "effectief": null,
+      "img": "https://s7g10.scene7.com/is/image/aldinord/product_1228159_main_cms_1_nl_nl_4_pack_tandenborstels_cw01_2024",
+      "url": "https://www.aldi.nl/producten/aanbiedingen/4-pack-tandenborstels-1228159.html"
+    },
+    {
+      "supermarkt": "Aldi",
+      "naam": "4-pack wc-blokken",
+      "desc": "Overig",
+      "prijs": "2.99",
+      "was": null,
+      "deal_label": "OP=OP",
+      "effectief": null,
+      "img": "https://s7g10.scene7.com/is/image/aldinord/product_1228177_main_cms_3_nl_nl_4_pack_wc_blokken_cw01_2024",
+      "url": "https://www.aldi.nl/producten/aanbiedingen/4-pack-wc-blokken-1228177.html"
+    },
+    {
+      "supermarkt": "Aldi",
       "naam": "Holle paaseieren",
       "desc": "Zuivel & eieren",
       "prijs": "2.44",
@@ -4712,6 +4789,17 @@
     },
     {
       "supermarkt": "Aldi",
+      "naam": "3-pack ananas in stukjes",
+      "desc": "Groente & fruit",
+      "prijs": "2.69",
+      "was": null,
+      "deal_label": "OP=OP",
+      "effectief": null,
+      "img": "https://s7g10.scene7.com/is/image/aldinord/product_1230333_main_cms_1_nl_nl_3_pack_ananas_in_stukjes_cw01_2024",
+      "url": "https://www.aldi.nl/producten/aanbiedingen/3-pack-ananas-in-stukjes-1230333.html"
+    },
+    {
+      "supermarkt": "Aldi",
       "naam": "Wortelreepjes",
       "desc": "Groente & fruit",
       "prijs": "1.99",
@@ -4723,6 +4811,17 @@
     },
     {
       "supermarkt": "Aldi",
+      "naam": "10-delige paasbakset",
+      "desc": "Overig",
+      "prijs": "4.99",
+      "was": null,
+      "deal_label": "OP=OP",
+      "effectief": null,
+      "img": "https://s7g10.scene7.com/is/image/aldinord/product_1231641_main_cms_16_nl_nl_10_delige_paasbakset_cw01_2024",
+      "url": "https://www.aldi.nl/producten/aanbiedingen/10-delige-paasbakset-1231641.html"
+    },
+    {
+      "supermarkt": "Aldi",
       "naam": "Gerookte kaasplakken",
       "desc": "Vleeswaren & kaas",
       "prijs": "3.49",
@@ -4731,6 +4830,17 @@
       "effectief": null,
       "img": "https://s7g10.scene7.com/is/image/aldinord/product_1231675_main_cms_4_nl_nl_gerookte_kaasplakken_cw01_2024",
       "url": "https://www.aldi.nl/producten/aanbiedingen/gerookte-kaasplakken-1231675.html"
+    },
+    {
+      "supermarkt": "Aldi",
+      "naam": "5-pack sokken",
+      "desc": "Overig",
+      "prijs": "4.99",
+      "was": null,
+      "deal_label": "OP=OP",
+      "effectief": null,
+      "img": "https://s7g10.scene7.com/is/image/aldinord/product_1231973_main_cms_30_nl_nl_5_pack_sokken_cw01_2024",
+      "url": "https://www.aldi.nl/producten/aanbiedingen/5-pack-sokken-1231973.html"
     },
     {
       "supermarkt": "Aldi",
@@ -4775,6 +4885,17 @@
       "effectief": null,
       "img": "https://s7g10.scene7.com/is/image/aldinord/product_1232346_main_cms_43_nl_nl_deurmat_cw01_2024",
       "url": "https://www.aldi.nl/producten/aanbiedingen/deurmat-1232346.html"
+    },
+    {
+      "supermarkt": "Aldi",
+      "naam": "12-pack Actimel multifruits",
+      "desc": "Groente & fruit",
+      "prijs": "3.99",
+      "was": null,
+      "deal_label": "OP=OP",
+      "effectief": null,
+      "img": "https://s7g10.scene7.com/is/image/aldinord/product_1232437_main_cms_1_nl_nl_12_pack_actimel_multifruits_cw01_2024",
+      "url": "https://www.aldi.nl/producten/aanbiedingen/12-pack-actimel-multifruits-1232437.html"
     },
     {
       "supermarkt": "Aldi",
@@ -4965,6 +5086,17 @@
     },
     {
       "supermarkt": "Aldi",
+      "naam": "2-pack witte kaas",
+      "desc": "Vleeswaren & kaas",
+      "prijs": "1.59",
+      "was": null,
+      "deal_label": "OP=OP",
+      "effectief": null,
+      "img": "https://s7g10.scene7.com/is/image/aldinord/product_1233551_main_cms_1_nl_nl_2_pack_witte_kaas_cw01_2024",
+      "url": "https://www.aldi.nl/producten/aanbiedingen/2-pack-witte-kaas-1233551.html"
+    },
+    {
+      "supermarkt": "Aldi",
       "naam": "Antipasti",
       "desc": "Vleeswaren & kaas",
       "prijs": "2.59",
@@ -5072,6 +5204,17 @@
       "effectief": null,
       "img": "https://s7g10.scene7.com/is/image/aldinord/variant_1235203_1_main_cms_13_nl_nl_retro_keukenmachine_cw01_2024",
       "url": "https://www.aldi.nl/producten/aanbiedingen/retro-keukenmachine-1235203.html"
+    },
+    {
+      "supermarkt": "Aldi",
+      "naam": "6-pack mineraalwater met sportdop",
+      "desc": "Niet interessant",
+      "prijs": "4.49",
+      "was": null,
+      "deal_label": "OP=OP",
+      "effectief": null,
+      "img": "https://s7g10.scene7.com/is/image/aldinord/product_1235281_main_cms_1_nl_nl_6_pack_mineraalwater_met_sportdop_cw01_2024",
+      "url": "https://www.aldi.nl/producten/aanbiedingen/6-pack-mineraalwater-met-sportdop-1235281.html"
     },
     {
       "supermarkt": "Aldi",
@@ -5185,6 +5328,17 @@
     },
     {
       "supermarkt": "Aldi",
+      "naam": "4-pack tonijn in water",
+      "desc": "Vlees & vis",
+      "prijs": "4.99",
+      "was": null,
+      "deal_label": "OP=OP",
+      "effectief": null,
+      "img": "https://s7g10.scene7.com/is/image/aldinord/product_1238357_main_cms_1_nl_nl_4_pack_tonijn_in_water_cw01_2024",
+      "url": "https://www.aldi.nl/producten/aanbiedingen/4-pack-tonijn-in-water-1238357.html"
+    },
+    {
+      "supermarkt": "Aldi",
       "naam": "Poms appeldrink",
       "desc": "Groente & fruit",
       "prijs": "0.99",
@@ -5237,6 +5391,17 @@
       "effectief": null,
       "img": "https://s7g10.scene7.com/is/image/aldinord/product_1239546_main_cms_18_nl_nl_ranonkels_cw01_2024",
       "url": "https://www.aldi.nl/producten/aanbiedingen/ranonkels-1239546.html"
+    },
+    {
+      "supermarkt": "Aldi",
+      "naam": "5-pack Lahmacun",
+      "desc": "Niet interessant",
+      "prijs": "4.99",
+      "was": null,
+      "deal_label": "OP=OP",
+      "effectief": null,
+      "img": "https://s7g10.scene7.com/is/image/aldinord/product_1239803_main_cms_2_nl_nl_5_pack_lahmacun_cw01_2024",
+      "url": "https://www.aldi.nl/producten/aanbiedingen/5-pack-lahmacun-1239803.html"
     },
     {
       "supermarkt": "Aldi",
@@ -5339,6 +5504,17 @@
     },
     {
       "supermarkt": "Aldi",
+      "naam": "2-pack gordijnen",
+      "desc": "Overig",
+      "prijs": "14.99",
+      "was": null,
+      "deal_label": "OP=OP",
+      "effectief": null,
+      "img": "https://s7g10.scene7.com/is/image/aldinord/product_1240140_main_cms_7_nl_nl_2_pack_gordijnen_cw01_2024",
+      "url": "https://www.aldi.nl/producten/aanbiedingen/2-pack-gordijnen-1240140.html"
+    },
+    {
+      "supermarkt": "Aldi",
       "naam": "Cargobroek",
       "desc": "Overig",
       "prijs": "6.99",
@@ -5402,6 +5578,17 @@
       "effectief": null,
       "img": "https://s7g10.scene7.com/is/image/aldinord/product_1240172_main_cms_8_nl_nl_opgravingsset_cw01_2024",
       "url": "https://www.aldi.nl/producten/aanbiedingen/opgravingsset-1240172.html"
+    },
+    {
+      "supermarkt": "Aldi",
+      "naam": "2 of 4-delige glazenset",
+      "desc": "Overig",
+      "prijs": "4.99",
+      "was": null,
+      "deal_label": "OP=OP",
+      "effectief": null,
+      "img": "https://s7g10.scene7.com/is/image/aldinord/product_1240176_main_cms_7_nl_nl_2_of_4_delige_glazenset_cw01_2024",
+      "url": "https://www.aldi.nl/producten/aanbiedingen/2-of-4-delige-glazenset-1240176.html"
     },
     {
       "supermarkt": "Aldi",
@@ -5537,6 +5724,17 @@
     },
     {
       "supermarkt": "Aldi",
+      "naam": "6-pack premium tonic",
+      "desc": "Niet interessant",
+      "prijs": "4.99",
+      "was": null,
+      "deal_label": "OP=OP",
+      "effectief": null,
+      "img": "https://s7g10.scene7.com/is/image/aldinord/product_1240459_main_cms_3_nl_nl_6_pack_premium_tonic_cw01_2024",
+      "url": "https://www.aldi.nl/producten/aanbiedingen/6-pack-premium-tonic-1240459.html"
+    },
+    {
+      "supermarkt": "Aldi",
       "naam": "Katten afschrikmiddel",
       "desc": "Overig",
       "prijs": "3.99",
@@ -5647,6 +5845,17 @@
     },
     {
       "supermarkt": "Aldi",
+      "naam": "8-pack Bueno",
+      "desc": "Niet interessant",
+      "prijs": "4.99",
+      "was": null,
+      "deal_label": "OP=OP",
+      "effectief": null,
+      "img": "https://s7g10.scene7.com/is/image/aldinord/91214061_wk12",
+      "url": "https://www.aldi.nl/producten/aanbiedingen/8-pack-bueno-91214061.html"
+    },
+    {
+      "supermarkt": "Aldi",
       "naam": "Snoep",
       "desc": "Niet interessant",
       "prijs": "0.99",
@@ -5732,6 +5941,17 @@
       "effectief": null,
       "img": "https://s7g10.scene7.com/is/image/aldinord/91224427_wk12",
       "url": "https://www.aldi.nl/producten/aanbiedingen/rings-chips-91224427.html"
+    },
+    {
+      "supermarkt": "Aldi",
+      "naam": "6-pack Chocomel, Fristi en Optimel",
+      "desc": "Ontbijt & beleg",
+      "prijs": "1.79",
+      "was": null,
+      "deal_label": "OP=OP",
+      "effectief": null,
+      "img": "https://s7g10.scene7.com/is/image/aldinord/91224624_wk12",
+      "url": "https://www.aldi.nl/producten/aanbiedingen/6-pack-chocomel-fristi-en-optimel-91224624.html"
     },
     {
       "supermarkt": "Aldi",
@@ -5834,6 +6054,17 @@
     },
     {
       "supermarkt": "Aldi",
+      "naam": "12-pack cola regular of zero",
+      "desc": "Niet interessant",
+      "prijs": "3.29",
+      "was": null,
+      "deal_label": "-17%",
+      "effectief": null,
+      "img": "https://s7g10.scene7.com/is/image/aldinord/91235121_wk12",
+      "url": "https://www.aldi.nl/producten/aanbiedingen/12-pack-cola-regular-of-zero-91235121.html"
+    },
+    {
+      "supermarkt": "Aldi",
       "naam": "IJsbeker",
       "desc": "Diepvries",
       "prijs": "3.49",
@@ -5911,6 +6142,17 @@
     },
     {
       "supermarkt": "Aldi",
+      "naam": "6-pack Oasis",
+      "desc": "Niet interessant",
+      "prijs": "3.99",
+      "was": null,
+      "deal_label": "OP=OP",
+      "effectief": null,
+      "img": "https://s7g10.scene7.com/is/image/aldinord/91239797_wk12",
+      "url": "https://www.aldi.nl/producten/aanbiedingen/6-pack-oasis-91239797.html"
+    },
+    {
+      "supermarkt": "Aldi",
       "naam": "Badmat of handdoeken",
       "desc": "Overig",
       "prijs": "5.99",
@@ -5930,6 +6172,17 @@
       "effectief": null,
       "img": "https://s7g10.scene7.com/is/image/aldinord/91240318_wk12",
       "url": "https://www.aldi.nl/producten/aanbiedingen/drop-91240318.html"
+    },
+    {
+      "supermarkt": "Aldi",
+      "naam": "10-pack drink",
+      "desc": "Overig",
+      "prijs": "3.49",
+      "was": null,
+      "deal_label": "OP=OP",
+      "effectief": null,
+      "img": "https://s7g10.scene7.com/is/image/aldinord/91240388_wk12",
+      "url": "https://www.aldi.nl/producten/aanbiedingen/10-pack-drink-91240388.html"
     },
     {
       "supermarkt": "Aldi",
@@ -7539,6 +7792,17 @@
     },
     {
       "supermarkt": "Plus",
+      "naam": "3G power en 3G expert",
+      "desc": "Overig",
+      "prijs": "2.49",
+      "was": "5.99",
+      "deal_label": "Weekaanbieding",
+      "effectief": null,
+      "img": "//images.ctfassets.net/s0lodsnpsezb/4421_15_M/9caca53753c36b343e105193aa94f6a6/4421_15.png",
+      "url": "https://www.plus.nl/aanbiedingen/4421-15"
+    },
+    {
+      "supermarkt": "Plus",
       "naam": "Dreft Handafwas",
       "desc": "Overig",
       "prijs": "2.49",
@@ -7594,6 +7858,39 @@
     },
     {
       "supermarkt": "Plus",
+      "naam": "3 VOOR 5.00",
+      "desc": "Overig",
+      "prijs": "5.0",
+      "was": null,
+      "deal_label": "3 VOOR 5.00",
+      "effectief": null,
+      "img": "https://images.ctfassets.net/s0lodsnpsezb/4418_158_M/814fe0d2bc16f1016dc960e8e31a4906/4418_158.png?w=120&h=120&fit=pad&q=85",
+      "url": "https://www.plus.nl/aanbiedingen"
+    },
+    {
+      "supermarkt": "Plus",
+      "naam": "0.99 PER KILO",
+      "desc": "Overig",
+      "prijs": "0.99",
+      "was": null,
+      "deal_label": "Weekaanbieding",
+      "effectief": null,
+      "img": "https://images.ctfassets.net/s0lodsnpsezb/113651_M/94dbcd0a996496506e58b3a216a58957/113651.png?w=120&h=120&fit=pad&q=85",
+      "url": "https://www.plus.nl/aanbiedingen"
+    },
+    {
+      "supermarkt": "Plus",
+      "naam": "2 VOOR 0.89",
+      "desc": "Overig",
+      "prijs": "0.89",
+      "was": null,
+      "deal_label": "2 VOOR 0.89",
+      "effectief": null,
+      "img": "https://images.ctfassets.net/s0lodsnpsezb/449412_M/66a0f6674f2215d7687fd649d3e2c597/449412.png?w=120&h=120&fit=pad&q=85",
+      "url": "https://www.plus.nl/aanbiedingen"
+    },
+    {
+      "supermarkt": "Plus",
       "naam": "Bijv. Oven en Airfryer groenten courg paprik",
       "desc": "Groente & fruit",
       "prijs": "7.98",
@@ -7616,6 +7913,28 @@
     },
     {
       "supermarkt": "Plus",
+      "naam": "2 VOOR 2.50",
+      "desc": "Overig",
+      "prijs": "2.5",
+      "was": null,
+      "deal_label": "2 VOOR 2.50",
+      "effectief": null,
+      "img": "https://images.ctfassets.net/s0lodsnpsezb/782069_M/30cb0aa5da62df4192762b488af37a7e/782069.png?w=120&h=120&fit=pad&q=85",
+      "url": "https://www.plus.nl/aanbiedingen"
+    },
+    {
+      "supermarkt": "Plus",
+      "naam": "2 VOOR 6.99",
+      "desc": "Overig",
+      "prijs": "6.99",
+      "was": null,
+      "deal_label": "2 VOOR 6.99",
+      "effectief": null,
+      "img": "//images.ctfassets.net/s0lodsnpsezb/4421_102_M/169138ce634d131307a556394c632bec/4421_102.png?w=120&h=120&fit=pad&q=85",
+      "url": "https://www.plus.nl/aanbiedingen"
+    },
+    {
+      "supermarkt": "Plus",
       "naam": "Alle Mama's Maaltijden Poké bowls",
       "desc": "Niet interessant",
       "prijs": "7.99",
@@ -7624,6 +7943,61 @@
       "effectief": null,
       "img": "https://images.ctfassets.net/s0lodsnpsezb/4421_36_M/7a4a75fe8567a8121b651bcef58a3d9a/4421_36.png?w=120&h=120&fit=pad&q=85",
       "url": "https://www.plus.nl/aanbiedingen"
+    },
+    {
+      "supermarkt": "Plus",
+      "naam": "2 VOOR 11.00",
+      "desc": "Overig",
+      "prijs": "11.0",
+      "was": null,
+      "deal_label": "2 VOOR 11.00",
+      "effectief": null,
+      "img": "//images.ctfassets.net/s0lodsnpsezb/4421_141_M/5082662d87d36c33cc30ceb5a9db0022/4421_141.png?w=120&h=120&fit=pad&q=85",
+      "url": "https://www.plus.nl/aanbiedingen"
+    },
+    {
+      "supermarkt": "Plus",
+      "naam": "2 VOOR 9.00",
+      "desc": "Overig",
+      "prijs": "9.0",
+      "was": null,
+      "deal_label": "2 VOOR 9.00",
+      "effectief": null,
+      "img": "https://images.ctfassets.net/s0lodsnpsezb/4417_17_M/8e8b8a11be3455d14fb4d49c61e080f2/4417_17.png?w=120&h=120&fit=pad&q=85",
+      "url": "https://www.plus.nl/aanbiedingen"
+    },
+    {
+      "supermarkt": "Plus",
+      "naam": "2 VOOR 5.50",
+      "desc": "Overig",
+      "prijs": "5.5",
+      "was": null,
+      "deal_label": "2 VOOR 5.50",
+      "effectief": null,
+      "img": "//images.ctfassets.net/s0lodsnpsezb/4417_24_M/88675b30358135f34270f2bc5acac4ac/4417_24.png?w=120&h=120&fit=pad&q=85",
+      "url": "https://www.plus.nl/aanbiedingen"
+    },
+    {
+      "supermarkt": "Plus",
+      "naam": "2 VOOR 7.50",
+      "desc": "Overig",
+      "prijs": "7.5",
+      "was": null,
+      "deal_label": "2 VOOR 7.50",
+      "effectief": null,
+      "img": "https://images.ctfassets.net/s0lodsnpsezb/4417_26_M/2493464922534b2096c7a96d871cdf89/4417_26.png?w=120&h=120&fit=pad&q=85",
+      "url": "https://www.plus.nl/aanbiedingen"
+    },
+    {
+      "supermarkt": "Dirk",
+      "naam": "1 de Beste IJsbergsla melange — Zak 200 gram.",
+      "desc": "Groente & fruit",
+      "prijs": "0.99",
+      "was": null,
+      "deal_label": "Actie_",
+      "effectief": null,
+      "img": "https://web-fileserver.dirk.nl/artikelen/9/3/7/4/3/1/IJsbergsla melange_639087323194387399.png",
+      "url": "https://www.dirk.nl/aanbiedingen"
     },
     {
       "supermarkt": "Dirk",
@@ -7733,6 +8107,17 @@
       "deal_label": "Actie_",
       "effectief": null,
       "img": "https://web-fileserver.dirk.nl/artikelen/5/9/7/4/3/1/Kokota tapas_639087353496586027.png",
+      "url": "https://www.dirk.nl/aanbiedingen"
+    },
+    {
+      "supermarkt": "Dirk",
+      "naam": "1 de Beste Aardappelen — Zak 1 kilo.",
+      "desc": "Groente & fruit",
+      "prijs": "0.79",
+      "was": null,
+      "deal_label": "Actie_",
+      "effectief": null,
+      "img": "https://web-fileserver.dirk.nl/artikelen/1/3/8/4/3/1/KILO KRUIMIG_416168-1_639087381482731126.png",
       "url": "https://www.dirk.nl/aanbiedingen"
     },
     {
@@ -7913,6 +8298,17 @@
     },
     {
       "supermarkt": "Dirk",
+      "naam": "1 de Beste Gebraden kipfilet of kiprollade chili — Pak 100 gram.",
+      "desc": "Vlees & vis",
+      "prijs": "1.99",
+      "was": "2.49",
+      "deal_label": "Actie_",
+      "effectief": null,
+      "img": "https://web-fileserver.dirk.nl/artikelen/8/5/7/4/3/1/Gebraden kipfilet of kiprollade chili_639087301176710024.png",
+      "url": "https://www.dirk.nl/aanbiedingen"
+    },
+    {
+      "supermarkt": "Dirk",
       "naam": "Zandvliet Gelderse gekookte worst — Per stuk 250 gram.",
       "desc": "Vlees & vis",
       "prijs": "1.59",
@@ -7931,6 +8327,17 @@
       "deal_label": "Actie_",
       "effectief": null,
       "img": "https://web-fileserver.dirk.nl/artikelen/5/6/7/4/3/1/Compaxo_639087301334867140.png",
+      "url": "https://www.dirk.nl/aanbiedingen"
+    },
+    {
+      "supermarkt": "Dirk",
+      "naam": "1 de Beste Gyros rollade — Pak 100 gram. OP=OP",
+      "desc": "Vlees & vis",
+      "prijs": "1.99",
+      "was": null,
+      "deal_label": "Vr, Za & Zo",
+      "effectief": null,
+      "img": "https://web-fileserver.dirk.nl/artikelen/3/4/8/4/3/1/Gyros rollade_639087302768066734.png",
       "url": "https://www.dirk.nl/aanbiedingen"
     },
     {
@@ -8184,6 +8591,17 @@
       "deal_label": "Vr, Za & Zo",
       "effectief": null,
       "img": "https://web-fileserver.dirk.nl/artikelen/1/5/8/4/3/1/Buitenlandse kaas_639087322538423557.png",
+      "url": "https://www.dirk.nl/aanbiedingen"
+    },
+    {
+      "supermarkt": "Dirk",
+      "naam": "1 de Beste Vers sap — Fles 500 ml.",
+      "desc": "Niet interessant",
+      "prijs": "1.99",
+      "was": "2.55",
+      "deal_label": "Actie_",
+      "effectief": null,
+      "img": "https://web-fileserver.dirk.nl/artikelen/9/5/7/4/3/1/Vers sap_639087302617811342.png",
       "url": "https://www.dirk.nl/aanbiedingen"
     },
     {
