@@ -68,6 +68,16 @@ NON_FOOD = {
     "Non-food", "Elektronica en multimedia", "Kantoor en school",
 }
 
+# Categorieën die tijdelijk als "Overig" worden getoond.
+# Verwijder een categorie uit deze set om hem weer als eigen filterknop te tonen.
+HIDDEN_CATEGORIES = {
+    "Koek & snoep",
+    "Snacks",
+    "Frisdrank",
+    "Glutenvrij",
+    "Maaltijden",
+}
+
 
 def normalize_category(raw_cat):
     main = raw_cat.split("/")[0].strip()
@@ -1734,6 +1744,8 @@ def main():
             d["desc"] = normalize_category(d["desc"])
             if d["desc"] == "Weekaanbieding":
                 d["desc"] = classify_by_name(d.get("naam", ""))
+            if d["desc"] in HIDDEN_CATEGORIES:
+                d["desc"] = "Overig"
         status = "OK" if deals else "⚠ GEEN DEALS"
         print(f"  {len(deals)} deals gevonden  [{status}]")
         all_deals.extend(deals)

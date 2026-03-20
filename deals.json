@@ -170,7 +170,7 @@
     {
       "supermarkt": "Albert Heijn",
       "naam": "Miskets Melk chocolade aardbei",
-      "desc": "Koek & snoep",
+      "desc": "Overig",
       "prijs": "2.54",
       "was": "3.39",
       "deal_label": "25% korting",
@@ -258,7 +258,7 @@
     {
       "supermarkt": "Albert Heijn",
       "naam": "AH Poffertjes",
-      "desc": "Maaltijden",
+      "desc": "Overig",
       "prijs": "1.89",
       "was": "1.89",
       "deal_label": "1+1 gratis",
@@ -269,7 +269,7 @@
     {
       "supermarkt": "Albert Heijn",
       "naam": "AH Bapao kip",
-      "desc": "Maaltijden",
+      "desc": "Overig",
       "prijs": "0.89",
       "was": "1.19",
       "deal_label": "25% korting",
@@ -280,7 +280,7 @@
     {
       "supermarkt": "Albert Heijn",
       "naam": "AH Ei salade",
-      "desc": "Snacks",
+      "desc": "Overig",
       "prijs": "2.69",
       "was": "2.69",
       "deal_label": "2 voor 3.75",
@@ -291,7 +291,7 @@
     {
       "supermarkt": "Albert Heijn",
       "naam": "AH Flammkuchendeeg",
-      "desc": "Maaltijden",
+      "desc": "Overig",
       "prijs": "2.19",
       "was": "2.19",
       "deal_label": "1+1 gratis",
@@ -302,7 +302,7 @@
     {
       "supermarkt": "Albert Heijn",
       "naam": "AH Stamppot zuurkool rookworst",
-      "desc": "Maaltijden",
+      "desc": "Overig",
       "prijs": "4.69",
       "was": "4.69",
       "deal_label": "2 voor 6.99",
@@ -313,7 +313,7 @@
     {
       "supermarkt": "Albert Heijn",
       "naam": "AH Pastasalade tonijn",
-      "desc": "Maaltijden",
+      "desc": "Overig",
       "prijs": "2.99",
       "was": "4.29",
       "deal_label": "30% korting",
@@ -324,7 +324,7 @@
     {
       "supermarkt": "Albert Heijn",
       "naam": "AH Terra Verse pureersoep tomaat oregano",
-      "desc": "Maaltijden",
+      "desc": "Overig",
       "prijs": "4.49",
       "was": "4.49",
       "deal_label": "2 voor 7.00",
@@ -335,7 +335,7 @@
     {
       "supermarkt": "Albert Heijn",
       "naam": "AH Verse pizza Amerikaans spicy salami",
-      "desc": "Maaltijden",
+      "desc": "Overig",
       "prijs": "6.99",
       "was": "6.99",
       "deal_label": "2 voor 12.00",
@@ -346,7 +346,7 @@
     {
       "supermarkt": "Albert Heijn",
       "naam": "AH Verse soep tomaat",
-      "desc": "Maaltijden",
+      "desc": "Overig",
       "prijs": "3.59",
       "was": "3.59",
       "deal_label": "2 voor 6.00",
@@ -357,7 +357,7 @@
     {
       "supermarkt": "Albert Heijn",
       "naam": "AH Verse maaltijd nasi kipsate",
-      "desc": "Maaltijden",
+      "desc": "Overig",
       "prijs": "6.49",
       "was": "6.49",
       "deal_label": "2 voor 12.00",
@@ -412,7 +412,7 @@
     {
       "supermarkt": "Albert Heijn",
       "naam": "Huls Sticks naturel",
-      "desc": "Snacks",
+      "desc": "Overig",
       "prijs": "1.64",
       "was": "2.19",
       "deal_label": "25% korting",
@@ -775,7 +775,7 @@
     {
       "supermarkt": "Albert Heijn",
       "naam": "HiPRO Protein bar caramel",
-      "desc": "Snacks",
+      "desc": "Overig",
       "prijs": "1.99",
       "was": "1.99",
       "deal_label": "2 voor 3.49",
@@ -1017,7 +1017,7 @@
     {
       "supermarkt": "Albert Heijn",
       "naam": "AH Glutenvrij Haverkoekjes bosbes",
-      "desc": "Glutenvrij",
+      "desc": "Overig",
       "prijs": "1.29",
       "was": "1.29",
       "deal_label": "3 voor 3.00",
@@ -1028,7 +1028,7 @@
     {
       "supermarkt": "Albert Heijn",
       "naam": "Lay's Bugles nacho cheese",
-      "desc": "Snacks",
+      "desc": "Overig",
       "prijs": "2.25",
       "was": "2.25",
       "deal_label": "2 voor 2.99",
@@ -1039,7 +1039,7 @@
     {
       "supermarkt": "Albert Heijn",
       "naam": "Chio Red paprika",
-      "desc": "Snacks",
+      "desc": "Overig",
       "prijs": "0.89",
       "was": "1.79",
       "deal_label": "50% korting",
@@ -1050,7 +1050,7 @@
     {
       "supermarkt": "Albert Heijn",
       "naam": "Jimmy's Popcorn sweet & salt",
-      "desc": "Snacks",
+      "desc": "Overig",
       "prijs": "0.99",
       "was": "1.99",
       "deal_label": "50% korting",
@@ -1072,7 +1072,7 @@
     {
       "supermarkt": "Albert Heijn",
       "naam": "AH Krokante zeewier",
-      "desc": "Snacks",
+      "desc": "Overig",
       "prijs": "3.59",
       "was": "3.59",
       "deal_label": "2 voor 5.00",
@@ -1083,7 +1083,7 @@
     {
       "supermarkt": "Albert Heijn",
       "naam": "AH Scrocchi zeezout",
-      "desc": "Snacks",
+      "desc": "Overig",
       "prijs": "2.19",
       "was": "2.19",
       "deal_label": "2 voor 4.00",
@@ -1094,7 +1094,7 @@
     {
       "supermarkt": "Albert Heijn",
       "naam": "AH Kleintje bruschetta dip",
-      "desc": "Snacks",
+      "desc": "Overig",
       "prijs": "1.49",
       "was": "1.49",
       "deal_label": "3 voor 3.00",
@@ -1105,7 +1105,7 @@
     {
       "supermarkt": "Albert Heijn",
       "naam": "AH Borrelnoten paprika smaak",
-      "desc": "Snacks",
+      "desc": "Overig",
       "prijs": "1.65",
       "was": "1.65",
       "deal_label": "3 voor 4.00",
@@ -1204,7 +1204,7 @@
     {
       "supermarkt": "Albert Heijn",
       "naam": "Lotus Biscoff Speculoos",
-      "desc": "Koek & snoep",
+      "desc": "Overig",
       "prijs": "0.99",
       "was": "1.99",
       "deal_label": "50% korting",
@@ -1215,7 +1215,7 @@
     {
       "supermarkt": "Albert Heijn",
       "naam": "Verkade Nizza kokos",
-      "desc": "Koek & snoep",
+      "desc": "Overig",
       "prijs": "1.99",
       "was": "1.99",
       "deal_label": "1+1 gratis",
@@ -1226,7 +1226,7 @@
     {
       "supermarkt": "Albert Heijn",
       "naam": "Haribo Soda straws f!zz zuur",
-      "desc": "Koek & snoep",
+      "desc": "Overig",
       "prijs": "0.99",
       "was": "2.15",
       "deal_label": "54% korting",
@@ -1237,7 +1237,7 @@
     {
       "supermarkt": "Albert Heijn",
       "naam": "Milka Chocoladereep alpenmelk",
-      "desc": "Koek & snoep",
+      "desc": "Overig",
       "prijs": "1.04",
       "was": "1.49",
       "deal_label": "30% korting",
@@ -1248,7 +1248,7 @@
     {
       "supermarkt": "Albert Heijn",
       "naam": "Mars Minimix repen uitdeelzak",
-      "desc": "Koek & snoep",
+      "desc": "Overig",
       "prijs": "4.19",
       "was": "5.99",
       "deal_label": "30% korting",
@@ -1259,7 +1259,7 @@
     {
       "supermarkt": "Albert Heijn",
       "naam": "Pandy Sour cola",
-      "desc": "Koek & snoep",
+      "desc": "Overig",
       "prijs": "0.89",
       "was": "1.79",
       "deal_label": "50% korting",
@@ -1270,7 +1270,7 @@
     {
       "supermarkt": "Albert Heijn",
       "naam": "Galler Wit pistaches",
-      "desc": "Koek & snoep",
+      "desc": "Overig",
       "prijs": "1.24",
       "was": "2.49",
       "deal_label": "50% korting",
@@ -1281,7 +1281,7 @@
     {
       "supermarkt": "Albert Heijn",
       "naam": "Tony's Chocolonely Reep everything bar",
-      "desc": "Koek & snoep",
+      "desc": "Overig",
       "prijs": "1.34",
       "was": "2.69",
       "deal_label": "50% korting",
@@ -1292,7 +1292,7 @@
     {
       "supermarkt": "Albert Heijn",
       "naam": "Celebrations Assortiments mix",
-      "desc": "Koek & snoep",
+      "desc": "Overig",
       "prijs": "5.17",
       "was": "7.39",
       "deal_label": "30% korting",
@@ -1303,7 +1303,7 @@
     {
       "supermarkt": "Albert Heijn",
       "naam": "Pocky Strawberry",
-      "desc": "Koek & snoep",
+      "desc": "Overig",
       "prijs": "1.27",
       "was": "1.69",
       "deal_label": "25% korting",
@@ -1512,7 +1512,7 @@
     {
       "supermarkt": "Albert Heijn",
       "naam": "Lipton Ice tea green",
-      "desc": "Frisdrank",
+      "desc": "Overig",
       "prijs": "3.05",
       "was": "3.05",
       "deal_label": "1+1 gratis",
@@ -1523,7 +1523,7 @@
     {
       "supermarkt": "Albert Heijn",
       "naam": "YAYA Kombucha yuzu",
-      "desc": "Frisdrank",
+      "desc": "Overig",
       "prijs": "0.99",
       "was": "2.39",
       "deal_label": "59% korting",
@@ -1534,7 +1534,7 @@
     {
       "supermarkt": "Albert Heijn",
       "naam": "Rivella Original",
-      "desc": "Frisdrank",
+      "desc": "Overig",
       "prijs": "2.99",
       "was": "2.99",
       "deal_label": "2e halve prijs",
@@ -1545,7 +1545,7 @@
     {
       "supermarkt": "Albert Heijn",
       "naam": "DubbelDrank Sinaasappel & perzik",
-      "desc": "Frisdrank",
+      "desc": "Overig",
       "prijs": "2.49",
       "was": "2.49",
       "deal_label": "2 voor 2.99",
@@ -1556,7 +1556,7 @@
     {
       "supermarkt": "Albert Heijn",
       "naam": "Hero Cassis",
-      "desc": "Frisdrank",
+      "desc": "Overig",
       "prijs": "1.69",
       "was": "2.69",
       "deal_label": "37% korting",
@@ -1578,7 +1578,7 @@
     {
       "supermarkt": "Albert Heijn",
       "naam": "Fanta Orange mini 8-pack",
-      "desc": "Frisdrank",
+      "desc": "Overig",
       "prijs": "3.49",
       "was": "4.99",
       "deal_label": "30% korting",
@@ -1677,7 +1677,7 @@
     {
       "supermarkt": "Jumbo",
       "naam": "Coca-Cola Zero Sugar 12 x 330 ml",
-      "desc": "Frisdrank",
+      "desc": "Overig",
       "prijs": "7.49",
       "was": "9.49",
       "deal_label": "21% korting",
@@ -1787,7 +1787,7 @@
     {
       "supermarkt": "Jumbo",
       "naam": "Côte d'Or BonBonBloc Chocoladereep Praliné Puur 200g",
-      "desc": "Koek & snoep",
+      "desc": "Overig",
       "prijs": "3.5",
       "was": "5.79",
       "deal_label": "40% korting",
@@ -2018,7 +2018,7 @@
     {
       "supermarkt": "Jumbo",
       "naam": "Cote D'or  Melk 180g",
-      "desc": "Koek & snoep",
+      "desc": "Overig",
       "prijs": "3.5",
       "was": "4.49",
       "deal_label": "2e halve prijs",
@@ -2029,7 +2029,7 @@
     {
       "supermarkt": "Jumbo",
       "naam": "Slimpie Bosvruchten Siroop 650 ml",
-      "desc": "Frisdrank",
+      "desc": "Overig",
       "prijs": "2.0",
       "was": "3.49",
       "deal_label": "43% korting",
@@ -2172,7 +2172,7 @@
     {
       "supermarkt": "Jumbo",
       "naam": "Côte d'Or BonBonBloc Chocoladereep Melk Praliné Hazelnoot 200g",
-      "desc": "Koek & snoep",
+      "desc": "Overig",
       "prijs": "3.5",
       "was": "5.79",
       "deal_label": "40% korting",
@@ -2348,7 +2348,7 @@
     {
       "supermarkt": "Jumbo",
       "naam": "Jumbo Pizzaswirl kruidboter 100g",
-      "desc": "Maaltijden",
+      "desc": "Overig",
       "prijs": "1.11",
       "was": "1.49",
       "deal_label": "2e halve prijs",
@@ -2414,7 +2414,7 @@
     {
       "supermarkt": "Jumbo",
       "naam": "Coca-Cola Original Taste 12 x 330 ml",
-      "desc": "Frisdrank",
+      "desc": "Overig",
       "prijs": "7.49",
       "was": "9.99",
       "deal_label": "2e halve prijs",
@@ -2447,7 +2447,7 @@
     {
       "supermarkt": "Jumbo",
       "naam": "Cote D'or Melk Hazelnoot Chocolade Reep 170g",
-      "desc": "Koek & snoep",
+      "desc": "Overig",
       "prijs": "3.5",
       "was": "4.99",
       "deal_label": "30% korting",
@@ -2546,7 +2546,7 @@
     {
       "supermarkt": "Jumbo",
       "naam": "Slimpie Cactus-Appel Smaak Siroop 650 ml",
-      "desc": "Frisdrank",
+      "desc": "Overig",
       "prijs": "2.0",
       "was": "3.49",
       "deal_label": "43% korting",
@@ -2997,7 +2997,7 @@
     {
       "supermarkt": "Jumbo",
       "naam": "Slimpie Framboos Siroop 650 ml",
-      "desc": "Frisdrank",
+      "desc": "Overig",
       "prijs": "2.0",
       "was": "3.49",
       "deal_label": "43% korting",
@@ -3019,7 +3019,7 @@
     {
       "supermarkt": "Jumbo",
       "naam": "Slimpie Bloedsinaasappel Grapefruit Smaak Siroop 650 ml",
-      "desc": "Frisdrank",
+      "desc": "Overig",
       "prijs": "2.0",
       "was": "3.49",
       "deal_label": "43% korting",
@@ -3030,7 +3030,7 @@
     {
       "supermarkt": "Jumbo",
       "naam": "Fanta Orange zero sugar 12 x 330 ml",
-      "desc": "Frisdrank",
+      "desc": "Overig",
       "prijs": "7.49",
       "was": "9.99",
       "deal_label": "2e halve prijs",
@@ -3052,7 +3052,7 @@
     {
       "supermarkt": "Jumbo",
       "naam": "Côte d'Or BonBonBloc Chocoladereep Praliné Melkchocolade 200g",
-      "desc": "Koek & snoep",
+      "desc": "Overig",
       "prijs": "3.5",
       "was": "5.59",
       "deal_label": "37% korting",
@@ -3096,7 +3096,7 @@
     {
       "supermarkt": "Jumbo",
       "naam": "Slimpie Aardbei Siroop 650 ml",
-      "desc": "Frisdrank",
+      "desc": "Overig",
       "prijs": "2.0",
       "was": "3.49",
       "deal_label": "43% korting",
@@ -3184,7 +3184,7 @@
     {
       "supermarkt": "Jumbo",
       "naam": "Slimpie Sinaasappel Siroop 650 ml",
-      "desc": "Frisdrank",
+      "desc": "Overig",
       "prijs": "2.0",
       "was": "3.49",
       "deal_label": "43% korting",
@@ -3195,7 +3195,7 @@
     {
       "supermarkt": "Jumbo",
       "naam": "Côte d'Or Pure chocolade advocaat  190g",
-      "desc": "Koek & snoep",
+      "desc": "Overig",
       "prijs": "3.5",
       "was": "4.99",
       "deal_label": "30% korting",
@@ -3294,7 +3294,7 @@
     {
       "supermarkt": "Jumbo",
       "naam": "Slimpie Ice Tea Perzik Siroop 650 ml",
-      "desc": "Frisdrank",
+      "desc": "Overig",
       "prijs": "2.0",
       "was": "3.49",
       "deal_label": "43% korting",
@@ -3305,7 +3305,7 @@
     {
       "supermarkt": "Jumbo",
       "naam": "Slimpie Siroop Mango-passievrucht 0% suiker 650ML",
-      "desc": "Frisdrank",
+      "desc": "Overig",
       "prijs": "2.0",
       "was": "3.49",
       "deal_label": "43% korting",
@@ -3349,7 +3349,7 @@
     {
       "supermarkt": "Jumbo",
       "naam": "Cote D'or Original Melk Stukjes Hazelnoot Chocoladetablet 180g",
-      "desc": "Koek & snoep",
+      "desc": "Overig",
       "prijs": "3.5",
       "was": "4.49",
       "deal_label": "2e halve prijs",
@@ -3459,7 +3459,7 @@
     {
       "supermarkt": "Jumbo",
       "naam": "Slimpie Kids Siroop Tutti Frutti Smaak 580 ml",
-      "desc": "Frisdrank",
+      "desc": "Overig",
       "prijs": "2.0",
       "was": "3.29",
       "deal_label": "39% korting",
@@ -3481,7 +3481,7 @@
     {
       "supermarkt": "Jumbo",
       "naam": "Slimpie Kids Siroop Perzik Peerrr Smaak 580 ml",
-      "desc": "Frisdrank",
+      "desc": "Overig",
       "prijs": "2.0",
       "was": "3.29",
       "deal_label": "39% korting",
@@ -3602,7 +3602,7 @@
     {
       "supermarkt": "Jumbo",
       "naam": "Slimpie Sinaasappel Framboos Siroop 650 ml",
-      "desc": "Frisdrank",
+      "desc": "Overig",
       "prijs": "2.0",
       "was": "3.49",
       "deal_label": "43% korting",
@@ -3668,7 +3668,7 @@
     {
       "supermarkt": "Jumbo",
       "naam": "Côte d'Or Bloc Pure Chocoladereep Hele Hazelnoten 180g",
-      "desc": "Koek & snoep",
+      "desc": "Overig",
       "prijs": "3.5",
       "was": "5.79",
       "deal_label": "40% korting",
@@ -3679,7 +3679,7 @@
     {
       "supermarkt": "Jumbo",
       "naam": "Fanta Orange Blik 12 x 0,33 L",
-      "desc": "Frisdrank",
+      "desc": "Overig",
       "prijs": "7.49",
       "was": "9.99",
       "deal_label": "2e halve prijs",
@@ -3756,7 +3756,7 @@
     {
       "supermarkt": "Jumbo",
       "naam": "Slimpie Watermeloen Aardbei Smaak Siroop 650 ml",
-      "desc": "Frisdrank",
+      "desc": "Overig",
       "prijs": "2.0",
       "was": "3.49",
       "deal_label": "43% korting",
@@ -3767,7 +3767,7 @@
     {
       "supermarkt": "Jumbo",
       "naam": "Côte d'Or BonBonBloc Chocoladereep Melk Praliné & Karamel 200g",
-      "desc": "Koek & snoep",
+      "desc": "Overig",
       "prijs": "3.5",
       "was": "5.79",
       "deal_label": "40% korting",
@@ -3811,7 +3811,7 @@
     {
       "supermarkt": "Jumbo",
       "naam": "Slimpie Kids Siroop Aardbei Bananana Smaak 580 ml",
-      "desc": "Frisdrank",
+      "desc": "Overig",
       "prijs": "2.0",
       "was": "3.29",
       "deal_label": "39% korting",
@@ -3899,7 +3899,7 @@
     {
       "supermarkt": "Jumbo",
       "naam": "Slimpie Lemon Siroop 650 ml",
-      "desc": "Frisdrank",
+      "desc": "Overig",
       "prijs": "2.0",
       "was": "3.49",
       "deal_label": "43% korting",
@@ -3954,7 +3954,7 @@
     {
       "supermarkt": "Jumbo",
       "naam": "Côte d'Or BonBonBloc Chocoladereep Praliné Witte Chocolade 200g",
-      "desc": "Koek & snoep",
+      "desc": "Overig",
       "prijs": "3.5",
       "was": "5.59",
       "deal_label": "37% korting",
@@ -3998,7 +3998,7 @@
     {
       "supermarkt": "Jumbo",
       "naam": "Cote D'or Zwart Met Amandelen Chocolade Tablet 180g",
-      "desc": "Koek & snoep",
+      "desc": "Overig",
       "prijs": "3.5",
       "was": "5.89",
       "deal_label": "41% korting",
@@ -4020,7 +4020,7 @@
     {
       "supermarkt": "Jumbo",
       "naam": "Cote D'or Melkchocolade met Noten en Rozijnen Tablet 180g",
-      "desc": "Koek & snoep",
+      "desc": "Overig",
       "prijs": "3.5",
       "was": "5.89",
       "deal_label": "41% korting",
@@ -4031,7 +4031,7 @@
     {
       "supermarkt": "Jumbo",
       "naam": "Côte d'Or Bloc Chocoladereep Melk Hele Hazelnoten 180g",
-      "desc": "Koek & snoep",
+      "desc": "Overig",
       "prijs": "3.5",
       "was": "5.79",
       "deal_label": "40% korting",
@@ -4042,7 +4042,7 @@
     {
       "supermarkt": "Jumbo",
       "naam": "Cote d'or Puur 180g",
-      "desc": "Koek & snoep",
+      "desc": "Overig",
       "prijs": "3.5",
       "was": "4.49",
       "deal_label": "2e halve prijs",
@@ -4075,7 +4075,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Chocolade paashaas",
-      "desc": "Frisdrank",
+      "desc": "Overig",
       "prijs": "0.9",
       "was": null,
       "deal_label": "-30%",
@@ -4273,7 +4273,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Appelsap",
-      "desc": "Frisdrank",
+      "desc": "Overig",
       "prijs": "1.59",
       "was": null,
       "deal_label": "-20%",
@@ -4284,7 +4284,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Borrelschotel",
-      "desc": "Snacks",
+      "desc": "Overig",
       "prijs": "4.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -4438,7 +4438,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Schenkstroop",
-      "desc": "Koek & snoep",
+      "desc": "Overig",
       "prijs": "1.29",
       "was": null,
       "deal_label": "-18%",
@@ -4669,7 +4669,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Zoete popcorn karamel",
-      "desc": "Snacks",
+      "desc": "Overig",
       "prijs": "2.79",
       "was": null,
       "deal_label": "OP=OP",
@@ -4713,7 +4713,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Koko- of balenakoekjes",
-      "desc": "Koek & snoep",
+      "desc": "Overig",
       "prijs": "1.59",
       "was": null,
       "deal_label": "OP=OP",
@@ -4768,7 +4768,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Salademix",
-      "desc": "Maaltijden",
+      "desc": "Overig",
       "prijs": "0.99",
       "was": null,
       "deal_label": "-28%",
@@ -4779,7 +4779,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Falafel maaltijdsalade",
-      "desc": "Maaltijden",
+      "desc": "Overig",
       "prijs": "2.99",
       "was": null,
       "deal_label": "-25%",
@@ -5164,7 +5164,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Studentenhaver",
-      "desc": "Snacks",
+      "desc": "Overig",
       "prijs": "3.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -5208,7 +5208,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "6-pack mineraalwater met sportdop",
-      "desc": "Frisdrank",
+      "desc": "Overig",
       "prijs": "4.49",
       "was": null,
       "deal_label": "OP=OP",
@@ -5219,7 +5219,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Kip-popcornnuggets",
-      "desc": "Snacks",
+      "desc": "Overig",
       "prijs": "2.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -5395,7 +5395,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "5-pack Lahmacun",
-      "desc": "Maaltijden",
+      "desc": "Overig",
       "prijs": "4.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -5725,7 +5725,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "6-pack premium tonic",
-      "desc": "Frisdrank",
+      "desc": "Overig",
       "prijs": "4.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -5824,7 +5824,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Smint",
-      "desc": "Koek & snoep",
+      "desc": "Overig",
       "prijs": "2.79",
       "was": null,
       "deal_label": "OP=OP",
@@ -5846,7 +5846,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "8-pack Bueno",
-      "desc": "Koek & snoep",
+      "desc": "Overig",
       "prijs": "4.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -5857,7 +5857,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Snoep",
-      "desc": "Koek & snoep",
+      "desc": "Overig",
       "prijs": "0.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -5901,7 +5901,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Paaschocolade",
-      "desc": "Frisdrank",
+      "desc": "Overig",
       "prijs": "3.49",
       "was": null,
       "deal_label": "OP=OP",
@@ -5934,7 +5934,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Rings chips",
-      "desc": "Snacks",
+      "desc": "Overig",
       "prijs": "2.5",
       "was": null,
       "deal_label": "2 VOOR",
@@ -6011,7 +6011,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Wereldgerechten",
-      "desc": "Maaltijden",
+      "desc": "Overig",
       "prijs": "1.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -6044,7 +6044,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Max chips",
-      "desc": "Snacks",
+      "desc": "Overig",
       "prijs": "1.99",
       "was": null,
       "deal_label": "TOT -32%",
@@ -6055,7 +6055,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "12-pack cola regular of zero",
-      "desc": "Frisdrank",
+      "desc": "Overig",
       "prijs": "3.29",
       "was": null,
       "deal_label": "-17%",
@@ -6121,7 +6121,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Chocolade-biscuits",
-      "desc": "Frisdrank",
+      "desc": "Overig",
       "prijs": "1.69",
       "was": null,
       "deal_label": "OP=OP",
@@ -6143,7 +6143,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "6-pack Oasis",
-      "desc": "Frisdrank",
+      "desc": "Overig",
       "prijs": "3.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -6165,7 +6165,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Drop",
-      "desc": "Koek & snoep",
+      "desc": "Overig",
       "prijs": "2.49",
       "was": null,
       "deal_label": "OP=OP",
@@ -6220,7 +6220,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Wagner Pizza Fina en Gustavo Gusto Pizza",
-      "desc": "Maaltijden",
+      "desc": "Overig",
       "prijs": "1.99",
       "was": "4.49",
       "deal_label": "Weekaanbieding",
@@ -6231,7 +6231,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Chio Chips en popcorn",
-      "desc": "Snacks",
+      "desc": "Overig",
       "prijs": "2.99",
       "was": "3.98",
       "deal_label": "2 Voor 2.99",
@@ -6407,7 +6407,7 @@
     {
       "supermarkt": "Plus",
       "naam": "PLUS Ijsbergsla of salademix",
-      "desc": "Maaltijden",
+      "desc": "Overig",
       "prijs": "1.09",
       "was": null,
       "deal_label": "1+1 Gratis",
@@ -6462,7 +6462,7 @@
     {
       "supermarkt": "Plus",
       "naam": "PLUS Verse pizza's",
-      "desc": "Maaltijden",
+      "desc": "Overig",
       "prijs": "6.99",
       "was": "12.58",
       "deal_label": "2 Voor 6.99",
@@ -6473,7 +6473,7 @@
     {
       "supermarkt": "Plus",
       "naam": "PLUS Bloemkool pizzabodem en No Fairytales Tortilla",
-      "desc": "Maaltijden",
+      "desc": "Overig",
       "prijs": "2.99",
       "was": null,
       "deal_label": "1+1 Gratis",
@@ -6495,7 +6495,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Mama's Maaltijden Poké bowls",
-      "desc": "Maaltijden",
+      "desc": "Overig",
       "prijs": "5.99",
       "was": null,
       "deal_label": "25 % Korting",
@@ -6506,7 +6506,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Uit de keuken van PLUS Kies & Mix Verse maaltijd",
-      "desc": "Maaltijden",
+      "desc": "Overig",
       "prijs": "11.0",
       "was": "12.78",
       "deal_label": "2 Voor 11.00",
@@ -6517,7 +6517,7 @@
     {
       "supermarkt": "Plus",
       "naam": "PLUS Kies & Mix Maaltijdsalade",
-      "desc": "Maaltijden",
+      "desc": "Overig",
       "prijs": "9.0",
       "was": "12.58",
       "deal_label": "2 Voor 9.00",
@@ -6539,7 +6539,7 @@
     {
       "supermarkt": "Plus",
       "naam": "PLUS Kies & Mix Oosterse maaltijd",
-      "desc": "Maaltijden",
+      "desc": "Overig",
       "prijs": "5.5",
       "was": "7.58",
       "deal_label": "2 Voor 5.50",
@@ -6682,7 +6682,7 @@
     {
       "supermarkt": "Plus",
       "naam": "PLUS Salade",
-      "desc": "Maaltijden",
+      "desc": "Overig",
       "prijs": "3.49",
       "was": "5.98",
       "deal_label": "2 Voor 3.49",
@@ -7023,7 +7023,7 @@
     {
       "supermarkt": "Plus",
       "naam": "PLUS Kies & Mix American Bakery Cookies, vanille- of chocolade muffins",
-      "desc": "Frisdrank",
+      "desc": "Overig",
       "prijs": "2.0",
       "was": "2.38",
       "deal_label": "2 Voor 2.00",
@@ -7067,7 +7067,7 @@
     {
       "supermarkt": "Plus",
       "naam": "PLUS Korenlanders Kies & Mix Koek, cake of chocolade",
-      "desc": "Frisdrank",
+      "desc": "Overig",
       "prijs": "6.0",
       "was": "7.5",
       "deal_label": "2 Voor 6.00",
@@ -7265,7 +7265,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Maaza en Dubbeldrank",
-      "desc": "Frisdrank",
+      "desc": "Overig",
       "prijs": "1.49",
       "was": "2.49",
       "deal_label": "Weekaanbieding",
@@ -7276,7 +7276,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Coca-Cola, Fanta, Sprite en Fuze Tea",
-      "desc": "Frisdrank",
+      "desc": "Overig",
       "prijs": "2.45",
       "was": null,
       "deal_label": "1+1 Gratis",
@@ -7287,7 +7287,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Karvan Cévitam",
-      "desc": "Frisdrank",
+      "desc": "Overig",
       "prijs": "3.49",
       "was": "4.29",
       "deal_label": "Weekaanbieding",
@@ -7441,7 +7441,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Honig Mix voor maaltijden en maaltijdpakketten",
-      "desc": "Maaltijden",
+      "desc": "Overig",
       "prijs": "1.99",
       "was": null,
       "deal_label": "1+1 Gratis",
@@ -7518,7 +7518,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Feestelijk PLUS Paaschocolade",
-      "desc": "Frisdrank",
+      "desc": "Overig",
       "prijs": "5.99",
       "was": "7.98",
       "deal_label": "2 Voor 5.99",
@@ -7529,7 +7529,7 @@
     {
       "supermarkt": "Plus",
       "naam": "PLUS Crème brulée koekjes en hazelino's met crèmevulling",
-      "desc": "Koek & snoep",
+      "desc": "Overig",
       "prijs": "1.99",
       "was": null,
       "deal_label": "1+1 Gratis",
@@ -7551,7 +7551,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Stimorol en Bubblicious",
-      "desc": "Koek & snoep",
+      "desc": "Overig",
       "prijs": "3.49",
       "was": null,
       "deal_label": "1+1 Gratis",
@@ -7562,7 +7562,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Red Band, Venco en The Jelly Bean Factory",
-      "desc": "Koek & snoep",
+      "desc": "Overig",
       "prijs": "3.99",
       "was": "5.5",
       "deal_label": "2 Voor 3.99",
@@ -7573,7 +7573,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Pringles",
-      "desc": "Snacks",
+      "desc": "Overig",
       "prijs": "1.95",
       "was": null,
       "deal_label": "1+1 Gratis",
@@ -7584,7 +7584,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Doritos",
-      "desc": "Snacks",
+      "desc": "Overig",
       "prijs": "3.49",
       "was": "4.78",
       "deal_label": "2 Voor 3.49",
@@ -7595,7 +7595,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Kies & Mix Chips",
-      "desc": "Snacks",
+      "desc": "Overig",
       "prijs": "2.5",
       "was": "4.45",
       "deal_label": "5 Voor 2.50",
@@ -7628,7 +7628,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Kwekkeboom Snacks",
-      "desc": "Snacks",
+      "desc": "Overig",
       "prijs": "4.59",
       "was": null,
       "deal_label": "1+1 Gratis",
@@ -7661,7 +7661,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Mama's en Fitmeals Vriesverse maaltijden",
-      "desc": "Maaltijden",
+      "desc": "Overig",
       "prijs": "10.0",
       "was": "13.98",
       "deal_label": "2 Voor 10.00",
@@ -7672,7 +7672,7 @@
     {
       "supermarkt": "Plus",
       "naam": "PLUS Kies & Mix Dolce Vita Pizza",
-      "desc": "Maaltijden",
+      "desc": "Overig",
       "prijs": "6.0",
       "was": "7.47",
       "deal_label": "3 Voor 6.00",
@@ -7936,7 +7936,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Alle Mama's Maaltijden Poké bowls",
-      "desc": "Maaltijden",
+      "desc": "Overig",
       "prijs": "7.99",
       "was": null,
       "deal_label": "25 % KORTING",
@@ -8079,7 +8079,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Del Monte vruchten op sap of siroop — Blik 825 of 840 gram. OP=OP",
-      "desc": "Frisdrank",
+      "desc": "Overig",
       "prijs": "1.99",
       "was": null,
       "deal_label": "Actie_",
@@ -8453,7 +8453,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Balconi wafers — Pak 5 x 45 gram. OP=OP",
-      "desc": "Koek & snoep",
+      "desc": "Overig",
       "prijs": "1.29",
       "was": null,
       "deal_label": "Actie_",
@@ -8464,7 +8464,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Enkhuizer Jodekoeken — Bus ca. 16 stuks.",
-      "desc": "Koek & snoep",
+      "desc": "Overig",
       "prijs": "1.89",
       "was": null,
       "deal_label": "Actie_",
@@ -8596,7 +8596,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "1 de Beste Vers sap — Fles 500 ml.",
-      "desc": "Frisdrank",
+      "desc": "Overig",
       "prijs": "1.99",
       "was": "2.55",
       "deal_label": "Actie_",
@@ -8629,7 +8629,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Fuze Tea — Fles 1.25  liter. OP=OP",
-      "desc": "Frisdrank",
+      "desc": "Overig",
       "prijs": "0.99",
       "was": "2.65",
       "deal_label": "Actie_",
@@ -8662,7 +8662,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Crystal Clear — Fles 1.5 liter.",
-      "desc": "Frisdrank",
+      "desc": "Overig",
       "prijs": "1.29",
       "was": "2.39",
       "deal_label": "Actie_",
@@ -8673,7 +8673,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "O2 Life mineraalwater — Per fles.750 ml.",
-      "desc": "Frisdrank",
+      "desc": "Overig",
       "prijs": "1.39",
       "was": null,
       "deal_label": "Actie_",
@@ -8684,7 +8684,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Slimpie limonadesiroop 0% suiker — Fles 580 of 650 ml.",
-      "desc": "Frisdrank",
+      "desc": "Overig",
       "prijs": "1.79",
       "was": "3.39",
       "deal_label": "Actie_",
@@ -8695,7 +8695,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Taksi, Dubbelfrisss of Maaza — Pak 300, 330 of 350 ml.",
-      "desc": "Frisdrank",
+      "desc": "Overig",
       "prijs": "0.69",
       "was": "1.49",
       "deal_label": "Actie_",
@@ -8772,7 +8772,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Coca-Cola, Fanta, Sprite of Fernandes — Blik 33 cl.",
-      "desc": "Frisdrank",
+      "desc": "Overig",
       "prijs": "0.55",
       "was": "0.99",
       "deal_label": "Actie_",
@@ -8871,7 +8871,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Maggi roerbaknoedels — Zak 185 gram.",
-      "desc": "Maaltijden",
+      "desc": "Overig",
       "prijs": "1.29",
       "was": "2.85",
       "deal_label": "Actie_",
@@ -8882,7 +8882,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Johma brood- en toastsalade — Kuip 175 gram.",
-      "desc": "Maaltijden",
+      "desc": "Overig",
       "prijs": "1.99",
       "was": "3.65",
       "deal_label": "Actie_",
@@ -8915,7 +8915,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Maaltijd verspakket — Per pakket.",
-      "desc": "Maaltijden",
+      "desc": "Overig",
       "prijs": "4.49",
       "was": null,
       "deal_label": "Vr, Za & Zo",
@@ -8926,7 +8926,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Pokébowl — Per stuk.",
-      "desc": "Maaltijden",
+      "desc": "Overig",
       "prijs": "3.99",
       "was": null,
       "deal_label": "Vr, Za & Zo",
@@ -8981,7 +8981,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Wagner Pizzeria style — Per stuk 365 - 375 gram.",
-      "desc": "Maaltijden",
+      "desc": "Overig",
       "prijs": "2.49",
       "was": null,
       "deal_label": "Actie_",
@@ -9036,7 +9036,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Smint mints — Pak 2 x 50 stuks.",
-      "desc": "Koek & snoep",
+      "desc": "Overig",
       "prijs": "1.99",
       "was": "4.19",
       "deal_label": "Actie_",
@@ -9047,7 +9047,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Nestlé mini's — Zak 208 - 284 gram.",
-      "desc": "Koek & snoep",
+      "desc": "Overig",
       "prijs": "2.49",
       "was": "3.95",
       "deal_label": "Actie_",
@@ -9058,7 +9058,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Wilhelmina pepermunt — Zak 200 gram.",
-      "desc": "Koek & snoep",
+      "desc": "Overig",
       "prijs": "0.99",
       "was": null,
       "deal_label": "Actie_",
@@ -9069,7 +9069,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Chio Partymix original — Zak 250 gram.",
-      "desc": "Snacks",
+      "desc": "Overig",
       "prijs": "0.99",
       "was": null,
       "deal_label": "Actie_",
@@ -9080,7 +9080,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Lay's chips — Zak 175 gram. OP=OP",
-      "desc": "Snacks",
+      "desc": "Overig",
       "prijs": "0.99",
       "was": null,
       "deal_label": "Actie_",
