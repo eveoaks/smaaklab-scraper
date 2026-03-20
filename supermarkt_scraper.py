@@ -607,6 +607,98 @@ def scrape_aldi():
 
 
 # ──────────────────────────────────────────────
+# Dirk — Nuxt __NUXT_DATA__ embedded JSON
+# ──────────────────────────────────────────────
+
+DIRK_URL        = "https://www.dirk.nl/aanbiedingen"
+DIRK_IMG_BASE   = "https://web-fileserver.dirk.nl/artikelen/"
+DIRK_HEADERS    = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"}
+
+
+def scrape_dirk():
+    try:
+        r = requests.get(DIRK_URL, timeout=TIMEOUT, headers=DIRK_HEADERS)
+        r.raise_for_status()
+    except Exception as e:
+        print(f"  FOUT Dirk (request): {e}")
+        return []
+
+    m = re.search(r'<script[^>]*id="__NUXT_DATA__"[^>]*>(.*?)</script>', r.text, re.S)
+    if not m:
+        print("  FOUT Dirk: __NUXT_DATA__ niet gevonden")
+        return []
+
+    try:
+        data = json.loads(m.group(1))
+    except Exception as e:
+        print(f"  FOUT Dirk (JSON parse): {e}")
+        return []
+
+    def resolve(v):
+        return data[v] if isinstance(v, int) and v < len(data) else v
+
+    # Alle offer-objecten hebben 'offerPrice' als key
+    results = []
+    seen    = set()
+
+    for item in data:
+        if not isinstance(item, dict) or "offerPrice" not in item:
+            continue
+
+        naam = resolve(item.get("headerText", ""))
+        if not isinstance(naam, str) or not naam.strip():
+            continue
+        naam = naam.strip()
+
+        key = naam.lower()
+        if key in seen:
+            continue
+
+        prijs = resolve(item.get("offerPrice"))
+        try:
+            prijs = float(prijs)
+            if prijs <= 0:
+                continue
+        except (TypeError, ValueError):
+            continue
+
+        was = resolve(item.get("normalPrice"))
+        try:
+            was = float(was)
+            was = str(was) if was > 0 and was != prijs else None
+        except (TypeError, ValueError):
+            was = None
+
+        packaging = resolve(item.get("packaging") or "")
+        deal_label = resolve(item.get("textPriceSign") or "")
+        if isinstance(deal_label, str):
+            deal_label = deal_label.replace("_actie", "").strip().title() or "Weekaanbieding"
+        else:
+            deal_label = "Weekaanbieding"
+
+        if packaging and isinstance(packaging, str):
+            naam = f"{naam} — {packaging.strip()}"
+
+        img_path = resolve(item.get("image") or "")
+        img = f"{DIRK_IMG_BASE}{img_path}" if img_path and isinstance(img_path, str) else ""
+
+        seen.add(key)
+        results.append({
+            "supermarkt": "Dirk",
+            "naam":       naam,
+            "desc":       "Weekaanbieding",
+            "prijs":      str(prijs),
+            "was":        was,
+            "deal_label": deal_label,
+            "effectief":  None,
+            "img":        img,
+            "url":        DIRK_URL,
+        })
+
+    return results
+
+
+# ──────────────────────────────────────────────
 # Plus — Playwright + network interception
 # ──────────────────────────────────────────────
 
@@ -893,6 +985,7 @@ SCRAPERS = [
     # ("Lidl",         scrape_lidl),  # tijdelijk uitgeschakeld (Vision API kost geld)
     ("Aldi",         scrape_aldi),
     ("Plus",         scrape_plus),
+    ("Dirk",         scrape_dirk),
 ]
 
 
@@ -931,6 +1024,7 @@ HTML_TEMPLATE = """\
   .super-lidl {{ background: #fff0f0; color: #c0392b; }}
   .super-aldi {{ background: #fff8e1; color: #e65100; }}
   .super-plus {{ background: #e8f5e9; color: #2e7d32; }}
+  .super-dirk {{ background: #fce4ec; color: #c62828; }}
   .effectief {{ font-weight: bold; color: #2e7d32; }}
   .effectief small {{ font-weight: normal; color: #888; font-size: 11px; }}
 </style>
@@ -1000,7 +1094,7 @@ function render() {{
   else if (sort === 'prijs') filtered.sort((a, b) => parseFloat(a.prijs || a.was) - parseFloat(b.prijs || b.was));
   else filtered.sort((a, b) => a.naam.localeCompare(b.naam));
   document.getElementById('count').textContent = filtered.length + ' deals';
-  const superClass = s => s === 'Albert Heijn' ? 'super-ah' : s === 'Jumbo' ? 'super-jumbo' : s === 'Lidl' ? 'super-lidl' : s === 'Aldi' ? 'super-aldi' : s === 'Plus' ? 'super-plus' : '';
+  const superClass = s => s === 'Albert Heijn' ? 'super-ah' : s === 'Jumbo' ? 'super-jumbo' : s === 'Lidl' ? 'super-lidl' : s === 'Aldi' ? 'super-aldi' : s === 'Plus' ? 'super-plus' : s === 'Dirk' ? 'super-dirk' : '';
   const isPct = label => label && /^\\d+%/.test(label);
   document.getElementById('tbody').innerHTML = filtered.map(d => {{
     const label = d.deal_label || '';
