@@ -10,6 +10,7 @@ import json
 import os
 import re
 import time
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import date
 
 import anthropic
@@ -81,28 +82,26 @@ def is_food(deal):
 # Albert Heijn — native GraphQL API
 # ──────────────────────────────────────────────
 
-AH_TOKEN_URL   = "https://api.ah.nl/mobile-auth/v1/auth/token/anonymous"
-AH_GRAPHQL_URL = "https://api.ah.nl/graphql"
+AH_TOKEN_URL    = "https://api.ah.nl/mobile-auth/v1/auth/token/anonymous"
+AH_GRAPHQL_URL  = "https://api.ah.nl/graphql"
+AH_PRODUCT_URL  = "https://api.ah.nl/mobile-services/product/detail/v4/fir/{}"
 
+# Product-level fields (title/category/imagePack) now return null in GraphQL.
+# We fetch only IDs + prices via GraphQL, then resolve details via REST.
 AH_QUERY = """
 {
   bonusPromotions {
     id
     title
-    subtitle
     promotionType
     products {
-      title
-      category
+      id
       priceV2 {
         now { amount }
         was { amount }
         promotionLabel {
           tiers { mechanism description count freeCount price percentage }
         }
-      }
-      imagePack {
-        small { url }
       }
     }
   }
@@ -120,6 +119,28 @@ def ah_get_token():
     return r.json()["access_token"]
 
 
+def _ah_fetch_product_detail(pid, auth_headers):
+    """Fetch title, mainCategory and image for a single product ID."""
+    try:
+        r = requests.get(
+            AH_PRODUCT_URL.format(pid),
+            headers=auth_headers,
+            timeout=10,
+        )
+        if r.ok:
+            card = r.json().get("productCard") or {}
+            images = card.get("images") or []
+            img = next((i["url"] for i in images if i.get("width", 0) >= 200), "")
+            return {
+                "title":    card.get("title", ""),
+                "category": card.get("mainCategory", ""),
+                "img":      img,
+            }
+    except Exception:
+        pass
+    return {"title": "", "category": "", "img": ""}
+
+
 def scrape_ah():
     try:
         token = ah_get_token()
@@ -127,17 +148,21 @@ def scrape_ah():
         print(f"  FOUT Albert Heijn (token): {e}")
         return []
 
-    headers = {
+    gql_headers = {
         "Authorization": f"Bearer {token}",
         "x-application": "AHWEBSHOP",
         "Content-Type": "application/json",
+    }
+    rest_headers = {
+        "Authorization": f"Bearer {token}",
+        "x-application": "AHWEBSHOP",
     }
 
     try:
         r = requests.post(
             AH_GRAPHQL_URL,
             json={"query": AH_QUERY},
-            headers=headers,
+            headers=gql_headers,
             timeout=TIMEOUT,
         )
         r.raise_for_status()
@@ -147,102 +172,106 @@ def scrape_ah():
         return []
 
     promotions = data.get("data", {}).get("bonusPromotions", [])
+    national = [
+        p for p in promotions
+        if p.get("promotionType") == "NATIONAL" and p.get("products")
+    ]
+
+    # Collect unique product IDs (first product per promo is enough for detail)
+    unique_pids = list({p["products"][0]["id"] for p in national})
+
+    # Fetch product details concurrently (20 workers ≈ 5-10s for ~300 products)
+    detail_cache = {}
+    with ThreadPoolExecutor(max_workers=20) as executor:
+        fut_map = {
+            executor.submit(_ah_fetch_product_detail, pid, rest_headers): pid
+            for pid in unique_pids
+        }
+        for fut in as_completed(fut_map):
+            detail_cache[fut_map[fut]] = fut.result()
+
     results = []
     seen = set()
 
-    for promo in promotions:
-        if promo.get("promotionType") != "NATIONAL":
+    for promo in national:
+        pid        = promo["products"][0]["id"]
+        detail     = detail_cache.get(pid, {})
+        promo_title = (promo.get("title") or "").strip()
+
+        naam = detail.get("title") or promo_title
+        if not naam:
             continue
-        products = promo.get("products") or []
-
-        if not products:
+        key = naam.lower()
+        if key in seen:
             continue
+        seen.add(key)
 
-        for product in products:
-            naam = (product.get("title") or "").strip()
-            if not naam:
-                continue
-            key = naam.lower()
-            if key in seen:
-                continue
-            seen.add(key)
+        prod_price = promo["products"][0].get("priceV2") or {}
+        now_amt  = (prod_price.get("now")  or {}).get("amount")
+        was_amt  = (prod_price.get("was")  or {}).get("amount")
 
-            prod_price = product.get("priceV2") or {}
-            now_amt  = (prod_price.get("now")  or {}).get("amount")
-            was_amt  = (prod_price.get("was")  or {}).get("amount")
+        promo_label = prod_price.get("promotionLabel") or {}
+        tiers = promo_label.get("tiers") or []
+        tier = tiers[0] if tiers else {}
+        mechanism = tier.get("mechanism", "")
 
-            promo_label = prod_price.get("promotionLabel") or {}
-            tiers = promo_label.get("tiers") or []
-            tier = tiers[0] if tiers else {}
-            mechanism = tier.get("mechanism", "")
+        # Compute deal_label + was + effectief_prijs from tier mechanism
+        deal_label = None
+        effectief_prijs = None
 
-            # Compute deal_label + was + effectief_prijs from tier mechanism
-            deal_label = None
-            effectief_prijs = None
-
-            if mechanism in ("FIXED_PRICE", "AMOUNT", "WEIGHT"):
-                # Simple price reduction — show % korting instead of redundant price label
-                if now_amt and was_amt and now_amt < was_amt:
-                    pct = round((1 - now_amt / was_amt) * 100)
-                    deal_label = f"{pct}% korting"
-                else:
-                    deal_label = tier.get("description")
-
-            elif mechanism == "PERCENTAGE":
-                deal_label = tier.get("description")  # Already "25% korting"
-
-            elif mechanism == "ONE_HALF_PRICE":
-                deal_label = tier.get("description") or "2e halve prijs"
-                # now_amt is the per-item regular price; was may be None
-                if now_amt:
-                    effectief_prijs = round(now_amt * 1.5 / 2, 2)  # avg of (1 + 0.5) items
-                if was_amt is None:
-                    was_amt = now_amt  # set was = normal price for filter
-
-            elif mechanism == "X_PLUS_Y_FREE":
-                deal_label = tier.get("description") or "1+1 gratis"
-                count      = tier.get("count") or 1
-                free_count = tier.get("freeCount") or 1
-                if now_amt:
-                    effectief_prijs = round(now_amt * count / (count + free_count), 2)
-                if was_amt is None:
-                    was_amt = now_amt
-
-            elif mechanism == "X_FOR_Y":
-                deal_label  = tier.get("description")  # "2 voor 2.49"
-                tier_price  = tier.get("price")
-                count       = tier.get("count")
-                if tier_price and count:
-                    effectief_prijs = round(tier_price / count, 2)
-                if was_amt is None:
-                    was_amt = now_amt
-
+        if mechanism in ("FIXED_PRICE", "AMOUNT", "WEIGHT"):
+            if now_amt and was_amt and now_amt < was_amt:
+                pct = round((1 - now_amt / was_amt) * 100)
+                deal_label = f"{pct}% korting"
             else:
-                # Unknown / no mechanism — use description if we have one
                 deal_label = tier.get("description")
 
-            # Skip deals with no price reduction and no deal info
-            # (e.g. "gratis bezorging" bundles where prijs == was == regular price)
-            if now_amt and was_amt and now_amt == was_amt and not deal_label:
-                continue
+        elif mechanism == "PERCENTAGE":
+            deal_label = tier.get("description")
 
-            img = ""
-            image_packs = product.get("imagePack") or []
-            if image_packs:
-                small = (image_packs[0] or {}).get("small") or {}
-                img = small.get("url", "")
+        elif mechanism == "ONE_HALF_PRICE":
+            deal_label = tier.get("description") or "2e halve prijs"
+            if now_amt:
+                effectief_prijs = round(now_amt * 1.5 / 2, 2)
+            if was_amt is None:
+                was_amt = now_amt
 
-            results.append({
-                "supermarkt":    "Albert Heijn",
-                "naam":          naam,
-                "desc":          (product.get("category") or "").strip(),
-                "prijs":         str(now_amt)  if now_amt  is not None else None,
-                "was":           str(was_amt)  if was_amt  is not None else None,
-                "deal_label":    deal_label,
-                "effectief":     str(effectief_prijs) if effectief_prijs is not None else None,
-                "img":           img,
-                "url":           "https://www.ah.nl/bonus",
-            })
+        elif mechanism == "X_PLUS_Y_FREE":
+            deal_label = tier.get("description") or "1+1 gratis"
+            count      = tier.get("count") or 1
+            free_count = tier.get("freeCount") or 1
+            if now_amt:
+                effectief_prijs = round(now_amt * count / (count + free_count), 2)
+            if was_amt is None:
+                was_amt = now_amt
+
+        elif mechanism == "X_FOR_Y":
+            deal_label  = tier.get("description")
+            tier_price  = tier.get("price")
+            count       = tier.get("count")
+            if tier_price and count:
+                effectief_prijs = round(tier_price / count, 2)
+            if was_amt is None:
+                was_amt = now_amt
+
+        else:
+            deal_label = tier.get("description")
+
+        # Skip deals with no price reduction and no deal info
+        if now_amt and was_amt and now_amt == was_amt and not deal_label:
+            continue
+
+        results.append({
+            "supermarkt":    "Albert Heijn",
+            "naam":          naam,
+            "desc":          detail.get("category", ""),
+            "prijs":         str(now_amt)  if now_amt  is not None else None,
+            "was":           str(was_amt)  if was_amt  is not None else None,
+            "deal_label":    deal_label,
+            "effectief":     str(effectief_prijs) if effectief_prijs is not None else None,
+            "img":           detail.get("img", ""),
+            "url":           "https://www.ah.nl/bonus",
+        })
 
     return results
 
