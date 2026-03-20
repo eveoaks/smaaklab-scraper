@@ -1557,27 +1557,31 @@ def scrape_plus():
 
             print(f"  Na scrollen: {prev_count} kaarten zichtbaar")
 
-            # Klik categorie-tabs zodat subcategorie-API-calls ook worden getriggerd
-            PLUS_TABS = [
-                "Groente", "Vlees", "Zuivel", "Brood", "Diepvries",
-                "Kaas", "Pasta", "Koffie", "Ontbijt", "Dranken",
+            # Navigeer via SPA naar subcategoriepagina's voor extra producten
+            PLUS_SUBCATS = [
+                "groente-fruit",
+                "vlees-vis-vega",
+                "zuivel-eieren",
+                "brood-gebak",
+                "diepvries",
+                "kaas-vleeswaren",
+                "pasta-rijst",
+                "koffie-thee",
+                "ontbijt-beleg",
             ]
-            for tab_text in PLUS_TABS:
+            for subcat in PLUS_SUBCATS:
                 try:
-                    tabs = page.query_selector_all("a[href*='/aanbiedingen/'], button")
-                    for el in tabs:
-                        txt = (el.inner_text() or "").strip()
-                        if tab_text.lower() in txt.lower() and el.is_visible():
-                            el.click()
-                            page.wait_for_timeout(2500)
-                            # Scroll om lazy-load te triggeren
-                            for _ in range(4):
-                                page.evaluate("window.scrollBy(0, 800)")
-                                page.wait_for_timeout(400)
-                            break
+                    # SPA-navigatie via history API ipv full reload
+                    page.evaluate(f"window.history.pushState({{}},'','/aanbiedingen/{subcat}')")
+                    page.wait_for_timeout(500)
+                    page.evaluate("window.dispatchEvent(new PopStateEvent('popstate'))")
+                    page.wait_for_timeout(3000)
+                    for _ in range(3):
+                        page.evaluate("window.scrollBy(0, 800)")
+                        page.wait_for_timeout(400)
                 except Exception:
                     pass
-            print(f"  Categorie-tabs geklikt, {len(captured_responses)} responses")
+            print(f"  Subcategorie-navigatie klaar, {len(captured_responses)} responses")
 
             # Network interception: parseer PromotionOfferList
             for resp in captured_responses:
