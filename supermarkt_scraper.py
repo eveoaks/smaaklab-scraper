@@ -1745,7 +1745,7 @@ def main():
             if d["desc"] == "Weekaanbieding":
                 d["desc"] = classify_by_name(d.get("naam", ""))
             if d["desc"] in HIDDEN_CATEGORIES:
-                d["desc"] = "Overig"
+                d["desc"] = "Niet interessant"
         status = "OK" if deals else "⚠ GEEN DEALS"
         print(f"  {len(deals)} deals gevonden  [{status}]")
         all_deals.extend(deals)
