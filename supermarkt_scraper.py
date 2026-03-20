@@ -1557,6 +1557,28 @@ def scrape_plus():
 
             print(f"  Na scrollen: {prev_count} kaarten zichtbaar")
 
+            # Klik categorie-tabs zodat subcategorie-API-calls ook worden getriggerd
+            PLUS_TABS = [
+                "Groente", "Vlees", "Zuivel", "Brood", "Diepvries",
+                "Kaas", "Pasta", "Koffie", "Ontbijt", "Dranken",
+            ]
+            for tab_text in PLUS_TABS:
+                try:
+                    tabs = page.query_selector_all("a[href*='/aanbiedingen/'], button")
+                    for el in tabs:
+                        txt = (el.inner_text() or "").strip()
+                        if tab_text.lower() in txt.lower() and el.is_visible():
+                            el.click()
+                            page.wait_for_timeout(2500)
+                            # Scroll om lazy-load te triggeren
+                            for _ in range(4):
+                                page.evaluate("window.scrollBy(0, 800)")
+                                page.wait_for_timeout(400)
+                            break
+                except Exception:
+                    pass
+            print(f"  Categorie-tabs geklikt, {len(captured_responses)} responses")
+
             # Network interception: parseer PromotionOfferList
             for resp in captured_responses:
                 try:
