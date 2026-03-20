@@ -1389,7 +1389,12 @@ def _parse_plus_network(data, results, seen):
         for tile in (tiles or []):
             if not isinstance(tile, dict) or tile.get("IsFreeDeliveryOffer"):
                 continue
-            tile_naam = tile.get("ProductName") or tile.get("Example") or tile.get("Variant") or ""
+            tile_naam = tile.get("ProductName") or ""
+            if re.match(r'^\d', tile_naam) or not tile_naam:
+                print(f"  [DEBUG bron1] velden: { {k: v for k, v in tile.items() if v and k not in ('ImageURL', 'Slug')} }")
+                brand = (tile.get("Brand") or "").replace("Alle ", "").replace("alle ", "").strip()
+                example = re.sub(r'^[Bb]ijv\.\s*', '', tile.get("Example") or "").split(",")[0].strip()
+                tile_naam = brand or example or tile.get("Variant") or tile_naam
             if re.match(r'^\d[\d,.]* (VOOR|PER)', tile_naam, re.IGNORECASE):
                 continue
             _plus_item_toevoegen(
@@ -1417,10 +1422,11 @@ def _parse_plus_network(data, results, seen):
             except (ValueError, TypeError):
                 continue
             naam_offer = offer.get("Name") or ""
-            # Als Name leeg of een prijslabel is: dump alle velden zodat we weten wat er is
             if re.match(r'^\d', naam_offer) or not naam_offer:
                 print(f"  [DEBUG bron2] velden: { {k: v for k, v in offer.items() if v and k not in ('ImageURL', 'Slug')} }")
-            # Als naam een prijslabel is (bv "2 VOOR 2.50", "0.99 PER KILO"), skip
+                brand = (offer.get("Brand") or "").replace("Alle ", "").replace("alle ", "").strip()
+                example = re.sub(r'^[Bb]ijv\.\s*', '', offer.get("Example") or "").split(",")[0].strip()
+                naam_offer = brand or example or offer.get("Variant") or naam_offer
             if re.match(r'^\d[\d,.]* (VOOR|PER)', naam_offer, re.IGNORECASE):
                 continue
             _plus_item_toevoegen(
