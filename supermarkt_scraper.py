@@ -1390,7 +1390,7 @@ def _parse_plus_network(data, results, seen):
             if not isinstance(tile, dict) or tile.get("IsFreeDeliveryOffer"):
                 continue
             _plus_item_toevoegen(
-                naam_raw  = tile.get("ProductName") or tile.get("PromotionLabel"),
+                naam_raw  = tile.get("ProductName") or tile.get("Example") or tile.get("Variant"),
                 brand_raw = tile.get("Brand"),
                 prijs_raw = tile.get("NewPrice"),
                 was_raw   = tile.get("PriceOriginal_Highest"),
@@ -1413,8 +1413,12 @@ def _parse_plus_network(data, results, seen):
                     continue
             except (ValueError, TypeError):
                 continue
+            naam_offer = offer.get("Name") or ""
+            # Als Name een prijslabel is, gebruik Example of Variant als productnaam
+            if re.match(r'^\d', naam_offer) or not naam_offer:
+                naam_offer = offer.get("Example") or offer.get("Variant") or naam_offer
             _plus_item_toevoegen(
-                naam_raw  = offer.get("Name"),
+                naam_raw  = naam_offer,
                 brand_raw = offer.get("Brand"),
                 prijs_raw = offer.get("NewPrice"),
                 was_raw   = offer.get("PriceOriginal_Highest"),
