@@ -1208,7 +1208,8 @@ def main():
         ]
         for d in deals:
             d["desc"] = normalize_category(d["desc"])
-        print(f"  {len(deals)} deals gevonden")
+        status = "OK" if deals else "⚠ GEEN DEALS"
+        print(f"  {len(deals)} deals gevonden  [{status}]")
         all_deals.extend(deals)
         time.sleep(1)
 
@@ -1224,7 +1225,18 @@ def main():
 
     generate_viewer(all_deals, datum)
 
-    print(f"\nKlaar: {len(all_deals)} deals opgeslagen in deals.json en deals_viewer.html")
+    print(f"\n{'='*40}")
+    print(f"SAMENVATTING  {datum}")
+    print(f"{'='*40}")
+    counts = {}
+    for d in all_deals:
+        counts[d["supermarkt"]] = counts.get(d["supermarkt"], 0) + 1
+    for naam, _ in SCRAPERS:
+        n = counts.get(naam, 0)
+        flag = "  ⚠ CONTROLEER" if n == 0 else ""
+        print(f"  {naam:<20} {n:>4} deals{flag}")
+    print(f"  {'TOTAAL':<20} {len(all_deals):>4} deals")
+    print(f"{'='*40}")
 
 
 if __name__ == "__main__":
