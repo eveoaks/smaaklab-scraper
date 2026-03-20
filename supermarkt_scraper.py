@@ -600,6 +600,37 @@ _KEYWORD_RULES = [
     # Ontbijt & beleg — extra
     ("snelle jelle",    "Ontbijt & beleg"),
     ("schenkstroop",    "Ontbijt & beleg"),
+
+    # Groente & fruit — extra
+    ("peren",           "Groente & fruit"),
+    ("verspakket",      "Groente & fruit"),
+    ("mandarijnen",     "Groente & fruit"),
+
+    # Vlees & vis — extra
+    ("hachee",          "Vlees & vis"),
+    ("riblappen",       "Vlees & vis"),
+    ("runderhach",      "Vlees & vis"),
+
+    # Brood & gebak — extra
+    ("korenlanders",    "Brood & gebak"),
+    ("volkoren",        "Brood & gebak"),
+    ("meergranen",      "Brood & gebak"),
+    ("spelt",           "Brood & gebak"),
+    ("stolletjes",      "Brood & gebak"),
+    ("grissini",        "Brood & gebak"),
+    ("pistolet",        "Brood & gebak"),
+
+    # Soepen & sauzen — extra
+    ("aioli",           "Soepen & sauzen"),
+    ("sriracha",        "Soepen & sauzen"),
+    ("specerij",        "Soepen & sauzen"),
+
+    # Vleeswaren & kaas — extra
+    ("fourme",          "Vleeswaren & kaas"),
+    ("ambert",          "Vleeswaren & kaas"),
+
+    # Diepvries — extra
+    ("tartufo",         "Diepvries"),
 ]
 
 

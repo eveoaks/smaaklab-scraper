@@ -170,7 +170,7 @@
     {
       "supermarkt": "Albert Heijn",
       "naam": "Miskets Melk chocolade aardbei",
-      "desc": "Niet interessant",
+      "desc": "Zuivel & eieren",
       "prijs": "2.54",
       "was": "3.39",
       "deal_label": "25% korting",
@@ -258,7 +258,7 @@
     {
       "supermarkt": "Albert Heijn",
       "naam": "AH Poffertjes",
-      "desc": "Niet interessant",
+      "desc": "Overig",
       "prijs": "1.89",
       "was": "1.89",
       "deal_label": "1+1 gratis",
@@ -269,7 +269,7 @@
     {
       "supermarkt": "Albert Heijn",
       "naam": "AH Bapao kip",
-      "desc": "Niet interessant",
+      "desc": "Vlees & vis",
       "prijs": "0.89",
       "was": "1.19",
       "deal_label": "25% korting",
@@ -280,7 +280,7 @@
     {
       "supermarkt": "Albert Heijn",
       "naam": "AH Ei salade",
-      "desc": "Niet interessant",
+      "desc": "Zuivel & eieren",
       "prijs": "2.69",
       "was": "2.69",
       "deal_label": "2 voor 3.75",
@@ -291,7 +291,7 @@
     {
       "supermarkt": "Albert Heijn",
       "naam": "AH Flammkuchendeeg",
-      "desc": "Niet interessant",
+      "desc": "Overig",
       "prijs": "2.19",
       "was": "2.19",
       "deal_label": "1+1 gratis",
@@ -302,7 +302,7 @@
     {
       "supermarkt": "Albert Heijn",
       "naam": "AH Stamppot zuurkool rookworst",
-      "desc": "Niet interessant",
+      "desc": "Vlees & vis",
       "prijs": "4.69",
       "was": "4.69",
       "deal_label": "2 voor 6.99",
@@ -313,7 +313,7 @@
     {
       "supermarkt": "Albert Heijn",
       "naam": "AH Pastasalade tonijn",
-      "desc": "Niet interessant",
+      "desc": "Vlees & vis",
       "prijs": "2.99",
       "was": "4.29",
       "deal_label": "30% korting",
@@ -324,7 +324,7 @@
     {
       "supermarkt": "Albert Heijn",
       "naam": "AH Terra Verse pureersoep tomaat oregano",
-      "desc": "Niet interessant",
+      "desc": "Soepen & sauzen",
       "prijs": "4.49",
       "was": "4.49",
       "deal_label": "2 voor 7.00",
@@ -335,7 +335,7 @@
     {
       "supermarkt": "Albert Heijn",
       "naam": "AH Verse pizza Amerikaans spicy salami",
-      "desc": "Niet interessant",
+      "desc": "Vleeswaren & kaas",
       "prijs": "6.99",
       "was": "6.99",
       "deal_label": "2 voor 12.00",
@@ -346,7 +346,7 @@
     {
       "supermarkt": "Albert Heijn",
       "naam": "AH Verse soep tomaat",
-      "desc": "Niet interessant",
+      "desc": "Soepen & sauzen",
       "prijs": "3.59",
       "was": "3.59",
       "deal_label": "2 voor 6.00",
@@ -412,7 +412,7 @@
     {
       "supermarkt": "Albert Heijn",
       "naam": "Huls Sticks naturel",
-      "desc": "Niet interessant",
+      "desc": "Overig",
       "prijs": "1.64",
       "was": "2.19",
       "deal_label": "25% korting",
@@ -775,7 +775,7 @@
     {
       "supermarkt": "Albert Heijn",
       "naam": "HiPRO Protein bar caramel",
-      "desc": "Niet interessant",
+      "desc": "Overig",
       "prijs": "1.99",
       "was": "1.99",
       "deal_label": "2 voor 3.49",
@@ -1028,7 +1028,7 @@
     {
       "supermarkt": "Albert Heijn",
       "naam": "Lay's Bugles nacho cheese",
-      "desc": "Niet interessant",
+      "desc": "Overig",
       "prijs": "2.25",
       "was": "2.25",
       "deal_label": "2 voor 2.99",
@@ -1039,7 +1039,7 @@
     {
       "supermarkt": "Albert Heijn",
       "naam": "Chio Red paprika",
-      "desc": "Niet interessant",
+      "desc": "Groente & fruit",
       "prijs": "0.89",
       "was": "1.79",
       "deal_label": "50% korting",
@@ -1072,7 +1072,7 @@
     {
       "supermarkt": "Albert Heijn",
       "naam": "AH Krokante zeewier",
-      "desc": "Niet interessant",
+      "desc": "Overig",
       "prijs": "3.59",
       "was": "3.59",
       "deal_label": "2 voor 5.00",
@@ -1083,7 +1083,7 @@
     {
       "supermarkt": "Albert Heijn",
       "naam": "AH Scrocchi zeezout",
-      "desc": "Niet interessant",
+      "desc": "Overig",
       "prijs": "2.19",
       "was": "2.19",
       "deal_label": "2 voor 4.00",
@@ -1094,7 +1094,7 @@
     {
       "supermarkt": "Albert Heijn",
       "naam": "AH Kleintje bruschetta dip",
-      "desc": "Niet interessant",
+      "desc": "Overig",
       "prijs": "1.49",
       "was": "1.49",
       "deal_label": "3 voor 3.00",
@@ -1105,7 +1105,7 @@
     {
       "supermarkt": "Albert Heijn",
       "naam": "AH Borrelnoten paprika smaak",
-      "desc": "Niet interessant",
+      "desc": "Groente & fruit",
       "prijs": "1.65",
       "was": "1.65",
       "deal_label": "3 voor 4.00",
@@ -1204,7 +1204,7 @@
     {
       "supermarkt": "Albert Heijn",
       "naam": "Lotus Biscoff Speculoos",
-      "desc": "Niet interessant",
+      "desc": "Overig",
       "prijs": "0.99",
       "was": "1.99",
       "deal_label": "50% korting",
@@ -1215,7 +1215,7 @@
     {
       "supermarkt": "Albert Heijn",
       "naam": "Verkade Nizza kokos",
-      "desc": "Niet interessant",
+      "desc": "Overig",
       "prijs": "1.99",
       "was": "1.99",
       "deal_label": "1+1 gratis",
@@ -1237,7 +1237,7 @@
     {
       "supermarkt": "Albert Heijn",
       "naam": "Milka Chocoladereep alpenmelk",
-      "desc": "Niet interessant",
+      "desc": "Zuivel & eieren",
       "prijs": "1.04",
       "was": "1.49",
       "deal_label": "30% korting",
@@ -1270,7 +1270,7 @@
     {
       "supermarkt": "Albert Heijn",
       "naam": "Galler Wit pistaches",
-      "desc": "Niet interessant",
+      "desc": "Overig",
       "prijs": "1.24",
       "was": "2.49",
       "deal_label": "50% korting",
@@ -1281,7 +1281,7 @@
     {
       "supermarkt": "Albert Heijn",
       "naam": "Tony's Chocolonely Reep everything bar",
-      "desc": "Niet interessant",
+      "desc": "Ontbijt & beleg",
       "prijs": "1.34",
       "was": "2.69",
       "deal_label": "50% korting",
@@ -1292,7 +1292,7 @@
     {
       "supermarkt": "Albert Heijn",
       "naam": "Celebrations Assortiments mix",
-      "desc": "Niet interessant",
+      "desc": "Overig",
       "prijs": "5.17",
       "was": "7.39",
       "deal_label": "30% korting",
@@ -1303,7 +1303,7 @@
     {
       "supermarkt": "Albert Heijn",
       "naam": "Pocky Strawberry",
-      "desc": "Niet interessant",
+      "desc": "Overig",
       "prijs": "1.27",
       "was": "1.69",
       "deal_label": "25% korting",
@@ -1523,7 +1523,7 @@
     {
       "supermarkt": "Albert Heijn",
       "naam": "YAYA Kombucha yuzu",
-      "desc": "Niet interessant",
+      "desc": "Overig",
       "prijs": "0.99",
       "was": "2.39",
       "deal_label": "59% korting",
@@ -1534,7 +1534,7 @@
     {
       "supermarkt": "Albert Heijn",
       "naam": "Rivella Original",
-      "desc": "Niet interessant",
+      "desc": "Overig",
       "prijs": "2.99",
       "was": "2.99",
       "deal_label": "2e halve prijs",
@@ -1545,7 +1545,7 @@
     {
       "supermarkt": "Albert Heijn",
       "naam": "DubbelDrank Sinaasappel & perzik",
-      "desc": "Niet interessant",
+      "desc": "Groente & fruit",
       "prijs": "2.49",
       "was": "2.49",
       "deal_label": "2 voor 2.99",
@@ -1655,7 +1655,7 @@
     {
       "supermarkt": "Jumbo",
       "naam": "Slimpie Framboos Siroop 650 ml",
-      "desc": "Niet interessant",
+      "desc": "Overig",
       "prijs": "2.0",
       "was": "3.49",
       "deal_label": "43% korting",
@@ -1754,7 +1754,7 @@
     {
       "supermarkt": "Jumbo",
       "naam": "Cote D'or Melk Hazelnoot Chocolade Reep 170g",
-      "desc": "Niet interessant",
+      "desc": "Zuivel & eieren",
       "prijs": "3.5",
       "was": "4.99",
       "deal_label": "30% korting",
@@ -1776,7 +1776,7 @@
     {
       "supermarkt": "Jumbo",
       "naam": "Slimpie Aardbei Siroop 650 ml",
-      "desc": "Niet interessant",
+      "desc": "Zuivel & eieren",
       "prijs": "2.0",
       "was": "3.49",
       "deal_label": "43% korting",
@@ -2018,7 +2018,7 @@
     {
       "supermarkt": "Jumbo",
       "naam": "Slimpie Kids Siroop Perzik Peerrr Smaak 580 ml",
-      "desc": "Niet interessant",
+      "desc": "Groente & fruit",
       "prijs": "2.0",
       "was": "3.29",
       "deal_label": "39% korting",
@@ -2139,7 +2139,7 @@
     {
       "supermarkt": "Jumbo",
       "naam": "Jumbo Pizzaswirl kruidboter 100g",
-      "desc": "Niet interessant",
+      "desc": "Zuivel & eieren",
       "prijs": "1.11",
       "was": "1.49",
       "deal_label": "2e halve prijs",
@@ -2315,7 +2315,7 @@
     {
       "supermarkt": "Jumbo",
       "naam": "Slimpie Siroop Mango-passievrucht 0% suiker 650ML",
-      "desc": "Niet interessant",
+      "desc": "Groente & fruit",
       "prijs": "2.0",
       "was": "3.49",
       "deal_label": "43% korting",
@@ -2348,7 +2348,7 @@
     {
       "supermarkt": "Jumbo",
       "naam": "Slimpie Bosvruchten Siroop 650 ml",
-      "desc": "Niet interessant",
+      "desc": "Overig",
       "prijs": "2.0",
       "was": "3.49",
       "deal_label": "43% korting",
@@ -2414,7 +2414,7 @@
     {
       "supermarkt": "Jumbo",
       "naam": "Slimpie Lemon Siroop 650 ml",
-      "desc": "Niet interessant",
+      "desc": "Overig",
       "prijs": "2.0",
       "was": "3.49",
       "deal_label": "43% korting",
@@ -2447,7 +2447,7 @@
     {
       "supermarkt": "Jumbo",
       "naam": "Cote D'or  Melk 180g",
-      "desc": "Niet interessant",
+      "desc": "Zuivel & eieren",
       "prijs": "3.5",
       "was": "4.49",
       "deal_label": "2e halve prijs",
@@ -2469,7 +2469,7 @@
     {
       "supermarkt": "Jumbo",
       "naam": "Slimpie Sinaasappel Framboos Siroop 650 ml",
-      "desc": "Niet interessant",
+      "desc": "Groente & fruit",
       "prijs": "2.0",
       "was": "3.49",
       "deal_label": "43% korting",
@@ -2590,7 +2590,7 @@
     {
       "supermarkt": "Jumbo",
       "naam": "Slimpie Watermeloen Aardbei Smaak Siroop 650 ml",
-      "desc": "Niet interessant",
+      "desc": "Zuivel & eieren",
       "prijs": "2.0",
       "was": "3.49",
       "deal_label": "43% korting",
@@ -2722,7 +2722,7 @@
     {
       "supermarkt": "Jumbo",
       "naam": "Slimpie Cactus-Appel Smaak Siroop 650 ml",
-      "desc": "Niet interessant",
+      "desc": "Groente & fruit",
       "prijs": "2.0",
       "was": "3.49",
       "deal_label": "43% korting",
@@ -2810,7 +2810,7 @@
     {
       "supermarkt": "Jumbo",
       "naam": "Cote D'or Melkchocolade met Noten en Rozijnen Tablet 180g",
-      "desc": "Niet interessant",
+      "desc": "Zuivel & eieren",
       "prijs": "3.5",
       "was": "5.89",
       "deal_label": "41% korting",
@@ -3019,7 +3019,7 @@
     {
       "supermarkt": "Jumbo",
       "naam": "Cote d'or Puur 180g",
-      "desc": "Niet interessant",
+      "desc": "Overig",
       "prijs": "3.5",
       "was": "4.49",
       "deal_label": "2e halve prijs",
@@ -3107,7 +3107,7 @@
     {
       "supermarkt": "Jumbo",
       "naam": "Côte d'Or BonBonBloc Chocoladereep Melk Praliné & Karamel 200g",
-      "desc": "Niet interessant",
+      "desc": "Zuivel & eieren",
       "prijs": "3.5",
       "was": "5.79",
       "deal_label": "40% korting",
@@ -3217,7 +3217,7 @@
     {
       "supermarkt": "Jumbo",
       "naam": "Slimpie Kids Siroop Aardbei Bananana Smaak 580 ml",
-      "desc": "Niet interessant",
+      "desc": "Zuivel & eieren",
       "prijs": "2.0",
       "was": "3.29",
       "deal_label": "39% korting",
@@ -3305,7 +3305,7 @@
     {
       "supermarkt": "Jumbo",
       "naam": "Slimpie Kids Siroop Tutti Frutti Smaak 580 ml",
-      "desc": "Niet interessant",
+      "desc": "Overig",
       "prijs": "2.0",
       "was": "3.29",
       "deal_label": "39% korting",
@@ -3569,7 +3569,7 @@
     {
       "supermarkt": "Jumbo",
       "naam": "Côte d'Or Bloc Chocoladereep Melk Hele Hazelnoten 180g",
-      "desc": "Niet interessant",
+      "desc": "Zuivel & eieren",
       "prijs": "3.5",
       "was": "5.79",
       "deal_label": "40% korting",
@@ -3646,7 +3646,7 @@
     {
       "supermarkt": "Jumbo",
       "naam": "Slimpie Bloedsinaasappel Grapefruit Smaak Siroop 650 ml",
-      "desc": "Niet interessant",
+      "desc": "Groente & fruit",
       "prijs": "2.0",
       "was": "3.49",
       "deal_label": "43% korting",
@@ -3690,7 +3690,7 @@
     {
       "supermarkt": "Jumbo",
       "naam": "Côte d'Or BonBonBloc Chocoladereep Melk Praliné Hazelnoot 200g",
-      "desc": "Niet interessant",
+      "desc": "Zuivel & eieren",
       "prijs": "3.5",
       "was": "5.79",
       "deal_label": "40% korting",
@@ -3888,7 +3888,7 @@
     {
       "supermarkt": "Jumbo",
       "naam": "Slimpie Sinaasappel Siroop 650 ml",
-      "desc": "Niet interessant",
+      "desc": "Groente & fruit",
       "prijs": "2.0",
       "was": "3.49",
       "deal_label": "43% korting",
@@ -3954,7 +3954,7 @@
     {
       "supermarkt": "Jumbo",
       "naam": "Cote D'or Original Melk Stukjes Hazelnoot Chocoladetablet 180g",
-      "desc": "Niet interessant",
+      "desc": "Zuivel & eieren",
       "prijs": "3.5",
       "was": "4.49",
       "deal_label": "2e halve prijs",
@@ -3998,7 +3998,7 @@
     {
       "supermarkt": "Jumbo",
       "naam": "Côte d'Or BonBonBloc Chocoladereep Praliné Melkchocolade 200g",
-      "desc": "Niet interessant",
+      "desc": "Zuivel & eieren",
       "prijs": "3.5",
       "was": "5.59",
       "deal_label": "37% korting",
@@ -4064,7 +4064,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Fourme d'Ambert 50+",
-      "desc": "Overig",
+      "desc": "Vleeswaren & kaas",
       "prijs": "1.69",
       "was": null,
       "deal_label": "-15%",
@@ -4493,7 +4493,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Boeren volkoren meergranen",
-      "desc": "Overig",
+      "desc": "Brood & gebak",
       "prijs": "1.29",
       "was": null,
       "deal_label": "-35%",
@@ -4548,7 +4548,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Gran tartufo",
-      "desc": "Overig",
+      "desc": "Diepvries",
       "prijs": "3.99",
       "was": null,
       "deal_label": "OP=OP",
@@ -5351,7 +5351,7 @@
     {
       "supermarkt": "Aldi",
       "naam": "Aioli sriracha",
-      "desc": "Overig",
+      "desc": "Soepen & sauzen",
       "prijs": "1.29",
       "was": null,
       "deal_label": "OP=OP",
@@ -6330,7 +6330,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Neutraal Handperen Conference",
-      "desc": "Overig",
+      "desc": "Groente & fruit",
       "prijs": "1.49",
       "was": null,
       "deal_label": "Weekaanbieding",
@@ -6418,7 +6418,7 @@
     {
       "supermarkt": "Plus",
       "naam": "PLUS Verspakket",
-      "desc": "Overig",
+      "desc": "Groente & fruit",
       "prijs": "4.49",
       "was": "5.99",
       "deal_label": "Weekaanbieding",
@@ -6583,7 +6583,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Boerentrots van PLUS Runderhachee en runderriblappen",
-      "desc": "Overig",
+      "desc": "Vlees & vis",
       "prijs": "4.49",
       "was": "5.38",
       "deal_label": "250 Gram 4.49",
@@ -6803,7 +6803,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Korenlanders van PLUS Stoer spelt",
-      "desc": "Overig",
+      "desc": "Brood & gebak",
       "prijs": "2.49",
       "was": "2.99",
       "deal_label": "Weekaanbieding",
@@ -6946,7 +6946,7 @@
     {
       "supermarkt": "Plus",
       "naam": "PLUS Korenlanders Brunch mix",
-      "desc": "Overig",
+      "desc": "Brood & gebak",
       "prijs": "2.49",
       "was": null,
       "deal_label": "Weekaanbieding",
@@ -7056,7 +7056,7 @@
     {
       "supermarkt": "Plus",
       "naam": "PLUS Kies & Mix Mini stolletjes",
-      "desc": "Overig",
+      "desc": "Brood & gebak",
       "prijs": "2.5",
       "was": "2.97",
       "deal_label": "3 Voor 2.50",
@@ -7474,7 +7474,7 @@
     {
       "supermarkt": "Plus",
       "naam": "Silvo Kruiden en specerijen",
-      "desc": "Overig",
+      "desc": "Soepen & sauzen",
       "prijs": "0.74",
       "was": null,
       "deal_label": "50 % Korting",
@@ -7606,7 +7606,7 @@
     {
       "supermarkt": "Plus",
       "naam": "PLUS Kies & Mix Dipstokjes, grissini, picos of scrocchi",
-      "desc": "Overig",
+      "desc": "Brood & gebak",
       "prijs": "3.5",
       "was": "4.38",
       "deal_label": "2 Voor 3.50",
@@ -8904,7 +8904,7 @@
     {
       "supermarkt": "Dirk",
       "naam": "Verspakket van de maand — Per pakket.",
-      "desc": "Overig",
+      "desc": "Groente & fruit",
       "prijs": "4.49",
       "was": null,
       "deal_label": "Actie_",
