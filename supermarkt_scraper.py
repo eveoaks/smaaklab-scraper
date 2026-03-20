@@ -1417,10 +1417,10 @@ def _parse_plus_network(data, results, seen):
             except (ValueError, TypeError):
                 continue
             naam_offer = offer.get("Name") or ""
-            # Als Name een prijslabel is, dump alle velden voor debug
+            # Als Name leeg of een prijslabel is, gebruik Brand als productnaam
             if re.match(r'^\d', naam_offer) or not naam_offer:
-                print(f"  [DEBUG prijslabel] alle velden: { {k:v for k,v in offer.items() if v and k not in ('ImageURL','Slug')} }")
-                naam_offer = offer.get("Example") or offer.get("Variant") or naam_offer
+                brand = (offer.get("Brand") or "").replace("Alle ", "").replace("alle ", "").strip()
+                naam_offer = brand or offer.get("Example") or offer.get("Variant") or naam_offer
             # Als naam nog steeds een prijslabel is (bv "2 VOOR 2.50", "0.99 PER KILO"), skip
             if re.match(r'^\d[\d,.]* (VOOR|PER)', naam_offer, re.IGNORECASE):
                 continue
