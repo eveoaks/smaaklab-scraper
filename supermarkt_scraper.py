@@ -1389,8 +1389,11 @@ def _parse_plus_network(data, results, seen):
         for tile in (tiles or []):
             if not isinstance(tile, dict) or tile.get("IsFreeDeliveryOffer"):
                 continue
+            tile_naam = tile.get("ProductName") or tile.get("Example") or tile.get("Variant") or ""
+            if re.match(r'^\d[\d,.]* (VOOR|PER)', tile_naam, re.IGNORECASE):
+                continue
             _plus_item_toevoegen(
-                naam_raw  = tile.get("ProductName") or tile.get("Example") or tile.get("Variant"),
+                naam_raw  = tile_naam,
                 brand_raw = tile.get("Brand"),
                 prijs_raw = tile.get("NewPrice"),
                 was_raw   = tile.get("PriceOriginal_Highest"),
@@ -1414,9 +1417,13 @@ def _parse_plus_network(data, results, seen):
             except (ValueError, TypeError):
                 continue
             naam_offer = offer.get("Name") or ""
-            # Als Name een prijslabel is, gebruik Example of Variant als productnaam
+            # Als Name een prijslabel is, dump alle velden voor debug
             if re.match(r'^\d', naam_offer) or not naam_offer:
+                print(f"  [DEBUG prijslabel] alle velden: { {k:v for k,v in offer.items() if v and k not in ('ImageURL','Slug')} }")
                 naam_offer = offer.get("Example") or offer.get("Variant") or naam_offer
+            # Als naam nog steeds een prijslabel is (bv "2 VOOR 2.50", "0.99 PER KILO"), skip
+            if re.match(r'^\d[\d,.]* (VOOR|PER)', naam_offer, re.IGNORECASE):
+                continue
             _plus_item_toevoegen(
                 naam_raw  = naam_offer,
                 brand_raw = offer.get("Brand"),
