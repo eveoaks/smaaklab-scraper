@@ -1713,7 +1713,7 @@ def generate_viewer(all_deals, datum):
             d["korting"] = 0
         enriched.append(d)
 
-    cats = sorted({d["desc"] for d in enriched if d.get("desc")})
+    cats = sorted({d["desc"] for d in enriched if d.get("desc") and d["desc"] != "Niet interessant"})
     supers = sorted({d["supermarkt"] for d in enriched if d.get("supermarkt")})
 
     html = HTML_TEMPLATE.format(
