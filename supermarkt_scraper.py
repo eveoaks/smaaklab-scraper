@@ -1469,10 +1469,16 @@ def _parse_plus_dom(page):
             if prijs is None:
                 continue
 
-            # Naam: langste niet-prijs regel vóór de prijs (of eerste regel)
-            naam_candidates = [l for l in lines[:prijs_idx] if not re.search(r"\d+[,.]\d{2}", l)]
-            naam = max(naam_candidates, key=len) if naam_candidates else lines[0]
-            naam = naam.strip()
+            # Naam: langste regel zonder prijs of aanbiedingslabel (alle regels, niet alleen vóór prijs)
+            naam_candidates = [
+                l for l in lines
+                if not re.search(r"\d+[,.]\d{2}", l)
+                and not re.match(r'^\d[\d,.]* (VOOR|PER)', l, re.IGNORECASE)
+                and len(l) >= 3
+            ]
+            if not naam_candidates:
+                continue
+            naam = max(naam_candidates, key=len).strip()
             if not naam or len(naam) < 3:
                 continue
 
