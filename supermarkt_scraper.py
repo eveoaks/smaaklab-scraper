@@ -1486,10 +1486,10 @@ def _parse_plus_dom(page):
             if key in seen:
                 continue
 
-            # Deal label: zoek regel met bekende aanbiedingstekst
+            # Deal label: zoek regel met bekende aanbiedingstekst (inclusief "X VOOR Y" en "X PER KILO")
             deal_label = "Weekaanbieding"
             for line in lines:
-                if re.search(r"(\d\+\d|gratis|korting|voor\s+€?\d|halve\s+prijs)", line, re.I):
+                if re.search(r"(\d\+\d|gratis|korting|voor\s+€?\d|halve\s+prijs|\d[\d,.]*\s+(voor|per)\b)", line, re.I):
                     deal_label = line
                     break
 
