@@ -1391,7 +1391,6 @@ def _parse_plus_network(data, results, seen):
                 continue
             tile_naam = tile.get("ProductName") or ""
             if re.match(r'^\d', tile_naam) or not tile_naam:
-                print(f"  [DEBUG bron1] velden: { {k: v for k, v in tile.items() if v and k not in ('ImageURL', 'Slug')} }")
                 brand = (tile.get("Brand") or "").replace("Alle ", "").replace("alle ", "").strip()
                 example = re.sub(r'^[Bb]ijv\.\s*', '', tile.get("Example") or "").split(",")[0].strip()
                 tile_naam = brand or example or tile.get("Variant") or tile_naam
@@ -1423,7 +1422,6 @@ def _parse_plus_network(data, results, seen):
                 continue
             naam_offer = offer.get("Name") or ""
             if re.match(r'^\d', naam_offer) or not naam_offer:
-                print(f"  [DEBUG bron2] velden: { {k: v for k, v in offer.items() if v and k not in ('ImageURL', 'Slug')} }")
                 brand = (offer.get("Brand") or "").replace("Alle ", "").replace("alle ", "").strip()
                 example = re.sub(r'^[Bb]ijv\.\s*', '', offer.get("Example") or "").split(",")[0].strip()
                 naam_offer = brand or example or offer.get("Variant") or naam_offer
