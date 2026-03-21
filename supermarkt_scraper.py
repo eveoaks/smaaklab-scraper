@@ -1440,16 +1440,18 @@ def _parse_plus_network(data, results, seen):
 
 
 def _parse_plus_dom(page):
-    """DOM-fallback: extraheer deals uit rendered Plus aanbiedingen pagina."""
+    """DOM-fallback: extraheer deals uit rendered Plus aanbiedingen pagina.
+    Geeft (results, was_map) terug waarbij was_map {naam_lower: was_str} is
+    voor alle kaarten waar een hogere was-prijs gevonden wordt."""
     results = []
     seen = set()
+    was_map = {}  # naam_lower → was_prijs (voor update van network results)
 
     cards = page.query_selector_all(".plp-results-list > a, [data-block*='OfferItem'] a")
     print(f"  DOM: {len(cards)} kaarten gevonden")
 
     for card in cards:
         try:
-            # Haal volledige tekst van de kaart op en parse daaruit naam + prijs
             full_text = card.inner_text().strip()
             if not full_text:
                 continue
@@ -1469,7 +1471,17 @@ def _parse_plus_dom(page):
             if prijs is None:
                 continue
 
-            # Naam: langste regel zonder prijs of aanbiedingslabel (alle regels, niet alleen vóór prijs)
+            # Was-prijs: eerste prijs na prijs_idx die hoger is dan huidige prijs
+            was = None
+            for line in lines[prijs_idx + 1:]:
+                m2 = re.search(r"(\d+)[,.](\d{2})", line)
+                if m2:
+                    was_val = float(f"{m2.group(1)}.{m2.group(2)}")
+                    if was_val > prijs:
+                        was = str(was_val)
+                    break
+
+            # Naam: langste regel zonder prijs of aanbiedingslabel (alle regels)
             naam_candidates = [
                 l for l in lines
                 if not re.search(r"\d+[,.]\d{2}", l)
@@ -1483,10 +1495,15 @@ def _parse_plus_dom(page):
                 continue
 
             key = naam.lower()
+
+            # Sla was-prijs op zodat network-results bijgewerkt kunnen worden
+            if was:
+                was_map[key] = was
+
             if key in seen:
                 continue
 
-            # Deal label: zoek regel met bekende aanbiedingstekst (inclusief "X VOOR Y" en "X PER KILO")
+            # Deal label: zoek regel met bekende aanbiedingstekst
             deal_label = "Weekaanbieding"
             for line in lines:
                 if re.search(r"(\d\+\d|gratis|korting|voor\s+€?\d|halve\s+prijs|\d[\d,.]*\s+(voor|per)\b)", line, re.I):
@@ -1502,7 +1519,7 @@ def _parse_plus_dom(page):
                 "naam":       naam,
                 "desc":       "Weekaanbieding",
                 "prijs":      str(prijs),
-                "was":        None,
+                "was":        was,
                 "deal_label": deal_label,
                 "effectief":  None,
                 "img":        img or "",
@@ -1511,7 +1528,7 @@ def _parse_plus_dom(page):
         except Exception:
             continue
 
-    return results
+    return results, was_map
 
 
 def scrape_plus():
@@ -1610,10 +1627,18 @@ def scrape_plus():
                     print(f"  parse fout: {e}")
             print(f"  Network resultaat: {len(results)} producten")
 
-            # DOM scraping
+            # DOM scraping: nieuwe kaarten toevoegen + was-prijzen aanvullen
             if not results:
                 print("  DOM fallback...")
-            dom_results = _parse_plus_dom(page)
+            dom_results, was_map = _parse_plus_dom(page)
+
+            # Vul ontbrekende was-prijzen aan in network-results via DOM was_map
+            for d in results:
+                if d.get("was") is None:
+                    key = d["naam"].lower()
+                    if key in was_map:
+                        d["was"] = was_map[key]
+
             for d in dom_results:
                 key = d["naam"].lower()
                 if key not in seen:
