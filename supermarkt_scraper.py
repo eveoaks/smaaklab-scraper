@@ -1458,6 +1458,18 @@ def _parse_plus_dom(page):
 
             lines = [l.strip() for l in full_text.splitlines() if l.strip()]
 
+            # Combineer gesplitste prijzen: "2." + "49" → "2.49"
+            combined = []
+            i = 0
+            while i < len(lines):
+                if re.match(r'^\d+\.$', lines[i]) and i + 1 < len(lines) and re.match(r'^\d{2}$', lines[i + 1]):
+                    combined.append(lines[i] + lines[i + 1])
+                    i += 2
+                else:
+                    combined.append(lines[i])
+                    i += 1
+            lines = combined
+
             # Prijs: zoek eerste regel die een getal bevat met optionele € en komma/punt
             prijs = None
             prijs_idx = None
