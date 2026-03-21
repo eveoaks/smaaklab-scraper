@@ -736,11 +736,32 @@ def scrape_ah():
         print(f"  FOUT Albert Heijn (graphql): {e}")
         return []
 
-    promotions = data.get("data", {}).get("bonusPromotions", [])
+    # DEBUG: diagnose AH API response
+    if data.get("errors"):
+        print(f"  [DEBUG AH] GraphQL errors: {data['errors']}")
+    gql_data = data.get("data") or {}
+    print(f"  [DEBUG AH] data keys: {list(gql_data.keys())}")
+    promotions = gql_data.get("bonusPromotions", [])
+    print(f"  [DEBUG AH] {len(promotions)} promotions totaal")
+    if promotions:
+        types = {}
+        for p in promotions:
+            t = p.get("promotionType", "?")
+            types[t] = types.get(t, 0) + 1
+        print(f"  [DEBUG AH] promotionTypes: {types}")
+        p0 = promotions[0]
+        print(f"  [DEBUG AH] eerste promo keys: {list(p0.keys())}")
+        print(f"  [DEBUG AH] eerste promo products count: {len(p0.get('products') or [])}")
+        if p0.get("products"):
+            prod0 = p0["products"][0]
+            print(f"  [DEBUG AH] eerste product keys: {list(prod0.keys())}")
+            print(f"  [DEBUG AH] eerste product waarden: { {k: v for k, v in prod0.items() if k != 'priceV2'} }")
+
     national = [
         p for p in promotions
         if p.get("promotionType") == "NATIONAL" and p.get("products")
     ]
+    print(f"  [DEBUG AH] {len(national)} NATIONAL promotions met products")
 
     # Collect unique product IDs (first product per promo is enough for detail)
     unique_pids = list({p["products"][0]["id"] for p in national})
