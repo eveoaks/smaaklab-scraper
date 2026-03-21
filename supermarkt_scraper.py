@@ -1483,7 +1483,7 @@ def _parse_plus_dom(page):
             if prijs is None:
                 continue
 
-            # Was-prijs: eerste prijs na prijs_idx die hoger is dan huidige prijs
+            # Was-prijs: zoek eerste prijs na prijs_idx die hoger is dan huidige prijs
             was = None
             for line in lines[prijs_idx + 1:]:
                 m2 = re.search(r"(\d+)[,.](\d{2})", line)
@@ -1491,7 +1491,7 @@ def _parse_plus_dom(page):
                     was_val = float(f"{m2.group(1)}.{m2.group(2)}")
                     if was_val > prijs:
                         was = str(was_val)
-                    break
+                        break
 
             # Naam: langste regel zonder prijs of aanbiedingslabel (alle regels)
             naam_candidates = [
