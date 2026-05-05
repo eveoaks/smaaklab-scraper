@@ -661,12 +661,9 @@ AH_QUERY = """
     promotionType
     products {
       id
-      priceV2 {
+      price {
         now { amount }
         was { amount }
-        promotionLabel {
-          tiers { mechanism description count freeCount price percentage }
-        }
       }
     }
   }
@@ -685,7 +682,7 @@ def ah_get_token():
 
 
 def _ah_fetch_product_detail(pid, auth_headers):
-    """Fetch title, mainCategory and image for a single product ID."""
+    """Fetch title, category, image, and bonus info for a single product ID."""
     try:
         r = requests.get(
             AH_PRODUCT_URL.format(pid),
@@ -696,14 +693,20 @@ def _ah_fetch_product_detail(pid, auth_headers):
             card = r.json().get("productCard") or {}
             images = card.get("images") or []
             img = next((i["url"] for i in images if i.get("width", 0) >= 200), "")
+            discount_labels = card.get("discountLabels") or []
+            bonus_mechanism = card.get("bonusMechanism") or ""
+            if not bonus_mechanism and discount_labels:
+                bonus_mechanism = discount_labels[0].get("defaultDescription", "")
             return {
-                "title":    card.get("title", ""),
-                "category": card.get("mainCategory", ""),
-                "img":      img,
+                "title":         card.get("title", ""),
+                "category":      card.get("mainCategory", ""),
+                "img":           img,
+                "bonus_mechanism": bonus_mechanism,
+                "price_before":  card.get("priceBeforeBonus"),
             }
     except Exception:
         pass
-    return {"title": "", "category": "", "img": ""}
+    return {"title": "", "category": "", "img": "", "bonus_mechanism": "", "price_before": None}
 
 
 def scrape_ah():
@@ -736,32 +739,13 @@ def scrape_ah():
         print(f"  FOUT Albert Heijn (graphql): {e}")
         return []
 
-    # DEBUG: diagnose AH API response
-    if data.get("errors"):
-        print(f"  [DEBUG AH] GraphQL errors: {data['errors']}")
     gql_data = data.get("data") or {}
-    print(f"  [DEBUG AH] data keys: {list(gql_data.keys())}")
     promotions = gql_data.get("bonusPromotions", [])
-    print(f"  [DEBUG AH] {len(promotions)} promotions totaal")
-    if promotions:
-        types = {}
-        for p in promotions:
-            t = p.get("promotionType", "?")
-            types[t] = types.get(t, 0) + 1
-        print(f"  [DEBUG AH] promotionTypes: {types}")
-        p0 = promotions[0]
-        print(f"  [DEBUG AH] eerste promo keys: {list(p0.keys())}")
-        print(f"  [DEBUG AH] eerste promo products count: {len(p0.get('products') or [])}")
-        if p0.get("products"):
-            prod0 = p0["products"][0]
-            print(f"  [DEBUG AH] eerste product keys: {list(prod0.keys())}")
-            print(f"  [DEBUG AH] eerste product waarden: { {k: v for k, v in prod0.items() if k != 'priceV2'} }")
 
     national = [
         p for p in promotions
         if p.get("promotionType") == "NATIONAL" and p.get("products")
     ]
-    print(f"  [DEBUG AH] {len(national)} NATIONAL promotions met products")
 
     # Collect unique product IDs (first product per promo is enough for detail)
     unique_pids = list({p["products"][0]["id"] for p in national})
@@ -792,59 +776,26 @@ def scrape_ah():
             continue
         seen.add(key)
 
-        prod_price = promo["products"][0].get("priceV2") or {}
+        prod_price = promo["products"][0].get("price") or {}
         now_amt  = (prod_price.get("now")  or {}).get("amount")
         was_amt  = (prod_price.get("was")  or {}).get("amount")
 
-        promo_label = prod_price.get("promotionLabel") or {}
-        tiers = promo_label.get("tiers") or []
-        tier = tiers[0] if tiers else {}
-        mechanism = tier.get("mechanism", "")
+        # Fallback: use priceBeforeBonus from REST detail as was price when GraphQL was is None
+        if was_amt is None and detail.get("price_before") and detail["price_before"] != now_amt:
+            was_amt = detail["price_before"]
 
-        # Compute deal_label + was + effectief_prijs from tier mechanism
-        deal_label = None
+        # deal_label from REST detail (bonusMechanism / discountLabels)
+        deal_label = detail.get("bonus_mechanism") or None
+
+        # Compute percentage discount label when we have both prices
+        if now_amt and was_amt and was_amt > now_amt and not deal_label:
+            pct = round((1 - now_amt / was_amt) * 100)
+            deal_label = f"{pct}% korting"
+
         effectief_prijs = None
 
-        if mechanism in ("FIXED_PRICE", "AMOUNT", "WEIGHT"):
-            if now_amt and was_amt and now_amt < was_amt:
-                pct = round((1 - now_amt / was_amt) * 100)
-                deal_label = f"{pct}% korting"
-            else:
-                deal_label = tier.get("description")
-
-        elif mechanism == "PERCENTAGE":
-            deal_label = tier.get("description")
-
-        elif mechanism == "ONE_HALF_PRICE":
-            deal_label = tier.get("description") or "2e halve prijs"
-            if now_amt:
-                effectief_prijs = round(now_amt * 1.5 / 2, 2)
-            if was_amt is None:
-                was_amt = now_amt
-
-        elif mechanism == "X_PLUS_Y_FREE":
-            deal_label = tier.get("description") or "1+1 gratis"
-            count      = tier.get("count") or 1
-            free_count = tier.get("freeCount") or 1
-            if now_amt:
-                effectief_prijs = round(now_amt * count / (count + free_count), 2)
-            if was_amt is None:
-                was_amt = now_amt
-
-        elif mechanism == "X_FOR_Y":
-            deal_label  = tier.get("description")
-            tier_price  = tier.get("price")
-            count       = tier.get("count")
-            if tier_price and count:
-                effectief_prijs = round(tier_price / count, 2)
-            if was_amt is None:
-                was_amt = now_amt
-
-        else:
-            deal_label = tier.get("description")
-
         # Skip deals with no price reduction and no deal info
-        if now_amt and was_amt and now_amt == was_amt and not deal_label:
+        if not was_amt and not deal_label:
             continue
 
         results.append({
