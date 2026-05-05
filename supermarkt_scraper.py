@@ -794,7 +794,13 @@ def scrape_ah():
 
         effectief_prijs = None
 
-        # Skip deals with no price reduction and no deal info
+        # Fallback now_amt from REST detail when GraphQL price.now is missing
+        if now_amt is None and detail.get("price_before"):
+            now_amt = detail["price_before"]
+
+        # Skip deals with no usable price and no deal info
+        if not now_amt and not deal_label:
+            continue
         if not was_amt and not deal_label:
             continue
 
