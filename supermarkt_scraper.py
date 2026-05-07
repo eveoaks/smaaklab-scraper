@@ -1161,7 +1161,7 @@ def scrape_aldi():
             None,
         )
         slug    = p.get("productSlug", "")
-        url     = f"https://www.aldi.nl/producten/aanbiedingen/{slug}.html" if slug else ALDI_URL
+        url     = ALDI_URL
 
         results.append({
             "supermarkt": "Aldi",
@@ -1336,7 +1336,7 @@ def _plus_item_toevoegen(naam_raw, brand_raw, prijs_raw, was_raw, label_raw, img
         was = None
 
     deal_label = (label_raw or "").strip().title() or "Weekaanbieding"
-    url = f"https://www.plus.nl/aanbiedingen/{slug}" if slug else PLUS_URL
+    url = PLUS_URL
 
     seen.add(key)
     results.append({
