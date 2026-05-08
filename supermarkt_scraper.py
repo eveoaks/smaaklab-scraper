@@ -1265,7 +1265,7 @@ def scrape_dirk():
             naam = f"{naam} — {packaging.strip()}"
 
         img_path = resolve(item.get("image") or "")
-        img = f"{DIRK_IMG_BASE}{img_path}" if img_path and isinstance(img_path, str) else ""
+        img = f"{DIRK_IMG_BASE}{img_path.replace(' ', '%20')}" if img_path and isinstance(img_path, str) else ""
 
         seen.add(key)
         results.append({
