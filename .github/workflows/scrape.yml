@@ -37,3 +37,7 @@ jobs:
           git add deals.json deals_viewer.html
           git diff --staged --quiet || git commit -m "chore: supermarkt deals $(date +%Y-%m-%d)"
           git push
+
+      - name: Purge jsDelivr cache
+        run: |
+          curl -s "https://purge.jsdelivr.net/gh/eveoaks/smaaklab-scraper@main/deals.json"
