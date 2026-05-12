@@ -1235,15 +1235,17 @@ def scrape_dirk():
         except (TypeError, ValueError):
             continue
 
-        # Haal department op via products → productInformation → department
-        dept = None
+        # Haal department + afbeelding op via products → productInformation
+        dept      = None
+        pinfo_img = None
         prods = resolve(item.get("products"))
         if isinstance(prods, list) and prods:
             prod = data[prods[0]] if isinstance(prods[0], int) else prods[0]
             if isinstance(prod, dict):
                 pinfo = resolve(prod.get("productInformation"))
                 if isinstance(pinfo, dict):
-                    dept = resolve(resolve(pinfo.get("department")))
+                    dept      = resolve(resolve(pinfo.get("department")))
+                    pinfo_img = resolve(pinfo.get("image"))
         if isinstance(dept, str) and dept in DIRK_NON_FOOD:
             continue
 
@@ -1264,8 +1266,13 @@ def scrape_dirk():
         if packaging and isinstance(packaging, str):
             naam = f"{naam} — {packaging.strip()}"
 
-        img_path = resolve(item.get("image") or "")
-        img = f"{DIRK_IMG_BASE}{img_path.replace(' ', '%20')}" if img_path and isinstance(img_path, str) else ""
+        # productInformation.image heeft het correcte numerieke formaat (artikelen/12345_...)
+        # item.image heeft het oude submap-formaat (7/4/9/5/3/1/naam_...) dat 404 geeft
+        if pinfo_img and isinstance(pinfo_img, str):
+            img = f"https://web-fileserver.dirk.nl/{pinfo_img.replace(' ', '%20')}"
+        else:
+            img_path = resolve(item.get("image") or "")
+            img = f"{DIRK_IMG_BASE}{img_path.replace(' ', '%20')}" if img_path and isinstance(img_path, str) else ""
 
         seen.add(key)
         results.append({
