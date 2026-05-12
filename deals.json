@@ -1,7 +1,40 @@
 {
-  "datum": "2026-05-11",
-  "totaal": 774,
+  "datum": "2026-05-12",
+  "totaal": 770,
   "deals": [
+    {
+      "supermarkt": "Albert Heijn",
+      "naam": "AH Nederlandse witte asperges",
+      "desc": "Groente & fruit",
+      "prijs": "6.99",
+      "was": null,
+      "deal_label": "2 stapelen tot 50%",
+      "effectief": null,
+      "img": "https://static.ah.nl/dam/product/AHI_30367745394a745f516557636e6d6565694135464c67?revLabel=1&rendition=800x800_JPG_Q90&fileType=binary",
+      "url": "https://www.ah.nl/bonus"
+    },
+    {
+      "supermarkt": "Albert Heijn",
+      "naam": "AH Broccoli",
+      "desc": "Groente & fruit",
+      "prijs": "2.18",
+      "was": "2.98",
+      "deal_label": "500 GRAM VOOR 1.09",
+      "effectief": null,
+      "img": "https://static.ah.nl/dam/product/AHI_335750456439566751696531384f7277616567364577?revLabel=1&rendition=800x800_JPG_Q90&fileType=binary",
+      "url": "https://www.ah.nl/bonus"
+    },
+    {
+      "supermarkt": "Albert Heijn",
+      "naam": "AH Trostomaten",
+      "desc": "Groente & fruit",
+      "prijs": "0.49",
+      "was": "1.35",
+      "deal_label": "500 GRAM VOOR 0.49",
+      "effectief": null,
+      "img": "https://static.ah.nl/dam/product/AHI_43545239373537383636?revLabel=1&rendition=800x800_JPG_Q90&fileType=binary",
+      "url": "https://www.ah.nl/bonus"
+    },
     {
       "supermarkt": "Albert Heijn",
       "naam": "AH Spinazie kleinverpakking",
@@ -22,17 +55,6 @@
       "deal_label": "2 voor 4.49",
       "effectief": null,
       "img": "https://static.ah.nl/dam/product/AHI_43545239393033383533?revLabel=1&rendition=800x800_JPG_Q90&fileType=binary",
-      "url": "https://www.ah.nl/bonus"
-    },
-    {
-      "supermarkt": "Albert Heijn",
-      "naam": "AH Broccoli",
-      "desc": "Groente & fruit",
-      "prijs": "1.09",
-      "was": "1.49",
-      "deal_label": "VOOR 1.09",
-      "effectief": null,
-      "img": "https://static.ah.nl/dam/product/AHI_4354523130323031313436?revLabel=1&rendition=800x800_JPG_Q90&fileType=binary",
       "url": "https://www.ah.nl/bonus"
     },
     {
@@ -92,35 +114,13 @@
     },
     {
       "supermarkt": "Albert Heijn",
-      "naam": "AH Nederlandse witte asperges",
-      "desc": "Groente & fruit",
-      "prijs": "6.99",
-      "was": null,
-      "deal_label": "2 stapelen tot 50%",
-      "effectief": null,
-      "img": "https://static.ah.nl/dam/product/AHI_30367745394a745f516557636e6d6565694135464c67?revLabel=1&rendition=800x800_JPG_Q90&fileType=binary",
-      "url": "https://www.ah.nl/bonus"
-    },
-    {
-      "supermarkt": "Albert Heijn",
-      "naam": "AH Pasta arrabbiata verspakket",
+      "naam": "AH Pasta arrabbiata verspakket 2-persoons",
       "desc": "Groente & fruit",
       "prijs": "2.69",
       "was": "4.49",
       "deal_label": "40% korting",
       "effectief": null,
       "img": "https://static.ah.nl/dam/product/AHI_7244494f2d4e4b555241434f316e564b594274355441?revLabel=1&rendition=800x800_JPG_Q90&fileType=binary",
-      "url": "https://www.ah.nl/bonus"
-    },
-    {
-      "supermarkt": "Albert Heijn",
-      "naam": "AH Trostomaten",
-      "desc": "Groente & fruit",
-      "prijs": "0.49",
-      "was": "1.35",
-      "deal_label": "500 GRAM VOOR 0.49",
-      "effectief": null,
-      "img": "https://static.ah.nl/dam/product/AHI_43545239373537383636?revLabel=1&rendition=800x800_JPG_Q90&fileType=binary",
       "url": "https://www.ah.nl/bonus"
     },
     {
@@ -136,7 +136,7 @@
     },
     {
       "supermarkt": "Albert Heijn",
-      "naam": "AH Slaverrijkers sojabonen",
+      "naam": "AH Slaverrijker sojabonen",
       "desc": "Groente & fruit",
       "prijs": "2.29",
       "was": null,
@@ -158,17 +158,6 @@
     },
     {
       "supermarkt": "Albert Heijn",
-      "naam": "AH Mango",
-      "desc": "Groente & fruit",
-      "prijs": "1.99",
-      "was": null,
-      "deal_label": "2 voor 2.49",
-      "effectief": null,
-      "img": "https://static.ah.nl/dam/product/AHI_75376b2d46425368526c4334344e58722d7a55445767?revLabel=1&rendition=800x800_JPG_Q90&fileType=binary",
-      "url": "https://www.ah.nl/bonus"
-    },
-    {
-      "supermarkt": "Albert Heijn",
       "naam": "AH Nectarine schaal",
       "desc": "Groente & fruit",
       "prijs": "3.99",
@@ -176,6 +165,17 @@
       "deal_label": "1 + 1 gratis",
       "effectief": null,
       "img": "https://static.ah.nl/dam/product/AHI_43545239393533323733?revLabel=1&rendition=800x800_JPG_Q90&fileType=binary",
+      "url": "https://www.ah.nl/bonus"
+    },
+    {
+      "supermarkt": "Albert Heijn",
+      "naam": "AH Mango",
+      "desc": "Groente & fruit",
+      "prijs": "1.99",
+      "was": null,
+      "deal_label": "2 voor 2.49",
+      "effectief": null,
+      "img": "https://static.ah.nl/dam/product/AHI_75376b2d46425368526c4334344e58722d7a55445767?revLabel=1&rendition=800x800_JPG_Q90&fileType=binary",
       "url": "https://www.ah.nl/bonus"
     },
     {
@@ -378,17 +378,6 @@
     },
     {
       "supermarkt": "Albert Heijn",
-      "naam": "Unox Knaks",
-      "desc": "Vlees & vis",
-      "prijs": "3.09",
-      "was": null,
-      "deal_label": "2 + 1 gratis",
-      "effectief": null,
-      "img": "https://static.ah.nl/dam/product/AHI_78536147326c554252426d3048565845714c65344767?revLabel=1&rendition=800x800_JPG_Q90&fileType=binary",
-      "url": "https://www.ah.nl/bonus"
-    },
-    {
-      "supermarkt": "Albert Heijn",
       "naam": "AH Greenfields Beefburger naturel 2 stuks",
       "desc": "Vlees & vis",
       "prijs": "3.79",
@@ -400,13 +389,13 @@
     },
     {
       "supermarkt": "Albert Heijn",
-      "naam": "AH BBQ procureur steak black garlic",
+      "naam": "AH BBQ speklapjes smokey",
       "desc": "Vlees & vis",
       "prijs": "3.74",
       "was": "4.99",
       "deal_label": "25% korting",
       "effectief": null,
-      "img": "https://static.ah.nl/dam/product/AHI_39454734694137775443474c6357385a507a30466677?revLabel=1&rendition=800x800_JPG_Q90&fileType=binary",
+      "img": "https://static.ah.nl/dam/product/AHI_4a38727446337457524e574665382d46675930464451?revLabel=1&rendition=800x800_JPG_Q90&fileType=binary",
       "url": "https://www.ah.nl/bonus"
     },
     {
@@ -565,17 +554,6 @@
     },
     {
       "supermarkt": "Albert Heijn",
-      "naam": "Eru Kids",
-      "desc": "Vleeswaren & kaas",
-      "prijs": "0.99",
-      "was": "1.69",
-      "deal_label": "VOOR 0.99",
-      "effectief": null,
-      "img": "https://static.ah.nl/dam/product/AHI_6d424d346758385951674f6a4344554e6f774c786367?revLabel=1&rendition=800x800_JPG_Q90&fileType=binary",
-      "url": "https://www.ah.nl/bonus"
-    },
-    {
-      "supermarkt": "Albert Heijn",
       "naam": "AH Goudse jong belegen 48+ stuk",
       "desc": "Vleeswaren & kaas",
       "prijs": "7.36",
@@ -583,6 +561,17 @@
       "deal_label": "1 + 1 gratis",
       "effectief": null,
       "img": "https://static.ah.nl/dam/product/AHI_4354523130313032343536?revLabel=1&rendition=800x800_JPG_Q90&fileType=binary",
+      "url": "https://www.ah.nl/bonus"
+    },
+    {
+      "supermarkt": "Albert Heijn",
+      "naam": "Eru Kids",
+      "desc": "Vleeswaren & kaas",
+      "prijs": "0.99",
+      "was": "1.69",
+      "deal_label": "VOOR 0.99",
+      "effectief": null,
+      "img": "https://static.ah.nl/dam/product/AHI_6d424d346758385951674f6a4344554e6f774c786367?revLabel=1&rendition=800x800_JPG_Q90&fileType=binary",
       "url": "https://www.ah.nl/bonus"
     },
     {
@@ -818,17 +807,6 @@
     },
     {
       "supermarkt": "Albert Heijn",
-      "naam": "AH Groene pesto",
-      "desc": "Niet interessant",
-      "prijs": "2.99",
-      "was": null,
-      "deal_label": "3 VOOR 5.99",
-      "effectief": null,
-      "img": "https://static.ah.nl/dam/product/AHI_503742304a6a6c68524853506d506c49544d71452d41?revLabel=1&rendition=800x800_JPG_Q90&fileType=binary",
-      "url": "https://www.ah.nl/bonus"
-    },
-    {
-      "supermarkt": "Albert Heijn",
       "naam": "Lay's Max paprika",
       "desc": "Niet interessant",
       "prijs": "2.99",
@@ -840,13 +818,24 @@
     },
     {
       "supermarkt": "Albert Heijn",
-      "naam": "Croky Patatas fritas speciaal",
+      "naam": "AH Groene pesto",
+      "desc": "Niet interessant",
+      "prijs": "2.99",
+      "was": null,
+      "deal_label": "3 VOOR 5.99",
+      "effectief": null,
+      "img": "https://static.ah.nl/dam/product/AHI_503742304a6a6c68524853506d506c49544d71452d41?revLabel=1&rendition=800x800_JPG_Q90&fileType=binary",
+      "url": "https://www.ah.nl/bonus"
+    },
+    {
+      "supermarkt": "Albert Heijn",
+      "naam": "Croky Explosions Thai curry",
       "desc": "Niet interessant",
       "prijs": "1.49",
-      "was": "1.79",
+      "was": "1.99",
       "deal_label": "VOOR 1.49",
       "effectief": null,
-      "img": "https://static.ah.nl/dam/product/AHI_4354523130313434323831?revLabel=1&rendition=800x800_JPG_Q90&fileType=binary",
+      "img": "https://static.ah.nl/dam/product/AHI_43545239393335303530?revLabel=1&rendition=800x800_JPG_Q90&fileType=binary",
       "url": "https://www.ah.nl/bonus"
     },
     {
@@ -1192,6 +1181,17 @@
     },
     {
       "supermarkt": "Albert Heijn",
+      "naam": "Saint Louis De provence rosé",
+      "desc": "Bier & wijn",
+      "prijs": "5.24",
+      "was": "6.99",
+      "deal_label": "25% korting",
+      "effectief": null,
+      "img": "https://static.ah.nl/dam/product/AHI_434d50323131343331?revLabel=1&rendition=800x800_JPG_Q90&fileType=binary",
+      "url": "https://www.ah.nl/bonus"
+    },
+    {
+      "supermarkt": "Albert Heijn",
       "naam": "Amstel Radler citroen 0.0 6-pack",
       "desc": "Bier & wijn",
       "prijs": "6.49",
@@ -1210,17 +1210,6 @@
       "deal_label": "25% korting",
       "effectief": null,
       "img": "https://static.ah.nl/dam/product/AHI_74396150494b5451535143424f4f5f32396831347a51?revLabel=1&rendition=800x800_JPG_Q90&fileType=binary",
-      "url": "https://www.ah.nl/bonus"
-    },
-    {
-      "supermarkt": "Albert Heijn",
-      "naam": "Saint Louis De provence rosé",
-      "desc": "Bier & wijn",
-      "prijs": "5.24",
-      "was": "6.99",
-      "deal_label": "25% korting",
-      "effectief": null,
-      "img": "https://static.ah.nl/dam/product/AHI_4354523130313930323630?revLabel=1&rendition=800x800_JPG_Q90&fileType=binary",
       "url": "https://www.ah.nl/bonus"
     },
     {
@@ -1247,17 +1236,6 @@
     },
     {
       "supermarkt": "Albert Heijn",
-      "naam": "AH Excellent Kamptal selectie grüner veltliner",
-      "desc": "Bier & wijn",
-      "prijs": "5.99",
-      "was": "7.99",
-      "deal_label": "2 euro korting",
-      "effectief": null,
-      "img": "https://static.ah.nl/dam/product/AHI_676f65646a7565325370657268697a5a79615f795841?revLabel=1&rendition=800x800_JPG_Q90&fileType=binary",
-      "url": "https://www.ah.nl/bonus"
-    },
-    {
-      "supermarkt": "Albert Heijn",
       "naam": "Grange de Malivet Chardonnay wooded",
       "desc": "Bier & wijn",
       "prijs": "4.99",
@@ -1265,6 +1243,17 @@
       "deal_label": "25% korting",
       "effectief": null,
       "img": "https://static.ah.nl/dam/product/AHI_4354523130313837303236?revLabel=1&rendition=800x800_JPG_Q90&fileType=binary",
+      "url": "https://www.ah.nl/bonus"
+    },
+    {
+      "supermarkt": "Albert Heijn",
+      "naam": "AH Excellent Kamptal selectie grüner veltliner",
+      "desc": "Bier & wijn",
+      "prijs": "5.99",
+      "was": "7.99",
+      "deal_label": "2 euro korting",
+      "effectief": null,
+      "img": "https://static.ah.nl/dam/product/AHI_676f65646a7565325370657268697a5a79615f795841?revLabel=1&rendition=800x800_JPG_Q90&fileType=binary",
       "url": "https://www.ah.nl/bonus"
     },
     {
@@ -1335,13 +1324,13 @@
     },
     {
       "supermarkt": "Albert Heijn",
-      "naam": "Antinori Villa antinori rosso Toscana",
+      "naam": "Massari San grato barolo",
       "desc": "Bier & wijn",
       "prijs": "11.99",
       "was": "15.99",
       "deal_label": "4 EURO KORTING",
       "effectief": null,
-      "img": "https://static.ah.nl/dam/product/AHI_434d50303239373432?revLabel=1&rendition=800x800_JPG_Q90&fileType=binary",
+      "img": "https://static.ah.nl/dam/product/AHI_507966726e435268536e36596771347a6b6f6b526e67?revLabel=1&rendition=800x800_JPG_Q90&fileType=binary",
       "url": "https://www.ah.nl/bonus"
     },
     {
@@ -1357,1150 +1346,6 @@
     },
     {
       "supermarkt": "Jumbo",
-      "naam": "Mount Fishtail Marlborough - Pinot Grigio - 750ML",
-      "desc": "Bier & wijn",
-      "prijs": "6.99",
-      "was": "8.99",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/05112025_1762349644834_1762349648214_9421904809918_1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Amstel Radler Citroen 0.0 Bier Fles 6 x 300ml",
-      "desc": "Bier & wijn",
-      "prijs": "4.34",
-      "was": "5.79",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/22122025_1766403190547_1766403195674_8712000034160_1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Calvé Knijpfles Samba Saus 250 ml",
-      "desc": "Soepen & sauzen",
-      "prijs": "1.0",
-      "was": "3.39",
-      "deal_label": "71% korting",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/07052026_1778120395695_1778120407871_485514_FLS_08720182269997_C1N1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Leffe Triple Belgisch Abdijbier Flessen 6 x 30 cl",
-      "desc": "Bier & wijn",
-      "prijs": "8.24",
-      "was": "10.99",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/23042026_1776902450426_1776902458083_8725000539085_1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Leffe Belgisch Abdijbier Blond Flessen 6 x 30 cl",
-      "desc": "Bier & wijn",
-      "prijs": "5.24",
-      "was": "6.99",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/23042026_1776944043538_1776944048875_5410228261100_1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Peroni - Nastro Azzurro - 0,0% Alcoholvrij - Fles - 6 x 330ML",
-      "desc": "Bier & wijn",
-      "prijs": "4.86",
-      "was": "6.49",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/08594404023304H1N12d3393e3-4e57-4d5d-8bab-97c79a32f67a-1727790627004.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Jumbo Mexicaanse Burrito's Verspakket 4 Personen",
-      "desc": "Niet interessant",
-      "prijs": "4.49",
-      "was": "5.99",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/20032026_1774017180812_1774017186329_8718452992850_1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Calvé Saus Fles Kerrie 250 ml",
-      "desc": "Soepen & sauzen",
-      "prijs": "1.0",
-      "was": "2.39",
-      "deal_label": "58% korting",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/12032026_1773292539613_1773292577279_52722_FLS_08720182750228_H1N1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Nescafé Double Choc Mocha 8 x 18,5 g",
-      "desc": "Koffie & thee",
-      "prijs": "2.76",
-      "was": "3.69",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/09052026_1778289253721_1778289258704_685679_DS_07613034635617_C1N1_s01.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Leffe - Blond - Krat - 24 x 250ML",
-      "desc": "Bier & wijn",
-      "prijs": "15.99",
-      "was": "21.32",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/28042026_1777372383501_1777372388735_5410228280705_1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Grolsch - 0.0% Alcoholvrij - Blik - 6 x 330ML",
-      "desc": "Bier & wijn",
-      "prijs": "4.49",
-      "was": "5.99",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/08716700018949H1N132af5f14-7d93-4fd0-8270-e94d05f53b1b-1758092155294.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Desperados Original Bier Fles 6 x 330ml",
-      "desc": "Bier & wijn",
-      "prijs": "7.98",
-      "was": "10.65",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/07012025_1736267694891_1736267703145_8712000060596_1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Nescafé Frappé 10 x 14 g",
-      "desc": "Koffie & thee",
-      "prijs": "2.99",
-      "was": "3.99",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/29042026_1777462488781_1777462497563_8445291509429_1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Jumbo Loaded Cookie Chocolate Chip 300g",
-      "desc": "Niet interessant",
-      "prijs": "3.74",
-      "was": "4.99",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/19032026_1773934377678_1773934384202_8717228613821_1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Jumbo Chili Con Carne Verspakket 4 Personen",
-      "desc": "Niet interessant",
-      "prijs": "4.49",
-      "was": "5.99",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/21042026_1776764032354_1776764038065_8718452988242_1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Corona Extra Bier Flessen 12x25cl",
-      "desc": "Bier & wijn",
-      "prijs": "10.11",
-      "was": "13.49",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/10032026_1773171262922_1773171269752_5410228333173_1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Calvé Knijpfles Chunky Burger Saus 250 ml",
-      "desc": "Soepen & sauzen",
-      "prijs": "1.0",
-      "was": "2.95",
-      "deal_label": "66% korting",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/08042026_1775612881550_1775612893642_485495_FLS_08720182255402_C1N1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Calvé Knijpfles Ravigotte Saus 250 ml",
-      "desc": "Soepen & sauzen",
-      "prijs": "1.0",
-      "was": "3.29",
-      "deal_label": "70% korting",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/06052026_1778034281569_1778034293629_485513_FLS_08720182269966_C1N1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Amstel Radler Citroen Bier Blik 6 x 330ml",
-      "desc": "Bier & wijn",
-      "prijs": "4.86",
-      "was": "6.49",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/22122025_1766403192090_1766403196075_8712000059453_1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Milka Biscoff Chocoladetablet 90g",
-      "desc": "Niet interessant",
-      "prijs": "1.0",
-      "was": "1.99",
-      "deal_label": "50% korting",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/07022026_1770438175013_1770438180019_709812_PAK_07622202305221_H1N1_s02.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Nescafé Hazelnootsmaak Latte 8 x 15 g",
-      "desc": "Koffie & thee",
-      "prijs": "2.76",
-      "was": "3.69",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/05052026_1777944244948_1777944270942_721822_DS_08445291512658_C1N1_s01.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Jumbo Kleine Salade Kerrie Mango 200 g",
-      "desc": "Niet interessant",
-      "prijs": "2.46",
-      "was": "3.29",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/21042026_1776760390961_1776760396409_8717228610745_1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Milka Chocoladereep Oreo Sandwich 92 g",
-      "desc": "Niet interessant",
-      "prijs": "1.0",
-      "was": "2.19",
-      "deal_label": "54% korting",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/12032026_1773311637491_1773311640838_7622210824721_1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Desperados Mojito Bier Fles 6 x 330ml",
-      "desc": "Bier & wijn",
-      "prijs": "7.98",
-      "was": "10.65",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/07012025_1736267694881_1736267702717_8712000061135_1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Alpaca - Sauvignon Blanc - 750ML",
-      "desc": "Bier & wijn",
-      "prijs": "3.75",
-      "was": "4.79",
-      "deal_label": "22% korting",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/22072024_1721640978078_1721640980868_7808704700287_1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Leffe Bruin Alcoholvrij Bier 6 x 33 cl",
-      "desc": "Bier & wijn",
-      "prijs": "5.76",
-      "was": "7.69",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/15042026_1776260037688_1776260046000_5410228275398_1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Leffe Belgisch Abdijbier Blond Subtiel Vleugje Vanille en Kruidnagel Blikken 4 x 50 cl",
-      "desc": "Bier & wijn",
-      "prijs": "6.74",
-      "was": "8.99",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/17032026_1773758071889_1773758077211_5410228304531_1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Jumbo Salade Poké Bowl Zalm 350 g",
-      "desc": "Niet interessant",
-      "prijs": "4.11",
-      "was": "5.49",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/19032025_1742402010558_1742402018720_8718452891863_1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Nescafé Amaretto Latte Oploskoffie 8 x 17,5 g",
-      "desc": "Koffie & thee",
-      "prijs": "2.76",
-      "was": "3.69",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/29042026_1777462486376_1777462494238_7613034641021_1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Milka Chocoladereep LU 87g",
-      "desc": "Niet interessant",
-      "prijs": "1.0",
-      "was": "2.19",
-      "deal_label": "54% korting",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/05022026_1770262907889_1770262909692_172906_ZK_07622300787844_H1N1_s01.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Liefmans - Peach Fruitesse - Limited Edition - Fles - 4 x 250ML",
-      "desc": "Bier & wijn",
-      "prijs": "4.94",
-      "was": "6.59",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/14022024_1707872685775_1707872692973_5411686702570_1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Desperados Original Bier Fles 12 x 330ml",
-      "desc": "Bier & wijn",
-      "prijs": "15.81",
-      "was": "21.09",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/22122025_1766406772489_1766406780858_8712000061425_1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Nescafé Karamelsmaak Latte 8 x 17 g",
-      "desc": "Koffie & thee",
-      "prijs": "2.76",
-      "was": "3.69",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/29042026_1777462486241_1777462493046_5011546492834_1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Mount Fishtail - Sauvignon Blanc - Rose - 750ML",
-      "desc": "Bier & wijn",
-      "prijs": "6.99",
-      "was": "8.99",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/05112025_1762349644484_1762349647879_9421904809505_1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Milka Chocoladereep Alpenmelk 90g",
-      "desc": "Niet interessant",
-      "prijs": "1.0",
-      "was": "1.59",
-      "deal_label": "37% korting",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/30012026_1769739981619_1769739984151_683449_PAK_07622202271700_H1N1_s01.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Grolsch Alcoholvrij Bier 0.0 Fles 6 x 300ml",
-      "desc": "Bier & wijn",
-      "prijs": "3.66",
-      "was": "4.89",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/08716700017270H1N1190e2698-9e5c-45b7-8681-2f869e815775-1758097618397.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Leffe Blond Belgisch Abdijbier Blikken 6 x 33 cl",
-      "desc": "Bier & wijn",
-      "prijs": "7.34",
-      "was": "9.79",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/28042026_1777386782826_1777386787671_5410228310419_1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Calvé Saus Whisky Cocktail 320 ml",
-      "desc": "Soepen & sauzen",
-      "prijs": "1.0",
-      "was": "2.55",
-      "deal_label": "61% korting",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/31122025_1767180958792_1767181001302_8720182743824_1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Calvé Knijpfles Samourai Saus 250 ml",
-      "desc": "Soepen & sauzen",
-      "prijs": "1.0",
-      "was": "2.99",
-      "deal_label": "67% korting",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/07052026_1778118329081_1778118334456_485499_FLS_08720182252982_H1N1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Jumbo Fijnproevers Geschilde Asperges 350 g",
-      "desc": "Groente & fruit",
-      "prijs": "4.99",
-      "was": "6.99",
-      "deal_label": "29% korting",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/03022026_1770147205539_1770147210732_8718452711291_1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Heineken Premium Pilsener Bier Draaidop Fles 6 x 250ml",
-      "desc": "Bier & wijn",
-      "prijs": "5.99",
-      "was": "7.99",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/08712000031053H1N177a1f31a-9de3-48e3-8106-ffd293e6c9c9-1766500927338.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Liefmans Fruitbier Peach 0% 4x250ML",
-      "desc": "Bier & wijn",
-      "prijs": "4.49",
-      "was": "5.99",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/05411686702976C1N1ef596a65-3cd0-497d-a647-c77996352342-1740998512616.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Jumbo Kleine Salade Coleslaw met Zilveruitjes 200 g",
-      "desc": "Niet interessant",
-      "prijs": "2.24",
-      "was": "2.99",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/21042026_1776760390783_1776760396840_8718452997480_1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Hoegaarden Witbier Coriander & Orange Peel Blikken 6 x 33 cl",
-      "desc": "Bier & wijn",
-      "prijs": "7.49",
-      "was": "9.99",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/29042026_1777473242797_1777473247840_5410228305101_1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Desperados Original Bier Blik 6 x 330ml",
-      "desc": "Bier & wijn",
-      "prijs": "7.98",
-      "was": "10.65",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/07012025_1736267693867_1736267701226_8712000059415_1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Amstel Radler 0.0%",
-      "desc": "Bier & wijn",
-      "prijs": "2.99",
-      "was": "3.99",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Desperados Virgin 0.0 Bier Fles 6 x 330ml",
-      "desc": "Bier & wijn",
-      "prijs": "7.26",
-      "was": "9.69",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/07012025_1736267694753_1736267702439_8712000060640_1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Oreo Remix Koekjes Tiramisu en Vanille 157g",
-      "desc": "Niet interessant",
-      "prijs": "1.0",
-      "was": "1.99",
-      "deal_label": "50% korting",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/12032026_1773311637803_1773311639799_7622201391300_1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Nescafé KitKat mocha 7 x 21 g",
-      "desc": "Koffie & thee",
-      "prijs": "2.76",
-      "was": "3.69",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/29042026_1777462488517_1777462500096_8445291484610_1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Peroni Nastro Azzurro 6 x 330ML",
-      "desc": "Bier & wijn",
-      "prijs": "6.74",
-      "was": "8.99",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/08716700019809C1N13d83de57-4204-42e4-b12f-ec17fcd27a2f-1769691191642.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Desperados Original 4x500ML",
-      "desc": "Bier & wijn",
-      "prijs": "7.48",
-      "was": "9.98",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/08712000060275H1N1ce665f22-c0e5-4fd2-819e-14516ed4d13e-1772455637156.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Alpaca - Merlot - 750ML",
-      "desc": "Bier & wijn",
-      "prijs": "3.75",
-      "was": "4.79",
-      "deal_label": "22% korting",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/22072024_1721640978099_1721640980502_7804436720272_1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Calvé Knijpfles BBQ Saus 250 ml",
-      "desc": "Soepen & sauzen",
-      "prijs": "1.0",
-      "was": "2.19",
-      "deal_label": "54% korting",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/09042026_1775699500648_1775699511932_485498_FLS_08720182286864_C1N1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "RAD DESPERADOS",
-      "desc": "Bier & wijn",
-      "prijs": "7.26",
-      "was": "9.69",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Nescafé Vanillesmaak Typ Latte 8 x 17 g",
-      "desc": "Koffie & thee",
-      "prijs": "2.76",
-      "was": "3.69",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/29042026_1777462485657_1777462489982_8445291513334_1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Oreo Double Crème Koekjes (11 x 14,2g) 157g",
-      "desc": "Niet interessant",
-      "prijs": "1.0",
-      "was": "1.89",
-      "deal_label": "47% korting",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/27042026_1777259486044_1777259498175_178402_STK_07622210137258_C1N1_s09.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Amstel Bier Rosé 0.0 Flessen 6 x 300 ml",
-      "desc": "Bier & wijn",
-      "prijs": "5.61",
-      "was": "7.49",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/12122025_1765549996562_1765550003118_8712000062132_1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Milka Melkchocolade Hazelnoot Crème 85 g",
-      "desc": "Niet interessant",
-      "prijs": "1.0",
-      "was": "2.19",
-      "deal_label": "54% korting",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/03042026_1775183146931_1775183156024_747429_PAK_07622202034107_H1N1_s01.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Jumbo Salade Bowl Mango Amandel 250 g",
-      "desc": "Niet interessant",
-      "prijs": "3.51",
-      "was": "4.69",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/17032026_1773758072583_1773758080831_8717228610776_1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Heineken Premium Pilsener Bier Draaidop Fles 12 x 250ml",
-      "desc": "Bier & wijn",
-      "prijs": "10.41",
-      "was": "13.89",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/22122025_1766406771862_1766406776434_8712000030957_1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Grolsch - 0.0% Alcoholvrij - Krat - 24 x 300ML",
-      "desc": "Bier & wijn",
-      "prijs": "13.86",
-      "was": "18.49",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/08716700031771H1N161ff7117-c761-4e95-9766-3108cf31e6d4-1758098203927.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Calvé Dressing Knoflooksaus 250 ml",
-      "desc": "Soepen & sauzen",
-      "prijs": "1.0",
-      "was": "2.89",
-      "deal_label": "65% korting",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/07052026_1778118597474_1778118615704_485494_FLS_08720182255563_H1N1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Leffe Tripel Belgisch Abdijbier Blikken 4 x 33 cl",
-      "desc": "Bier & wijn",
-      "prijs": "6.74",
-      "was": "8.99",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/14042026_1776173586782_1776173592387_5410228300366_1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Corona Extra Bier Pils Flessen 20x25cl",
-      "desc": "Bier & wijn",
-      "prijs": "16.76",
-      "was": "22.35",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/04032026_1772634828984_1772634835033_5410228333265_1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Jumbo Kleine Salade Griekse Stijl 200 g",
-      "desc": "Niet interessant",
-      "prijs": "2.76",
-      "was": "3.69",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/21042026_1776760390762_1776760398554_8717228610752_1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Liefmans - Fruitesse Alcoholvrij 0.0% - Fles - 4 x 250ML",
-      "desc": "Bier & wijn",
-      "prijs": "4.49",
-      "was": "5.99",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/09082023_1691591227272_1691591265825_5411686701597_1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Leffe Belgisch Abdijbier Bruin Blikken 6 x 33 cl",
-      "desc": "Bier & wijn",
-      "prijs": "7.49",
-      "was": "9.99",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/14042026_1776173586698_1776173594631_5410228301325_596.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Milka Chocoladereep Choco-Biscuit 100 g",
-      "desc": "Niet interessant",
-      "prijs": "1.0",
-      "was": "2.09",
-      "deal_label": "52% korting",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/12032026_1773311635214_1773311638665_7622400005176_1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Mount Fishtail - Sauvignon Blanc - 750 ML",
-      "desc": "Bier & wijn",
-      "prijs": "6.99",
-      "was": "8.79",
-      "deal_label": "20% korting",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/26112025_1764137359277_1764137363740_383979_FLS_09421904809307_C1N1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Jumbo Poké Kip Salade Bowl 350 g",
-      "desc": "Niet interessant",
-      "prijs": "4.11",
-      "was": "5.49",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/21042025_1745193609615_1745193631145_8718452891856_1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Calvé Knijpfles Zoetzuur Saus 250 ml",
-      "desc": "Soepen & sauzen",
-      "prijs": "1.0",
-      "was": "2.99",
-      "deal_label": "67% korting",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/08042026_1775610697658_1775610709663_613263_FLS_08720182783349_C1N1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Nescafé Espresso Concentrate Style Classic 500 ml",
-      "desc": "Koffie & thee",
-      "prijs": "4.86",
-      "was": "6.49",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/29042026_1777462489883_1777462492346_8445292117944_1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Calvé Knijpfles Mosterd Saus 250 ml",
-      "desc": "Soepen & sauzen",
-      "prijs": "1.0",
-      "was": "2.69",
-      "deal_label": "63% korting",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/09122025_1765247452885_1765247478719_485510_FLS_08720182253033_H1N1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Leffe Ruby Belgisch Abdijbier Fles 330 ml",
-      "desc": "Bier & wijn",
-      "prijs": "6.36",
-      "was": "8.49",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/22042026_1776868483467_1776868490204_5410228205678_1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Nescafé Cappuccino Koffiedrank 10 x 12,5 g",
-      "desc": "Koffie & thee",
-      "prijs": "2.76",
-      "was": "3.69",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/09052026_1778291686420_1778291700791_383945_DS_07613287002327_C1N1_s01.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Amstel Radler 0.0% 12x330ML",
-      "desc": "Bier & wijn",
-      "prijs": "9.71",
-      "was": "12.95",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/08712000757335H1N156cb5fc1-3e83-493a-9f6a-36db57a68fc0-1773063574090.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Grolsch Premium Pilsner Beugelflessen 4 x 450ml",
-      "desc": "Bier & wijn",
-      "prijs": "3.89",
-      "was": "5.19",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/08716700016013H1N1498903ba-8e2d-4499-bb36-2365afe78476-1758096699141.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Jumbo Krokante Kip Wrap Gesneden Verspakket 4 Personen",
-      "desc": "Niet interessant",
-      "prijs": "5.61",
-      "was": "7.49",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/23032026_1774279979938_1774279988198_8718452988266_1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Leffe Bruin Belgisch Abdijbier Flessen 6 x 30 cl",
-      "desc": "Bier & wijn",
-      "prijs": "6.63",
-      "was": "8.85",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/23042026_1776902450687_1776902457801_8725000468538_1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Alpaca - Cabernet Sauvignon - 750ML",
-      "desc": "Bier & wijn",
-      "prijs": "3.75",
-      "was": "4.79",
-      "deal_label": "22% korting",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/22072024_1721637327392_1721637329942_7808704700270_1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Milka Chocoladereep Alpenmelk Crème 100g",
-      "desc": "Niet interessant",
-      "prijs": "1.0",
-      "was": "1.99",
-      "deal_label": "50% korting",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/02022026_1770024882423_1770024886909_7622202050725_1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "RAD BLIK 88X6PK",
-      "desc": "Bier & wijn",
-      "prijs": "4.62",
-      "was": "6.17",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Jumbo Kleine Salade Quinoa met Pistachenoten & Gemberdressing 205 g",
-      "desc": "Niet interessant",
-      "prijs": "2.31",
-      "was": "3.09",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/25042025_1745588008912_1745588014543_8718452903153_1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Jumbo Zalmfilet met Huid Naturel ca. 360 g",
-      "desc": "Vlees & vis",
-      "prijs": "6.5",
-      "was": "8.99",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/29012026_1769700788004_1769700795660_8718452979424_1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Jumbo Salade Bowl Geitenkaas Blauwe Bes 260 g",
-      "desc": "Niet interessant",
-      "prijs": "3.51",
-      "was": "4.69",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/17032026_1773758072433_1773758079574_8717228610783_1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Heineken Premium Pilsener Bier Fles Krat 24 x 300ml",
-      "desc": "Bier & wijn",
-      "prijs": "14.99",
-      "was": "19.99",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/22122025_1766406771924_1766406776490_8712000033040_1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Calvé Knijpfles Broodje Unox Saus 250 ml",
-      "desc": "Soepen & sauzen",
-      "prijs": "1.0",
-      "was": "2.89",
-      "deal_label": "65% korting",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/07052026_1778118340541_1778118350718_485496_FLS_08720182255082_C1N1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Grolsch - Premium Pilsner - Blik - 6 x 500ML",
-      "desc": "Bier & wijn",
-      "prijs": "5.91",
-      "was": "7.89",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/08716700018796H1N1afc803a5-9ae0-4a32-a866-b428253acdc6-1758094999748.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Nescafé Espresso Concentrate Style Vanilla Flavour 500 ml",
-      "desc": "Koffie & thee",
-      "prijs": "4.86",
-      "was": "6.49",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/07052026_1778116185311_1778116216231_742315_FLS_08445292118309_H1N1_s01.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Nescafé Americano 250 ml",
-      "desc": "Koffie & thee",
-      "prijs": "1.49",
-      "was": "1.99",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/29042026_1777462490037_1777462499425_8445292129589_596.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Leffe Blond 0,0% Alc. Belgisch Abdijbier Blikken 6 x 33 cl",
-      "desc": "Bier & wijn",
-      "prijs": "6.59",
-      "was": "8.79",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/22042026_1776868483602_1776868494426_5410228304999_596.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Jumbo Kleine Salade Geitenkaas Hot Honey 200 g",
-      "desc": "Niet interessant",
-      "prijs": "2.76",
-      "was": "3.69",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/21042026_1776760390933_1776760397574_8717228610769_1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "DC RAD Liefmans",
-      "desc": "Bier & wijn",
-      "prijs": "4.94",
-      "was": "6.59",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Jumbo Mexicaanse Nacho Ovenschotel Gesneden Verspakket 2-3 Personen",
-      "desc": "Niet interessant",
-      "prijs": "5.24",
-      "was": "6.99",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/20032026_1774020778385_1774020785335_8718452988259_1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Liefmans - Fruitesse - Fles - 4 x 250ML",
-      "desc": "Bier & wijn",
-      "prijs": "4.94",
-      "was": "6.59",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/09082023_1691588094768_1691588161380_5411686700712_1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Liefmans - Fruitesse - Blik - 4 x 250ML",
-      "desc": "Bier & wijn",
-      "prijs": "5.46",
-      "was": "7.29",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/LIEFMANSOTR4x250mlCanSleeveOpenFront68fecc4c-89ec-4974-8156-1f3e77dc6486-1774863166993.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Jumbo Salade Bowl Midden-Oosterse Stijl 300 g",
-      "desc": "Niet interessant",
-      "prijs": "3.21",
-      "was": "4.29",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/17032026_1773758072412_1773758079673_8718452997503_1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Peroni - Nastro Azzurro - Fles -  6 x 330ML",
-      "desc": "Bier & wijn",
-      "prijs": "4.98",
-      "was": "6.65",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/08008440542748H1N17c3cfb4e-be90-402c-a447-750b349afc47-1739795625664.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Corona Extra Mexicaans Pils Fles 12x330ML",
-      "desc": "Bier & wijn",
-      "prijs": "14.24",
-      "was": "18.99",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/547156_7501064193040_1_T1_547156TRA1691077217025.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Oreo Remix Koekjes Frambozen & Vanille 157g",
-      "desc": "Niet interessant",
-      "prijs": "1.0",
-      "was": "1.99",
-      "deal_label": "50% korting",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/28112025_1764309413696_1764309418833_505853_PAK_07622201500047_C1N1_s02.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "RAD blik 99x6x33",
-      "desc": "Bier & wijn",
-      "prijs": "4.42",
-      "was": "5.9",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Milka Daim Chocolade Tablet 90g",
-      "desc": "Niet interessant",
-      "prijs": "1.0",
-      "was": "1.79",
-      "deal_label": "44% korting",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/09052026_1778291354752_1778291363094_743130_PAK_07622202370564_H1N1_s01.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Calvé Saus Honing Mosterd 250 ml",
-      "desc": "Soepen & sauzen",
-      "prijs": "1.0",
-      "was": "2.95",
-      "deal_label": "66% korting",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/25032026_1774416872819_1774416877707_198248_FLS_08720182743589_H1N1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Nescafé Latte Macchiato 8 x 18 g",
-      "desc": "Koffie & thee",
-      "prijs": "2.76",
-      "was": "3.69",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/29042026_1777462487206_1777462497283_5011798087031_1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
       "naam": "Corona Cero Alcoholvrij Bier Flessen 6 x 33 cl",
       "desc": "Bier & wijn",
       "prijs": "7.11",
@@ -2508,468 +1353,6 @@
       "deal_label": "2e halve prijs",
       "effectief": null,
       "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/22042026_1776868482665_1776868489242_5410228292203_1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Milka Chocoladereep Confetti 90 g",
-      "desc": "Niet interessant",
-      "prijs": "1.0",
-      "was": "1.79",
-      "deal_label": "44% korting",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/09052026_1778293651134_1778293660387_743059_PAK_07622202365829_H1N1_s01.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Grolsch - Pils - Fles - 6 x 300ML",
-      "desc": "Bier & wijn",
-      "prijs": "3.74",
-      "was": "4.99",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/08716700019380H1N19e4e6d84-ef80-4a66-a4a2-d4ef3efa1a1e-1758094703448.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Nescafé Vanilla Cookie Dough Latte Special Edition 7 x 19.5 g",
-      "desc": "Koffie & thee",
-      "prijs": "2.76",
-      "was": "3.69",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/29042026_1777462487977_1777462499967_8445291292147_1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Corona Cero 0.0% Alc./Vol. Bier 330 ml",
-      "desc": "Bier & wijn",
-      "prijs": "4.49",
-      "was": "5.99",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/22042026_1776868483595_1776868489405_5410228327264_1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Milka Reep Gebroken Noot 90g",
-      "desc": "Niet interessant",
-      "prijs": "1.0",
-      "was": "1.75",
-      "deal_label": "43% korting",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/05072025_1751677597321_1751677611185_674219_PAK_07622202261626_C1N1_s02.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Milka Karamel Chocoladereep enkel 100 g",
-      "desc": "Niet interessant",
-      "prijs": "1.0",
-      "was": "1.75",
-      "deal_label": "43% korting",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/17022026_1771327989002_1771327992457_7622300086404_1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Pink Lady Biologische Appels 4 Stuks",
-      "desc": "Groente & fruit",
-      "prijs": "2.49",
-      "was": "3.49",
-      "deal_label": "29% korting",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/18092023_1695061826790_1695061838533_3700476651443_1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Oreo Golden Koekjes (14x 11g) 154g",
-      "desc": "Niet interessant",
-      "prijs": "1.0",
-      "was": "1.89",
-      "deal_label": "47% korting",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/02022026_1770024880229_1770024884025_7622210584519_1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Amstel Radler Citroen 0.0 Bier Blik 6 x 330ml",
-      "desc": "Bier & wijn",
-      "prijs": "4.86",
-      "was": "6.49",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/22122025_1766403191940_1766403196474_8712000059460_1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Nescafé Cappuccino Decaf 10 x 12,5 g",
-      "desc": "Koffie & thee",
-      "prijs": "2.76",
-      "was": "3.69",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/29042026_1777462485469_1777462491751_7613034641342_1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Milka Hele Hazelnoot 95g",
-      "desc": "Niet interessant",
-      "prijs": "1.0",
-      "was": "2.49",
-      "deal_label": "60% korting",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/10022026_1770716215294_1770716217980_747745_PAK_07622202261565_H1N1_s01.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Amstel Radler Citroen Bier Fles 6 x 300ml",
-      "desc": "Bier & wijn",
-      "prijs": "4.49",
-      "was": "5.99",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/22122025_1766403190736_1766403196925_8712000033088_1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Calvé Saus Knoflook 320 ml",
-      "desc": "Soepen & sauzen",
-      "prijs": "1.0",
-      "was": "2.29",
-      "deal_label": "56% korting",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/09012026_1767926800360_1767926815861_73299_FLS_08720182743558_H1N1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Desperados Strawberry Margarita Bier Fles 6 x 330ml",
-      "desc": "Bier & wijn",
-      "prijs": "7.98",
-      "was": "10.65",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/07012025_1736267694692_1736267703457_8712000060626_1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Milka Reep Wit 90g",
-      "desc": "Niet interessant",
-      "prijs": "1.0",
-      "was": "1.79",
-      "deal_label": "44% korting",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/21052025_1747789298998_1747789309619_674324_PAK_07622202286698_C1N1_s01.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "MILKA OREO Chocolade Tablet 100g",
-      "desc": "Niet interessant",
-      "prijs": "1.0",
-      "was": "1.85",
-      "deal_label": "46% korting",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/17122025_1765938437628_1765938442405_680922_PAK_07622210656490_H1N1_s02.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Nescafé Wiener Melange Mocha 8 x 17 g",
-      "desc": "Koffie & thee",
-      "prijs": "2.76",
-      "was": "3.69",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/29042026_1777462487149_1777462494949_8445291512887_1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Milka Koeienvlekken 90g",
-      "desc": "Niet interessant",
-      "prijs": "1.0",
-      "was": "1.95",
-      "deal_label": "49% korting",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/10022026_1770716228112_1770716244215_747746_PAK_07622202262524_H1N1_s01.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Alpaca - Chardonnay - Semillón - 750ML",
-      "desc": "Bier & wijn",
-      "prijs": "3.75",
-      "was": "4.79",
-      "deal_label": "22% korting",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/22072024_1721655196954_1721655199674_7804300141196_1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Heineken Premium Pilsener Bier Blik 6 x 500ml",
-      "desc": "Bier & wijn",
-      "prijs": "6.96",
-      "was": "9.29",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/07012025_1736267694111_1736267699195_8712000059057_1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Pink Lady Appels 6 Stuks",
-      "desc": "Groente & fruit",
-      "prijs": "2.49",
-      "was": "4.49",
-      "deal_label": "45% korting",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/07032025_1741357965055_1741357973509_3700476611164_1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Oreo Original koekjes 154g",
-      "desc": "Niet interessant",
-      "prijs": "1.0",
-      "was": "1.09",
-      "deal_label": "8% korting",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/10042026_1775788824097_1775788827220_146753_PAK_07622300336738_H1N1_s09.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Desperados Sunlight Cherry & Pommegranate 6x330ML",
-      "desc": "Bier & wijn",
-      "prijs": "7.48",
-      "was": "9.98",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/08712000757199H1N1849ecb9a-0e77-4338-9d6a-b466318afe1f-1772455636662.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Jumbo Witte Asperges 500 g",
-      "desc": "Groente & fruit",
-      "prijs": "4.99",
-      "was": "7.99",
-      "deal_label": "38% korting",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/24032025_1742844746385_1742844751145_8718452165735_1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Milka Chocoladereep witte chocolade en Oreo 100 g",
-      "desc": "Niet interessant",
-      "prijs": "1.0",
-      "was": "1.89",
-      "deal_label": "47% korting",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/17022026_1771338830429_1771338833507_7622201109615_1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Calvé Saus Samba 320 ml",
-      "desc": "Soepen & sauzen",
-      "prijs": "1.0",
-      "was": "2.29",
-      "deal_label": "56% korting",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/27042026_1777254843121_1777254871009_87590_FLS_08720182755698_H1N1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Desperados Lime Bier Fles 6 x 330ml",
-      "desc": "Bier & wijn",
-      "prijs": "7.51",
-      "was": "10.02",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/07012025_1736267694551_1736267702295_8712000060633_1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Desperados Tropical Beer Flavoured with Aguardiente Passion Fruit & Lime Flessen 6 x 330 ml",
-      "desc": "Bier & wijn",
-      "prijs": "7.98",
-      "was": "10.65",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/8712000062255H1N1adb373e6-58c3-4c57-ae9f-4734f1e07331-1766489391134.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Calvé Saus Schaschlik 250 ml",
-      "desc": "Soepen & sauzen",
-      "prijs": "1.0",
-      "was": "2.59",
-      "deal_label": "61% korting",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/27042026_1777260214362_1777260219248_198249_FLS_08714100860571_H1N1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Amstel Bier Rosé 4.0 Blikken 4 x 330 ml",
-      "desc": "Bier & wijn",
-      "prijs": "5.84",
-      "was": "7.79",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/12122025_1765549996427_1765550002643_8712000062330_1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Milka Bubbly Milk 90g",
-      "desc": "Niet interessant",
-      "prijs": "1.0",
-      "was": "1.75",
-      "deal_label": "43% korting",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/09052026_1778288782990_1778288787695_674218_PAK_07622202273476_H1N1_s01.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Heineken Premium Pilsener Bier Blik 6 x 330ml",
-      "desc": "Bier & wijn",
-      "prijs": "5.24",
-      "was": "6.99",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/22122025_1766406772233_1766406775624_8712000058869_1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Pink Lady Kids Appels 8 Stuks",
-      "desc": "Groente & fruit",
-      "prijs": "2.49",
-      "was": "3.99",
-      "deal_label": "38% korting",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/30072025_1753900395692_1753900402566_3700476661824_1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Desperados Sunlight Mango & Passionfruit 6x330ML",
-      "desc": "Bier & wijn",
-      "prijs": "7.48",
-      "was": "9.98",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/08712000757212H1N170a502ea-878d-4c86-943b-5b021492f59c-1772455637138.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Nescafé Espresso Concentrate Style Caramel Flavour 500 ml",
-      "desc": "Koffie & thee",
-      "prijs": "4.86",
-      "was": "6.49",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/29042026_1777462489566_1777462494047_8445292118606_1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Jumbo Kleine Salade Waldorf Kip 200 g",
-      "desc": "Niet interessant",
-      "prijs": "2.46",
-      "was": "3.29",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/21042026_1776760390701_1776760397016_8718452997497_1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Grolsch - Premium Pilsner - Blik - 6 x 330ML",
-      "desc": "Bier & wijn",
-      "prijs": "5.01",
-      "was": "6.69",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/08716700018772H1N1401f8eb0-7ca7-40ee-b4b7-066505f0dda0-1758094614330.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Corona Extra Bier Blikken 6 x 33 cl",
-      "desc": "Bier & wijn",
-      "prijs": "7.49",
-      "was": "9.99",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/04032026_1772634828942_1772634834494_5410228305170_1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Calvé Saus Honey BBQ 320 ml",
-      "desc": "Soepen & sauzen",
-      "prijs": "1.0",
-      "was": "2.75",
-      "deal_label": "64% korting",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/12082025_1754994819876_1754994825994_8720182779540_1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Jumbo Loaded cookie pistache 350g",
-      "desc": "Niet interessant",
-      "prijs": "4.49",
-      "was": "5.99",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Leffe Belgisch Abdijbier Zomerbier fles 6 x 33 cl",
-      "desc": "Bier & wijn",
-      "prijs": "6.29",
-      "was": "8.39",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/14042026_1776177218322_1776177222920_5410228243953_1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Desperados Sunlight Lemon & Lime 6x330ML",
-      "desc": "Bier & wijn",
-      "prijs": "7.48",
-      "was": "9.98",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/08712000757175H1N111f712e2e-51dc-429c-a5b9-1b29c47e7ed9-1772455636626.png",
       "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
     },
     {
@@ -2985,46 +1368,35 @@
     },
     {
       "supermarkt": "Jumbo",
-      "naam": "Hoegaarden Wit Witbier Flessen 6 x 30 cl",
+      "naam": "Desperados Original Bier Fles 12 x 330ml",
       "desc": "Bier & wijn",
-      "prijs": "5.99",
-      "was": "7.99",
+      "prijs": "15.81",
+      "was": "21.09",
       "deal_label": "2e halve prijs",
       "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/03042026_1775233984769_1775233989565_5412421306015_1.png",
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/22122025_1766406772489_1766406780858_8712000061425_1.png",
       "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
     },
     {
       "supermarkt": "Jumbo",
-      "naam": "Leffe Blond Belgisch Abdijbier Flessen 6 x 30 cl",
+      "naam": "Liefmans - Fruitesse - Blik - 4 x 250ML",
       "desc": "Bier & wijn",
-      "prijs": "6.59",
-      "was": "8.79",
+      "prijs": "5.46",
+      "was": "7.29",
       "deal_label": "2e halve prijs",
       "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/01042026_1775043244188_1775043250746_8725000443795_1.png",
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/LIEFMANSOTR4x250mlCanSleeveOpenFront68fecc4c-89ec-4974-8156-1f3e77dc6486-1774863166993.png",
       "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
     },
     {
       "supermarkt": "Jumbo",
-      "naam": "Amstel Rosé Bier Fles 6 x 300ml",
+      "naam": "Desperados Virgin 0.0 Bier Fles 6 x 330ml",
       "desc": "Bier & wijn",
-      "prijs": "5.99",
-      "was": "7.99",
+      "prijs": "7.26",
+      "was": "9.69",
       "deal_label": "2e halve prijs",
       "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/19122025_1766161977266_1766161982725_8712000061418_1.png",
-      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
-    },
-    {
-      "supermarkt": "Jumbo",
-      "naam": "Corona - Extra - Fles - 6 x 330ML",
-      "desc": "Bier & wijn",
-      "prijs": "7.49",
-      "was": "9.99",
-      "deal_label": "2e halve prijs",
-      "effectief": null,
-      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/Simplification07CORExtraBotPack6x33clORI2Dc0c14faa-cee2-4806-b89e-503a34d5ef2e-1723473863859.png",
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/07012025_1736267694753_1736267702439_8712000060640_1.png",
       "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
     },
     {
@@ -3040,6 +1412,149 @@
     },
     {
       "supermarkt": "Jumbo",
+      "naam": "Amstel Radler Citroen 0.0 Bier Fles 6 x 300ml",
+      "desc": "Bier & wijn",
+      "prijs": "4.34",
+      "was": "5.79",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/22122025_1766403190547_1766403195674_8712000034160_1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Peroni - Nastro Azzurro - 0,0% Alcoholvrij - Fles - 6 x 330ML",
+      "desc": "Bier & wijn",
+      "prijs": "4.86",
+      "was": "6.49",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/08594404023304H1N12d3393e3-4e57-4d5d-8bab-97c79a32f67a-1727790627004.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Heineken Premium Pilsener Bier Fles Krat 24 x 300ml",
+      "desc": "Bier & wijn",
+      "prijs": "14.99",
+      "was": "19.99",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/22122025_1766406771924_1766406776490_8712000033040_1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Milka Karamel Chocoladereep enkel 100 g",
+      "desc": "Niet interessant",
+      "prijs": "1.0",
+      "was": "1.75",
+      "deal_label": "43% korting",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/17022026_1771327989002_1771327992457_7622300086404_1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Amstel Radler 0.0% 12x330ML",
+      "desc": "Bier & wijn",
+      "prijs": "9.71",
+      "was": "12.95",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/08712000757335H1N156cb5fc1-3e83-493a-9f6a-36db57a68fc0-1773063574090.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Amstel Rosé Bier Fles 6 x 300ml",
+      "desc": "Bier & wijn",
+      "prijs": "5.99",
+      "was": "7.99",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/19122025_1766161977266_1766161982725_8712000061418_1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Calvé Saus Whisky Cocktail 320 ml",
+      "desc": "Soepen & sauzen",
+      "prijs": "1.0",
+      "was": "2.55",
+      "deal_label": "61% korting",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/31122025_1767180958792_1767181001302_8720182743824_1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Leffe Blond 0,0% Alc. Belgisch Abdijbier Blikken 6 x 33 cl",
+      "desc": "Bier & wijn",
+      "prijs": "6.59",
+      "was": "8.79",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/22042026_1776868483602_1776868494426_5410228304999_596.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Jumbo Chili Con Carne Verspakket 4 Personen",
+      "desc": "Niet interessant",
+      "prijs": "4.49",
+      "was": "5.99",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/21042026_1776764032354_1776764038065_8718452988242_1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Desperados Tropical Beer Flavoured with Aguardiente Passion Fruit & Lime Flessen 6 x 330 ml",
+      "desc": "Bier & wijn",
+      "prijs": "7.98",
+      "was": "10.65",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/8712000062255H1N1adb373e6-58c3-4c57-ae9f-4734f1e07331-1766489391134.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Jumbo Salade Bowl Midden-Oosterse Stijl 300 g",
+      "desc": "Niet interessant",
+      "prijs": "3.21",
+      "was": "4.29",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/17032026_1773758072412_1773758079673_8718452997503_1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Calvé Saus Knoflook 320 ml",
+      "desc": "Soepen & sauzen",
+      "prijs": "1.0",
+      "was": "2.29",
+      "deal_label": "56% korting",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/09012026_1767926800360_1767926815861_73299_FLS_08720182743558_H1N1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Nescafé KitKat mocha 7 x 21 g",
+      "desc": "Koffie & thee",
+      "prijs": "2.76",
+      "was": "3.69",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/29042026_1777462488517_1777462500096_8445291484610_1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
       "naam": "Jumbo Loaded Cookie Rocky Road 350g",
       "desc": "Niet interessant",
       "prijs": "3.74",
@@ -3047,6 +1562,1480 @@
       "deal_label": "2e halve prijs",
       "effectief": null,
       "img": "",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Milka Melkchocolade Hazelnoot Crème 85 g",
+      "desc": "Niet interessant",
+      "prijs": "1.0",
+      "was": "2.19",
+      "deal_label": "54% korting",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/13032026_1773372245144_1773372255768_685635_PAK_07622202034107_H1N1_s01.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Nescafé Wiener Melange Mocha 8 x 17 g",
+      "desc": "Koffie & thee",
+      "prijs": "2.76",
+      "was": "3.69",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/29042026_1777462487149_1777462494949_8445291512887_1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Nescafé Cappuccino Koffiedrank 10 x 12,5 g",
+      "desc": "Koffie & thee",
+      "prijs": "2.76",
+      "was": "3.69",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/12052026_1778549803464_1778549812359_383945_DS_07613287002327_C1N1_s01.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Milka Chocoladereep Oreo Sandwich 92 g",
+      "desc": "Niet interessant",
+      "prijs": "1.0",
+      "was": "2.19",
+      "deal_label": "54% korting",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/12032026_1773311637491_1773311640838_7622210824721_1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Leffe Belgisch Abdijbier Blond Subtiel Vleugje Vanille en Kruidnagel Blikken 4 x 50 cl",
+      "desc": "Bier & wijn",
+      "prijs": "6.74",
+      "was": "8.99",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/17032026_1773758071889_1773758077211_5410228304531_1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Desperados Mojito Bier Fles 6 x 330ml",
+      "desc": "Bier & wijn",
+      "prijs": "7.98",
+      "was": "10.65",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/07012025_1736267694881_1736267702717_8712000061135_1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Peroni - Nastro Azzurro - Fles -  6 x 330ML",
+      "desc": "Bier & wijn",
+      "prijs": "4.98",
+      "was": "6.65",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/08008440542748H1N17c3cfb4e-be90-402c-a447-750b349afc47-1739795625664.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Milka Reep Wit 90g",
+      "desc": "Niet interessant",
+      "prijs": "1.0",
+      "was": "1.79",
+      "deal_label": "44% korting",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/21052025_1747789298998_1747789309619_674324_PAK_07622202286698_C1N1_s01.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Jumbo Kleine Salade Geitenkaas Hot Honey 200 g",
+      "desc": "Niet interessant",
+      "prijs": "2.76",
+      "was": "3.69",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/21042026_1776760390933_1776760397574_8717228610769_1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Calvé Saus Samba 320 ml",
+      "desc": "Soepen & sauzen",
+      "prijs": "1.0",
+      "was": "2.29",
+      "deal_label": "56% korting",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/27042026_1777254843121_1777254871009_87590_FLS_08720182755698_H1N1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Calvé Knijpfles Chunky Burger Saus 250 ml",
+      "desc": "Soepen & sauzen",
+      "prijs": "1.0",
+      "was": "2.95",
+      "deal_label": "66% korting",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/08042026_1775612881550_1775612893642_485495_FLS_08720182255402_C1N1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Desperados Original Bier Blik 6 x 330ml",
+      "desc": "Bier & wijn",
+      "prijs": "7.98",
+      "was": "10.65",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/07012025_1736267693867_1736267701226_8712000059415_1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Milka Reep Gebroken Noot 90g",
+      "desc": "Niet interessant",
+      "prijs": "1.0",
+      "was": "1.75",
+      "deal_label": "43% korting",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/05072025_1751677597321_1751677611185_674219_PAK_07622202261626_C1N1_s02.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Leffe - Blond - Krat - 24 x 250ML",
+      "desc": "Bier & wijn",
+      "prijs": "15.99",
+      "was": "21.32",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/28042026_1777372383501_1777372388735_5410228280705_1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Desperados Original 4x500ML",
+      "desc": "Bier & wijn",
+      "prijs": "7.48",
+      "was": "9.98",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/08712000060275H1N1ce665f22-c0e5-4fd2-819e-14516ed4d13e-1772455637156.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Nescafé Cappuccino Decaf 10 x 12,5 g",
+      "desc": "Koffie & thee",
+      "prijs": "2.76",
+      "was": "3.69",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/29042026_1777462485469_1777462491751_7613034641342_1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Jumbo Salade Bowl Geitenkaas Blauwe Bes 260 g",
+      "desc": "Niet interessant",
+      "prijs": "3.51",
+      "was": "4.69",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/17032026_1773758072433_1773758079574_8717228610783_1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Oreo Double Crème Koekjes (11 x 14,2g) 157g",
+      "desc": "Niet interessant",
+      "prijs": "1.0",
+      "was": "1.89",
+      "deal_label": "47% korting",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/27042026_1777259486044_1777259498175_178402_STK_07622210137258_C1N1_s09.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Milka Chocoladereep Alpenmelk Crème 100g",
+      "desc": "Niet interessant",
+      "prijs": "1.0",
+      "was": "1.99",
+      "deal_label": "50% korting",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/02022026_1770024882423_1770024886909_7622202050725_1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Nescafé Amaretto Latte Oploskoffie 8 x 17,5 g",
+      "desc": "Koffie & thee",
+      "prijs": "2.76",
+      "was": "3.69",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/29042026_1777462486376_1777462494238_7613034641021_1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Pink Lady Biologische Appels 4 Stuks",
+      "desc": "Groente & fruit",
+      "prijs": "2.49",
+      "was": "3.49",
+      "deal_label": "29% korting",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/18092023_1695061826790_1695061838533_3700476651443_1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Milka Daim Chocolade Tablet 90g",
+      "desc": "Niet interessant",
+      "prijs": "1.0",
+      "was": "1.79",
+      "deal_label": "44% korting",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/09052026_1778291354752_1778291363094_743130_PAK_07622202370564_H1N1_s01.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Amstel Radler Citroen Bier Blik 6 x 330ml",
+      "desc": "Bier & wijn",
+      "prijs": "4.86",
+      "was": "6.49",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/22122025_1766403192090_1766403196075_8712000059453_1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Leffe Bruin Alcoholvrij Bier 6 x 33 cl",
+      "desc": "Bier & wijn",
+      "prijs": "5.76",
+      "was": "7.69",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/15042026_1776260037688_1776260046000_5410228275398_1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Milka Chocoladereep witte chocolade en Oreo 100 g",
+      "desc": "Niet interessant",
+      "prijs": "1.0",
+      "was": "1.89",
+      "deal_label": "47% korting",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/17022026_1771338830429_1771338833507_7622201109615_1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Corona Extra Mexicaans Pils Fles 12x330ML",
+      "desc": "Bier & wijn",
+      "prijs": "14.24",
+      "was": "18.99",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/547156_7501064193040_1_T1_547156TRA1691077217025.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Desperados Strawberry Margarita Bier Fles 6 x 330ml",
+      "desc": "Bier & wijn",
+      "prijs": "7.98",
+      "was": "10.65",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/07012025_1736267694692_1736267703457_8712000060626_1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Jumbo Zalmfilet met Huid Naturel ca. 360 g",
+      "desc": "Vlees & vis",
+      "prijs": "6.5",
+      "was": "8.99",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/29012026_1769700788004_1769700795660_8718452979424_1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Calvé Saus Schaschlik 250 ml",
+      "desc": "Soepen & sauzen",
+      "prijs": "1.0",
+      "was": "2.59",
+      "deal_label": "61% korting",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/27042026_1777260214362_1777260219248_198249_FLS_08714100860571_H1N1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Jumbo Mexicaanse Burrito's Verspakket 4 Personen",
+      "desc": "Niet interessant",
+      "prijs": "4.49",
+      "was": "5.99",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/20032026_1774017180812_1774017186329_8718452992850_1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Leffe Tripel Belgisch Abdijbier Blikken 4 x 33 cl",
+      "desc": "Bier & wijn",
+      "prijs": "6.74",
+      "was": "8.99",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/14042026_1776173586782_1776173592387_5410228300366_1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Grolsch - 0.0% Alcoholvrij - Blik - 6 x 330ML",
+      "desc": "Bier & wijn",
+      "prijs": "4.49",
+      "was": "5.99",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/08716700018949H1N132af5f14-7d93-4fd0-8270-e94d05f53b1b-1758092155294.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Leffe Belgisch Abdijbier Bruin Blikken 6 x 33 cl",
+      "desc": "Bier & wijn",
+      "prijs": "7.49",
+      "was": "9.99",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/14042026_1776173586698_1776173594631_5410228301325_596.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "RAD DESPERADOS",
+      "desc": "Bier & wijn",
+      "prijs": "7.26",
+      "was": "9.69",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Jumbo Poké Kip Salade Bowl 350 g",
+      "desc": "Niet interessant",
+      "prijs": "4.11",
+      "was": "5.49",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/21042025_1745193609615_1745193631145_8718452891856_1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Leffe Bruin Belgisch Abdijbier Flessen 6 x 30 cl",
+      "desc": "Bier & wijn",
+      "prijs": "6.63",
+      "was": "8.85",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/23042026_1776902450687_1776902457801_8725000468538_1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Milka Chocoladereep Confetti 90 g",
+      "desc": "Niet interessant",
+      "prijs": "1.0",
+      "was": "1.79",
+      "deal_label": "44% korting",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/09052026_1778293651134_1778293660387_743059_PAK_07622202365829_H1N1_s01.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Jumbo Kleine Salade Kerrie Mango 200 g",
+      "desc": "Niet interessant",
+      "prijs": "2.46",
+      "was": "3.29",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/21042026_1776760390961_1776760396409_8717228610745_1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "RAD BLIK 88X6PK",
+      "desc": "Bier & wijn",
+      "prijs": "4.62",
+      "was": "6.17",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Heineken Premium Pilsener Bier Blik 6 x 330ml",
+      "desc": "Bier & wijn",
+      "prijs": "5.24",
+      "was": "6.99",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/22122025_1766406772233_1766406775624_8712000058869_1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Heineken Premium Pilsener Bier Blik 6 x 500ml",
+      "desc": "Bier & wijn",
+      "prijs": "6.96",
+      "was": "9.29",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/07012025_1736267694111_1736267699195_8712000059057_1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Jumbo Loaded cookie pistache 350g",
+      "desc": "Niet interessant",
+      "prijs": "4.49",
+      "was": "5.99",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Corona - Extra - Fles - 6 x 330ML",
+      "desc": "Bier & wijn",
+      "prijs": "7.49",
+      "was": "9.99",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/Simplification07CORExtraBotPack6x33clORI2Dc0c14faa-cee2-4806-b89e-503a34d5ef2e-1723473863859.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Amstel Bier Rosé 0.0 Flessen 6 x 300 ml",
+      "desc": "Bier & wijn",
+      "prijs": "5.61",
+      "was": "7.49",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/12122025_1765549996562_1765550003118_8712000062132_1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Milka Biscoff Chocoladetablet 90g",
+      "desc": "Niet interessant",
+      "prijs": "1.0",
+      "was": "1.99",
+      "deal_label": "50% korting",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/07022026_1770438175013_1770438180019_709812_PAK_07622202305221_H1N1_s02.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Jumbo Krokante Kip Wrap Gesneden Verspakket 4 Personen",
+      "desc": "Niet interessant",
+      "prijs": "5.61",
+      "was": "7.49",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/23032026_1774279979938_1774279988198_8718452988266_1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Desperados Sunlight Mango & Passionfruit 6x330ML",
+      "desc": "Bier & wijn",
+      "prijs": "7.48",
+      "was": "9.98",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/08712000757212H1N170a502ea-878d-4c86-943b-5b021492f59c-1772455637138.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Alpaca - Sauvignon Blanc - 750ML",
+      "desc": "Bier & wijn",
+      "prijs": "3.75",
+      "was": "4.79",
+      "deal_label": "22% korting",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/22072024_1721640978078_1721640980868_7808704700287_1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Corona Cero 0.0% Alc./Vol. Bier 330 ml",
+      "desc": "Bier & wijn",
+      "prijs": "4.49",
+      "was": "5.99",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/22042026_1776868483595_1776868489405_5410228327264_1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Grolsch Premium Pilsner Beugelflessen 4 x 450ml",
+      "desc": "Bier & wijn",
+      "prijs": "3.89",
+      "was": "5.19",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/08716700016013H1N1498903ba-8e2d-4499-bb36-2365afe78476-1758096699141.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Nescafé Espresso Concentrate Style Vanilla Flavour 500 ml",
+      "desc": "Koffie & thee",
+      "prijs": "4.86",
+      "was": "6.49",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/07052026_1778116185311_1778116216231_742315_FLS_08445292118309_H1N1_s01.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Alpaca - Merlot - 750ML",
+      "desc": "Bier & wijn",
+      "prijs": "3.75",
+      "was": "4.79",
+      "deal_label": "22% korting",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/22072024_1721640978099_1721640980502_7804436720272_1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Calvé Saus Honey BBQ 320 ml",
+      "desc": "Soepen & sauzen",
+      "prijs": "1.0",
+      "was": "2.75",
+      "deal_label": "64% korting",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/12082025_1754994819876_1754994825994_8720182779540_1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Milka Chocoladereep Choco-Biscuit 100 g",
+      "desc": "Niet interessant",
+      "prijs": "1.0",
+      "was": "2.09",
+      "deal_label": "52% korting",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/12032026_1773311635214_1773311638665_7622400005176_1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Amstel Radler Citroen Bier Fles 6 x 300ml",
+      "desc": "Bier & wijn",
+      "prijs": "4.49",
+      "was": "5.99",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/22122025_1766403190736_1766403196925_8712000033088_1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Alpaca - Cabernet Sauvignon - 750ML",
+      "desc": "Bier & wijn",
+      "prijs": "3.75",
+      "was": "4.79",
+      "deal_label": "22% korting",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/22072024_1721637327392_1721637329942_7808704700270_1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Leffe Belgisch Abdijbier Blond Flessen 6 x 30 cl",
+      "desc": "Bier & wijn",
+      "prijs": "5.24",
+      "was": "6.99",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/23042026_1776944043538_1776944048875_5410228261100_1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Nescafé Karamelsmaak Latte 8 x 17 g",
+      "desc": "Koffie & thee",
+      "prijs": "2.76",
+      "was": "3.69",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/29042026_1777462486241_1777462493046_5011546492834_1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Grolsch - Premium Pilsner - Blik - 6 x 500ML",
+      "desc": "Bier & wijn",
+      "prijs": "5.91",
+      "was": "7.89",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/08716700018796H1N1afc803a5-9ae0-4a32-a866-b428253acdc6-1758094999748.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Corona Extra Bier Blikken 6 x 33 cl",
+      "desc": "Bier & wijn",
+      "prijs": "7.49",
+      "was": "9.99",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/04032026_1772634828942_1772634834494_5410228305170_1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Jumbo Salade Poké Bowl Zalm 350 g",
+      "desc": "Niet interessant",
+      "prijs": "4.11",
+      "was": "5.49",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/19032025_1742402010558_1742402018720_8718452891863_1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Milka Bubbly Milk 90g",
+      "desc": "Niet interessant",
+      "prijs": "1.0",
+      "was": "1.75",
+      "deal_label": "43% korting",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/09052026_1778288782990_1778288787695_674218_PAK_07622202273476_H1N1_s01.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Leffe Blond Belgisch Abdijbier Blikken 6 x 33 cl",
+      "desc": "Bier & wijn",
+      "prijs": "7.34",
+      "was": "9.79",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/28042026_1777386782826_1777386787671_5410228310419_1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Nescafé Hazelnootsmaak Latte 8 x 15 g",
+      "desc": "Koffie & thee",
+      "prijs": "2.76",
+      "was": "3.69",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/05052026_1777944244948_1777944270942_721822_DS_08445291512658_C1N1_s01.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Milka Hele Hazelnoot 95g",
+      "desc": "Niet interessant",
+      "prijs": "1.0",
+      "was": "2.49",
+      "deal_label": "60% korting",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/10022026_1770716215294_1770716217980_747745_PAK_07622202261565_H1N1_s01.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Corona Extra Bier Flessen 12x250ML",
+      "desc": "Bier & wijn",
+      "prijs": "10.11",
+      "was": "13.49",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/10032026_1773171262922_1773171269752_5410228333173_1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Hoegaarden Witbier Coriander & Orange Peel Blikken 6 x 33 cl",
+      "desc": "Bier & wijn",
+      "prijs": "7.49",
+      "was": "9.99",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/29042026_1777473242797_1777473247840_5410228305101_1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Oreo Remix Koekjes Frambozen & Vanille 157g",
+      "desc": "Niet interessant",
+      "prijs": "1.0",
+      "was": "1.99",
+      "deal_label": "50% korting",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/28112025_1764309413696_1764309418833_505853_PAK_07622201500047_C1N1_s02.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Desperados Sunlight Lemon & Lime 6x330ML",
+      "desc": "Bier & wijn",
+      "prijs": "7.48",
+      "was": "9.98",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/08712000757175H1N111f712e2e-51dc-429c-a5b9-1b29c47e7ed9-1772455636626.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Jumbo Witte Asperges 500 g",
+      "desc": "Groente & fruit",
+      "prijs": "4.99",
+      "was": "6.99",
+      "deal_label": "29% korting",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/24032025_1742844746385_1742844751145_8718452165735_1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Jumbo Kleine Salade Waldorf Kip 200 g",
+      "desc": "Niet interessant",
+      "prijs": "2.46",
+      "was": "3.29",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/21042026_1776760390701_1776760397016_8718452997497_1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Jumbo Kleine Salade Coleslaw met Zilveruitjes 200 g",
+      "desc": "Niet interessant",
+      "prijs": "2.24",
+      "was": "2.99",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/21042026_1776760390783_1776760396840_8718452997480_1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Calvé Knijpfles Samourai Saus 250 ml",
+      "desc": "Soepen & sauzen",
+      "prijs": "1.0",
+      "was": "2.99",
+      "deal_label": "67% korting",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/07052026_1778118329081_1778118334456_485499_FLS_08720182252982_H1N1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Calvé Knijpfles Ravigotte Saus 250 ml",
+      "desc": "Soepen & sauzen",
+      "prijs": "1.0",
+      "was": "3.29",
+      "deal_label": "70% korting",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/06052026_1778034281569_1778034293629_485513_FLS_08720182269966_C1N1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Mount Fishtail - Sauvignon Blanc - Rose - 750ML",
+      "desc": "Bier & wijn",
+      "prijs": "6.99",
+      "was": "8.99",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/05112025_1762349644484_1762349647879_9421904809505_1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Calvé Knijpfles Zoetzuur Saus 250 ml",
+      "desc": "Soepen & sauzen",
+      "prijs": "1.0",
+      "was": "2.99",
+      "deal_label": "67% korting",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/08042026_1775610697658_1775610709663_613263_FLS_08720182783349_C1N1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Jumbo Kleine Salade Griekse Stijl 200 g",
+      "desc": "Niet interessant",
+      "prijs": "2.76",
+      "was": "3.69",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/21042026_1776760390762_1776760398554_8717228610752_1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "DC RAD Liefmans",
+      "desc": "Bier & wijn",
+      "prijs": "4.94",
+      "was": "6.59",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Jumbo Salade Bowl Mango Amandel 250 g",
+      "desc": "Niet interessant",
+      "prijs": "3.51",
+      "was": "4.69",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/17032026_1773758072583_1773758080831_8717228610776_1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "MILKA OREO Chocolade Tablet 100g",
+      "desc": "Niet interessant",
+      "prijs": "1.0",
+      "was": "1.85",
+      "deal_label": "46% korting",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/17122025_1765938437628_1765938442405_680922_PAK_07622210656490_H1N1_s02.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Amstel Bier Rosé 4.0 Blikken 4 x 330 ml",
+      "desc": "Bier & wijn",
+      "prijs": "5.84",
+      "was": "7.79",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/12122025_1765549996427_1765550002643_8712000062330_1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Grolsch Alcoholvrij Bier 0.0 Fles 6 x 300ml",
+      "desc": "Bier & wijn",
+      "prijs": "3.66",
+      "was": "4.89",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/08716700017270H1N1190e2698-9e5c-45b7-8681-2f869e815775-1758097618397.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Grolsch - 0.0% Alcoholvrij - Krat - 24 x 300ML",
+      "desc": "Bier & wijn",
+      "prijs": "13.86",
+      "was": "18.49",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/08716700031771H1N161ff7117-c761-4e95-9766-3108cf31e6d4-1758098203927.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Oreo Golden Koekjes (14x 11g) 154g",
+      "desc": "Niet interessant",
+      "prijs": "1.0",
+      "was": "1.89",
+      "deal_label": "47% korting",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/02022026_1770024880229_1770024884025_7622210584519_1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Jumbo Mexicaanse Nacho Ovenschotel Gesneden Verspakket 2-3 Personen",
+      "desc": "Niet interessant",
+      "prijs": "5.24",
+      "was": "6.99",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/20032026_1774020778385_1774020785335_8718452988259_1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Calvé Saus Honing Mosterd 250 ml",
+      "desc": "Soepen & sauzen",
+      "prijs": "1.0",
+      "was": "2.95",
+      "deal_label": "66% korting",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/25032026_1774416872819_1774416877707_198248_FLS_08720182743589_H1N1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Liefmans - Fruitesse Alcoholvrij 0.0% - Fles - 4 x 250ML",
+      "desc": "Bier & wijn",
+      "prijs": "4.49",
+      "was": "5.99",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/09082023_1691591227272_1691591265825_5411686701597_1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Liefmans Fruitbier Peach 0% 4x250ML",
+      "desc": "Bier & wijn",
+      "prijs": "4.49",
+      "was": "5.99",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/05411686702976C1N1ef596a65-3cd0-497d-a647-c77996352342-1740998512616.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Nescafé Espresso Concentrate Style Caramel Flavour 500 ml",
+      "desc": "Koffie & thee",
+      "prijs": "4.86",
+      "was": "6.49",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/29042026_1777462489566_1777462494047_8445292118606_1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Calvé Dressing Knoflooksaus 250 ml",
+      "desc": "Soepen & sauzen",
+      "prijs": "1.0",
+      "was": "2.89",
+      "deal_label": "65% korting",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/07052026_1778118597474_1778118615704_485494_FLS_08720182255563_H1N1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Amstel Radler Citroen 0.0 Bier Blik 6 x 330ml",
+      "desc": "Bier & wijn",
+      "prijs": "4.86",
+      "was": "6.49",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/22122025_1766403191940_1766403196474_8712000059460_1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Calvé Knijpfles Samba Saus 250 ml",
+      "desc": "Soepen & sauzen",
+      "prijs": "1.0",
+      "was": "3.39",
+      "deal_label": "71% korting",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/07052026_1778120395695_1778120407871_485514_FLS_08720182269997_C1N1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Nescafé Latte Macchiato 8 x 18 g",
+      "desc": "Koffie & thee",
+      "prijs": "2.76",
+      "was": "3.69",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/29042026_1777462487206_1777462497283_5011798087031_1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Pink Lady Kids Appels 8 Stuks",
+      "desc": "Groente & fruit",
+      "prijs": "2.49",
+      "was": "3.99",
+      "deal_label": "38% korting",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/30072025_1753900395692_1753900402566_3700476661824_1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Mount Fishtail - Sauvignon Blanc - 750 ML",
+      "desc": "Bier & wijn",
+      "prijs": "6.99",
+      "was": "8.79",
+      "deal_label": "20% korting",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/26112025_1764137359277_1764137363740_383979_FLS_09421904809307_C1N1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Nescafé Vanilla Cookie Dough Latte Special Edition 7 x 19.5 g",
+      "desc": "Koffie & thee",
+      "prijs": "2.76",
+      "was": "3.69",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/29042026_1777462487977_1777462499967_8445291292147_1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Heineken Premium Pilsener Bier Draaidop Fles 12 x 250ml",
+      "desc": "Bier & wijn",
+      "prijs": "10.41",
+      "was": "13.89",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/22122025_1766406771862_1766406776434_8712000030957_1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Desperados Lime Bier Fles 6 x 330ml",
+      "desc": "Bier & wijn",
+      "prijs": "7.51",
+      "was": "10.02",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/07012025_1736267694551_1736267702295_8712000060633_1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Alpaca - Chardonnay - Semillón - 750ML",
+      "desc": "Bier & wijn",
+      "prijs": "3.75",
+      "was": "4.79",
+      "deal_label": "22% korting",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/22072024_1721655196954_1721655199674_7804300141196_1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Jumbo Kleine Salade Quinoa met Pistachenoten & Gemberdressing 205 g",
+      "desc": "Niet interessant",
+      "prijs": "2.31",
+      "was": "3.09",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/25042025_1745588008912_1745588014543_8718452903153_1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Peroni Nastro Azzurro 6 x 330ML",
+      "desc": "Bier & wijn",
+      "prijs": "6.74",
+      "was": "8.99",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/08716700019809C1N13d83de57-4204-42e4-b12f-ec17fcd27a2f-1769691191642.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Calvé Knijpfles Mosterd Saus 250 ml",
+      "desc": "Soepen & sauzen",
+      "prijs": "1.0",
+      "was": "2.69",
+      "deal_label": "63% korting",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/09122025_1765247452885_1765247478719_485510_FLS_08720182253033_H1N1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Calvé Knijpfles BBQ Saus 250 ml",
+      "desc": "Soepen & sauzen",
+      "prijs": "1.0",
+      "was": "2.19",
+      "deal_label": "54% korting",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/09042026_1775699500648_1775699511932_485498_FLS_08720182286864_C1N1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Grolsch - Pils - Fles - 6 x 300ML",
+      "desc": "Bier & wijn",
+      "prijs": "3.74",
+      "was": "4.99",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/08716700019380H1N19e4e6d84-ef80-4a66-a4a2-d4ef3efa1a1e-1758094703448.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Desperados Original Bier Fles 6 x 330ml",
+      "desc": "Bier & wijn",
+      "prijs": "7.98",
+      "was": "10.65",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/07012025_1736267694891_1736267703145_8712000060596_1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Nescafé Americano 250 ml",
+      "desc": "Koffie & thee",
+      "prijs": "1.49",
+      "was": "1.99",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/29042026_1777462490037_1777462499425_8445292129589_596.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Grolsch - Premium Pilsner - Blik - 6 x 330ML",
+      "desc": "Bier & wijn",
+      "prijs": "5.01",
+      "was": "6.69",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/08716700018772H1N1401f8eb0-7ca7-40ee-b4b7-066505f0dda0-1758094614330.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Milka Koeienvlekken 90g",
+      "desc": "Niet interessant",
+      "prijs": "1.0",
+      "was": "1.95",
+      "deal_label": "49% korting",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/10022026_1770716228112_1770716244215_747746_PAK_07622202262524_H1N1_s01.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Corona Extra Bier Pils Flessen 20x25cl",
+      "desc": "Bier & wijn",
+      "prijs": "16.76",
+      "was": "22.35",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/04032026_1772634828984_1772634835033_5410228333265_1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Heineken Premium Pilsener Bier Draaidop Fles 6 x 250ml",
+      "desc": "Bier & wijn",
+      "prijs": "5.99",
+      "was": "7.99",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/08712000031053H1N177a1f31a-9de3-48e3-8106-ffd293e6c9c9-1766500927338.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Milka Chocoladereep Alpenmelk 90g",
+      "desc": "Niet interessant",
+      "prijs": "1.0",
+      "was": "1.59",
+      "deal_label": "37% korting",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/30012026_1769739981619_1769739984151_683449_PAK_07622202271700_H1N1_s01.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Liefmans - Fruitesse - Fles - 4 x 250ML",
+      "desc": "Bier & wijn",
+      "prijs": "4.94",
+      "was": "6.59",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/09082023_1691588094768_1691588161380_5411686700712_1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Nescafé Frappé 10 x 14 g",
+      "desc": "Koffie & thee",
+      "prijs": "2.99",
+      "was": "3.99",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/29042026_1777462488781_1777462497563_8445291509429_1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Hoegaarden Wit Witbier Flessen 6 x 30 cl",
+      "desc": "Bier & wijn",
+      "prijs": "5.99",
+      "was": "7.99",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/03042026_1775233984769_1775233989565_5412421306015_1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Leffe Ruby Belgisch Abdijbier Fles 330 ml",
+      "desc": "Bier & wijn",
+      "prijs": "6.36",
+      "was": "8.49",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/22042026_1776868483467_1776868490204_5410228205678_1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Calvé Knijpfles Broodje Unox Saus 250 ml",
+      "desc": "Soepen & sauzen",
+      "prijs": "1.0",
+      "was": "2.89",
+      "deal_label": "65% korting",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/07052026_1778118340541_1778118350718_485496_FLS_08720182255082_C1N1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Oreo Original koekjes 154g",
+      "desc": "Niet interessant",
+      "prijs": "1.0",
+      "was": "1.09",
+      "deal_label": "8% korting",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/10042026_1775788824097_1775788827220_146753_PAK_07622300336738_H1N1_s09.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Nescafé Vanillesmaak Typ Latte 8 x 17 g",
+      "desc": "Koffie & thee",
+      "prijs": "2.76",
+      "was": "3.69",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/29042026_1777462485657_1777462489982_8445291513334_1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Milka Chocoladereep LU 87g",
+      "desc": "Niet interessant",
+      "prijs": "1.0",
+      "was": "2.19",
+      "deal_label": "54% korting",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/05022026_1770262907889_1770262909692_172906_ZK_07622300787844_H1N1_s01.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Jumbo Fijnproevers Geschilde Asperges 350 g",
+      "desc": "Groente & fruit",
+      "prijs": "4.99",
+      "was": "6.99",
+      "deal_label": "29% korting",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/03022026_1770147205539_1770147210732_8718452711291_1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Nescafé Double Choc Mocha 8 x 18,5 g",
+      "desc": "Koffie & thee",
+      "prijs": "2.76",
+      "was": "3.69",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/12052026_1778548130642_1778548135765_685679_DS_07613034635617_C1N1_s01.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Mount Fishtail Marlborough - Pinot Grigio - 750ML",
+      "desc": "Bier & wijn",
+      "prijs": "6.99",
+      "was": "8.99",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/05112025_1762349644834_1762349648214_9421904809918_1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Leffe Triple Belgisch Abdijbier Flessen 6 x 30 cl",
+      "desc": "Bier & wijn",
+      "prijs": "8.24",
+      "was": "10.99",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/23042026_1776902450426_1776902458083_8725000539085_1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Leffe Belgisch Abdijbier Zomerbier fles 6 x 33 cl",
+      "desc": "Bier & wijn",
+      "prijs": "6.29",
+      "was": "8.39",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/14042026_1776177218322_1776177222920_5410228243953_1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Desperados Sunlight Cherry & Pommegranate 6x330ML",
+      "desc": "Bier & wijn",
+      "prijs": "7.48",
+      "was": "9.98",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/08712000757199H1N1849ecb9a-0e77-4338-9d6a-b466318afe1f-1772455636662.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Amstel Radler 0.0%",
+      "desc": "Bier & wijn",
+      "prijs": "2.99",
+      "was": "3.99",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "RAD blik 99x6x33",
+      "desc": "Bier & wijn",
+      "prijs": "4.42",
+      "was": "5.9",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Liefmans - Peach Fruitesse - Limited Edition - Fles - 4 x 250ML",
+      "desc": "Bier & wijn",
+      "prijs": "4.94",
+      "was": "6.59",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/14022024_1707872685775_1707872692973_5411686702570_1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Leffe Blond Belgisch Abdijbier Flessen 6 x 30 cl",
+      "desc": "Bier & wijn",
+      "prijs": "6.59",
+      "was": "8.79",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/01042026_1775043244188_1775043250746_8725000443795_1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Jumbo Loaded Cookie Chocolate Chip 300g",
+      "desc": "Niet interessant",
+      "prijs": "3.74",
+      "was": "4.99",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/19032026_1773934377678_1773934384202_8717228613821_1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Oreo Remix Koekjes Tiramisu en Vanille 157g",
+      "desc": "Niet interessant",
+      "prijs": "1.0",
+      "was": "1.99",
+      "deal_label": "50% korting",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/12032026_1773311637803_1773311639799_7622201391300_1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Pink Lady Appels 6 Stuks",
+      "desc": "Groente & fruit",
+      "prijs": "2.49",
+      "was": "4.49",
+      "deal_label": "45% korting",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/07032025_1741357965055_1741357973509_3700476611164_1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Nescafé Espresso Concentrate Style Classic 500 ml",
+      "desc": "Koffie & thee",
+      "prijs": "4.86",
+      "was": "6.49",
+      "deal_label": "2e halve prijs",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/29042026_1777462489883_1777462492346_8445292117944_1.png",
+      "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
+    },
+    {
+      "supermarkt": "Jumbo",
+      "naam": "Calvé Saus Fles Kerrie 250 ml",
+      "desc": "Soepen & sauzen",
+      "prijs": "1.0",
+      "was": "2.39",
+      "deal_label": "58% korting",
+      "effectief": null,
+      "img": "https://www.jumbo.com/dam-images/fit-in/360x360/Products/12032026_1773292539613_1773292577279_52722_FLS_08720182750228_H1N1.png",
       "url": "https://www.jumbo.com/aanbiedingen/alle-aanbiedingen/"
     },
     {
@@ -5460,17 +5449,6 @@
     },
     {
       "supermarkt": "Plus",
-      "naam": "PLUS Bananen Fairtrade",
-      "desc": "Groente & fruit",
-      "prijs": "0.99",
-      "was": "2.25",
-      "deal_label": "0.99 Per Kilo",
-      "effectief": null,
-      "img": "https://images.ctfassets.net/s0lodsnpsezb/113651_M/94dbcd0a996496506e58b3a216a58957/113651.png",
-      "url": "https://www.plus.nl/aanbiedingen"
-    },
-    {
-      "supermarkt": "Plus",
       "naam": "PLUS Nederlandse Aardbeien",
       "desc": "Groente & fruit",
       "prijs": "2.99",
@@ -5526,17 +5504,6 @@
     },
     {
       "supermarkt": "Plus",
-      "naam": "PLUS Snoeptomaten en snoepkomkommer",
-      "desc": "Groente & fruit",
-      "prijs": "3.99",
-      "was": "5.99",
-      "deal_label": "Weekaanbieding",
-      "effectief": null,
-      "img": "//images.ctfassets.net/s0lodsnpsezb/4428_174_M/95f579aad230d9e39dc4b60396f928ab/4428_174.png",
-      "url": "https://www.plus.nl/aanbiedingen"
-    },
-    {
-      "supermarkt": "Plus",
       "naam": "PLUS Asperges geschild",
       "desc": "Groente & fruit",
       "prijs": "4.99",
@@ -5544,6 +5511,17 @@
       "deal_label": "Weekaanbieding",
       "effectief": null,
       "img": "https://images.ctfassets.net/s0lodsnpsezb/724190_M/9e2b385ab96e3b222b9233bf802aa119/724190.png",
+      "url": "https://www.plus.nl/aanbiedingen"
+    },
+    {
+      "supermarkt": "Plus",
+      "naam": "PLUS Snoeptomaten en snoepkomkommer",
+      "desc": "Groente & fruit",
+      "prijs": "3.99",
+      "was": "5.99",
+      "deal_label": "Weekaanbieding",
+      "effectief": null,
+      "img": "//images.ctfassets.net/s0lodsnpsezb/4428_174_M/95f579aad230d9e39dc4b60396f928ab/4428_174.png",
       "url": "https://www.plus.nl/aanbiedingen"
     },
     {
@@ -5874,17 +5852,6 @@
       "deal_label": "25 % Korting",
       "effectief": null,
       "img": "//images.ctfassets.net/s0lodsnpsezb/4428_15_M/84ac0dc80c2bd0c6f01876fe05ccbc98/4428_15.png",
-      "url": "https://www.plus.nl/aanbiedingen"
-    },
-    {
-      "supermarkt": "Plus",
-      "naam": "PLUS Vleeswaren",
-      "desc": "Vlees & vis",
-      "prijs": "1.99",
-      "was": "3.99",
-      "deal_label": "Weekaanbieding",
-      "effectief": null,
-      "img": "https://images.ctfassets.net/s0lodsnpsezb/4428_8_M/28da20798b5040aa56c40c708066d9ca/4428_8.png",
       "url": "https://www.plus.nl/aanbiedingen"
     },
     {
@@ -6918,7 +6885,7 @@
       "was": null,
       "deal_label": "25 % Korting",
       "effectief": null,
-      "img": "//images.ctfassets.net/s0lodsnpsezb/4483_1_M/d8350dcb2b51ef2453450a5274c81790/4483_1.png",
+      "img": "https://images.ctfassets.net/s0lodsnpsezb/4483_1_M/d8350dcb2b51ef2453450a5274c81790/4483_1.png",
       "url": "https://www.plus.nl/aanbiedingen"
     },
     {
@@ -7556,7 +7523,7 @@
       "was": null,
       "deal_label": "Actie_",
       "effectief": null,
-      "img": "https://web-fileserver.dirk.nl/artikelen/7/4/9/5/3/1/Roerbakgroente_639129824007100714.png",
+      "img": "https://web-fileserver.dirk.nl/artikelen/70626_1_247482_638345994515910466.png",
       "url": "https://www.dirk.nl/aanbiedingen"
     },
     {
@@ -7567,7 +7534,7 @@
       "was": null,
       "deal_label": "Actie_",
       "effectief": null,
-      "img": "https://web-fileserver.dirk.nl/artikelen/8/4/9/5/3/1/Hollandse%20aardbeien_639129871061278562.png",
+      "img": "https://web-fileserver.dirk.nl/artikelen/243172_1_481279_638956218528263034.png",
       "url": "https://www.dirk.nl/aanbiedingen"
     },
     {
@@ -7578,7 +7545,7 @@
       "was": null,
       "deal_label": "Actie_",
       "effectief": null,
-      "img": "https://web-fileserver.dirk.nl/artikelen/9/4/9/5/3/1/Hollandse%20biologische%20courgette_639129870332432437.png",
+      "img": "https://web-fileserver.dirk.nl/artikelen/242132_1_347405_638943060099875832.png",
       "url": "https://www.dirk.nl/aanbiedingen"
     },
     {
@@ -7589,7 +7556,7 @@
       "was": null,
       "deal_label": "Actie_",
       "effectief": null,
-      "img": "https://web-fileserver.dirk.nl/artikelen/0/5/9/5/3/1/Hollandse%20witte%20asperges_639129870817450271.png",
+      "img": "https://web-fileserver.dirk.nl/artikelen/226171_1_424300_638827311256347265.png",
       "url": "https://www.dirk.nl/aanbiedingen"
     },
     {
@@ -7600,7 +7567,7 @@
       "was": null,
       "deal_label": "Actie_",
       "effectief": null,
-      "img": "https://web-fileserver.dirk.nl/artikelen/2/5/9/5/3/1/Hollandse%20Elstar%20appels_639129871954112787.png",
+      "img": "https://web-fileserver.dirk.nl/artikelen/212872_1_473833_638727106420962411.png",
       "url": "https://www.dirk.nl/aanbiedingen"
     },
     {
@@ -7611,7 +7578,7 @@
       "was": null,
       "deal_label": "Actie_",
       "effectief": null,
-      "img": "https://web-fileserver.dirk.nl/artikelen/3/5/9/5/3/1/Hollandse%20trostomaten_639129870942603399.png",
+      "img": "https://web-fileserver.dirk.nl/artikelen/223624_1_245265_638798718217005970.png",
       "url": "https://www.dirk.nl/aanbiedingen"
     },
     {
@@ -7622,7 +7589,7 @@
       "was": null,
       "deal_label": "Actie_",
       "effectief": null,
-      "img": "https://web-fileserver.dirk.nl/artikelen/4/5/9/5/3/1/Perziken_639129870684167181.png",
+      "img": "https://web-fileserver.dirk.nl/artikelen/190943_1_414174_638519646442757300.png",
       "url": "https://www.dirk.nl/aanbiedingen"
     },
     {
@@ -7633,7 +7600,7 @@
       "was": "2.79",
       "deal_label": "Actie_",
       "effectief": null,
-      "img": "https://web-fileserver.dirk.nl/artikelen/2/9/9/5/3/1/Bonduelle%20v1_639129871453365963.png",
+      "img": "https://web-fileserver.dirk.nl/artikelen/201234_1_147263_638630310311279320.png",
       "url": "https://www.dirk.nl/aanbiedingen"
     },
     {
@@ -7644,7 +7611,7 @@
       "was": null,
       "deal_label": "Actie_",
       "effectief": null,
-      "img": "",
+      "img": "https://web-fileserver.dirk.nl/artikelen/246754_1_467262_639014115114552445.png",
       "url": "https://www.dirk.nl/aanbiedingen"
     },
     {
@@ -7655,7 +7622,7 @@
       "was": null,
       "deal_label": "Actie_",
       "effectief": null,
-      "img": "",
+      "img": "https://web-fileserver.dirk.nl/artikelen/93980_1_369608_638284636140544763.png",
       "url": "https://www.dirk.nl/aanbiedingen"
     },
     {
@@ -7666,7 +7633,7 @@
       "was": null,
       "deal_label": "Actie_",
       "effectief": null,
-      "img": "",
+      "img": "https://web-fileserver.dirk.nl/artikelen/98922_1_434014_638331657782898998.png",
       "url": "https://www.dirk.nl/aanbiedingen"
     },
     {
@@ -7688,7 +7655,7 @@
       "was": null,
       "deal_label": "Actie_",
       "effectief": null,
-      "img": "",
+      "img": "https://web-fileserver.dirk.nl/artikelen/213510_1_247977_638732208731138555.png",
       "url": "https://www.dirk.nl/aanbiedingen"
     },
     {
@@ -7699,7 +7666,7 @@
       "was": null,
       "deal_label": "Actie_",
       "effectief": null,
-      "img": "",
+      "img": "https://web-fileserver.dirk.nl/artikelen/126966_1_268458_638312761240083442.png",
       "url": "https://www.dirk.nl/aanbiedingen"
     },
     {
@@ -7732,7 +7699,7 @@
       "was": null,
       "deal_label": "Actie_",
       "effectief": null,
-      "img": "",
+      "img": "https://web-fileserver.dirk.nl/artikelen/54981_1_412119_638315829678148078.png",
       "url": "https://www.dirk.nl/aanbiedingen"
     },
     {
@@ -7754,7 +7721,7 @@
       "was": null,
       "deal_label": "Actie_",
       "effectief": null,
-      "img": "",
+      "img": "https://web-fileserver.dirk.nl/artikelen/205242_1_420009_638669367609168044.png",
       "url": "https://www.dirk.nl/aanbiedingen"
     },
     {
@@ -7765,7 +7732,7 @@
       "was": "3.89",
       "deal_label": "Actie_",
       "effectief": null,
-      "img": "https://web-fileserver.dirk.nl/artikelen/5/5/9/5/3/1/Gemarineerde%20lapjes_639129868421544165.png",
+      "img": "https://web-fileserver.dirk.nl/artikelen/225528_1_468474_638817861749750253.png",
       "url": "https://www.dirk.nl/aanbiedingen"
     },
     {
@@ -7776,7 +7743,7 @@
       "was": null,
       "deal_label": "Actie_",
       "effectief": null,
-      "img": "https://web-fileserver.dirk.nl/artikelen/6/5/9/5/3/1/Magere%20runderhamburgers_639129868552885937.png",
+      "img": "https://web-fileserver.dirk.nl/artikelen/228567_1_456778_639020937469549153.png",
       "url": "https://www.dirk.nl/aanbiedingen"
     },
     {
@@ -7787,7 +7754,7 @@
       "was": "3.59",
       "deal_label": "Actie_",
       "effectief": null,
-      "img": "https://web-fileserver.dirk.nl/artikelen/7/5/9/5/3/1/Vivera%20kipsticks,%20Gouda%20kaasschnitzels%20of%20döner%20kebab_639129863803219364.png",
+      "img": "https://web-fileserver.dirk.nl/artikelen/255429_1_488638_639120144438793751.png",
       "url": "https://www.dirk.nl/aanbiedingen"
     },
     {
@@ -7798,7 +7765,7 @@
       "was": null,
       "deal_label": "Actie_",
       "effectief": null,
-      "img": "https://web-fileserver.dirk.nl/artikelen/8/5/9/5/3/1/Kipfilet_639129868826437958.png",
+      "img": "https://web-fileserver.dirk.nl/artikelen/226638_1_475486_638829804474444549.png",
       "url": "https://www.dirk.nl/aanbiedingen"
     },
     {
@@ -7809,7 +7776,7 @@
       "was": null,
       "deal_label": "Actie_",
       "effectief": null,
-      "img": "https://web-fileserver.dirk.nl/artikelen/9/5/9/5/3/1/Schouderkarbonade_639129868690057124.png",
+      "img": "https://web-fileserver.dirk.nl/artikelen/228646_1_456776_638968125580460291.png",
       "url": "https://www.dirk.nl/aanbiedingen"
     },
     {
@@ -7820,7 +7787,7 @@
       "was": null,
       "deal_label": "Actie_",
       "effectief": null,
-      "img": "https://web-fileserver.dirk.nl/artikelen/0/6/9/5/3/1/Pangasiusfilet%20met%20tuinkruiden_639129863934274068.png",
+      "img": "https://web-fileserver.dirk.nl/artikelen/256649_1_489195_639123825157547929.png",
       "url": "https://www.dirk.nl/aanbiedingen"
     },
     {
@@ -7831,7 +7798,7 @@
       "was": "2.39",
       "deal_label": "Actie_",
       "effectief": null,
-      "img": "https://web-fileserver.dirk.nl/artikelen/6/6/9/5/3/1/Flinterdunne%20vleeswaren_639129833383652301.png",
+      "img": "https://web-fileserver.dirk.nl/artikelen/242120_1_423076_638943033318114580.png",
       "url": "https://www.dirk.nl/aanbiedingen"
     },
     {
@@ -7842,7 +7809,7 @@
       "was": "2.49",
       "deal_label": "Actie_",
       "effectief": null,
-      "img": "https://web-fileserver.dirk.nl/artikelen/7/6/9/5/3/1/Gebraden%20gehakt_639129833259571852.png",
+      "img": "https://web-fileserver.dirk.nl/artikelen/239280_1_471132_638908446267746997.png",
       "url": "https://www.dirk.nl/aanbiedingen"
     },
     {
@@ -7853,7 +7820,7 @@
       "was": null,
       "deal_label": "Actie_",
       "effectief": null,
-      "img": "https://web-fileserver.dirk.nl/artikelen/4/9/9/5/3/1/Princes%20tonijnstukken_639129823835637417.png",
+      "img": "https://web-fileserver.dirk.nl/artikelen/242237_1_481669_638944761399324851.png",
       "url": "https://www.dirk.nl/aanbiedingen"
     },
     {
@@ -7864,7 +7831,7 @@
       "was": null,
       "deal_label": "Actie_",
       "effectief": null,
-      "img": "https://web-fileserver.dirk.nl/artikelen/1/6/9/5/3/1/Rozijnen%20krentenbollen_639129816774687307.png",
+      "img": "https://web-fileserver.dirk.nl/artikelen/175256_1_447403_638350383680487798.png",
       "url": "https://www.dirk.nl/aanbiedingen"
     },
     {
@@ -7875,7 +7842,7 @@
       "was": null,
       "deal_label": "Actie_",
       "effectief": null,
-      "img": "https://web-fileserver.dirk.nl/artikelen/2/6/9/5/3/1/Beemsterkaasbroodje_639129816642274174.png",
+      "img": "https://web-fileserver.dirk.nl/artikelen/250290_1_485917_639062232577503295.png",
       "url": "https://www.dirk.nl/aanbiedingen"
     },
     {
@@ -7886,7 +7853,7 @@
       "was": null,
       "deal_label": "Actie_",
       "effectief": null,
-      "img": "https://web-fileserver.dirk.nl/artikelen/3/6/9/5/3/1/Boerenbrood_639129816513264882.png",
+      "img": "https://web-fileserver.dirk.nl/artikelen/150569_1_447443_638288129765224924.png",
       "url": "https://www.dirk.nl/aanbiedingen"
     },
     {
@@ -7897,7 +7864,7 @@
       "was": "3.19",
       "deal_label": "Actie_",
       "effectief": null,
-      "img": "https://web-fileserver.dirk.nl/artikelen/4/6/9/5/3/1/Danerolles%20croissants_639129816899484308.png",
+      "img": "https://web-fileserver.dirk.nl/artikelen/254212_1_335428_639095118430063123.png",
       "url": "https://www.dirk.nl/aanbiedingen"
     },
     {
@@ -7908,7 +7875,7 @@
       "was": null,
       "deal_label": "Actie_",
       "effectief": null,
-      "img": "https://web-fileserver.dirk.nl/artikelen/5/6/9/5/3/1/Hartvormige%20donuts_639129814404582635.png",
+      "img": "https://web-fileserver.dirk.nl/artikelen/248772_1_486200_639058788239195983.png",
       "url": "https://www.dirk.nl/aanbiedingen"
     },
     {
@@ -7919,7 +7886,7 @@
       "was": "1.87",
       "deal_label": "Actie_",
       "effectief": null,
-      "img": "https://web-fileserver.dirk.nl/artikelen/9/8/9/5/3/1/Bolletje%20vezelrijk%20beschuit_639129816395176954.png",
+      "img": "https://web-fileserver.dirk.nl/artikelen/192245_1_433759_638532798732547496.png",
       "url": "https://www.dirk.nl/aanbiedingen"
     },
     {
@@ -7930,7 +7897,7 @@
       "was": "3.35",
       "deal_label": "Actie_",
       "effectief": null,
-      "img": "https://web-fileserver.dirk.nl/artikelen/0/9/9/5/3/1/Hero%20jam_639129825673482180.png",
+      "img": "https://web-fileserver.dirk.nl/artikelen/131391_1_441910_638233715217839904.png",
       "url": "https://www.dirk.nl/aanbiedingen"
     },
     {
@@ -7941,7 +7908,7 @@
       "was": null,
       "deal_label": "Actie_",
       "effectief": null,
-      "img": "https://web-fileserver.dirk.nl/artikelen/1/0/0/6/3/1/Moederdag%20roomboter%20cake_639129814274195032.png",
+      "img": "https://web-fileserver.dirk.nl/artikelen/252180_1_486226_639131649855254413.png",
       "url": "https://www.dirk.nl/aanbiedingen"
     },
     {
@@ -7952,7 +7919,7 @@
       "was": "2.99",
       "deal_label": "Actie_",
       "effectief": null,
-      "img": "https://web-fileserver.dirk.nl/artikelen/4/0/0/6/3/1/Luxe%20koeken%20v1_639129817260812054.png",
+      "img": "https://web-fileserver.dirk.nl/artikelen/218200_1_470271_638761719872245445.png",
       "url": "https://www.dirk.nl/aanbiedingen"
     },
     {
@@ -7963,7 +7930,7 @@
       "was": "1.95",
       "deal_label": "Actie_",
       "effectief": null,
-      "img": "https://web-fileserver.dirk.nl/artikelen/6/0/0/6/3/1/Sneeuwwitjes,%20vruchten-%20of%20aardbeiengebak_639129867873927648.png",
+      "img": "https://web-fileserver.dirk.nl/artikelen/24646_1_399601_637867369591193679.png",
       "url": "https://www.dirk.nl/aanbiedingen"
     },
     {
@@ -7974,7 +7941,7 @@
       "was": "2.39",
       "deal_label": "Actie_",
       "effectief": null,
-      "img": "https://web-fileserver.dirk.nl/artikelen/9/0/0/6/3/1/Lotus%20koek_639129832437609164.png",
+      "img": "https://web-fileserver.dirk.nl/artikelen/182206_1_415150_638436051954049509.png",
       "url": "https://www.dirk.nl/aanbiedingen"
     },
     {
@@ -7985,7 +7952,7 @@
       "was": "8.35",
       "deal_label": "Actie_",
       "effectief": null,
-      "img": "https://web-fileserver.dirk.nl/artikelen/8/6/9/5/3/1/Kroon%20van%20Holland%20kaas%2048+_639129832565259402.png",
+      "img": "https://web-fileserver.dirk.nl/artikelen/256748_1_458621_639125394479895856.png",
       "url": "https://www.dirk.nl/aanbiedingen"
     },
     {
@@ -7996,7 +7963,7 @@
       "was": null,
       "deal_label": "Actie_",
       "effectief": null,
-      "img": "https://web-fileserver.dirk.nl/artikelen/9/6/9/5/3/1/Uniekaas%20hotel%20plakken%2048+_639129832815167284.png",
+      "img": "https://web-fileserver.dirk.nl/artikelen/255920_1_490093_639131649877197407.png",
       "url": "https://www.dirk.nl/aanbiedingen"
     },
     {
@@ -8007,7 +7974,7 @@
       "was": "3.05",
       "deal_label": "Actie_",
       "effectief": null,
-      "img": "https://web-fileserver.dirk.nl/artikelen/1/7/9/5/3/1/Apetina%20witte%20kaas_639129832963458891.png",
+      "img": "https://web-fileserver.dirk.nl/artikelen/253974_1_115155_639093825649818744.png",
       "url": "https://www.dirk.nl/aanbiedingen"
     },
     {
@@ -8018,7 +7985,7 @@
       "was": null,
       "deal_label": "Actie_",
       "effectief": null,
-      "img": "https://web-fileserver.dirk.nl/artikelen/3/7/9/5/3/1/Ehrmann%20Grand%20dessert_639129815114088242.png",
+      "img": "https://web-fileserver.dirk.nl/artikelen/215124_1_391263_638741694586055292.png",
       "url": "https://www.dirk.nl/aanbiedingen"
     },
     {
@@ -8029,7 +7996,7 @@
       "was": "2.89",
       "deal_label": "Actie_",
       "effectief": null,
-      "img": "https://web-fileserver.dirk.nl/artikelen/8/7/9/5/3/1/Lurpak%20roomboter%20of%20smeerbaar_639129864693579503.png",
+      "img": "https://web-fileserver.dirk.nl/artikelen/244133_1_401377_638973507291116736.png",
       "url": "https://www.dirk.nl/aanbiedingen"
     },
     {
@@ -8040,7 +8007,7 @@
       "was": "2.19",
       "deal_label": "Actie_",
       "effectief": null,
-      "img": "https://web-fileserver.dirk.nl/artikelen/9/7/9/5/3/1/Optimel%20drinkyoghurt_639129866321812868.png",
+      "img": "https://web-fileserver.dirk.nl/artikelen/14862_1_391072_638180136799845761.png",
       "url": "https://www.dirk.nl/aanbiedingen"
     },
     {
@@ -8051,7 +8018,7 @@
       "was": "1.98",
       "deal_label": "Actie_",
       "effectief": null,
-      "img": "https://web-fileserver.dirk.nl/artikelen/0/8/9/5/3/1/Zuivelhoeve%20Boer’n%20vla_639129816231914789.png",
+      "img": "https://web-fileserver.dirk.nl/artikelen/151370_1_448607_638126847175771786.png",
       "url": "https://www.dirk.nl/aanbiedingen"
     },
     {
@@ -8062,7 +8029,7 @@
       "was": null,
       "deal_label": "Actie_",
       "effectief": null,
-      "img": "https://web-fileserver.dirk.nl/artikelen/3/8/9/5/3/1/Galbani%20mozzarella_639129869768516175.png",
+      "img": "https://web-fileserver.dirk.nl/artikelen/230082_1_367967_638865354911192025.png",
       "url": "https://www.dirk.nl/aanbiedingen"
     },
     {
@@ -8073,7 +8040,7 @@
       "was": "3.65",
       "deal_label": "Actie_",
       "effectief": null,
-      "img": "https://web-fileserver.dirk.nl/artikelen/3/9/9/5/3/1/Oatly%20haverdrink_639129864572953170.png",
+      "img": "https://web-fileserver.dirk.nl/artikelen/59133_1_408980_637856410935928876.png",
       "url": "https://www.dirk.nl/aanbiedingen"
     },
     {
@@ -8084,7 +8051,7 @@
       "was": "2.59",
       "deal_label": "Actie_",
       "effectief": null,
-      "img": "https://web-fileserver.dirk.nl/artikelen/6/7/9/5/3/1/Starbucks%20ijskoffie_639129815251717794.png",
+      "img": "https://web-fileserver.dirk.nl/artikelen/217587_1_371796_638756400519607309.png",
       "url": "https://www.dirk.nl/aanbiedingen"
     },
     {
@@ -8095,7 +8062,7 @@
       "was": "2.69",
       "deal_label": "Actie_",
       "effectief": null,
-      "img": "https://web-fileserver.dirk.nl/artikelen/7/7/9/5/3/1/Innocent%20sap%20of%20smoothie_639129833523403166.png",
+      "img": "https://web-fileserver.dirk.nl/artikelen/216574_1_412105_638748868405039656.png",
       "url": "https://www.dirk.nl/aanbiedingen"
     },
     {
@@ -8106,7 +8073,7 @@
       "was": "1.92",
       "deal_label": "Actie_",
       "effectief": null,
-      "img": "https://web-fileserver.dirk.nl/artikelen/2/8/9/5/3/1/Dubbelfrisss%20Boost_639129832185755922.png",
+      "img": "https://web-fileserver.dirk.nl/artikelen/184931_1_463065_638454936761414692.png",
       "url": "https://www.dirk.nl/aanbiedingen"
     },
     {
@@ -8117,7 +8084,7 @@
       "was": null,
       "deal_label": "Actie_",
       "effectief": null,
-      "img": "https://web-fileserver.dirk.nl/artikelen/4/8/9/5/3/1/Spa%20Reine_639129832316377128.png",
+      "img": "https://web-fileserver.dirk.nl/artikelen/209088_1_248946_638744295404633498.png",
       "url": "https://www.dirk.nl/aanbiedingen"
     },
     {
@@ -8139,7 +8106,7 @@
       "was": null,
       "deal_label": "Actie_",
       "effectief": null,
-      "img": "https://web-fileserver.dirk.nl/artikelen/8/8/9/5/3/1/Senseo%20cappuccino_639129863397003097.png",
+      "img": "https://web-fileserver.dirk.nl/artikelen/194653_1_439918_638560533561798005.png",
       "url": "https://www.dirk.nl/aanbiedingen"
     },
     {
@@ -8150,7 +8117,7 @@
       "was": null,
       "deal_label": "Actie_",
       "effectief": null,
-      "img": "https://web-fileserver.dirk.nl/artikelen/0/0/0/6/3/1/Kahrel%20koffiebonen_639129815783323006.png",
+      "img": "https://web-fileserver.dirk.nl/artikelen/222387_1_475647_638793721077304761.png",
       "url": "https://www.dirk.nl/aanbiedingen"
     },
     {
@@ -8161,7 +8128,7 @@
       "was": null,
       "deal_label": "Actie_",
       "effectief": null,
-      "img": "https://web-fileserver.dirk.nl/artikelen/2/0/0/6/3/1/Kahrel%20RISTRETTO_639129873860735533.png",
+      "img": "https://web-fileserver.dirk.nl/artikelen/222770_1_475997_638793721401462117.png",
       "url": "https://www.dirk.nl/aanbiedingen"
     },
     {
@@ -8172,7 +8139,7 @@
       "was": null,
       "deal_label": "Actie_",
       "effectief": null,
-      "img": "https://web-fileserver.dirk.nl/artikelen/5/0/0/6/3/1/Saporito%20Crema%20likeur_639129825150927741.png",
+      "img": "https://web-fileserver.dirk.nl/artikelen/202297_1_472206_638647827617363874.png",
       "url": "https://www.dirk.nl/aanbiedingen"
     },
     {
@@ -8183,7 +8150,7 @@
       "was": "7.25",
       "deal_label": "Actie_",
       "effectief": null,
-      "img": "https://web-fileserver.dirk.nl/artikelen/7/0/0/6/3/1/Lavazza%20filterkoffie_639129866458869084.png",
+      "img": "https://web-fileserver.dirk.nl/artikelen/205232_1_343252_638669364787231108.png",
       "url": "https://www.dirk.nl/aanbiedingen"
     },
     {
@@ -8194,7 +8161,7 @@
       "was": "2.85",
       "deal_label": "Actie_",
       "effectief": null,
-      "img": "https://web-fileserver.dirk.nl/artikelen/8/0/0/6/3/1/Lipton%20thee_639129868004025400.png",
+      "img": "https://web-fileserver.dirk.nl/artikelen/198522_1_467663_638604618901951385.png",
       "url": "https://www.dirk.nl/aanbiedingen"
     },
     {
@@ -8205,7 +8172,7 @@
       "was": "1.69",
       "deal_label": "Actie_",
       "effectief": null,
-      "img": "https://web-fileserver.dirk.nl/artikelen/2/1/0/6/3/1/Aquarius%20of%20Powerade_639129871190282393.png",
+      "img": "https://web-fileserver.dirk.nl/artikelen/158281_1_423398_638168976432635529.png",
       "url": "https://www.dirk.nl/aanbiedingen"
     },
     {
@@ -8216,7 +8183,7 @@
       "was": "2.89",
       "deal_label": "Actie_",
       "effectief": null,
-      "img": "https://web-fileserver.dirk.nl/artikelen/5/1/0/6/3/1/Fanta,%20Sprite,%20Fernandes%20of%20Rivella_639129871328514717.png",
+      "img": "https://web-fileserver.dirk.nl/artikelen/183356_1_424746_638441283267704292.png",
       "url": "https://www.dirk.nl/aanbiedingen"
     },
     {
@@ -8227,7 +8194,7 @@
       "was": "2.85",
       "deal_label": "Actie_",
       "effectief": null,
-      "img": "https://web-fileserver.dirk.nl/artikelen/6/1/0/6/3/1/Fuze%20Tea_639129871584935487.png",
+      "img": "https://web-fileserver.dirk.nl/artikelen/250821_1_390271_639064929578654881.png",
       "url": "https://www.dirk.nl/aanbiedingen"
     },
     {
@@ -8238,7 +8205,7 @@
       "was": null,
       "deal_label": "Actie_",
       "effectief": null,
-      "img": "https://web-fileserver.dirk.nl/artikelen/7/1/0/6/3/1/Amstel%20of%20Grolsch%20V3_639129825995336393.png",
+      "img": "https://web-fileserver.dirk.nl/artikelen/244417_1_742140_638977713278744662.png",
       "url": "https://www.dirk.nl/aanbiedingen"
     },
     {
@@ -8249,7 +8216,7 @@
       "was": null,
       "deal_label": "Actie_",
       "effectief": null,
-      "img": "https://web-fileserver.dirk.nl/artikelen/1/2/0/6/3/1/Corona%20V3_639129866716274998.png",
+      "img": "https://web-fileserver.dirk.nl/artikelen/191296_1_434865_638524896534484115.png",
       "url": "https://www.dirk.nl/aanbiedingen"
     },
     {
@@ -8260,7 +8227,7 @@
       "was": null,
       "deal_label": "Actie_",
       "effectief": null,
-      "img": "https://web-fileserver.dirk.nl/artikelen/4/2/0/6/3/1/Grolsch%20Radler%20V4_639129831365679768.png",
+      "img": "https://web-fileserver.dirk.nl/artikelen/224917_1_360371_638811795653980455.png",
       "url": "https://www.dirk.nl/aanbiedingen"
     },
     {
@@ -8271,7 +8238,7 @@
       "was": null,
       "deal_label": "Actie_",
       "effectief": null,
-      "img": "https://web-fileserver.dirk.nl/artikelen/8/2/0/6/3/1/Hertog%20Jan%20pils%20of%200.0%20V2%20copy_639129828464565703.png",
+      "img": "https://web-fileserver.dirk.nl/artikelen/247660_1_446246_639032844232467700.png",
       "url": "https://www.dirk.nl/aanbiedingen"
     },
     {
@@ -8282,7 +8249,7 @@
       "was": null,
       "deal_label": "Actie_",
       "effectief": null,
-      "img": "https://web-fileserver.dirk.nl/artikelen/2/3/0/6/3/1/Viper_639129869514226629.png",
+      "img": "https://web-fileserver.dirk.nl/artikelen/224744_1_478026_638810907413931001.png",
       "url": "https://www.dirk.nl/aanbiedingen"
     },
     {
@@ -8293,7 +8260,7 @@
       "was": null,
       "deal_label": "Actie_",
       "effectief": null,
-      "img": "https://web-fileserver.dirk.nl/artikelen/3/3/0/6/3/1/Hidden%20River_639129833925426358.png",
+      "img": "https://web-fileserver.dirk.nl/artikelen/242691_1_483596_638956821516785459.png",
       "url": "https://www.dirk.nl/aanbiedingen"
     },
     {
@@ -8304,7 +8271,7 @@
       "was": "5.29",
       "deal_label": "Actie_",
       "effectief": null,
-      "img": "https://web-fileserver.dirk.nl/artikelen/4/3/0/6/3/1/I%20Am%20wijn_639129825398931295.png",
+      "img": "https://web-fileserver.dirk.nl/artikelen/196677_1_346405_638580366575626944.png",
       "url": "https://www.dirk.nl/aanbiedingen"
     },
     {
@@ -8326,7 +8293,7 @@
       "was": "4.49",
       "deal_label": "Actie_",
       "effectief": null,
-      "img": "https://web-fileserver.dirk.nl/artikelen/7/9/9/5/3/1/Heinz%20tomatenketchup%20of%20mayonaise_639129867739472298.png",
+      "img": "https://web-fileserver.dirk.nl/artikelen/227045_1_455658_638834997306893984.png",
       "url": "https://www.dirk.nl/aanbiedingen"
     },
     {
@@ -8337,7 +8304,7 @@
       "was": null,
       "deal_label": "Actie_",
       "effectief": null,
-      "img": "https://web-fileserver.dirk.nl/artikelen/1/5/9/5/3/1/Maaltijd%20verspakket_639129824152509609.png",
+      "img": "https://web-fileserver.dirk.nl/artikelen/229272_1_474819_638857488212441192.png",
       "url": "https://www.dirk.nl/aanbiedingen"
     },
     {
@@ -8348,7 +8315,7 @@
       "was": "1.28",
       "deal_label": "Actie_",
       "effectief": null,
-      "img": "https://web-fileserver.dirk.nl/artikelen/0/7/9/5/3/1/Westland%20salade_639129864984707304.png",
+      "img": "https://web-fileserver.dirk.nl/artikelen/211572_1_447922_638720337277796355.png",
       "url": "https://www.dirk.nl/aanbiedingen"
     },
     {
@@ -8359,7 +8326,7 @@
       "was": null,
       "deal_label": "Actie_",
       "effectief": null,
-      "img": "https://web-fileserver.dirk.nl/artikelen/2/7/9/5/3/1/Daily%20Chef%20verse%20pasta_639129864062134641.png",
+      "img": "https://web-fileserver.dirk.nl/artikelen/196490_1_463071_638580138847684640.png",
       "url": "https://www.dirk.nl/aanbiedingen"
     },
     {
@@ -8381,7 +8348,7 @@
       "was": null,
       "deal_label": "Actie_",
       "effectief": null,
-      "img": "https://web-fileserver.dirk.nl/artikelen/5/7/9/5/3/1/Padifood%20beef%20teriyaki,%20bami%20of%20nasi%20speciaal_639129868258372370.png",
+      "img": "https://web-fileserver.dirk.nl/artikelen/214414_1_471139_638738253472862098.png",
       "url": "https://www.dirk.nl/aanbiedingen"
     },
     {
@@ -8392,7 +8359,7 @@
       "was": "4.75",
       "deal_label": "Actie_",
       "effectief": null,
-      "img": "https://web-fileserver.dirk.nl/artikelen/9/9/9/5/3/1/Unox%20soep_639129825276946214.png",
+      "img": "https://web-fileserver.dirk.nl/artikelen/167464_1_408299_638261533798728846.png",
       "url": "https://www.dirk.nl/aanbiedingen"
     },
     {
@@ -8414,7 +8381,7 @@
       "was": "3.99",
       "deal_label": "Actie_",
       "effectief": null,
-      "img": "https://web-fileserver.dirk.nl/artikelen/1/9/9/5/3/1/Mekkafood%20Streetfood_639129814983438570.png",
+      "img": "https://web-fileserver.dirk.nl/artikelen/244257_1_483659_638974380293445950.png",
       "url": "https://www.dirk.nl/aanbiedingen"
     },
     {
@@ -8425,7 +8392,7 @@
       "was": "8.55",
       "deal_label": "Actie_",
       "effectief": null,
-      "img": "https://web-fileserver.dirk.nl/artikelen/5/9/9/5/3/1/Ben%20&%20Jerry’s%20ijs%20v1_639129864833184034.png",
+      "img": "https://web-fileserver.dirk.nl/artikelen/189343_1_411815_638500905597166401.png",
       "url": "https://www.dirk.nl/aanbiedingen"
     },
     {
@@ -8436,18 +8403,7 @@
       "was": null,
       "deal_label": "Actie_",
       "effectief": null,
-      "img": "https://web-fileserver.dirk.nl/artikelen/8/9/9/5/3/1/Puuur%20Visch_639129866170732027.png",
-      "url": "https://www.dirk.nl/aanbiedingen"
-    },
-    {
-      "supermarkt": "Dirk",
-      "naam": "Dreft wasverzachter XL — Flacon 75 wasbeurten. OP=OP",
-      "desc": "Overig",
-      "prijs": "3.99",
-      "was": null,
-      "deal_label": "Actie_",
-      "effectief": null,
-      "img": "https://web-fileserver.dirk.nl/artikelen/1/8/9/5/3/1/Dreft%20wasverzachter%20XL_639129865120232414.png",
+      "img": "https://web-fileserver.dirk.nl/artikelen/133244_1_441473_638224229332155691.png",
       "url": "https://www.dirk.nl/aanbiedingen"
     },
     {
@@ -8469,7 +8425,7 @@
       "was": null,
       "deal_label": "Actie_",
       "effectief": null,
-      "img": "https://web-fileserver.dirk.nl/artikelen/7/8/9/5/3/1/KitKat%20chocolade_639129832694180812.png",
+      "img": "https://web-fileserver.dirk.nl/artikelen/249607_1_487624_639056190423404388.png",
       "url": "https://www.dirk.nl/aanbiedingen"
     },
     {
@@ -8480,7 +8436,7 @@
       "was": "2.75",
       "deal_label": "Actie_",
       "effectief": null,
-      "img": "https://web-fileserver.dirk.nl/artikelen/0/1/0/6/3/1/Oldtimers%20drop_639129871836264669.png",
+      "img": "https://web-fileserver.dirk.nl/artikelen/146127_1_373616_638090568064499130.png",
       "url": "https://www.dirk.nl/aanbiedingen"
     },
     {
@@ -8491,7 +8447,7 @@
       "was": null,
       "deal_label": "Actie_",
       "effectief": null,
-      "img": "https://web-fileserver.dirk.nl/artikelen/1/1/0/6/3/1/Red%20Band_639129863529679113.png",
+      "img": "https://web-fileserver.dirk.nl/artikelen/200862_1_471702_638671776529985077.png",
       "url": "https://www.dirk.nl/aanbiedingen"
     },
     {
@@ -8502,7 +8458,7 @@
       "was": "2.35",
       "deal_label": "Actie_",
       "effectief": null,
-      "img": "https://web-fileserver.dirk.nl/artikelen/3/1/0/6/3/1/Cheetos,%20Hamka’s,%20Pomtips%20of%20Mama%20Mia’s_639129871711587777.png",
+      "img": "https://web-fileserver.dirk.nl/artikelen/162020_1_375096_638215614145438483.png",
       "url": "https://www.dirk.nl/aanbiedingen"
     },
     {
@@ -8513,7 +8469,7 @@
       "was": "1.95",
       "deal_label": "Actie_",
       "effectief": null,
-      "img": "https://web-fileserver.dirk.nl/artikelen/4/1/0/6/3/1/Chio%20Heartbreakers%20of%20Pom-bär_639129825801776790.png",
+      "img": "https://web-fileserver.dirk.nl/artikelen/212785_1_374731_638726433841494881.png",
       "url": "https://www.dirk.nl/aanbiedingen"
     }
   ]
