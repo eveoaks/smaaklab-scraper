@@ -1673,7 +1673,7 @@ def scrape_plus():
 SCRAPERS = [
     ("Albert Heijn", scrape_ah),
     ("Jumbo",        scrape_jumbo),
-    # ("Lidl",         scrape_lidl),  # tijdelijk uitgeschakeld (Vision API kost geld)
+    ("Lidl",         scrape_lidl),
     ("Aldi",         scrape_aldi),
     ("Plus",         scrape_plus),
     ("Dirk",         scrape_dirk),
