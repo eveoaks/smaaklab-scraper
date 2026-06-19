@@ -659,6 +659,8 @@ AH_QUERY = """
     id
     title
     promotionType
+    startDate
+    endDate
     products {
       id
       price {
@@ -747,8 +749,12 @@ def scrape_ah():
         if p.get("promotionType") == "NATIONAL" and p.get("products")
     ]
 
-    # Collect unique product IDs (first product per promo is enough for detail)
-    unique_pids = list({p["products"][0]["id"] for p in national})
+    # Collect unique product IDs — alle producten per promo (max 3), anders missen combo-deals
+    unique_pids = list({
+        prod["id"]
+        for p in national
+        for prod in (p.get("products") or [])[:3]
+    })
 
     # Fetch product details concurrently (20 workers ≈ 5-10s for ~300 products)
     detail_cache = {}
@@ -762,59 +768,69 @@ def scrape_ah():
 
     results = []
     seen = set()
+    today_str = str(date.today())
 
     for promo in national:
-        pid        = promo["products"][0]["id"]
-        detail     = detail_cache.get(pid, {})
         promo_title = (promo.get("title") or "").strip()
 
-        naam = detail.get("title") or promo_title
-        if not naam:
-            continue
-        key = naam.lower()
-        if key in seen:
-            continue
-        seen.add(key)
+        # startDate: AH geeft ISO datetime, wij nemen alleen de datum (YYYY-MM-DD)
+        start_raw = (promo.get("startDate") or "")
+        start_date = start_raw[:10] if start_raw else ""
+        # Alleen als startDate echt in de toekomst ligt bewaren als effectief
+        effectief_str = start_date if start_date and start_date > today_str else None
 
-        prod_price = promo["products"][0].get("price") or {}
-        now_amt  = (prod_price.get("now")  or {}).get("amount")
-        was_amt  = (prod_price.get("was")  or {}).get("amount")
+        products = promo.get("products") or []
+        # Combo-deals (2 producten): beide verwerken. Groepsdeals (>2): alleen eerste als representant.
+        to_process = products if len(products) <= 2 else products[:1]
 
-        # Fallback: use priceBeforeBonus from REST detail as was price when GraphQL was is None
-        if was_amt is None and detail.get("price_before") and detail["price_before"] != now_amt:
-            was_amt = detail["price_before"]
+        for prod_data in to_process:
+            pid    = prod_data["id"]
+            detail = detail_cache.get(pid, {})
 
-        # deal_label from REST detail (bonusMechanism / discountLabels)
-        deal_label = detail.get("bonus_mechanism") or None
+            naam = detail.get("title") or promo_title
+            if not naam:
+                continue
+            key = naam.lower()
+            if key in seen:
+                continue
+            seen.add(key)
 
-        # Compute percentage discount label when we have both prices
-        if now_amt and was_amt and was_amt > now_amt and not deal_label:
-            pct = round((1 - now_amt / was_amt) * 100)
-            deal_label = f"{pct}% korting"
+            prod_price = prod_data.get("price") or {}
+            now_amt  = (prod_price.get("now")  or {}).get("amount")
+            was_amt  = (prod_price.get("was")  or {}).get("amount")
 
-        effectief_prijs = None
+            # Fallback: priceBeforeBonus uit REST detail als GraphQL was None is
+            if was_amt is None and detail.get("price_before") and detail["price_before"] != now_amt:
+                was_amt = detail["price_before"]
 
-        # Fallback now_amt from REST detail when GraphQL price.now is missing
-        if now_amt is None and detail.get("price_before"):
-            now_amt = detail["price_before"]
+            # deal_label uit REST detail (bonusMechanism / discountLabels)
+            deal_label = detail.get("bonus_mechanism") or None
 
-        # Skip deals with no usable price and no deal info
-        if not now_amt and not deal_label:
-            continue
-        if not was_amt and not deal_label:
-            continue
+            # Bereken kortingslabel als beide prijzen bekend zijn
+            if now_amt and was_amt and was_amt > now_amt and not deal_label:
+                pct = round((1 - now_amt / was_amt) * 100)
+                deal_label = f"{pct}% korting"
 
-        results.append({
-            "supermarkt":    "Albert Heijn",
-            "naam":          naam,
-            "desc":          detail.get("category", ""),
-            "prijs":         str(now_amt)  if now_amt  is not None else None,
-            "was":           str(was_amt)  if was_amt  is not None else None,
-            "deal_label":    deal_label,
-            "effectief":     str(effectief_prijs) if effectief_prijs is not None else None,
-            "img":           detail.get("img", ""),
-            "url":           "https://www.ah.nl/bonus",
-        })
+            # Fallback now_amt uit REST detail als GraphQL price.now ontbreekt
+            if now_amt is None and detail.get("price_before"):
+                now_amt = detail["price_before"]
+
+            if not now_amt and not deal_label:
+                continue
+            if not was_amt and not deal_label:
+                continue
+
+            results.append({
+                "supermarkt":    "Albert Heijn",
+                "naam":          naam,
+                "desc":          detail.get("category", ""),
+                "prijs":         str(now_amt)  if now_amt  is not None else None,
+                "was":           str(was_amt)  if was_amt  is not None else None,
+                "deal_label":    deal_label,
+                "effectief":     effectief_str,
+                "img":           detail.get("img", ""),
+                "url":           "https://www.ah.nl/bonus",
+            })
 
     return results
 
@@ -1830,7 +1846,11 @@ def main():
 
     for naam, scraper in SCRAPERS:
         print(f"Scraping {naam}...")
-        deals = scraper()
+        try:
+            deals = scraper()
+        except Exception as e:
+            print(f"  ⚠ {naam} overgeslagen: {e}")
+            continue
         deals = [
             d for d in deals
             if is_food(d)
